@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!--======================================================Melee================================================-->
+  
+  <MU.MechUpgradeDef ParentName="MU_MechChipBase" Name="MU_MeleeChipBase" Abstract="True">
+    <exclusionTags>
+	  <li>MeleeChip</li>
+	</exclusionTags>
+	<restrictions>
+	  <li Class="MU.UpgradeRestriction_MeleeFighter">
+        <factor>0.05</factor>
+      </li>
+	</restrictions>
+  </MU.MechUpgradeDef>
+
+  <ThingDef ParentName="MU_AdvancedChipItemBase">
+    <defName>MU_MechChip_Melee_A</defName>
+    <label>melee chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large melee hit chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Melee_A</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Melee</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Melee_A</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MeleeChipBase">
+    <defName>MU_MechChip_Melee_A</defName>
+    <label>melee chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large melee hit chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Melee_A</uiIconPath>
+    <statOffsets>
+	  <MeleeHitChance>14</MeleeHitChance>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Melee_A</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_StandardChipItemBase">
+    <defName>MU_MechChip_Melee_B</defName>
+    <label>melee chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium melee hit chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Melee_B</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Melee</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Melee_B</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MeleeChipBase">
+    <defName>MU_MechChip_Melee_B</defName>
+    <label>melee chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium melee hit chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Melee_B</uiIconPath>
+    <statOffsets>
+	  <MeleeHitChance>7</MeleeHitChance>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Melee_B</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_BasicChipItemBase">
+    <defName>MU_MechChip_Melee_C</defName>
+    <label>melee chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a small melee hit chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Melee_C</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Melee</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Melee_C</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MeleeChipBase">
+    <defName>MU_MechChip_Melee_C</defName>
+    <label>melee chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a small melee hit chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Melee_C</uiIconPath>
+    <statOffsets>
+	  <MeleeHitChance>4</MeleeHitChance>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Melee_C</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <!--===================================Dodge==========================================-->
+  
+  <MU.MechUpgradeDef ParentName="MU_MechChipBase" Name="MU_DodgeChipBase" Abstract="True">
+    <exclusionTags>
+	  <li>DodgeChip</li>
+	</exclusionTags>
+	<restrictions>
+	  <li Class="MU.UpgradeRestriction_MeleeFighter">
+        <factor>0.2</factor>
+      </li>
+	</restrictions>
+  </MU.MechUpgradeDef>
+
+  <ThingDef ParentName="MU_AdvancedChipItemBase">
+    <defName>MU_MechChip_Dodge_A</defName>
+    <label>dodge chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large melee dodge chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Dodge_A</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Dodge</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Dodge_A</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_DodgeChipBase">
+    <defName>MU_MechChip_Dodge_A</defName>
+    <label>dodge chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large melee dodge chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Dodge_A</uiIconPath>
+    <statOffsets>
+	  <MeleeDodgeChance>20</MeleeDodgeChance>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Dodge_A</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_StandardChipItemBase">
+    <defName>MU_MechChip_Dodge_B</defName>
+    <label>dodge chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium melee dodge chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Dodge_B</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Dodge</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Dodge_B</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_DodgeChipBase">
+    <defName>MU_MechChip_Dodge_B</defName>
+    <label>dodge chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium melee dodge chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Dodge_B</uiIconPath>
+    <statOffsets>
+	  <MeleeDodgeChance>15</MeleeDodgeChance>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Dodge_B</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_BasicChipItemBase">
+    <defName>MU_MechChip_Dodge_C</defName>
+    <label>dodge chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a small melee dodge chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Dodge_C</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Dodge</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Dodge_C</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_DodgeChipBase">
+    <defName>MU_MechChip_Dodge_C</defName>
+    <label>dodge chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a small melee dodge chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Dodge_C</uiIconPath>
+    <statOffsets>
+	  <MeleeDodgeChance>9</MeleeDodgeChance>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Dodge_C</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+</Defs>

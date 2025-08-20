@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ScenarioDef[defName="Mechanitor"]/scenario/parts</xpath>
+		<value>
+		
+		<li Class="MU.ScenPart_Upgrades">
+          <def>MU_UpgradeStartingMech</def>
+          <mechs>
+            <li>Mech_Constructoid</li>
+          </mechs>
+		  <upgrades>
+            <li>MU_MechChip_Speed_C</li>
+			<li>MU_MechChip_Work_C</li>
+			<li>MU_MechChip_Energy_C</li>
+          </upgrades>
+		  <visible>false</visible>
+        </li>
+		
+		<li Class="MU.ScenPart_Upgrades">
+          <def>MU_UpgradeStartingMech</def>
+          <mechs>
+            <li>Mech_Lifter</li>
+          </mechs>
+		  <upgrades>
+            <li>MU_MechChip_Speed_C</li>
+			<li>MU_MechChip_Energy_C</li>
+          </upgrades>
+		  <visible>false</visible>
+        </li>
+		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ScenarioDef[defName="LFM_Mechanitor"]/scenario/parts</xpath>
+		<success>Always</success>
+		<value>
+		
+		<li Class="MU.ScenPart_Upgrades">
+          <def>MU_UpgradeStartingMech</def>
+          <mechs>
+            <li>LFM_Mech_Slinger</li>
+          </mechs>
+		  <upgrades>
+            <li>MU_Module_Ranged_A</li>
+			<li>MU_MechChip_Aiming_A</li>
+			<li>MU_MechChip_Ranged_A</li>
+			<li>MU_Shield_Small_A</li>
+			<li>MU_CommandPack</li>
+          </upgrades>
+		  <visible>false</visible>
+        </li>
+		
+		<li Class="MU.ScenPart_Upgrades">
+          <def>MU_UpgradeStartingMech</def>
+          <mechs>
+            <li>Mech_Constructoid</li>
+			<li>Mech_Agrihand</li>
+          </mechs>
+		  <upgrades>
+            <li>MU_MechChip_Speed_C</li>
+			<li>MU_MechChip_Energy_C</li>
+			<li>MU_MechChip_Work_C</li>
+          </upgrades>
+		  <visible>false</visible>
+        </li>
+		
+		</value>
+	</Operation>
+
+</Patch>

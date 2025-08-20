@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!--=========================================Work===============================================-->
+  
+  <MU.MechUpgradeDef ParentName="MU_MechChipBase" Name="MU_WorkChipBase" Abstract="True">
+    <exclusionTags>
+	  <li>WorkChip</li>
+	</exclusionTags>
+	<restrictions>
+	  <li Class="MU.UpgradeRestriction_IsWorker" />
+	</restrictions>
+  </MU.MechUpgradeDef>
+
+  <ThingDef ParentName="MU_AdvancedChipItemBase">
+    <defName>MU_MechChip_Work_A</defName>
+    <label>work chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large work speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Work_A</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Work</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Work_A</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_WorkChipBase">
+    <defName>MU_MechChip_Work_A</defName>
+    <label>work chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large work speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Work_A</uiIconPath>
+    <statOffsets>
+	  <WorkSpeedGlobal>0.55</WorkSpeedGlobal>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Work_A</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_StandardChipItemBase">
+    <defName>MU_MechChip_Work_B</defName>
+    <label>work chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium work speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Work_B</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Work</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Work_B</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_WorkChipBase">
+    <defName>MU_MechChip_Work_B</defName>
+    <label>work chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium work speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Work_B</uiIconPath>
+    <statOffsets>
+	  <WorkSpeedGlobal>0.3</WorkSpeedGlobal>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Work_B</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_BasicChipItemBase">
+    <defName>MU_MechChip_Work_C</defName>
+    <label>work chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a small work speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Work_C</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Work</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Work_C</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_WorkChipBase">
+    <defName>MU_MechChip_Work_C</defName>
+    <label>work chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a small work speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Work_C</uiIconPath>
+    <statOffsets>
+	  <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Work_C</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <!--==========================================Speed===========================================-->
+  
+  <MU.MechUpgradeDef ParentName="MU_MechChipBase" Name="MU_SpeedChipBase" Abstract="True">
+    <exclusionTags>
+	  <li>SpeedChip</li>
+	</exclusionTags>
+  </MU.MechUpgradeDef>
+
+  <ThingDef ParentName="MU_AdvancedChipItemBase">
+    <defName>MU_MechChip_Speed_A</defName>
+    <label>speed chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large movement speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Speed_A</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Speed</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Speed_A</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_SpeedChipBase">
+    <defName>MU_MechChip_Speed_A</defName>
+    <label>speed chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large movement speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Speed_A</uiIconPath>
+    <statFactors>
+	  <MoveSpeed>1.25</MoveSpeed>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Speed_A</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_StandardChipItemBase">
+    <defName>MU_MechChip_Speed_B</defName>
+    <label>speed chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium movement speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Speed_B</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Speed</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Speed_B</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_SpeedChipBase">
+    <defName>MU_MechChip_Speed_B</defName>
+    <label>speed chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium movement speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Speed_B</uiIconPath>
+    <statFactors>
+	  <MoveSpeed>1.15</MoveSpeed>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Speed_B</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_BasicChipItemBase">
+    <defName>MU_MechChip_Speed_C</defName>
+    <label>speed chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives CL movement speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Speed_C</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Speed</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Speed_C</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_SpeedChipBase">
+    <defName>MU_MechChip_Speed_C</defName>
+    <label>speed chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives CL movement speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Speed_C</uiIconPath>
+    <statFactors>
+	  <MoveSpeed>1.075</MoveSpeed>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Speed_C</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <!--==========================================Energy===========================================-->
+  
+  <MU.MechUpgradeDef ParentName="MU_MechChipBase" Name="MU_EnergyChipBase" Abstract="True">
+    <exclusionTags>
+	  <li>EnergyChip</li>
+	</exclusionTags>
+	<commonality>0.10</commonality>
+  </MU.MechUpgradeDef>
+
+  <ThingDef ParentName="MU_AdvancedChipItemBase">
+    <defName>MU_MechChip_Energy_A</defName>
+    <label>energy chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large energy usage decrease.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Energy_A</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Energy</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Energy_A</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_EnergyChipBase">
+    <defName>MU_MechChip_Energy_A</defName>
+    <label>energy chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large energy usage decrease.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Energy_A</uiIconPath>
+    <statFactors>
+	  <MechEnergyUsageFactor>0.50</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Energy_A</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_StandardChipItemBase">
+    <defName>MU_MechChip_Energy_B</defName>
+    <label>energy chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium energy usage decrease.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Energy_B</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Energy</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Energy_B</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_EnergyChipBase">
+    <defName>MU_MechChip_Energy_B</defName>
+    <label>energy chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium energy usage decrease.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Energy_B</uiIconPath>
+    <statFactors>
+	  <MechEnergyUsageFactor>0.75</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Energy_B</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_BasicChipItemBase">
+    <defName>MU_MechChip_Energy_C</defName>
+    <label>energy chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives CL energy usage decrease.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Energy_C</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Energy</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Energy_C</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_EnergyChipBase">
+    <defName>MU_MechChip_Energy_C</defName>
+    <label>energy chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives CL energy usage decrease.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Energy_C</uiIconPath>
+    <statFactors>
+	  <MechEnergyUsageFactor>0.90</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Energy_C</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+</Defs>

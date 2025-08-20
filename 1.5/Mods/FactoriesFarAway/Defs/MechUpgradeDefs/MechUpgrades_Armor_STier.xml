@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="MU_SmallMechArmorItemBase">
+    <defName>MU_MechArmor_Small_S</defName>
+    <label>small mech armor tier S</label>
+    <description>Universal armor for a small mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nStandard armor technology allows to reduce even non-reflected damage.</description>
+    <techLevel>Ultra</techLevel>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechArmor_Small_S</upgradeDef>
+      </li>
+    </comps>
+	<costList>
+      <NanostructuringChip>1</NanostructuringChip>
+	  <Steel>40</Steel>
+	  <Plasteel>20</Plasteel>
+	  <Uranium>10</Uranium>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+	<statBases>
+	  <WorkToMake>30000</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>MU_SuperArmor</researchPrerequisite>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags Inherit="False">
+      <li>MU_SuperUpgrades</li>
+    </thingSetMakerTags>
+	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_S</uiIconPath>
+	<tradeTags>
+	  <li>MU_SuperUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_SmallMechArmorBase">
+    <defName>MU_MechArmor_Small_S</defName>
+    <label>small mech armor tier S</label>
+	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_S</uiIconPath>
+    <description>Universal armor for a small mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nStandard armor technology allows to reduce even non-reflected damage.</description>
+    <statOffsets>
+	  <ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+	  <MoveSpeed>-0.15</MoveSpeed>
+	</statOffsets>
+	<statFactors>
+	  <IncomingDamageFactor>0.60</IncomingDamageFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechArmor_Small_S</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_MediumMechArmorItemBase">
+    <defName>MU_MechArmor_Medium_S</defName>
+    <label>medium mech armor tier S</label>
+    <description>Universal armor for a medium mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nStandard armor technology allows to reduce even non-reflected damage.</description>
+    <techLevel>Ultra</techLevel>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechArmor_Medium_S</upgradeDef>
+      </li>
+    </comps>
+	<costList>
+      <NanostructuringChip>1</NanostructuringChip>
+	  <Steel>45</Steel>
+	  <Plasteel>60</Plasteel>
+	  <Uranium>15</Uranium>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+	<statBases>
+	  <WorkToMake>50000</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>MU_SuperArmor</researchPrerequisite>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags Inherit="False">
+      <li>MU_SuperUpgrades</li>
+    </thingSetMakerTags>
+	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_S</uiIconPath>
+	<tradeTags>
+	  <li>MU_SuperUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MediumMechArmorBase">
+    <defName>MU_MechArmor_Medium_S</defName>
+    <label>medium mech armor tier S</label>
+	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_S</uiIconPath>
+    <description>Universal armor for a medium mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nStandard armor technology allows to reduce even non-reflected damage.</description>
+    <statOffsets>
+	  <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+	  <MoveSpeed>-0.15</MoveSpeed>
+	</statOffsets>
+	<statFactors>
+	  <IncomingDamageFactor>0.60</IncomingDamageFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechArmor_Medium_S</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_LargeMechArmorItemBase">
+    <defName>MU_MechArmor_Large_S</defName>
+    <label>large mech armor tier S</label>
+    <description>Universal armor for a large mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nStandard armor technology allows to reduce even non-reflected damage.</description>
+    <techLevel>Ultra</techLevel>
+	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_LargeMechArmor_S</uiIconPath>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechArmor_Large_S</upgradeDef>
+      </li>
+    </comps>
+	<costList>
+      <NanostructuringChip>1</NanostructuringChip>
+	  <Steel>70</Steel>
+	  <Plasteel>100</Plasteel>
+	  <Uranium>30</Uranium>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <statBases>
+	  <WorkToMake>70000</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>MU_SuperArmor</researchPrerequisite>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags Inherit="False">
+      <li>MU_SuperUpgrades</li>
+    </thingSetMakerTags>
+	<tradeTags>
+	  <li>MU_SuperUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_LargeMechArmorBase">
+    <defName>MU_MechArmor_Large_S</defName>
+    <label>large mech armor tier S</label>
+	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_LargeMechArmor_S</uiIconPath>
+    <description>Universal armor for a large mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nStandard armor technology allows to reduce even non-reflected damage.</description>
+    <statOffsets>
+	  <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+	  <MoveSpeed>-0.15</MoveSpeed>
+	</statOffsets>
+	<statFactors>
+	  <IncomingDamageFactor>0.60</IncomingDamageFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechArmor_Large_S</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_UltraLargeMechArmorItemBase">
+    <defName>MU_MechArmor_UltraLarge_S</defName>
+    <label>ultra large mech armor tier S</label>
+    <description>Universal armor for an ultra large mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nStandard armor technology allows to reduce even non-reflected damage.</description>
+    <techLevel>Ultra</techLevel>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechArmor_UltraLarge_S</upgradeDef>
+      </li>
+    </comps>
+	<costList>
+      <NanostructuringChip>1</NanostructuringChip>
+	  <Steel>100</Steel>
+	  <Plasteel>130</Plasteel>
+	  <Uranium>50</Uranium>
+      <ComponentIndustrial>4</ComponentIndustrial>
+	  <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <statBases>
+	  <WorkToMake>70000</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>MU_SuperArmor</researchPrerequisite>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags Inherit="False">
+      <li>MU_SuperUpgrades</li>
+    </thingSetMakerTags>
+	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_UltraLargeMechArmor_S</uiIconPath>
+	<tradeTags>
+	  <li>MU_SuperUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_UltraLargeMechArmorBase">
+    <defName>MU_MechArmor_UltraLarge_S</defName>
+    <label>ultra large mech armor tier S</label>
+	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_UltraLargeMechArmor_S</uiIconPath>
+    <description>Universal armor for an ultra large mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nStandard armor technology allows to reduce even non-reflected damage.</description>
+    <statOffsets>
+	  <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+	  <MoveSpeed>-0.15</MoveSpeed>
+	</statOffsets>
+	<statFactors>
+	  <IncomingDamageFactor>0.60</IncomingDamageFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechArmor_UltraLarge_S</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+</Defs>

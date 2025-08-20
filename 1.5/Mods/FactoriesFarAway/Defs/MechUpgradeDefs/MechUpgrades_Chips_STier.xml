@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef Name="MU_SuperChipItemBase" ParentName="MU_MechChipItemBase" Abstract="True">
+	<statBases>
+      <Flammability>0</Flammability><WorkToMake>27000</WorkToMake>
+    </statBases>
+	<costList>
+      <SignalChip>1</SignalChip>
+	  <Plasteel>15</Plasteel>
+	  <Gold>1</Gold>
+    </costList>
+	<recipeMaker>
+      <displayPriority>130</displayPriority>
+	  <researchPrerequisite>MU_SuperChips</researchPrerequisite>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags>
+      <li>MU_SuperUpgrades</li>
+	  <li>MU_SuperMechChips</li>
+    </thingSetMakerTags>
+	<techLevel>Ultra</techLevel>
+	<tradeTags>
+	  <li>MU_SuperUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <!--==========================================Gastro-analize===========================================-->
+  
+  <ThingDef ParentName="MU_SuperChipItemBase">
+    <defName>MU_MechChip_GastroAnalize_S</defName>
+    <label>gastro-analize chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives cooking speed increase and prevents food poisoning.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_GastroAnalize_S</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_GastroAnalize</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_GastroAnalize_S</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_GastroAnalizeChipBase">
+    <defName>MU_MechChip_GastroAnalize_S</defName>
+    <label>gastro-analize chip tier S</label>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_GastroAnalize_S</uiIconPath>
+    <description>A small chip, that can be installed into mechanoid brain. Gives cooking speed increase and prevent food poisoning.</description>
+    <statFactors>
+	  <FoodPoisonChance>0</FoodPoisonChance>
+	  <CookSpeed>1.75</CookSpeed>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_GastroAnalize_S</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <!--==========================================Production===========================================-->
+
+  <ThingDef ParentName="MU_SuperChipItemBase">
+    <defName>MU_MechChip_Production_S</defName>
+    <label>production chip tier S</label>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Production</texPath>
+    </graphicData>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a work speed increase and increases quality of things created by mechanoid.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Production_S</uiIconPath>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Production_S</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_ProductionChipBase">
+    <defName>MU_MechChip_Production_S</defName>
+    <label>production chip tier S</label>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Production_S</uiIconPath>
+    <description>A small chip, that can be installed into mechanoid brain. Gives a work speed increase and increases quality of things created by mechanoid.</description>
+  <statFactors>
+	  <GeneralLaborSpeed>1.45</GeneralLaborSpeed>
+	</statFactors>
+   <statOffsets>
+	  <ConstructionSpeed>0.65</ConstructionSpeed>
+	</statOffsets> 
+	<linkedThingDef>MU_MechChip_Production_S</linkedThingDef>
+	<comps>
+	 <li Class="MU.UpgradeCompProperties_QualityOffset" >
+	   <offset>1</offset>
+	 </li>
+	</comps>
+  </MU.MechUpgradeDef>
+  
+  <!--==========================================Medical===========================================-->
+  
+  <ThingDef ParentName="MU_SuperChipItemBase">
+    <defName>MU_MechChip_Medical_S</defName>
+    <label>medical chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large increase to all medical characteristics.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Medical</texPath>
+    </graphicData>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Medical_S</uiIconPath>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Medical_S</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MedicalChipBase">
+    <defName>MU_MechChip_Medical_S</defName>
+    <label>medical chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large increase to all medical characteristics.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Medical_S</uiIconPath>
+    <statFactors>
+	  <MedicalOperationSpeed>1.4</MedicalOperationSpeed>
+	  <MedicalTendSpeed>1.5</MedicalTendSpeed>
+	</statFactors>
+	<statOffsets>
+	  <MedicalTendQuality>0.75</MedicalTendQuality>
+	  <MedicalSurgerySuccessChance>0.25</MedicalSurgerySuccessChance>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Medical_S</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_SuperChipItemBase">
+    <defName>MU_MechChip_Melee_S</defName>
+    <label>melee chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large melee hit chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Melee_S</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Melee</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Melee_S</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MeleeChipBase">
+    <defName>MU_MechChip_Melee_S</defName>
+    <label>melee chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large melee hit chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Melee_S</uiIconPath>
+    <statOffsets>
+	  <MeleeHitChance>20</MeleeHitChance>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Melee_S</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_SuperChipItemBase">
+    <defName>MU_MechChip_Dodge_S</defName>
+    <label>dodge chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large melee dodge chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Dodge_S</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Dodge</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Dodge_S</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_DodgeChipBase">
+    <defName>MU_MechChip_Dodge_S</defName>
+    <label>dodge chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large melee dodge chance increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Dodge_S</uiIconPath>
+    <statOffsets>
+	  <MeleeDodgeChance>29</MeleeDodgeChance>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Dodge_S</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_SuperChipItemBase">
+    <defName>MU_MechChip_Ranged_S</defName>
+    <label>accuracy chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large shooting accuracy increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Ranged_S</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Ranged</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Ranged_S</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_RangedChipBase">
+    <defName>MU_MechChip_Ranged_S</defName>
+    <label>accuracy chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large shooting accuracy increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Ranged_S</uiIconPath>
+    <statOffsets>
+	  <ShootingAccuracyPawn>18</ShootingAccuracyPawn>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Ranged_S</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_SuperChipItemBase">
+    <defName>MU_MechChip_Reload_S</defName>
+    <label>reload chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large reload speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Reload_S</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Reload</texPath>
+    </graphicData>
+
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Reload_S</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_ReloadChipBase">
+    <defName>MU_MechChip_Reload_S</defName>
+    <label>reload chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large reload speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Reload_S</uiIconPath>
+    <statFactors>
+	  <RangedCooldownFactor>0.35</RangedCooldownFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Reload_S</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_SuperChipItemBase">
+    <defName>MU_MechChip_Aiming_S</defName>
+    <label>aiming chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large aiming speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Aiming_S</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Aiming</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Aiming_S</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_AimingChipBase">
+    <defName>MU_MechChip_Aiming_S</defName>
+    <label>aiming chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large aiming speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Aiming_S</uiIconPath>
+    <statFactors>
+	  <AimingDelayFactor>0.35</AimingDelayFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Aiming_S</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_SuperChipItemBase">
+    <defName>MU_MechChip_Work_S</defName>
+    <label>work chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large work speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Work_S</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Work</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Work_S</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_WorkChipBase">
+    <defName>MU_MechChip_Work_S</defName>
+    <label>work chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large work speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Work_S</uiIconPath>
+    <statOffsets>
+	  <WorkSpeedGlobal>0.75</WorkSpeedGlobal>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Work_S</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_SuperChipItemBase">
+    <defName>MU_MechChip_Speed_S</defName>
+    <label>speed chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large movement speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Speed_S</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Speed</texPath>
+    </graphicData>
+
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Speed_S</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_SpeedChipBase">
+    <defName>MU_MechChip_Speed_S</defName>
+    <label>speed chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large movement speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Speed_S</uiIconPath>
+    <statFactors>
+	  <MoveSpeed>1.35</MoveSpeed>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Speed_S</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_SuperChipItemBase">
+    <defName>MU_MechChip_Energy_S</defName>
+    <label>energy chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large energy usage decrease.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Energy_S</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Energy</texPath>
+    </graphicData>
+
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Energy_S</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_EnergyChipBase">
+    <defName>MU_MechChip_Energy_S</defName>
+    <label>energy chip tier S</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large energy usage decrease.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Energy_S</uiIconPath>
+    <statFactors>
+	  <MechEnergyUsageFactor>0.35</MechEnergyUsageFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Energy_S</linkedThingDef>
+  </MU.MechUpgradeDef>
+</Defs>

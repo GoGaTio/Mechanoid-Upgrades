@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>MU_UpgradeSlag</defName>
+    <label>upgrade slag</label>
+    <description>Slag remained after removal of unstable upgrade.</description>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/MU_UnfinishedModule</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.7, 0.7)</drawSize>
+    </graphicData>
+	<statBases>
+      <MarketValue>0</MarketValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0</Flammability>
+	  <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <useHitPoints>true</useHitPoints>
+	<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+	<thingCategories Inherit="False">
+      <li>ItemsMisc</li>
+    </thingCategories>
+  </ThingDef>
+  
+</Defs>

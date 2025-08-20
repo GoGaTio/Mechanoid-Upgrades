@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MU.MechUpgradeDef Name="MU_LargeMechArmorBase" ParentName="MU_MechArmorBase" Abstract="True">
+	<upgradePoints>5</upgradePoints>
+	<minBodySize>1.6</minBodySize>
+	<maxBodySize>3.1</maxBodySize>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef Name="MU_LargeMechArmorItemBase" ParentName="MU_MechUpgradeItemCraftable" Abstract="True">
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_LargeMechArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>550</MaxHitPoints>
+      <Mass>35</Mass>
+      <Flammability>0</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+	<recipeMaker>
+      <displayPriority>1200</displayPriority>
+	  <unfinishedThingDef>MU_UnfinishedUpgrade_Armor_Large</unfinishedThingDef>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>MU_Armor</li>
+    </thingCategories>
+	<tradeTags>
+	  <li>MU_LargeArmor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="MU_LargeMechArmorItemBase">
+    <defName>MU_MechArmor_Large_C</defName>
+    <label>large mech armor tier C</label>
+    <description>Universal armor for a large mechanoid. Gives a small increase in protection against penetrating and crushing damage.</description>
+    <techLevel>Industrial</techLevel>
+	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_LargeMechArmor_C</uiIconPath>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechArmor_Large_C</upgradeDef>
+      </li>
+    </comps>
+	<costList>
+      <Steel>85</Steel>
+	  <Plasteel>40</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+	<statBases>
+	  <WorkToMake>45000</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>MU_BasicArmor</researchPrerequisite>
+    </recipeMaker>
+	<tradeTags>
+	  <li>MU_BasicUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_LargeMechArmorBase">
+    <defName>MU_MechArmor_Large_C</defName>
+    <label>large mech armor tier C</label>
+	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_LargeMechArmor_C</uiIconPath>
+    <description>Universal armor for a large mechanoid. Gives a small increase in protection against penetrating and crushing damage.</description>
+    <statOffsets>
+	  <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+	  <MoveSpeed>-0.1</MoveSpeed>
+	</statOffsets>
+	<linkedThingDef>MU_MechArmor_Large_C</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_LargeMechArmorItemBase">
+    <defName>MU_MechArmor_Large_B</defName>
+    <label>large mech armor tier B</label>
+    <description>Universal armor for a large mechanoid. Gives a medium increase in protection against penetrating and crushing damage.</description>
+    <techLevel>Spacer</techLevel>
+	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_LargeMechArmor_B</uiIconPath>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechArmor_Large_B</upgradeDef>
+      </li>
+    </comps>
+	<costList>
+      <Steel>100</Steel>
+	  <Plasteel>55</Plasteel>
+	  <Uranium>25</Uranium>
+      <ComponentIndustrial>3</ComponentIndustrial>
+	  <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+	<statBases>
+	  <WorkToMake>60000</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>MU_StandardArmor</researchPrerequisite>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags Inherit="False">
+      <li>MU_StandardUpgrades</li>
+    </thingSetMakerTags>
+	<tradeTags>
+	  <li>MU_StandardUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_LargeMechArmorBase">
+    <defName>MU_MechArmor_Large_B</defName>
+    <label>large mech armor tier B</label>
+	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_LargeMechArmor_B</uiIconPath>
+    <description>Universal armor for a large mechanoid. Gives a medium increase in protection against penetrating and crushing damage.</description>
+    <statOffsets>
+	  <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+	  <MoveSpeed>-0.2</MoveSpeed>
+	</statOffsets>
+	<linkedThingDef>MU_MechArmor_Large_B</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_LargeMechArmorItemBase">
+    <defName>MU_MechArmor_Large_A</defName>
+    <label>large mech armor tier A</label>
+    <description>Universal armor for a large mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nStandard armor technology allows to reduce even non-reflected damage.</description>
+    <techLevel>Ultra</techLevel>
+	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_LargeMechArmor_A</uiIconPath>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechArmor_Large_A</upgradeDef>
+      </li>
+    </comps>
+	<costList>
+      <NanostructuringChip>1</NanostructuringChip>
+	  <Steel>70</Steel>
+	  <Plasteel>65</Plasteel>
+	  <Uranium>30</Uranium>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+	  <WorkToMake>70000</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <researchPrerequisite>MU_AdvancedArmor</researchPrerequisite>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags Inherit="False">
+      <li>MU_AdvancedUpgrades</li>
+    </thingSetMakerTags>
+	<tradeTags>
+	  <li>MU_AdvancedUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_LargeMechArmorBase">
+    <defName>MU_MechArmor_Large_A</defName>
+    <label>large mech armor tier A</label>
+	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_LargeMechArmor_A</uiIconPath>
+    <description>Universal armor for a large mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nStandard armor technology allows to reduce even non-reflected damage.</description>
+    <statOffsets>
+	  <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+	  <MoveSpeed>-0.15</MoveSpeed>
+	</statOffsets>
+	<statFactors>
+	  <IncomingDamageFactor>0.75</IncomingDamageFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechArmor_Large_A</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+</Defs>

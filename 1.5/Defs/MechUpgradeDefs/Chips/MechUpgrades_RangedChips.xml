@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!--=================================Ranged============================================-->
+  
+  <MU.MechUpgradeDef ParentName="MU_MechChipBase" Name="MU_RangedChipBase" Abstract="True">
+    <exclusionTags>
+	  <li>RangedChip</li>
+	</exclusionTags>
+	<restrictions>
+	  <li Class="MU.UpgradeRestriction_RangedFighter" />
+	</restrictions>
+  </MU.MechUpgradeDef>
+
+  <ThingDef ParentName="MU_AdvancedChipItemBase">
+    <defName>MU_MechChip_Ranged_A</defName>
+    <label>accuracy chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large shooting accuracy increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Ranged_A</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Ranged</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Ranged_A</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_RangedChipBase">
+    <defName>MU_MechChip_Ranged_A</defName>
+    <label>accuracy chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large shooting accuracy increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Ranged_A</uiIconPath>
+    <statOffsets>
+	  <ShootingAccuracyPawn>12</ShootingAccuracyPawn>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Ranged_A</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_StandardChipItemBase">
+    <defName>MU_MechChip_Ranged_B</defName>
+    <label>accuracy chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium shooting accuracy increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Ranged_B</uiIconPath>
+    <techLevel>Spacer</techLevel>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Ranged</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Ranged_B</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_RangedChipBase">
+    <defName>MU_MechChip_Ranged_B</defName>
+    <label>accuracy chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium shooting accuracy increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Ranged_B</uiIconPath>
+    <statOffsets>
+	  <ShootingAccuracyPawn>6</ShootingAccuracyPawn>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Ranged_B</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_BasicChipItemBase">
+    <defName>MU_MechChip_Ranged_C</defName>
+    <label>accuracy chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a a small shooting accuracy increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Ranged_C</uiIconPath>
+    <techLevel>Ultra</techLevel>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Ranged</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Ranged_C</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_RangedChipBase">
+    <defName>MU_MechChip_Ranged_C</defName>
+    <label>accuracy chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a a small shooting accuracy increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Ranged_C</uiIconPath>
+    <statOffsets>
+	  <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Ranged_C</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <!--==========================================Reload===========================================-->
+
+  <MU.MechUpgradeDef ParentName="MU_MechChipBase" Name="MU_ReloadChipBase" Abstract="True">
+    <exclusionTags>
+	  <li>ReloadChip</li>
+	</exclusionTags>
+	<restrictions>
+	  <li Class="MU.UpgradeRestriction_RangedFighter" />
+	</restrictions>
+  </MU.MechUpgradeDef>
+
+  <ThingDef ParentName="MU_AdvancedChipItemBase">
+    <defName>MU_MechChip_Reload_A</defName>
+    <label>reload chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large reload speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Reload_A</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Reload</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Reload_A</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_ReloadChipBase">
+    <defName>MU_MechChip_Reload_A</defName>
+    <label>reload chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large reload speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Reload_A</uiIconPath>
+    <statFactors>
+	  <RangedCooldownFactor>0.5</RangedCooldownFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Reload_A</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_StandardChipItemBase">
+    <defName>MU_MechChip_Reload_B</defName>
+    <label>reload chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium reload speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Reload_B</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Reload</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Reload_B</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_ReloadChipBase">
+    <defName>MU_MechChip_Reload_B</defName>
+    <label>reload chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium reload speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Reload_B</uiIconPath>
+    <statFactors>
+	  <RangedCooldownFactor>0.75</RangedCooldownFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Reload_B</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_BasicChipItemBase">
+    <defName>MU_MechChip_Reload_C</defName>
+    <label>reload chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a a small reload speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Reload_C</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Reload</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Reload_C</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_ReloadChipBase">
+    <defName>MU_MechChip_Reload_C</defName>
+    <label>reload chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a a small reload speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Reload_C</uiIconPath>
+    <statFactors>
+	  <RangedCooldownFactor>0.9</RangedCooldownFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Reload_C</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <!--==========================================Aiming===========================================-->
+  
+  <MU.MechUpgradeDef ParentName="MU_MechChipBase" Name="MU_AimingChipBase" Abstract="True">
+    <exclusionTags>
+	  <li>AimingChip</li>
+	</exclusionTags>
+	<restrictions>
+	  <li Class="MU.UpgradeRestriction_RangedFighter" />
+	</restrictions>
+  </MU.MechUpgradeDef>
+
+  <ThingDef ParentName="MU_AdvancedChipItemBase">
+    <defName>MU_MechChip_Aiming_A</defName>
+    <label>aiming chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large aiming speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Aiming_A</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Aiming</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Aiming_A</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_AimingChipBase">
+    <defName>MU_MechChip_Aiming_A</defName>
+    <label>aiming chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large aiming speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Aiming_A</uiIconPath>
+    <statFactors>
+	  <AimingDelayFactor>0.5</AimingDelayFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Aiming_A</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_StandardChipItemBase">
+    <defName>MU_MechChip_Aiming_B</defName>
+    <label>aiming chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium aiming speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Aiming_B</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Aiming</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Aiming_B</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_AimingChipBase">
+    <defName>MU_MechChip_Aiming_B</defName>
+    <label>aiming chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium aiming speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Aiming_B</uiIconPath>
+    <statFactors>
+	  <AimingDelayFactor>0.75</AimingDelayFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Aiming_B</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_BasicChipItemBase">
+    <defName>MU_MechChip_Aiming_C</defName>
+    <label>aiming chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a a small aiming speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Aiming_C</uiIconPath>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Aiming</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Aiming_C</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_AimingChipBase">
+    <defName>MU_MechChip_Aiming_C</defName>
+    <label>aiming chip tier C</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a a small aiming speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Aiming_C</uiIconPath>
+    <statFactors>
+	  <AimingDelayFactor>0.9</AimingDelayFactor>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_Aiming_C</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+</Defs>

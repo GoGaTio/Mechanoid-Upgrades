@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MU_MechUpgradeItemCraftable">
+    <defName>MU_ShieldBooster</defName>
+    <label>shield booster</label>
+    <description>An advanced discharger device that allow to conduct large amount of energy in the shield system, making it much more durable to damage for a short period of time.\n\nThe main conductor gets overload when device is active, so it requires components for recharging.\n\nThe effect scales based on mechanoid body size.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_ShieldBooster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.75, 0.75)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+	  <Plasteel>60</Plasteel>
+     <Uranium>30</Uranium>
+	  <ComponentSpacer>2</ComponentSpacer>
+     <Gold>1</Gold>
+    </costList>
+    <descriptionHyperlinks>
+      <HediffDef>MU_ShieldBoost</HediffDef>
+    </descriptionHyperlinks>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_ShieldBooster</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>39000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+      <researchPrerequisite>MU_ShieldBooster</researchPrerequisite>
+    </recipeMaker>
+	<tradeTags>
+      <li>MU_UpgradeWithAbility</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef>
+    <defName>MU_ShieldBooster</defName>
+    <label>shield booster</label>
+    <description>An advanced discharger device that allow to conduct large amount of energy in the shield system, making it much more durable to damage for a short period of time.\n\nThe main conductor gets overload when device is active, so it requires components for recharging.\n\nThe effect scales based on mechanoid body size.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_ShieldBooster</uiIconPath>
+	<descriptionHyperlinks>
+      <HediffDef>MU_ShieldBoost</HediffDef>
+    </descriptionHyperlinks>
+	<linkedThingDef>MU_ShieldBooster</linkedThingDef>
+	<ability>MU_ShieldBoost</ability>
+	<exclusionTags>
+	  <li>ShieldRegen</li>
+	</exclusionTags>
+	<upgradePoints>2</upgradePoints>
+	<commonality>1.5</commonality>
+	<restrictions>
+	  <li Class="MU.UpgradeRestriction_Shield" />
+	</restrictions>
+  </MU.MechUpgradeDef>
+  
+  <AbilityDef>
+    <defName>MU_ShieldBoost</defName>
+    <label>shield boost</label>
+    <description>Use the shield booster to enhance mechanoid shield, making it much more durable for a short period of time.\n\nThe effect scales based on mechanoid body size.</description>
+    <iconPath>UI/Abilities/MU_ShieldBoost</iconPath>
+	<charges>1</charges>
+    <hostile>false</hostile>
+    <groupAbility>true</groupAbility>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <targetRequired>false</targetRequired>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<showOnCharacterCard>false</showOnCharacterCard>
+    <statBases>
+      <Ability_Duration>42</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <soundCast>ShieldMech_Start</soundCast>
+      <targetable>false</targetable>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>MU_ShieldBoost</hediffDef>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+        <ammoDef>ComponentIndustrial</ammoDef>
+		   <ammoCount>2</ammoCount>
+      </li>
+	  <li Class="MU.CompProperties_AICastableAbility" /> <!--To prevent player mechs from using-->
+    </comps>
+  </AbilityDef>
+  
+  <HediffDef>
+    <defName>MU_ShieldBoost</defName>
+    <label>shield boost</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>This mechanoid shield is boosted by overcharge of core casing.\n\nThe boost makes shield much more durable, but also consumes energy and requires components for another use.</description>
+	<isBad>false</isBad>
+	<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsDisableable">
+        <disappearsAfterTicks>2500</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath" />
+	  <li Class="MU.HediffCompProperties_ShieldBoost">
+        <baseEnergyGain>1</baseEnergyGain>
+        <energyGainFromWeightClass>
+		  <points>
+		    <li>(0, 2.5)</li>
+			<li>(3, 10)</li>
+		  </points>
+		</energyGainFromWeightClass>
+      </li>
+    </comps>
+	<stages>
+      <li>
+        <statFactors>
+          <MechEnergyUsageFactor>4</MechEnergyUsageFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <!--<ThingDef ParentName="MU_MechUpgradeItemCraftable">
+    <defName>MU_MechBooster</defName>
+    <label>mech booster</label>
+    <description>A remote energy and computation enhancement device. Can be installed into mechanoid. Any friendly mechanoids in its effect radius will move and work faster.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_Booster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5, 1.5)</drawSize>
+    </graphicData>
+	<saveCompressible>true</saveCompressible>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+	  <Plasteel>35</Plasteel>
+	  <Chemfuel>40</Chemfuel>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechBooster</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>40000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+      <researchPrerequisite>MU_StandardUpgrades</researchPrerequisite>
+	  <displayPriority>7000</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MechTowerBase">
+    <defName>MU_MechBooster</defName>
+    <label>mech booster</label>
+    <description>A remote energy and computation enhancement device. Can be installed into mechanoid. Any friendly mechanoids in its effect radius will move and work faster.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MU_Booster</uiIconPath>
+	<linkedThingDef>MU_MechBooster</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_HediffInRange">
+        <hediffDef>MechBoost</hediffDef>
+		<range>9.9</range>
+		<onlyTargetMechs>true</onlyTargetMechs>
+		<targetSelf>true</targetSelf>
+		<onlySameFaction>true</onlySameFaction>
+		<gismoTextKey>MU_MechBooster</gismoTextKey>
+		<gizmoTexPath>UI/MechanoidUpgrades/MU_Booster</gizmoTexPath>
+      </li>
+	  <li Class="MU.UpgradeCompProperties_SingleGraphic">
+		<texPaths>
+		  <li>Things/Pawn/MechanoidUpgrades/MechBooster/MechBooster</li>
+		</texPaths>
+		<drawSize>(1.4, 1.4)</drawSize>
+      </li>
+	</comps>
+   <commonality>0.25</commonality>
+  </MU.MechUpgradeDef>-->
+  
+  <ThingDef ParentName="MU_MechUpgradeItemCraftable">
+    <defName>MU_LegActuators</defName>
+    <label>reinforced leg actuators</label>
+    <description>Reinforced leg actuators for ultraheavy mechanoid. Greatly increase movement speed.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_LegActuators</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+	  <Plasteel>60</Plasteel>
+	  <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_LegActuators</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>220</MaxHitPoints>
+      <Mass>24</Mass>
+      <Flammability>0</Flammability>
+	  <DeteriorationRate>0</DeteriorationRate>
+	  <WorkToMake>40000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+      <researchPrerequisite>MU_AdvancedUpgrades</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef>
+    <defName>MU_LegActuators</defName>
+    <label>reinforced leg actuators</label>
+    <description>Reinforced leg actuators for ultraheavy mechanoid. Greatly increase movement speed.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_LegActuators</uiIconPath>
+	<linkedThingDef>MU_LegActuators</linkedThingDef>
+	<exclusionTags>
+	  <li>Legs</li>
+	</exclusionTags>
+	<statOffsets>
+	   <MoveSpeed>1.1</MoveSpeed>
+	</statOffsets>
+	<upgradePoints>4</upgradePoints>
+	<minBodySize>3</minBodySize>
+	<restrictions>
+	  <li Class="MU.UpgradeRestriction_HaveBodyParts_Amount">
+        <tag>MovingLimbSegment</tag>
+		<amount>4</amount>
+		<invert>false</invert>
+      </li>
+	</restrictions>
+  </MU.MechUpgradeDef>
+  
+  <!--<ThingDef ParentName="MU_MechUpgradeItemCraftable">
+    <defName>MU_CommandTower</defName>
+    <label>command tower</label>
+    <description>A special tower for mechanoid that rebroadcast mechanitor command signals, creating additional large control area.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_SmallMechArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.75, 0.75)</drawSize>
+    </graphicData>
+    <costList>
+      <SignalChip>1</SignalChip>
+	  <SubcoreHigh>1</SubcoreHigh>
+	  <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>6</ComponentIndustrial>
+	  <Plasteel>60</Plasteel>
+	  <Steel>110</Steel>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_CommandTower</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>24000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+      <researchPrerequisite>MU_CommandExtenders</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MechTowerBase">
+    <defName>MU_CommandTower</defName>
+    <label>command tower</label>
+    <description>A special tower for mechanoid that rebroadcast mechanitor command signals, creating additional large control area.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MU_MediumMechArmor</uiIconPath>
+	<linkedThingDef>MU_CommandTower</linkedThingDef>
+	<exclusionTags>
+	  <li>Command</li>
+	</exclusionTags>
+	<weightClasses>
+	   <li>UltraHeavy</li>
+	</weightClasses>
+	<commandRange>24.9</commandRange>
+	<allowRemoteControl>true</allowRemoteControl>
+	<commonality>0</commonality>
+  </MU.MechUpgradeDef>-->
+  
+  <ThingDef ParentName="MU_MechUpgradeItemCraftable">
+    <defName>MU_UrchinSpawner</defName>
+    <label>urchin mini-gestator</label>
+    <description>A mini-gestator unit which can create war urchins. Require steel for gestation.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_UrchinSpawner</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1, 1.1)</drawSize>
+    </graphicData>
+    <costList>
+	  <ComponentSpacer>1</ComponentSpacer>
+	  <ComponentIndustrial>4</ComponentIndustrial>
+	  <Plasteel>60</Plasteel>
+	  <Steel>200</Steel>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_UrchinSpawner</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>45</Mass>
+      <Flammability>0</Flammability>
+	  <DeteriorationRate>0.5</DeteriorationRate>
+	  <WorkToMake>55000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+      <researchPrerequisite>MU_AdvancedUpgrades</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef>
+    <defName>MU_UrchinSpawner</defName>
+    <label>urchin mini-gestator</label>
+    <description>A mini-gestator unit which can create war urchins. Require steel for gestation.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_UrchinSpawner</uiIconPath>
+	<linkedThingDef>MU_UrchinSpawner</linkedThingDef>
+	<exclusionTags>
+	  <li>Spawner</li>
+	</exclusionTags>
+	<upgradePoints>5</upgradePoints>
+	<minBodySize>3</minBodySize>
+	<commonality>0</commonality>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_MechCarrier">
+        <spawnPawnKind>Mech_WarUrchin</spawnPawnKind>
+		<gizmoKey>MU_MechCarrier</gizmoKey>
+        <ammoDef>Steel</ammoDef>
+		<barColor>(0.34, 0.42, 0.43, 1)</barColor>
+		<barHighlightColor>(0.43, 0.54, 0.55, 1)</barHighlightColor>
+        <costPerPawn>30</costPerPawn>
+        <startingResource>180</startingResource>
+        <maxResource>180</maxResource>
+        <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
+        <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
+        <attachSpawnedEffecter>true</attachSpawnedEffecter>
+        <attachSpawnedMechEffecter>true</attachSpawnedMechEffecter>
+      </li>
+	</comps>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_MechUpgradeItemCraftable">
+    <defName>MU_JumpLauncher</defName>
+    <label>jump launcher</label>
+    <description>Jump launcher that allows to jump to a distant location.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_JumpLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.75, 0.75)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+	  <Plasteel>20</Plasteel>
+	  <Chemfuel>75</Chemfuel>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_JumpLauncher</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>25000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>MU_JumpLauncher</researchPrerequisite>
+    </recipeMaker>
+	<tradeTags>
+      <li>MU_UpgradeWithAbility</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef>
+    <defName>MU_JumpLauncher</defName>
+    <label>jump launcher</label>
+    <description>Jump launcher that allows to jump to a distant location.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_JumpLauncher</uiIconPath>
+	<ability>MU_JumpLauncher</ability>
+	<linkedThingDef>MU_JumpLauncher</linkedThingDef>
+	<exclusionTags>
+	  <li>JumpPack</li>
+	</exclusionTags>
+	<upgradePoints>2</upgradePoints>
+	<maxBodySize>1.3</maxBodySize>
+   <commonality>0</commonality>
+  </MU.MechUpgradeDef>
+  
+  <AbilityDef>
+    <defName>MU_JumpLauncher</defName>
+    <label>jump launcher</label>
+	<iconPath>UI/Abilities/MechLongJump</iconPath>
+	<comps>
+      <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+        <ammoDef>Chemfuel</ammoDef>
+		<ammoCount>25</ammoCount>
+      </li>
+    </comps>
+	<description>Jump to a distant location using a jump launcher.</description>
+    <showPsycastEffects>False</showPsycastEffects>
+	<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <charges>3</charges>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<showOnCharacterCard>false</showOnCharacterCard>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>0.5</warmupTime>
+      <range>17.9</range>
+      <warmupEffecter>JumpMechWarmupEffect</warmupEffecter>
+      <requireLineOfSight>true</requireLineOfSight>
+      <flightEffecterDef>JumpMechFlightEffect</flightEffecterDef>
+      <flyWithCarriedThing>true</flyWithCarriedThing>
+      <soundLanding>JumpMechLand</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+  <ThingDef ParentName="MU_MechUpgradeItemCraftable">
+    <defName>MU_MedicineKit</defName>
+    <label>medicine kit</label>
+    <description>A first aid kit that can be installed in mechanoid. Can be used to tend living creatures.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MedicineKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.8, 0.8)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+	  <Plasteel>10</Plasteel>
+	  <MedicineIndustrial>8</MedicineIndustrial>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MedicineKit</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>25000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisites>
+	    <li>MedicineProduction</li>
+	  </researchPrerequisites>
+	  <researchPrerequisite>MU_BasicUpgrades</researchPrerequisite>
+    </recipeMaker>
+	<tradeTags>
+      <li>MU_UpgradeWithAbility</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef>
+    <defName>MU_MedicineKit</defName>
+    <label>medicine kit</label>
+    <description>A first aid kit that can be installed in mechanoid. Can be used to tend living creatures.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_MedicineKit</uiIconPath>
+	<ability>MU_MedicineKit</ability>
+	<linkedThingDef>MU_MedicineKit</linkedThingDef>
+	<exclusionTags>
+	  <li>MiscAbility</li>
+	</exclusionTags>
+	<upgradePoints>2</upgradePoints>
+	<maxBodySize>1.3</maxBodySize>
+   <minBodySize>0.5</minBodySize>
+  <commonality>0</commonality>
+  </MU.MechUpgradeDef>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>MU_MedicineKit</defName>
+    <label>use medicine kit</label>
+    <description>Use installed medical kit to tend wounds of living creature.</description>
+    <iconPath>Things/Item/MechanoidUpgrade/MU_MedicineKit</iconPath>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <warmupMote>Mote_CoagulateStencil</warmupMote>
+    <warmupEffecter>Coagulate</warmupEffecter>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <hostile>false</hostile>
+    <charges>2</charges>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>3.3</warmupTime>
+	  <soundCast>Interact_Tend</soundCast>
+      <targetParams>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+        <ammoDef>MedicineIndustrial</ammoDef>
+        <ammoCount>4</ammoCount>
+      </li>
+      <li Class="CompProperties_AbilityCoagulate">
+        <tendQualityRange>0.35~0.5</tendQualityRange>
+      </li>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Manipulation</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

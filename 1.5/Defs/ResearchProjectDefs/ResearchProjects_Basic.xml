@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef Abstract="True" Name="MU_BasicBase">
+    <techLevel>Industrial</techLevel>
+	<requiresMechanitor>true</requiresMechanitor>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <tab>MU</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MU_BasicBase">
+    <defName>MU_BasicUpgrades</defName>
+    <label>basic upgrades</label>
+    <description>Create and install basic upgrades for mechanoids.</description>
+    <baseCost>800</baseCost>
+    <prerequisites>
+      <li>StandardMechtech</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->mechanoid upgrades</li>
+
+        <li>subject_story->created first prototype of mech upgrade</li>
+        
+        <li>subject_gerund->upgrading mechanoids</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="MU_BasicBase">
+    <defName>MU_BasicChips</defName>
+    <label>basic mechanoid chips</label>
+    <description>Create basic mechanoid chips.</description>
+    <baseCost>250</baseCost>
+    <prerequisites>
+      <li>MU_BasicUpgrades</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->basic chips</li>
+
+        <li>subject_story->programmed chips to upgrade mechanoids</li>
+        
+        <li>subject_gerund->crafting basic chips</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="MU_BasicBase">
+    <defName>MU_BasicModules</defName>
+    <label>basic mechanoid modules</label>
+    <description>Create basic mechanoid modules.</description>
+    <baseCost>300</baseCost>
+    <prerequisites>
+      <li>MU_BasicUpgrades</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->basic modules</li>
+
+        <li>subject_story->created special modules for mechanoids</li>
+        
+        <li>subject_gerund->crafting basic modules</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MU_BasicBase">
+    <defName>MU_BasicArmor</defName>
+    <label>basic mechanoid armor</label>
+    <description>Create basic mechanoid armor.</description>
+    <baseCost>200</baseCost>
+    <prerequisites>
+      <li>MU_BasicUpgrades</li>
+    </prerequisites>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->basic mechanoid armor</li>
+
+        <li>subject_story->created armor for assault mechanoids</li>
+       
+        <li>subject_gerund->crafting basic armor</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="MU_BasicBase">
+    <defName>MU_BasicShields</defName>
+    <label>basic mechanoid shields</label>
+    <description>Create basic mechanoid shields.</description>
+    <baseCost>600</baseCost>
+    <prerequisites>
+      <li>MU_BasicUpgrades</li>
+	  <li>ShieldBelt</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.75</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->basic mechanoid shields</li>
+
+        <li>subject_story->created shields for assault mechanoids</li>
+       
+        <li>subject_gerund->crafting basic shields</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MU_BasicBase">
+    <defName>MU_Burners</defName>
+    <label>built-in burners</label>
+    <description>Create compact flamethrowers for mechanoids.</description>
+    <baseCost>700</baseCost>
+    <prerequisites>
+      <li>MU_BasicUpgrades</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->built-in flame weapons</li>
+
+        <li>subject_story->moved into the development of microelectronics</li>
+
+        <li>subject_gerund->crafting flamethrowers</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="MU_BasicBase">
+    <defName>MU_Grenades</defName>
+    <label>mechanoid grenades</label>
+    <description>Create grenades for mechanoids.</description>
+    <baseCost>300</baseCost>
+    <prerequisites>
+      <li>MU_BasicUpgrades</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->grenades for mechanoids</li>
+
+        <li>subject_story->equipped mechanoids with grenades</li>
+        
+        <li>subject_gerund->creating grenades for mechanoids</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+</Defs>

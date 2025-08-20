@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef Name="MU_PopperItemBase" Abstract="True" ParentName="MU_MechUpgradeItemCraftable">
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>6</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>MU_BasicUpgrades</researchPrerequisite>
+	  <displayPriority>7500</displayPriority>
+    </recipeMaker>
+	<tradeTags>
+      <li>MU_UpgradeWithAbility</li>
+	  <li>MU_Popper</li>
+    </tradeTags>
+    <thingCategories Inherit="False">
+      <li>MU_Poppers</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef Name="MU_PopperBase" Abstract="True">
+    <exclusionTags>
+	  <li>Popper</li>
+	</exclusionTags>
+	<upgradePoints>2</upgradePoints>
+  <minBodySize>0.7</minBodySize> 
+	<restrictions>
+	  <li Class="MU.UpgradeRestriction_FactorFromBodySize">
+        <curve>
+		  <points>
+		    <li>(0, 0)</li>
+			<li>(1, 0.7)</li>
+			<li>(2, 1)</li>
+			<li>(4, 0)</li>
+		  </points>
+		</curve>
+      </li>
+	</restrictions>
+	<commonality>0.5</commonality>
+  </MU.MechUpgradeDef>
+
+  <!--<ThingDef ParentName="MU_PopperItemBase">
+    <defName>MU_FirefoamPopper</defName>
+    <label>acid spitter</label>
+    <description>A small tank with pipe system that can be installed into mechanoid. It gives ability to create, store and spew acid. Requires twisted meat for acid synthesis.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_FirefoamPopper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+	  <Plasteel>20</Plasteel>
+	  <Bioferrite>25</Bioferrite>
+	  <Shard>1</Shard>
+	  <Meat_Twisted>60</Meat_Twisted>
+    </costList>
+    <descriptionHyperlinks>
+      <MU.MechUpgradeDef>MU_FirefoamPopper</MU.MechUpgradeDef>
+    </descriptionHyperlinks>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_FirefoamPopper</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>3</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>18000</WorkToMake>
+    </statBases>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_PopperBase" >
+    <defName>MU_FirefoamPopper</defName>
+    <label>acid spitter</label>
+    <description>A small tank with pipe system that allows to create, store and spew acid. It requires twisted meat for acid synthesis.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_FirefoamPopper</uiIconPath>
+	<descriptionHyperlinks>
+      <ThingDef>MU_FirefoamPopper</ThingDef>
+    </descriptionHyperlinks>
+	<linkedThingDef>MU_FirefoamPopper</linkedThingDef>
+	<ability>MU_FirefoamPopper</ability>
+	<commonality>0.2</commonality>
+  </MU.MechUpgradeDef> 
+
+  <AbilityDef>
+    <defName>MU_FirefoamPopper</defName>
+    <label>firefoam popper</label>
+    <description>Release a fire-retardant foam in a circular area.</description>
+    <iconPath>UI/Abilities/MechFirefoamPop</iconPath>
+    <charges>2</charges>
+    <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <targetRequired>false</targetRequired>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0</warmupTime>
+      <requireLineOfSight>false</requireLineOfSight>
+      <drawAimPie>false</drawAimPie>      
+      <range>3.9</range>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityFirefoampop">
+        <firefoamRadius>3.9</firefoamRadius>
+        <clamorType>Ability</clamorType>
+        <clamorRadius>15</clamorRadius>
+      </li>
+	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+        <ammoDef>Chemfuel</ammoDef>
+		<ammoCount>25</ammoCount>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <AbilityDef>
+    <defName>MU_SmokePopper</defName>
+    <label>smoke popper</label>
+    <description>Release compressed smoke from concealed vents. Smoke reduces the accuracy of any shot fired through it, and prevents turrets from locking on entirely.</description>
+    <iconPath>UI/Abilities/MechSmokepop</iconPath>
+    <charges>5</charges>
+    <targetRequired>false</targetRequired>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0</warmupTime>
+      <range>3.9</range>
+      <drawAimPie>false</drawAimPie>   
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast> 
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilitySmokepop">
+        <smokeRadius>3.9</smokeRadius>
+        <clamorType>Ability</clamorType>
+        <clamorRadius>15</clamorRadius>
+      </li>
+	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+        <ammoDef>Chemfuel</ammoDef>
+		<ammoCount>10</ammoCount>
+      </li>
+    </comps>
+  </AbilityDef>-->
+
+</Defs>

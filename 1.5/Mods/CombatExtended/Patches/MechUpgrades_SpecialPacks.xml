@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Militor Pack -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_UpgradePack_Militor"]/statFactors</xpath>
+		<value>
+		  <statFactors>
+				<MoveSpeed>1.2</MoveSpeed>
+				<ReloadSpeed>1.25</ReloadSpeed>
+				<StaggerDurationFactor>0</StaggerDurationFactor>
+				<MU_RangedDamageFactor>1.5</MU_RangedDamageFactor>
+				<IncomingDamageFactor>0.9</IncomingDamageFactor>
+		  </statFactors>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_UpgradePack_Militor"]/statOffsets</xpath>
+		<value>
+		  <statOffsets>
+			<AimingAccuracy>0.3</AimingAccuracy>
+			<ShootingAccuracyPawn>0.55</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.2</AimingDelayFactor> 
+		  </statOffsets>
+		</value>
+	</Operation>
+
+	<!-- Scyther Pack-->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_UpgradePack_Scyther"]/statFactors</xpath>
+		<value>
+		  <statFactors>
+			  <MoveSpeed>1.2</MoveSpeed>
+			  <MeleeCooldownFactor>0.9</MeleeCooldownFactor>
+			  <StaggerDurationFactor>0</StaggerDurationFactor>
+			  <MeleeDamageFactor>1.25</MeleeDamageFactor>
+			  <IncomingDamageFactor>0.9</IncomingDamageFactor>
+		  </statFactors>
+		</value>
+	</Operation>
+	
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_UpgradePack_Scyther"]/statOffsets/MeleeHitChance</xpath>
+		<value>
+			<MeleeHitChance>1</MeleeHitChance>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_UpgradePack_Scyther"]/statOffsets/MeleeDodgeChance</xpath>
+		<value>
+			<MeleeDodgeChance>0.22</MeleeDodgeChance>
+		</value>
+	</Operation> 
+	
+	<!-- Tesseron Pack -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_UpgradePack_Tesseron"]/statFactors</xpath>
+		<value>
+		  <statFactors>
+			  <MoveSpeed>1.1</MoveSpeed>
+			  <StaggerDurationFactor>0</StaggerDurationFactor>
+			  <IncomingDamageFactor>0.9</IncomingDamageFactor>
+		  </statFactors>
+		</value>
+	</Operation>
+	
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_UpgradePack_Tesseron"]/statOffsets/AimingDelayFactor</xpath>
+		<value>
+			 <AimingDelayFactor>-0.3</AimingDelayFactor>
+		</value>
+	</Operation>
+</Patch>

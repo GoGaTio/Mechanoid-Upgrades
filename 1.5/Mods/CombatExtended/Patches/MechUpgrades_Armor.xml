@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechArmor_UltraLarge_A"]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+					<ArmorRating_Sharp>10</ArmorRating_Sharp> 
+					<ArmorRating_Blunt>15</ArmorRating_Blunt>
+					<MoveSpeed>-0.15</MoveSpeed>
+			</statOffsets>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechArmor_UltraLarge_B"]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+					<ArmorRating_Sharp>6</ArmorRating_Sharp> 
+					<ArmorRating_Blunt>9.5</ArmorRating_Blunt>
+					<MoveSpeed>-0.10</MoveSpeed>
+			</statOffsets>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechArmor_UltraLarge_C"]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+					<ArmorRating_Sharp>3</ArmorRating_Sharp> 
+					<ArmorRating_Blunt>4.5</ArmorRating_Blunt>
+					<MoveSpeed>-0.05</MoveSpeed>
+			</statOffsets>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechArmor_Large_A"]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+					<ArmorRating_Sharp>7.5</ArmorRating_Sharp> 
+					<ArmorRating_Blunt>11.5</ArmorRating_Blunt>
+					<MoveSpeed>-0.15</MoveSpeed>
+			</statOffsets>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechArmor_Large_B"]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<ArmorRating_Sharp>5</ArmorRating_Sharp> 
+				<ArmorRating_Blunt>7.5</ArmorRating_Blunt>
+				<MoveSpeed>-0.10</MoveSpeed>
+			</statOffsets>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechArmor_Large_C"]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<ArmorRating_Sharp>2.5</ArmorRating_Sharp> 
+				<ArmorRating_Blunt>4.5</ArmorRating_Blunt>
+				<MoveSpeed>-0.05</MoveSpeed>
+			</statOffsets>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechArmor_Medium_A"]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<ArmorRating_Sharp>5.5</ArmorRating_Sharp> 
+				<ArmorRating_Blunt>7.5</ArmorRating_Blunt>
+				<MoveSpeed>-0.2</MoveSpeed>
+			</statOffsets>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechArmor_Medium_B"]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<ArmorRating_Sharp>2.75</ArmorRating_Sharp> 
+				<ArmorRating_Blunt>3.5</ArmorRating_Blunt>
+				<MoveSpeed>-0.15</MoveSpeed>
+			</statOffsets>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechArmor_Medium_C"]/statOffsets</xpath>
+		<value>
+        <statOffsets>
+					<ArmorRating_Sharp>1.5</ArmorRating_Sharp> 
+             <ArmorRating_Blunt>1.75</ArmorRating_Blunt>
+					<MoveSpeed>-0.1</MoveSpeed>
+			</statOffsets>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechArmor_Small_A"]/statOffsets</xpath>
+		<value>
+        <statOffsets>
+					<ArmorRating_Sharp>3.5</ArmorRating_Sharp> 
+             <ArmorRating_Blunt>4</ArmorRating_Blunt>
+					<MoveSpeed>-0.2</MoveSpeed>
+			</statOffsets>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechArmor_Small_B"]/statOffsets</xpath>
+		<value>
+        <statOffsets>
+					<ArmorRating_Sharp>1.75</ArmorRating_Sharp> 
+             <ArmorRating_Blunt>2.25</ArmorRating_Blunt>
+					<MoveSpeed>-0.15</MoveSpeed>
+			</statOffsets>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechArmor_Small_C"]/statOffsets</xpath>
+		<value>
+        <statOffsets>
+					<ArmorRating_Sharp>0.75</ArmorRating_Sharp> 
+             <ArmorRating_Blunt>1</ArmorRating_Blunt>
+					<MoveSpeed>-0.1</MoveSpeed>
+			</statOffsets>
+		</value>
+	</Operation>
+
+</Patch>

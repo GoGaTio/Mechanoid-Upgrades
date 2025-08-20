@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef Abstract="True" Name="MU_SuperBase">
+    <techLevel>Ultra</techLevel>
+    <requiresMechanitor>true</requiresMechanitor>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>MU</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MU_SuperBase">
+    <defName>MU_SuperUpgrades</defName>
+    <label>super upgrades</label>
+    <description>Create advanced upgrades for mechanoids.</description>
+    <baseCost>1650</baseCost>
+    <prerequisites>
+      <li>MU_AdvancedUpgrades</li>
+    </prerequisites>
+    <researchViewX>9.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->advanced mech upgrades</li>
+
+        <li>subject_story->moved into the development of microelectronics</li>
+        
+        <li>subject_gerund->crafting advanced upgrades</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="MU_SuperBase">
+    <defName>MU_SuperChips</defName>
+    <label>advanced mechanoid chips</label>
+    <description>Work with complex microelectronics. This unlocks the hi-tech research bench and comms console.</description>
+    <baseCost>850</baseCost>
+    <prerequisites>
+      <li>MU_SuperUpgrades</li>
+      <li>MU_AdvancedChips</li>
+    </prerequisites>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->advanced mech upgrades</li>
+
+        <li>subject_story->moved into the development of microelectronics</li>
+       
+        <li>subject_gerund->crafting advanced upgrades</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="MU_StandardBase">
+    <defName>MU_SuperModules</defName>
+    <label>advanced mechanoid modules</label>
+    <description>Create advanced mechanoid modules.</description>
+    <baseCost>900</baseCost>
+    <prerequisites>
+      <li>MU_SuperUpgrades</li>
+	  <li>MU_AdvancedModules</li>
+    </prerequisites>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->standard modules</li>
+
+        <li>subject_story->created special modules for mechanoids</li>
+        
+        <li>subject_gerund->crafting standard modules</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MU_SuperBase">
+    <defName>MU_SuperArmor</defName>
+    <label>advanced mechanoid armor</label>
+    <description>Work with complex microelectronics. This unlocks the hi-tech research bench and comms console.</description>
+    <baseCost>800</baseCost>
+    <prerequisites>
+      <li>MU_SuperUpgrades</li>
+      <li>MU_AdvancedArmor</li>
+    </prerequisites>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->advanced mech upgrades</li>
+
+        <li>subject_story->moved into the development of microelectronics</li>
+        
+        <li>subject_gerund->crafting advanced upgrades</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="MU_SuperBase">
+    <defName>MU_SuperShields</defName>
+    <label>advanced mechanoid shields</label>
+    <description>Create advanced mechanoid shields.</description>
+    <baseCost>1250</baseCost>
+    <prerequisites>
+      <li>MU_SuperUpgrades</li>
+	  <li>MU_AdvancedShields</li>
+    </prerequisites>
+    <researchViewX>11.00</researchViewX>
+    <researchViewY>1.75</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->advanced mechanoid shields</li>
+
+        <li>subject_story->created shields for assault mechanoids</li>
+       
+        <li>subject_gerund->crafting advanced shields</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+</Defs>

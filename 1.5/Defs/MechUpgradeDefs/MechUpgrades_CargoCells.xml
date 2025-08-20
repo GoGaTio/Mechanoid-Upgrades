@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MU_MechUpgradeItemCraftable">
+    <defName>MU_CargoCell_Small</defName>
+    <label>small cargo cell</label>
+    <description>Small cargo cell that can be installed in mechanoid. Increases carried weight, but also affects energy consumption.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_CargoCell_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+	  <Plasteel>10</Plasteel>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_CargoCell_Small</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>9000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>MU_BasicUpgrades</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef>
+    <defName>MU_CargoCell_Small</defName>
+    <label>small cargo cell</label>
+    <description>Small cargo cell that can be installed in mechanoid. Increases carried weight, but also affects energy consumption.</description>
+    <uiIconPath>Things/Item/MechanoidUpgrade/MU_CargoCell_Small</uiIconPath>
+	<linkedThingDef>MU_CargoCell_Small</linkedThingDef>
+	<exclusionTags>
+	  <li>CargoCell</li>
+	</exclusionTags>
+	<statOffsets>
+	  <MU_CarriedMassOffset>20</MU_CarriedMassOffset> <!--Regular light mech has 24.5 carried weight so this is pretty much-->
+	</statOffsets>
+	<statFactors>
+	  <MechEnergyUsageFactor>1.10</MechEnergyUsageFactor>
+	</statFactors>
+	<upgradePoints>1</upgradePoints>
+	<commonality>0</commonality>
+	<maxBodySize>3</maxBodySize>
+	<minBodySize>0</minBodySize>
+  </MU.MechUpgradeDef>
+
+  <ThingDef ParentName="MU_MechUpgradeItemCraftable">
+    <defName>MU_CargoCell_Double</defName>
+    <label>double cargo cell</label>
+    <description>Two small cargo cells that can be installed in mechanoid. Increase carried weight, but also affects energy consumption.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_CargoCell_Double</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+	  <Plasteel>20</Plasteel>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_CargoCell_Double</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>9</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>13000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>MU_BasicUpgrades</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef>
+    <defName>MU_CargoCell_Double</defName>
+    <label>double cargo cell</label>
+    <description>Two small cargo cells that can be installed in mechanoid. Increase carried weight, but also affects energy consumption.</description>
+    <uiIconPath>Things/Item/MechanoidUpgrade/MU_CargoCell_Double</uiIconPath>
+	<linkedThingDef>MU_CargoCell_Double</linkedThingDef>
+	<exclusionTags>
+	  <li>CargoCell</li>
+	</exclusionTags>
+	<statOffsets>
+	  <MU_CarriedMassOffset>40</MU_CarriedMassOffset>
+	</statOffsets>
+	<statFactors>
+	  <MechEnergyUsageFactor>1.20</MechEnergyUsageFactor>
+	</statFactors>
+	<upgradePoints>2</upgradePoints>
+	<commonality>0</commonality>
+	<maxBodySize>3</maxBodySize>
+	<minBodySize>0.6</minBodySize>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_MechUpgradeItemCraftable">
+    <defName>MU_CargoCell_Large</defName>
+    <label>large cargo cell</label>
+    <description>Large cargo cell that can be installed in mechanoid. Increases carried weight, but also affects energy consumption.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_CargoCell_Large</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>170</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+	  <Plasteel>40</Plasteel>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_CargoCell_Large</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>26000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>MU_BasicUpgrades</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef>
+    <defName>MU_CargoCell_Large</defName>
+    <label>large cargo cell</label>
+    <description>Large cargo cell that can be installed in mechanoid. Increases carried weight, but also affects energy consumption.</description>
+    <uiIconPath>Things/Item/MechanoidUpgrade/MU_CargoCell_Large</uiIconPath>
+	<linkedThingDef>MU_CargoCell_Large</linkedThingDef>
+	<exclusionTags>
+	  <li>CargoCell</li>
+	</exclusionTags>
+	<statOffsets>
+	  <MU_CarriedMassOffset>95</MU_CarriedMassOffset>
+	</statOffsets>
+	<statFactors>
+	  <MechEnergyUsageFactor>1.25</MechEnergyUsageFactor>
+	</statFactors>
+	<minBodySize>3</minBodySize>
+	<upgradePoints>4</upgradePoints>
+	<commonality>0</commonality>
+  </MU.MechUpgradeDef>
+
+</Defs>

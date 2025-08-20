@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>MU_ConfigureUpgrades</defName>
+    <driverClass>MU.JobDriver_ConfigureUpgrades</driverClass>
+    <reportString>changing upgrades at TargetA.</reportString>
+  </JobDef>
+  
+  <JobDef>
+    <defName>MU_CarryUpgradeToStorage</defName>
+    <driverClass>MU.JobDriver_CarryUpgradeToStorage</driverClass>
+    <reportString>banking TargetA.</reportString>
+  </JobDef>
+  
+  <JobDef>
+    <defName>MU_ReloadUpgrade</defName>
+    <driverClass>MU.JobDriver_ReloadAbilityUpgrade</driverClass>
+    <reportString>reloading using TargetA.</reportString>
+  </JobDef>
+
+</Defs>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="MU_MechUpgradeItemCraftable">
+    <defName>MU_MiniTurret</defName>
+    <label>mini-turret</label>
+    <description>Small defence turret that can be mounted on mechanoid. Has lower range and accuracy than stationary variants.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MiniTurret</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MiniTurret</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>11000</WorkToMake>
+    </statBases>
+	<costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+	  <Plasteel>15</Plasteel>
+    </costList>
+	<recipeMaker>
+      <researchPrerequisites>
+	    <li>GunTurrets</li>
+		<li>MU_BasicUpgrades</li>
+	  </researchPrerequisites>
+    </recipeMaker>
+    <thingCategories Inherit="False">
+      <li>MU_Turrets</li>
+    </thingCategories> 
+  </ThingDef>
+  
+  <MU.MechUpgradeDef>
+    <defName>MU_MiniTurret</defName>
+    <label>mini-turret</label>
+    <description>Small defence turret that can be mounted on mechanoid. Has lower range and accuracy than stationary variants.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_MiniTurret</uiIconPath>
+	<linkedThingDef>MU_MiniTurret</linkedThingDef>
+	<upgradePoints>1</upgradePoints>
+	<exclusionTags>
+	  <li>MiddleTurret</li>
+	</exclusionTags>
+	<maxBodySize>1.1</maxBodySize>
+	<comps>
+	   <li Class="MU.UpgradeCompProperties_TurretGun">
+          <turretDef>MU_Gun_MiniTurret</turretDef>
+          <angleOffset>-90</angleOffset>
+          <renderNodeProperties>
+            <li>
+              <nodeClass>MU.PawnRenderNode_UpgradeTurret</nodeClass>
+              <workerClass>MU.PawnRenderNodeWorker_UpgradeTurret</workerClass>
+              <parentTagDef>Body</parentTagDef>
+              <overrideMeshSize>(1.25, 1.25)</overrideMeshSize>
+              <baseLayer>25</baseLayer>
+              <pawnType>Any</pawnType>
+              <drawData>
+                <dataWest>
+                  <rotationOffset>180</rotationOffset>
+                </dataWest>
+				<dataSouth>
+                  <layer>-25</layer>
+                </dataSouth>
+              </drawData>
+            </li>
+          </renderNodeProperties>
+        </li>
+	</comps>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>MU_Gun_MiniTurret</defName>
+    <label>mini-turret gun</label>
+    <description>A simple automatic gun designed for use on a defense turret.</description>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <graphicData>
+      <texPath>Things/Item/MU_MiniTurret</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2.6</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+    </statBases>
+    <verbs>
+	  <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_MiniTurret</defaultProjectile>
+        <range>24.9</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <defaultCooldownTime>4</defaultCooldownTime>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+      </li>
+    </verbs>
+  </ThingDef>
+
+</Defs>

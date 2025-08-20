@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <MU.UpgradeCombinationDef Name="MU_CentipedeBase" Abstract="True">
+	<mechs>
+	  <li>Mech_CentipedeBlaster</li>
+	  <li>Mech_CentipedeGunner</li>
+	  <li>Mech_CentipedeBurner</li>
+	</mechs>
+  </MU.UpgradeCombinationDef>
+  
+  <MU.UpgradeCombinationDef Name="MU_WalkerBase" Abstract="True">
+	<mechs>
+	  <li>Mech_Lancer</li>
+	  <li>Mech_Tesseron</li>
+	  <li>Mech_Legionary</li>
+	  <li>Mech_Scyther</li>
+	</mechs>
+  </MU.UpgradeCombinationDef>
+  
+  <MU.UpgradeCombinationDef ParentName="MU_WalkerBase">
+    <defName>UniversalWalker</defName>
+	<commonality>1</commonality>
+	<upgrades>
+	  <li>
+	    <li>MU_MechArmor_Medium_A</li>
+	  </li>
+	  <li>
+	    <li>MU_Module_Robust</li>
+	  </li>
+	  <li>
+	    <li>MU_Shield_Medium_A</li>
+	  </li>
+     <li>
+	    <li>MU_MechChip_Speed_A</li>
+	  </li>
+	</upgrades>
+  </MU.UpgradeCombinationDef>
+  
+  <MU.UpgradeCombinationDef ParentName="MU_CentipedeBase">
+    <defName>Centipede</defName>
+	<commonality>1</commonality>
+	<upgrades>
+
+	  <li>
+	    <li>MU_MechArmor_Large_A</li>
+	  </li>
+	  <li>
+	    <li>MU_MechChip_Ranged_A</li>
+	  </li>
+	  <li>
+	    <li>MU_MechChip_Reload_A</li>
+	  </li>
+	  <li>
+	    <li>MU_MechChip_Aiming_A</li>
+	  </li>
+	  <li>
+	    <li>MU_Shield_Large_A</li>
+	  </li>
+	  <li>
+	    <li>MU_Module_Ranged_A</li>
+	  </li>
+	  <li>
+	    <li>MU_ChemfuelFlamethrower</li>
+		<li MayRequire="GoGaTio.MechanoidUpgrades.Anomaly">MU_BioferriteFlamethrower</li>
+	  </li>
+	</upgrades>
+  </MU.UpgradeCombinationDef>
+
+  <MU.UpgradeCombinationDef ParentName="MU_WalkerBase">
+    <defName>CloseCombatWalker</defName>
+	<commonality>1</commonality>
+	<upgrades>
+	  <li>
+	    <li>MU_MechArmor_Medium_A</li>
+	  </li>
+	  <li>
+      <li>MU_ChemfuelBurner</li>
+      <li MayRequire="GoGaTio.MechanoidUpgrades.Anomaly">MU_BioferriteBurner</li>
+	  </li>
+     <li>
+	    <li>MU_Module_Robust</li>
+	  </li>
+	  <li>
+	    <li>MU_FragGrenades</li>
+		 <li>MU_IncendiaryGrenades</li>
+	  </li>
+     <li>
+	    <li>MU_MechChip_Speed_A</li>
+	  </li>
+	</upgrades>
+  </MU.UpgradeCombinationDef>
+  
+  <MU.UpgradeCombinationDef>
+    <defName>Destroyer</defName>
+	<commonality>1</commonality>
+	<mechs>
+	  <li>Mech_Lancer</li>
+	</mechs>
+	<upgrades>
+	  <li>
+	    <li>MU_MechChip_Ranged_A</li>
+	  </li>
+	  <li>
+	    <li>MU_MechChip_Reload_A</li>
+	  </li>
+	  <li>
+	    <li>MU_MechChip_Aiming_A</li>
+	  </li>
+	  <li>
+	    <li>MU_Shield_Medium_A</li>
+	  </li>
+	  <li>
+	    <li>MU_Module_Ranged_A</li>
+	  </li>
+	</upgrades>
+  </MU.UpgradeCombinationDef>
+  
+  <!--<MU.UpgradeCombinationDef>
+    <defName></defName>
+	<commonality></commonality>
+	<mechs>
+	</mechs>
+	<upgrades>
+	  <li>
+	    <li></li>
+	  </li>
+	</upgrades>
+  </MU.UpgradeCombinationDef>-->
+
+</Defs>

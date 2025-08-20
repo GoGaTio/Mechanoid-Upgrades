@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef Name="MU_MechUpgradeItemBase" Abstract="True">
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <Flammability>0</Flammability>
+	  <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+	<thingClass>ThingWithComps</thingClass>
+	<graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>MU_Upgrades</li>
+    </thingCategories>
+	<tradeTags>
+      <li>MU_Upgrade</li> <!-- Use this tag for buing -->
+	  <li>MU_Upgrade_TraderSells</li> <!-- Use this tag to add all upgrades to trader stock (very rare or archotech upgrades won't have this tag) -->
+    </tradeTags>
+    <stackLimit>1</stackLimit>
+    <tradeNeverGenerateStacked>true</tradeNeverGenerateStacked>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>true</alwaysHaulable>
+    <rotatable>false</rotatable>
+    <healthAffectsPrice>false</healthAffectsPrice>
+	<tickerType>Rare</tickerType>
+    <useHitPoints>true</useHitPoints>
+    <pathCost>14</pathCost>
+	<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef Name="MU_MechUpgradeItemCraftable" ParentName="MU_MechUpgradeItemBase" Abstract="True">
+    <tradeTags>
+      <li>MU_CraftableUpgrade</li>
+    </tradeTags>
+	<statBases>
+      <WorkToMake>20000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <workSpeedStat>MU_UpgradeCreatingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>MU_BasicUpgradesAssembler</li>
+      </recipeUsers>
+      <unfinishedThingDef>MU_UnfinishedUpgrade_Misc</unfinishedThingDef>
+      <soundWorking>SubcoreEncoder_Working</soundWorking>
+	  <researchPrerequisite>MU_BasicUpgrades</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef Name="MU_MechTowerBase" Abstract="True">
+	<exclusionTags>
+	  <li>Tower</li>
+	</exclusionTags>
+	<upgradePoints>4</upgradePoints>
+	<minBodySize>3</minBodySize>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_Graphics">
+        <graphicOptions>
+		  <li>
+			<mech>Mech_CentipedeGunner</mech>
+			<props>
+				<parentTagDef>Body</parentTagDef>
+				<drawSize>(1.35, 1.35)</drawSize>
+				<baseLayer>5</baseLayer>
+				<pawnType>Any</pawnType>
+				<drawData>
+					<dataNorth><offset>(0, 0, 0.65)</offset></dataNorth>
+					<dataEast><offset>(0, 0, 0.65)</offset><layer>-5</layer></dataEast>
+					<dataSouth><offset>(0, 0, 0.75)</offset></dataSouth>
+					<dataWest><offset>(0, 0, 0.65)</offset><layer>-5</layer></dataWest>
+				</drawData>
+			</props>
+		  </li>
+		  <li>
+			<mech>Mech_CentipedeBlaster</mech>
+			<props>
+				<parentTagDef>Body</parentTagDef>
+				<drawSize>(1.35, 1.35)</drawSize>
+				<baseLayer>5</baseLayer>
+				<pawnType>Any</pawnType>
+				<drawData>
+					<dataNorth><offset>(0, 0, 0.65)</offset></dataNorth>
+					<dataEast><offset>(0, 0, 0.65)</offset><layer>-5</layer></dataEast>
+					<dataSouth><offset>(0, 0, 0.75)</offset></dataSouth>
+					<dataWest><offset>(0, 0, 0.65)</offset><layer>-5</layer></dataWest>
+				</drawData>
+			</props>
+		  </li>
+		  <li>
+			<mech>Mech_CentipedeBurner</mech>
+			<props>
+				<parentTagDef>Body</parentTagDef>
+				<drawSize>(1.35, 1.35)</drawSize>
+				<baseLayer>5</baseLayer>
+				<pawnType>Any</pawnType>
+				<drawData>
+					<dataNorth><offset>(0, 0, 0.65)</offset></dataNorth>
+					<dataEast><offset>(0, 0, 0.65)</offset><layer>-5</layer></dataEast>
+					<dataSouth><offset>(0, 0, 0.75)</offset></dataSouth>
+					<dataWest><offset>(0, 0, 0.65)</offset><layer>-5</layer></dataWest>
+				</drawData>
+			</props>
+		  </li>
+		  <li>
+			<mech>Mech_Diabolus</mech>
+			<props>
+				<parentTagDef>Body</parentTagDef>
+				<drawSize>(1.35, 1.35)</drawSize>
+				<baseLayer>5</baseLayer>
+				<pawnType>Any</pawnType>
+				<drawData>
+					<dataNorth><offset>(0, 0, 0.65)</offset></dataNorth>
+					<dataEast><offset>(0, 0, 0.65)</offset><layer>-5</layer></dataEast>
+					<dataSouth><offset>(0, 0, 0.75)</offset><layer>-5</layer></dataSouth>
+					<dataWest><offset>(0, 0, 0.65)</offset><layer>-5</layer></dataWest>
+				</drawData>
+			</props>
+		  </li>
+		  <li>
+			<mech>Mech_Warqueen</mech>
+			<props>
+				<parentTagDef>Body</parentTagDef>
+				<drawSize>(1.35, 1.35)</drawSize>
+				<baseLayer>5</baseLayer>
+				<pawnType>Any</pawnType>
+				<drawData>
+					<dataNorth><offset>(0, 0, 0.65)</offset></dataNorth>
+					<dataEast><offset>(0, 0, 0.65)</offset><layer>-5</layer></dataEast>
+					<dataSouth><offset>(0, 0, 0.75)</offset><layer>-5</layer></dataSouth>
+					<dataWest><offset>(0, 0, 0.65)</offset><layer>-5</layer></dataWest>
+				</drawData>
+			</props>
+		  </li>
+		  <li>
+			<mech>Mech_Centurion</mech>
+			<props>
+				<parentTagDef>Body</parentTagDef>
+				<drawSize>(1.35, 1.35)</drawSize>
+				<baseLayer>-5</baseLayer>
+				<pawnType>Any</pawnType>
+				<drawData>
+					<dataNorth><offset>(0, 0, 0.65)</offset><layer>5</layer></dataNorth>
+					<dataEast><offset>(0, 0, 0.65)</offset></dataEast>
+					<dataSouth><offset>(0, 0, 0.75)</offset></dataSouth>
+					<dataWest><offset>(0, 0, 0.65)</offset></dataWest>
+				</drawData>
+			</props>
+		  </li>
+		</graphicOptions>
+		<defaultProps>
+		  <parentTagDef>Body</parentTagDef>
+		  <drawSize>(1.35, 1.35)</drawSize>
+		  <baseLayer>-5</baseLayer>
+		  <pawnType>Any</pawnType>
+		  <drawData>
+            <dataNorth><offset>(0, 0, 0.65)</offset><layer>5</layer></dataNorth>
+            <dataEast><offset>(0, 0, 0.65)</offset></dataEast>
+            <dataSouth><offset>(0, 0, 0.75)</offset><layer>5</layer></dataSouth>
+            <dataWest><offset>(0, 0, 0.65)</offset></dataWest>
+          </drawData>
+		</defaultProps>
+      </li>
+	</comps>
+  </MU.MechUpgradeDef>
+
+</Defs>

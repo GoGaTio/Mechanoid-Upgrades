@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="MU_MechSPackItemBase" ParentName="MU_MechUpgradeItemBase" Abstract="True">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.1</Mass>
+      <Flammability>0</Flammability>
+	  <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+	<thingCategories Inherit="False">
+      <li>MU_UpgradePacks</li>
+    </thingCategories>
+	<thingSetMakerTags Inherit="False">
+      <li>MU_UpgradePacks</li>
+    </thingSetMakerTags>
+	<tradeTags>
+	  <li>MU_SPack</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef Name="MU_MechSPackBase" Abstract="True">
+    <upgradePoints>2</upgradePoints>
+	<listIsWhitelist>true</listIsWhitelist>
+	<allowRemoteControl>true</allowRemoteControl>
+	<exclusionTags>
+	  <li>UpgradePack</li>
+	  <li>RemoteControl</li>
+	</exclusionTags>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_MechSPackItemBase">
+    <defName>MU_UpgradePack_Militor</defName>
+    <label>militor upgrade pack</label>
+    <description>Pack of different upgrades for militor.\nAlso contains remote controle module that allows control outside of mechanitor command range.</description>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_UpgradePack_Militor</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+    </statBases>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_UpgradePack_Militor</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MechSPackBase">
+    <defName>MU_UpgradePack_Militor</defName>
+    <label>militor upgrade pack</label>
+    <description>Pack of different upgrades for militor.\nAlso contains remote controle module that allows control outside of mechanitor command range.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_UpgradePack_Militor</uiIconPath>
+    <statFactors>
+	  <MoveSpeed>1.2</MoveSpeed>
+	  <RangedCooldownFactor>0.5</RangedCooldownFactor>
+	  <StaggerDurationFactor>0</StaggerDurationFactor>
+	  <AimingDelayFactor>0.65</AimingDelayFactor>
+	  <IncomingDamageFactor>0.75</IncomingDamageFactor>
+	  <MU_RangedDamageFactor>1.5</MU_RangedDamageFactor>
+	</statFactors>
+	<statOffsets>
+	  <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+	</statOffsets>
+	<upgradePoints>1</upgradePoints>
+	<mechanoidDefs>
+	   <li>Mech_Militor</li>
+	</mechanoidDefs>
+	<linkedThingDef>MU_UpgradePack_Militor</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_MechSPackItemBase">
+    <defName>MU_UpgradePack_Scyther</defName>
+    <label>scyther upgrade pack</label>
+    <description>Pack of different upgrades for scyther.\nAlso contains remote controle module that allows control outside of mechanitor command range.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_UpgradePack_Scyther</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+    </statBases>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_UpgradePack_Scyther</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MechSPackBase">
+    <defName>MU_UpgradePack_Scyther</defName>
+    <label>scyther upgrade pack</label>
+    <description>Pack of different upgrades for scyther.\nAlso contains remote controle module that allows control outside of mechanitor command range.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_UpgradePack_Scyther</uiIconPath>
+    <statFactors>
+	  <MoveSpeed>1.2</MoveSpeed>
+	  <MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+	  <MeleeHitChance>1.5</MeleeHitChance>
+	  <StaggerDurationFactor>0</StaggerDurationFactor>
+	  <MeleeDamageFactor>1.5</MeleeDamageFactor>
+	  <IncomingDamageFactor>0.75</IncomingDamageFactor>
+	</statFactors>
+	<statOffsets>
+	  <MeleeHitChance>4</MeleeHitChance>
+	  <MeleeDodgeChance>20</MeleeDodgeChance>
+	</statOffsets>
+	<mechanoidDefs>
+	   <li>Mech_Scyther</li>
+	</mechanoidDefs>
+	<linkedThingDef>MU_UpgradePack_Scyther</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_MechSPackItemBase">
+    <defName>MU_UpgradePack_Tesseron</defName>
+    <label>tesseron upgrade pack</label>
+    <description>Pack of different upgrades for tesseron.\nAlso contains remote controle module that allows control outside of mechanitor command range.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_UpgradePack_Tesseron</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+    </statBases>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_UpgradePack_Tesseron</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MechSPackBase">
+    <defName>MU_UpgradePack_Tesseron</defName>
+    <label>tesseron upgrade pack</label>
+    <description>Pack of different upgrades for tesseron.\nAlso contains remote controle module that allows control outside of mechanitor command range.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_UpgradePack_Tesseron</uiIconPath>
+    <statFactors>
+	  <MoveSpeed>1.1</MoveSpeed>
+	  <RangedCooldownFactor>0.25</RangedCooldownFactor>
+	  <StaggerDurationFactor>0</StaggerDurationFactor>
+	  <IncomingDamageFactor>0.75</IncomingDamageFactor>
+	</statFactors>
+	<statOffsets>
+	  <AimingDelayFactor>-0.75</AimingDelayFactor>
+	</statOffsets>
+	<mechanoidDefs>
+	   <li>Mech_Tesseron</li>
+	</mechanoidDefs>
+	<linkedThingDef>MU_UpgradePack_Tesseron</linkedThingDef>
+  </MU.MechUpgradeDef>
+
+</Defs>

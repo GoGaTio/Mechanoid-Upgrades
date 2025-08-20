@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="MechBuildingBase">
+		<defName>MU_MechReloadStation</defName>
+		<label>mech reload station</label>
+		<description>A mechanoid auto reloading unit. When active, it reloads upgrades of mechs nearby.</description>
+		<size>(2,2)</size>
+		<tickerType>Normal</tickerType>
+		<fillPercent>0.45</fillPercent>
+		<receivesSignals>true</receivesSignals>
+		<drawerType>MapMeshOnly</drawerType>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<buildingTags>
+				<li>MechClusterMember</li>
+			</buildingTags>
+		</building>
+		<graphicData>
+			<texPath>Things/Building/MU_MechReloadStation</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_CanBeDormant" />
+			<li Class="CompProperties_WakeUpDormant">
+				<wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+			</li>
+			<li Class="CompProperties_Stunnable">
+				<affectedDamageDefs>
+					<li>Stun</li>
+					<li>EMP</li>
+				</affectedDamageDefs>
+				<adaptableDamageDefs>
+					<li>EMP</li>
+				</adaptableDamageDefs>
+			</li>
+			<li Class="MU.CompProperties_ReloadStation">
+				<cooldownTicks>10000</cooldownTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

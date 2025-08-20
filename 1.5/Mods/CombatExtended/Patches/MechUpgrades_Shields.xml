@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Large_A"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseMaxEnergy</xpath>
+		<value>
+			<baseMaxEnergy>3</baseMaxEnergy>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Large_B"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseMaxEnergy</xpath>
+		<value>
+			<baseMaxEnergy>2.25</baseMaxEnergy>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Large_C"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseMaxEnergy</xpath>
+		<value>
+			<baseMaxEnergy>1.65</baseMaxEnergy>
+		</value>
+	</Operation> 
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Medium_A"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseMaxEnergy</xpath>
+		<value>
+			<baseMaxEnergy>2.85</baseMaxEnergy>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Medium_B"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseMaxEnergy</xpath>
+		<value>
+			<baseMaxEnergy>1.95</baseMaxEnergy>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Medium_C"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseMaxEnergy</xpath>
+		<value>
+			<baseMaxEnergy>1.5</baseMaxEnergy>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Small_A"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseMaxEnergy</xpath>
+		<value>
+			<baseMaxEnergy>2.5</baseMaxEnergy>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Small_B"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseMaxEnergy</xpath>
+		<value>
+			<baseMaxEnergy>1.6</baseMaxEnergy>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Small_C"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseMaxEnergy</xpath>
+		<value>
+			<baseMaxEnergy>1.1</baseMaxEnergy>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Large_A"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseEnergyGain</xpath>
+		<value>
+			<baseEnergyGain>0.26</baseEnergyGain>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Large_B"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseEnergyGain</xpath>
+		<value>
+			<baseEnergyGain>0.21</baseEnergyGain>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Large_C"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseEnergyGain</xpath>
+		<value>
+			<baseEnergyGain>0.17</baseEnergyGain>
+		</value>
+	</Operation> 
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Medium_A"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseEnergyGain</xpath>
+		<value>
+			<baseEnergyGain>0.21</baseEnergyGain>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Medium_B"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseEnergyGain</xpath>
+		<value>
+			<baseEnergyGain>0.17</baseEnergyGain>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Medium_C"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseEnergyGain</xpath>
+		<value>
+			<baseEnergyGain>0.14</baseEnergyGain>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Small_A"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseEnergyGain</xpath>
+		<value>
+			<baseEnergyGain>0.19</baseEnergyGain>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Small_B"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseEnergyGain</xpath>
+		<value>
+			<baseEnergyGain>0.16</baseEnergyGain>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Shield_Small_C"]/comps/li[@Class="MU.UpgradeCompProperties_Shield"]/baseEnergyGain</xpath>
+		<value>
+			<baseEnergyGain>0.13</baseEnergyGain>
+		</value>
+	</Operation>
+
+</Patch>

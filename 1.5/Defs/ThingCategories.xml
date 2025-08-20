@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>MU_Upgrades</defName>
+      <label>mech upgrades</label>
+      <parent>Items</parent>
+    </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>MU_Chips</defName>
+        <label>chips</label>
+        <parent>MU_Upgrades</parent>
+      </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>MU_Modules</defName>
+        <label>modules</label>
+        <parent>MU_Upgrades</parent>
+      </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>MU_Armor</defName>
+        <label>armor</label>
+        <parent>MU_Upgrades</parent>
+      </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>MU_Shields</defName>
+        <label>shields</label>
+        <parent>MU_Upgrades</parent>
+      </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>MU_Grenades</defName>
+        <label>grenades</label>
+        <parent>MU_Upgrades</parent>
+      </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>MU_Poppers</defName>
+        <label>poppers</label>
+        <parent>MU_Upgrades</parent>
+      </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>MU_Turrets</defName>
+        <label>turrets</label>
+        <parent>MU_Upgrades</parent>
+      </ThingCategoryDef>
+
+      <ThingCategoryDef MayRequireAnyOf="GoGaTio.MechanoidUpgrades.HeavyWeaponry,GoGaTio.MechanoidUpgrades.Archotech">
+        <defName>MU_HeavyWeaponry</defName>
+        <label>heavy weaponry</label>
+        <parent>MU_Upgrades</parent>
+      </ThingCategoryDef>
+
+      <ThingCategoryDef>
+        <defName>MU_UpgradePacks</defName>
+        <label>upgrade packs</label>
+        <parent>MU_Upgrades</parent>
+      </ThingCategoryDef>
+  
+</Defs>

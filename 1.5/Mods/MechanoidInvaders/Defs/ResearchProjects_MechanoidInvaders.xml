@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ResearchProjectDef ParentName="MU_StandardBase">
+    <defName>MU_SystemMerger</defName>
+    <label>system merger</label>
+    <description>Create devices that can merge mechanoid systems, enhancing various characteristics.</description>
+    <baseCost>700</baseCost>
+    <prerequisites>
+      <li>MU_StandardUpgrades</li>
+    </prerequisites>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->system merger</li>
+
+        <li>subject_story->designed advanced merging devices</li>
+        
+        <li>subject_gerund->crafting system merger</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MU.MechUpgradeDef Name="MU_MechChipBase" Abstract="True">
+    <upgradePoints>1</upgradePoints>
+	<commonality>0.5</commonality>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef Name="MU_MechChipItemBase" ParentName="MU_MechUpgradeItemCraftable" Abstract="True">
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+	<graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.7, 0.7)</drawSize>
+    </graphicData>
+	<recipeMaker>
+      <displayPriority>100</displayPriority>
+	  <unfinishedThingDef>MU_UnfinishedUpgrade_Chip</unfinishedThingDef>
+	  <recipeUsers Inherit="False">
+        <li>MU_BasicUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>MU_Chips</li>
+    </thingCategories>
+	<tradeTags>
+	  <li>MU_MechChip</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef Name="MU_BasicChipItemBase" ParentName="MU_MechChipItemBase" Abstract="True">
+	<statBases>
+      <Flammability>0.5</Flammability><WorkToMake>11000</WorkToMake>
+    </statBases>
+	<costList>
+      <ComponentIndustrial>1</ComponentIndustrial>
+	  <Steel>5</Steel>
+	  <Plasteel>5</Plasteel>
+	  <Silver>4</Silver>
+    </costList>
+	<recipeMaker>
+      <displayPriority>110</displayPriority>
+	  <researchPrerequisite>MU_BasicChips</researchPrerequisite>
+    </recipeMaker>
+	<thingSetMakerTags>
+      <li>MU_BasicUpgrades</li>
+	  <li>MU_BasicMechChips</li>
+    </thingSetMakerTags>
+	<techLevel>Industrial</techLevel>
+	<tradeTags>
+	  <li>MU_BasicUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef Name="MU_StandardChipItemBase" ParentName="MU_MechChipItemBase" Abstract="True">
+	<statBases>
+      <Flammability>0.25</Flammability><WorkToMake>14000</WorkToMake>
+    </statBases>
+	<costList>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>1</ComponentIndustrial>
+	  <Plasteel>10</Plasteel>
+	  <Silver>5</Silver>
+    </costList>
+	<recipeMaker>
+      <displayPriority>120</displayPriority>
+	  <researchPrerequisite>MU_StandardChips</researchPrerequisite>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags>
+      <li>MU_StandardUpgrades</li>
+	  <li>MU_StandardMechChips</li>
+    </thingSetMakerTags>
+	<techLevel>Spacer</techLevel>
+	<tradeTags>
+	  <li>MU_StandardUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef Name="MU_AdvancedChipItemBase" ParentName="MU_MechChipItemBase" Abstract="True">
+	<statBases>
+      <Flammability>0</Flammability><WorkToMake>18500</WorkToMake>
+    </statBases>
+	<costList>
+      <SignalChip>1</SignalChip>
+	  <Plasteel>15</Plasteel>
+	  <Gold>1</Gold>
+    </costList>
+	<recipeMaker>
+      <displayPriority>130</displayPriority>
+	  <researchPrerequisite>MU_AdvancedChips</researchPrerequisite>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags>
+      <li>MU_AdvancedUpgrades</li>
+	  <li>MU_AdvancedMechChips</li>
+    </thingSetMakerTags>
+	<techLevel>Ultra</techLevel>
+	<tradeTags>
+	  <li>MU_AdvancedUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+
+  
+  <!--==========================================Gastro-analize===========================================-->
+
+  <MU.MechUpgradeDef ParentName="MU_MechChipBase" Name="MU_GastroAnalizeChipBase" Abstract="True">
+    <exclusionTags>
+	  <li>GastroAnalizeChip</li>
+	</exclusionTags>
+	<restrictions>
+	 <li Class="MU.UpgradeRestriction_WorkType" >
+	   <workType>Cooking</workType>
+	 </li>
+	</restrictions>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_AdvancedChipItemBase">
+    <defName>MU_MechChip_GastroAnalize_A</defName>
+    <label>gastro-analize chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives cooking speed increase and prevents food poisoning.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_GastroAnalize_A</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_GastroAnalize</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_GastroAnalize_A</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_GastroAnalizeChipBase">
+    <defName>MU_MechChip_GastroAnalize_A</defName>
+    <label>gastro-analize chip tier A</label>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_GastroAnalize_A</uiIconPath>
+    <description>A small chip, that can be installed into mechanoid brain. Gives cooking speed increase and prevent food poisoning.</description>
+    <statFactors>
+	  <FoodPoisonChance>0</FoodPoisonChance>
+	  <CookSpeed>1.45</CookSpeed>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_GastroAnalize_A</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_StandardChipItemBase">
+    <defName>MU_MechChip_GastroAnalize_B</defName>
+    <label>gastro-analize chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a cooking speed increase and decreases food poisoning chance.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_GastroAnalize_B</uiIconPath>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_GastroAnalize</texPath>
+    </graphicData>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_GastroAnalize_B</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_GastroAnalizeChipBase">
+    <defName>MU_MechChip_GastroAnalize_B</defName>
+    <label>gastro-analize chip tier B</label>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_GastroAnalize_B</uiIconPath>
+    <description>A small chip, that can be installed into mechanoid brain. Gives a cooking speed increase and decreases food poisoning chance.</description>
+    <statFactors>
+	  <FoodPoisonChance>0.5</FoodPoisonChance>
+	  <CookSpeed>1.25</CookSpeed>
+	</statFactors>
+	<linkedThingDef>MU_MechChip_GastroAnalize_B</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <!--==========================================Production===========================================-->
+
+  <MU.MechUpgradeDef ParentName="MU_MechChipBase" Name="MU_ProductionChipBase" Abstract="True">
+    <exclusionTags>
+	  <li>ProductionChip</li>
+	</exclusionTags>
+	<restrictions>
+	 <li Class="MU.UpgradeRestriction_WorkTypeAny" >
+	   <workTypes>
+	     <li>Construction</li>
+		 <li>Smithing</li>
+		 <li>Tailoring</li>
+		 <li>Art</li>
+	   </workTypes>
+	 </li>
+	</restrictions>
+  </MU.MechUpgradeDef>
+
+  <ThingDef ParentName="MU_AdvancedChipItemBase">
+    <defName>MU_MechChip_Production_A</defName>
+    <label>production chip tier A</label>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Production</texPath>
+    </graphicData>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a work speed increase and increases quality of things created by mechanoid.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Production_A</uiIconPath>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Production_A</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_ProductionChipBase">
+    <defName>MU_MechChip_Production_A</defName>
+    <label>production chip tier A</label>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Production_A</uiIconPath>
+    <description>A small chip, that can be installed into mechanoid brain. Gives a work speed increase and increases quality of things created by mechanoid.</description>
+  <statFactors>
+	  <GeneralLaborSpeed>1.25</GeneralLaborSpeed>
+	</statFactors>
+   <statOffsets>
+	  <ConstructionSpeed>0.4</ConstructionSpeed>
+	</statOffsets> 
+	<linkedThingDef>MU_MechChip_Production_A</linkedThingDef>
+	<comps>
+	 <li Class="MU.UpgradeCompProperties_QualityOffset" >
+	   <offset>1</offset>
+	 </li>
+	</comps>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_StandardChipItemBase">
+    <defName>MU_MechChip_Production_B</defName>
+    <label>production chip tier B</label>
+	<graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Production</texPath>
+    </graphicData>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a work speed increase.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Production_B</uiIconPath>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Production_B</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_ProductionChipBase">
+    <defName>MU_MechChip_Production_B</defName>
+    <label>production chip tier B</label>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Production_B</uiIconPath>
+    <description>A small chip, that can be installed into mechanoid brain. Gives a work speed increase.</description>
+	<statFactors>
+	  <GeneralLaborSpeed>1.15</GeneralLaborSpeed>
+	</statFactors>
+   <statOffsets>
+	  <ConstructionSpeed>0.25</ConstructionSpeed>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Production_B</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <!--==========================================Medical===========================================-->
+  
+  <MU.MechUpgradeDef ParentName="MU_MechChipBase" Name="MU_MedicalChipBase" Abstract="True">
+    <exclusionTags>
+	  <li>MedicalChip</li>
+	</exclusionTags>
+	<restrictions>
+	 <li Class="MU.UpgradeRestriction_WorkType" >
+	   <workType>Doctor</workType>
+	 </li>
+	</restrictions>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_AdvancedChipItemBase">
+    <defName>MU_MechChip_Medical_A</defName>
+    <label>medical chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large increase to all medical characteristics.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Medical</texPath>
+    </graphicData>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Medical_A</uiIconPath>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Medical_A</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MedicalChipBase">
+    <defName>MU_MechChip_Medical_A</defName>
+    <label>medical chip tier A</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a large increase to all medical characteristics.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Medical_A</uiIconPath>
+    <statFactors>
+	  <MedicalOperationSpeed>1.4</MedicalOperationSpeed>
+	  <MedicalTendSpeed>1.5</MedicalTendSpeed>
+	</statFactors>
+	<statOffsets>
+	  <MedicalTendQuality>0.75</MedicalTendQuality>
+	  <MedicalSurgerySuccessChance>0.25</MedicalSurgerySuccessChance>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Medical_A</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_StandardChipItemBase">
+    <defName>MU_MechChip_Medical_B</defName>
+    <label>medical chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium increase to all medical characteristics.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Medical</texPath>
+    </graphicData>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Medical_B</uiIconPath>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_MechChip_Medical_B</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MedicalChipBase">
+    <defName>MU_MechChip_Medical_B</defName>
+    <label>medical chip tier B</label>
+	<description>A small chip, that can be installed into mechanoid brain. Gives a medium increase to all medical characteristics.</description>
+	<uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Medical_B</uiIconPath>
+	<statFactors>
+	  <MedicalOperationSpeed>1.25</MedicalOperationSpeed>
+	  <MedicalTendSpeed>1.2</MedicalTendSpeed>
+	</statFactors>
+	<statOffsets>
+	  <MedicalTendQuality>0.35</MedicalTendQuality>
+	  <MedicalSurgerySuccessChance>0.10</MedicalSurgerySuccessChance>
+	</statOffsets>
+	<linkedThingDef>MU_MechChip_Medical_B</linkedThingDef>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_MechUpgradeItemBase">
+    <defName>MU_RemoteControlChip</defName>
+    <label>remote control chip</label>
+    <description>A small chip, that can be installed into mechanoid brain. Mechanoid with it can be controlled even outside of mechanitor command range.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_RemoteControl</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(0.7, 0.7)</drawSize>
+    </graphicData>
+	<statBases>
+      <MarketValue>1000</MarketValue>
+	  <MaxHitPoints>70</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <Flammability>0</Flammability>
+	  <DeteriorationRate>0</DeteriorationRate>
+    </statBases>	<uiIconPath>Things/Item/MechanoidUpgrade/MU_MechChip_RemoteControl</uiIconPath>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_RemoteControlChip</upgradeDef>
+      </li>
+    </comps>
+	<thingCategories Inherit="False">
+      <li>MU_Chips</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef>
+    <defName>MU_RemoteControlChip</defName>
+    <label>remote control chip</label>
+    <description>A small chip, that can be installed into mechanoid brain. Mechanoid with it can be controlled even outside of mechanitor command range.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_MechChip_RemoteControl</uiIconPath>
+	<allowRemoteControl>true</allowRemoteControl>
+	<linkedThingDef>MU_RemoteControlChip</linkedThingDef>
+	<exclusionTags>
+	  <li>RemoteControl</li>
+	</exclusionTags>
+	<commonality>0</commonality>
+  </MU.MechUpgradeDef>
+  
+</Defs>

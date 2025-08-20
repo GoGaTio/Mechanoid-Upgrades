@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MU_MechUpgradeItemCraftable">
+    <defName>MU_PropulsorAmplifier</defName>
+    <label>propulsion amplifier</label>
+    <description>Amplifier for mechanoid propulsion engine. Increases speed and carried mass, but also consumes additional energy.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_PropulsorAmplifier</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+	  <Plasteel>30</Plasteel>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_PropulsorAmplifier</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>9</Mass>
+      <Flammability>0</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>21000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>MU_StandardUpgrades</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef>
+    <defName>MU_PropulsorAmplifier</defName>
+    <label>propulsion amplifier</label>
+    <description>Amplifier for mechanoid propulsion engine. Increases speed and carried mass, but also consumes additional energy.</description>
+    <uiIconPath>Things/Item/MechanoidUpgrade/MU_PropulsorAmplifier</uiIconPath>
+	<linkedThingDef>MU_PropulsorAmplifier</linkedThingDef>
+	<exclusionTags>
+	  <li>Propulsor</li>
+	</exclusionTags>
+	<statOffsets>
+    <MU_CarriedMassOffset>15</MU_CarriedMassOffset> 
+    <MoveSpeed>0.8</MoveSpeed> 
+	  <MechEnergyUsageFactor>0.25</MechEnergyUsageFactor>
+	</statOffsets>
+	<upgradePoints>2</upgradePoints>
+	<commonality>1</commonality>
+	<listIsWhitelist>true</listIsWhitelist>
+	<mechanoidDefs>
+	   <li>IM_Mech_Skirmisher</li>
+	</mechanoidDefs>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_MechUpgradeItemCraftable">
+    <defName>MU_SystemMerger</defName>
+    <label>system merger</label>
+    <description>A special device that can be installed into mechanoid, allowing to connect and merge systems with another mechanoid, boosting its data processing and mobility, while reducing incoming damage by acting as backup for critical subsystems. Should the connection end prematurely by broadcaster's death, the receiver will suffer from severe system disruption.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_SystemMerger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.75, 0.75)</drawSize>
+    </graphicData>
+    <descriptionHyperlinks>
+      <HediffDef>IM_SystemMerge</HediffDef>
+    </descriptionHyperlinks>
+    <costList>
+      <SubcoreHigh>1</SubcoreHigh>
+      <ComponentIndustrial>2</ComponentIndustrial>
+     <Uranium>10</Uranium>
+	  <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_SystemMerger</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.1</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>4</DeteriorationRate>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+      <researchPrerequisite>MU_SystemMerger</researchPrerequisite>
+    </recipeMaker>
+	<tradeTags>
+      <li>MU_UpgradeWithAbility</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef>
+    <defName>MU_SystemMerger</defName>
+    <label>system merger</label>
+    <description>A special device that can be installed into mechanoid, allowing to connect and merge systems with another mechanoid, boosting its data processing and mobility, while reducing incoming damage by acting as backup for critical subsystems. Should the connection end prematurely by broadcaster's death, the receiver will suffer from severe system disruption.</description>
+    <uiIconPath>Things/Item/MechanoidUpgrade/MU_SystemMerger</uiIconPath>
+	<descriptionHyperlinks>
+      <HediffDef>IM_SystemMerge</HediffDef>
+    </descriptionHyperlinks>
+	<linkedThingDef>MU_SystemMerger</linkedThingDef>
+	<ability>MU_SystemMerge</ability>
+	<exclusionTags>
+	  <li>Interlink</li>
+	</exclusionTags>
+	<upgradePoints>2</upgradePoints>
+	<commonality>0</commonality>
+  </MU.MechUpgradeDef>
+
+  <AbilityDef>
+    <defName>MU_SystemMerge</defName>
+    <label>system merge</label>
+    <description>Connect and merge systems with another mechanoid, boosting its data processing and mobility, while reducing incoming damage by acting as backup for critical subsystems. Should the connection end prematurely by broadcaster's death, the receiver will suffer from severe system disruption.</description>
+    <iconPath>UI/Abilities/SystemMerge</iconPath>
+    <charges>3</charges> 
+    <cooldownPerCharge>true</cooldownPerCharge>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+	  <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+	  <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_Duration>168</Ability_Duration>
+    </statBases>
+    <cooldownTicksRange>120000</cooldownTicksRange>
+	  <targetRequired>true</targetRequired>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>system interlink</label>
+      <warmupEffecter>IM_InterlinkSpark_Giver</warmupEffecter>
+      <violent>false</violent>
+      <drawAimPie>true</drawAimPie>
+      <range>14.9</range>
+      <warmupTime>0.65</warmupTime>  
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetCorpses>false</canTargetCorpses>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>true</canTargetMechs>
+        <canTargetMutants>false</canTargetMutants>
+        <neverTargetIncapacitated>true</neverTargetIncapacitated>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+        <disableGizmo>False</disableGizmo>
+        <hideGizmo>False</hideGizmo>
+        <targetHasNoneOfHediffs>
+          <li>IM_SystemMerge</li>
+          <li>IM_SystemDisruption</li>
+          <li>IM_SystemInterlink</li>
+        </targetHasNoneOfHediffs>
+      </li>
+      <li Class="EBSGFramework.CompProperties_CreateLinkedHediff">
+        <targetHediffOnBrain>True</targetHediffOnBrain>
+        <hediffOnTarget>IM_SystemMerge</hediffOnTarget>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>IM_MergeSpark_Receiver</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>
