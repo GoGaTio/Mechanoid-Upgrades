@@ -54,7 +54,75 @@ using Verse.Steam;
 
 namespace MU
 {
-	public class CompProperties_AbilityReloadableUpgrade : CompProperties_AbilityEffect
+	public class Ability_AutoCastable : Ability
+	{
+		public bool autocastable = false;
+
+        public override bool AICanTargetNow(LocalTargetInfo target)
+        {
+            return (autocastable || pawn.Faction != Faction.OfPlayerSilentFail) && base.AICanTargetNow(target);
+        }
+
+		//public Ability_AutoCastable() { }
+
+        public Ability_AutoCastable(Pawn pawn)
+            : base(pawn)
+        {
+        }
+
+        public Ability_AutoCastable(Pawn pawn, AbilityDef def)
+            : base(pawn, def)
+        {
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref autocastable, "autocastable", defaultValue: false);
+        }
+    }
+
+	public class Command_AbilityAutoCastable : Command_Ability
+	{
+		public Ability_AutoCastable Ability_AutoCastable => Ability as Ability_AutoCastable; 
+        public Command_AbilityAutoCastable(Ability ability, Pawn pawn)
+            : base(ability, pawn)
+        {
+            
+        }
+
+        public override bool Visible => base.Visible;
+
+        public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
+        {
+            Rect rect = new Rect(topLeft.x, topLeft.y, 24f, 24f);
+            GizmoResult result = base.GizmoOnGUI(topLeft, maxWidth, parms);
+			Widgets.DrawTextureFitted(rect, Ability_AutoCastable.autocastable ? Widgets.CheckboxOnTex : Widgets.CheckboxOffTex, 1);
+            return result;
+        }
+
+        public override void ProcessInput(Event ev)
+        {
+            if (Event.current.button == 1)
+            {
+                Ability_AutoCastable.autocastable = !Ability_AutoCastable.autocastable;
+                SoundDefOf.Click.PlayOneShotOnCamera();
+				return;
+            }
+            base.ProcessInput(ev);
+        }
+
+        public override bool GroupsWith(Gizmo other)
+        {
+            if (ability.def.groupAbility && other is Command_AbilityAutoCastable command_Ability && command_Ability.ability.def == ability.def)
+            {
+                return  command_Ability.Ability_AutoCastable.autocastable == Ability_AutoCastable.autocastable;
+            }
+            return false;
+        }
+    }
+
+    public class CompProperties_AbilityReloadableUpgrade : CompProperties_AbilityEffect
 	{
 		public ThingDef ammoDef;
 
@@ -232,8 +300,6 @@ namespace MU
 
 		public bool incendiary;
 
-		public bool castableByPlayerMechs = false;
-
 		public CompProperties_AICastableAbility()
 		{
 			compClass = typeof(CompAbilityEffect_AICastable);
@@ -248,10 +314,6 @@ namespace MU
 
 		public override bool AICanTargetNow(LocalTargetInfo target)
 		{
-			if(!Props.castableByPlayerMechs && parent.pawn.Faction == Faction.OfPlayer)
-            {
-				return false;
-            }
             if (Props.incendiary && target.Thing?.FlammableNow != true)
             {
 				return false;

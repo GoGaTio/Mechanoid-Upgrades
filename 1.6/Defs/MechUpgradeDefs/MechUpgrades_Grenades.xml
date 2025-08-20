@@ -6,96 +6,119 @@
       <MaxHitPoints>100</MaxHitPoints>
       <Mass>3</Mass>
       <Flammability>0.5</Flammability>
-	  <DeteriorationRate>1</DeteriorationRate>
+      <DeteriorationRate>1</DeteriorationRate>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>MU_Grenades</researchPrerequisite>
-	  <displayPriority>4000</displayPriority>
+      <displayPriority>4000</displayPriority>
     </recipeMaker>
-	<thingCategories Inherit="False">
+    <thingCategories Inherit="False">
       <li>MU_Grenades</li>
     </thingCategories>
-	<tradeTags>
+    <tradeTags>
       <li>MU_UpgradeWithAbility</li>
-	  <li>MU_Grenade</li>
+      <li>MU_Grenade</li>
     </tradeTags>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef Name="MU_MechGrenadesBase" Abstract="True">
     <exclusionTags>
-	  <li>Grenades</li>
-	</exclusionTags>
-	<upgradePoints>1</upgradePoints>
-	<maxBodySize>1.6</maxBodySize>
-	<restrictions>
-	  <li Class="MU.UpgradeRestriction_HaveBodyParts">
+      <li>Grenades</li>
+    </exclusionTags>
+    <upgradePoints>1</upgradePoints>
+    <maxBodySize>1.6</maxBodySize>
+    <restrictions>
+      <li Class="MU.UpgradeRestriction_HaveBodyParts">
         <tag>ManipulationLimbDigit</tag>
-		<invert>false</invert>
+        <invert>false</invert>
       </li>
-	</restrictions>
-	<comps>
-	   <li Class="MU.UpgradeCompProperties_Graphics">
-		<graphicOptions>
-		  <li>
-			<mech>Mech_Tesseron</mech>
-			<props>
-			  <parentTagDef>Body</parentTagDef>
-			  <!--<overrideMeshSize>(1.5, 1.5)</overrideMeshSize>-->
-			  <baseLayer>1</baseLayer>
-			  <pawnType>Any</pawnType>
-			  <drawSize>0.75</drawSize>
-		  <drawData>
-            <dataNorth><offset>(0.15, 0, -0.25)</offset></dataNorth>
-            <dataEast><offset>(0, 0, -0.25)</offset></dataEast>
-            <dataSouth><offset>(-0.15, 0, -0.25)</offset></dataSouth>
-            <dataWest><offset>(0, 0, -0.25)</offset><layer>-5</layer></dataWest>
+    </restrictions>
+    <comps>
+      <li Class="MU.UpgradeCompProperties_Graphics">
+        <graphicOptions>
+          <li>
+            <mech>Mech_Tesseron</mech>
+            <props>
+              <parentTagDef>Body</parentTagDef>
+              <!--<overrideMeshSize>(1.5, 1.5)</overrideMeshSize>-->
+              <baseLayer>1</baseLayer>
+              <pawnType>Any</pawnType>
+              <drawSize>0.75</drawSize>
+              <drawData>
+                <dataNorth>
+                  <offset>(0.15, 0, -0.25)</offset>
+                </dataNorth>
+                <dataEast>
+                  <offset>(0, 0, -0.25)</offset>
+                </dataEast>
+                <dataSouth>
+                  <offset>(-0.15, 0, -0.25)</offset>
+                </dataSouth>
+                <dataWest>
+                  <offset>(0, 0, -0.25)</offset>
+                  <layer>-5</layer>
+                </dataWest>
+              </drawData>
+            </props>
+          </li>
+        </graphicOptions>
+        <defaultProps>
+          <parentTagDef>Body</parentTagDef>
+          <!--<overrideMeshSize>(1.5, 1.5)</overrideMeshSize>-->
+          <baseLayer>5</baseLayer>
+          <pawnType>Any</pawnType>
+          <drawSize>0.75</drawSize>
+          <drawData>
+            <dataNorth>
+              <offset>(0.2, 0, -0.25)</offset>
+            </dataNorth>
+            <dataEast>
+              <offset>(0, 0, -0.25)</offset>
+            </dataEast>
+            <dataSouth>
+              <offset>(-0.2, 0, -0.25)</offset>
+            </dataSouth>
+            <dataWest>
+              <offset>(0, 0, -0.25)</offset>
+              <layer>-5</layer>
+            </dataWest>
           </drawData>
-			</props>
-		  </li>
-		</graphicOptions>
-		<defaultProps>
-		  <parentTagDef>Body</parentTagDef>
-		  <!--<overrideMeshSize>(1.5, 1.5)</overrideMeshSize>-->
-		  <baseLayer>5</baseLayer>
-		  <pawnType>Any</pawnType>
-		  <drawSize>0.75</drawSize>
-		  <drawData>
-            <dataNorth><offset>(0.2, 0, -0.25)</offset></dataNorth>
-            <dataEast><offset>(0, 0, -0.25)</offset></dataEast>
-            <dataSouth><offset>(-0.2, 0, -0.25)</offset></dataSouth>
-            <dataWest><offset>(0, 0, -0.25)</offset><layer>-5</layer></dataWest>
-          </drawData>
-		</defaultProps>
+        </defaultProps>
       </li>
-	</comps>
-	<commonality>0.75</commonality>
+    </comps>
+    <commonality>0.75</commonality>
   </MU.MechUpgradeDef>
-  
+
   <AbilityDef Name="MU_MechGrenadeAbility" Abstract="True">
     <showPsycastEffects>False</showPsycastEffects>
-	<showOnCharacterCard>false</showOnCharacterCard>
-	<aiCanUse>true</aiCanUse>
-	<casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
-	<jobDef>CastAbilityOnThingWithoutWeaponInterruptible</jobDef>
-	<charges>3</charges>
+    <abilityClass>MU.Ability_AutoCastable</abilityClass>
+    <gizmoClass>MU.Command_AbilityAutoCastable</gizmoClass>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <showOnCharacterCard>false</showOnCharacterCard>
+    <aiCanUse>true</aiCanUse>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <jobDef>CastAbilityOnThingWithoutWeaponInterruptible</jobDef>
+    <charges>3</charges>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <warmupTime>1.5</warmupTime>
       <soundCast>ThrowGrenade</soundCast>
+      <defaultCooldownTime>1.3</defaultCooldownTime>
       <range>12.9</range>
-	  <targetParams>
-          <canTargetLocations>true</canTargetLocations>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
       </targetParams>
     </verbProperties>
-    <comps>
+    <comps>
+
       <li Class="CompProperties_AbilityRequiresCapacity">
         <capacity>Manipulation</capacity>
       </li>
     </comps>
   </AbilityDef>
-  
+
   <ThingDef Name="MU_BaseGrenade" ParentName="BaseGrenadeProjectile" Abstract="True">
-	<thingClass>Projectile_Explosive</thingClass>
+    <thingClass>Projectile_Explosive</thingClass>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
@@ -105,7 +128,7 @@
   </ThingDef>
 
   <!--==============================================Frag===================================================-->
-   
+
   <ThingDef ParentName="MU_MechGrenadesItemBase">
     <defName>MU_FragGrenades</defName>
     <label>frag grenades</label>
@@ -118,57 +141,58 @@
     <costList>
       <Steel>50</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
-	  <Plasteel>15</Plasteel>
+      <Plasteel>15</Plasteel>
     </costList>
-	<statBases>
-	  <WorkToMake>10000</WorkToMake>
-    </statBases>
-	<comps>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+    </statBases>
+
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_FragGrenades</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_MechGrenadesBase">
     <defName>MU_FragGrenades</defName>
     <label>frag grenades</label>
     <description>Fragmentation grenades. This particular version is designed to be used by mechanoids.</description>
-	<uiIconPath>Things/Item/MechanoidUpgrade/Grenades/MU_FragGrenades</uiIconPath>
-	<ability>MU_FragGrenades</ability>
-	<linkedThingDef>MU_FragGrenades</linkedThingDef>
-	<comps>
-	  <li Class="MU.UpgradeCompProperties_SingleGraphic">
-		<texPaths>
-		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Empty</li>
-		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Frag/Frag_1</li>
-		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Frag/Frag_2</li>
-		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Frag/Frag_3</li>
-		</texPaths>
+    <uiIconPath>Things/Item/MechanoidUpgrade/Grenades/MU_FragGrenades</uiIconPath>
+    <ability>MU_FragGrenades</ability>
+    <linkedThingDef>MU_FragGrenades</linkedThingDef>
+    <comps>
+      <li Class="MU.UpgradeCompProperties_SingleGraphic">
+        <texPaths>
+          <li>Things/Pawn/MechanoidUpgrades/Grenades/Empty</li>
+          <li>Things/Pawn/MechanoidUpgrades/Grenades/Frag/Frag_1</li>
+          <li>Things/Pawn/MechanoidUpgrades/Grenades/Frag/Frag_2</li>
+          <li>Things/Pawn/MechanoidUpgrades/Grenades/Frag/Frag_3</li>
+        </texPaths>
       </li>
     </comps>
   </MU.MechUpgradeDef>
-  
+
   <AbilityDef ParentName="MU_MechGrenadeAbility">
     <defName>MU_FragGrenades</defName>
     <label>throw frag grenade</label>
-	<description>Throw frag grenade.</description>
-	<iconPath>UI/Abilities/MU_ThrowGrenade_Frag</iconPath>
-	<comps>
+    <description>Throw frag grenade.</description>
+    <iconPath>UI/Abilities/MU_ThrowGrenade_Frag</iconPath>
+    <comps>
       <li Class="MU.CompProperties_AICastableAbility">
-		<cooldown>60</cooldown>
+        <cooldown>360</cooldown>
       </li>
-	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+      <li Class="MU.CompProperties_AbilityReloadableUpgrade">
         <ammoDef>Steel</ammoDef>
-		<ammoCount>15</ammoCount>
+        <ammoCount>15</ammoCount>
       </li>
-	  <li Class="MU.CompProperties_AbilityProjectileWithMissRadius">
+      <li Class="MU.CompProperties_AbilityProjectileWithMissRadius">
         <projectileDef>MU_FragGrenade</projectileDef>
-		<forcedMissRadius>1.7</forcedMissRadius>
+        <forcedMissRadius>1.7</forcedMissRadius>
       </li>
     </comps>
   </AbilityDef>
-  
+
   <ThingDef ParentName="MU_BaseGrenade" >
     <defName>MU_FragGrenade</defName>
     <label>frag grenade</label>
@@ -180,9 +204,9 @@
       <damageDef>Bomb</damageDef>
     </projectile>
   </ThingDef>
-  
+
   <!--==============================================Incendiary===================================================-->
-  
+
   <ThingDef ParentName="MU_MechGrenadesItemBase">
     <defName>MU_IncendiaryGrenades</defName>
     <label>incendiary grenades</label>
@@ -195,59 +219,60 @@
     <costList>
       <Steel>5</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
-	  <Plasteel>15</Plasteel>
-	  <Chemfuel>60</Chemfuel>
+      <Plasteel>15</Plasteel>
+      <Chemfuel>60</Chemfuel>
     </costList>
-	<statBases>
-	  <WorkToMake>11000</WorkToMake>
-    </statBases>
-	<comps>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+    </statBases>
+
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_IncendiaryGrenades</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_MechGrenadesBase">
     <defName>MU_IncendiaryGrenades</defName>
     <label>incendiary grenades</label>
     <description>Incendiary grenades. This particular version is designed to be used by mechanoids.</description>
-	<uiIconPath>Things/Item/MechanoidUpgrade/Grenades/MU_IncendiaryGrenades</uiIconPath>
-	<ability>MU_IncendiaryGrenades</ability>
-	<linkedThingDef>MU_IncendiaryGrenades</linkedThingDef>
-	<comps>
-	  <li Class="MU.UpgradeCompProperties_SingleGraphic">
-		<texPaths>
-		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Empty</li>
-		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Incendiary/Incendiary_1</li>
-		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Incendiary/Incendiary_2</li>
-		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Incendiary/Incendiary_3</li>
-		</texPaths>
+    <uiIconPath>Things/Item/MechanoidUpgrade/Grenades/MU_IncendiaryGrenades</uiIconPath>
+    <ability>MU_IncendiaryGrenades</ability>
+    <linkedThingDef>MU_IncendiaryGrenades</linkedThingDef>
+    <comps>
+      <li Class="MU.UpgradeCompProperties_SingleGraphic">
+        <texPaths>
+          <li>Things/Pawn/MechanoidUpgrades/Grenades/Empty</li>
+          <li>Things/Pawn/MechanoidUpgrades/Grenades/Incendiary/Incendiary_1</li>
+          <li>Things/Pawn/MechanoidUpgrades/Grenades/Incendiary/Incendiary_2</li>
+          <li>Things/Pawn/MechanoidUpgrades/Grenades/Incendiary/Incendiary_3</li>
+        </texPaths>
       </li>
     </comps>
   </MU.MechUpgradeDef>
-  
+
   <AbilityDef ParentName="MU_MechGrenadeAbility">
     <defName>MU_IncendiaryGrenades</defName>
     <label>throw incendiary grenade</label>
-	<description>Throw incendiary grenade.</description>
-	<iconPath>UI/Abilities/MU_ThrowGrenade_Incendiary</iconPath>
-	<comps>
+    <description>Throw incendiary grenade.</description>
+    <iconPath>UI/Abilities/MU_ThrowGrenade_Incendiary</iconPath>
+    <comps>
       <li Class="MU.CompProperties_AICastableAbility">
-		<cooldown>60</cooldown>
-		<incendiary>true</incendiary>
+        <cooldown>360</cooldown>
+        <incendiary>true</incendiary>
       </li>
-	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+      <li Class="MU.CompProperties_AbilityReloadableUpgrade">
         <ammoDef>Chemfuel</ammoDef>
-		<ammoCount>20</ammoCount>
+        <ammoCount>20</ammoCount>
       </li>
-	  <li Class="MU.CompProperties_AbilityProjectileWithMissRadius">
+      <li Class="MU.CompProperties_AbilityProjectileWithMissRadius">
         <projectileDef>MU_IncendiaryGrenade</projectileDef>
-		<forcedMissRadius>1.7</forcedMissRadius>
+        <forcedMissRadius>1.7</forcedMissRadius>
       </li>
     </comps>
   </AbilityDef>
-  
+
   <ThingDef ParentName="MU_BaseGrenade" >
     <defName>MU_IncendiaryGrenade</defName>
     <label>incendiary grenade</label>
@@ -261,9 +286,9 @@
       <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
   </ThingDef>
-  
+
   <!--==============================================EMP===================================================-->
-  
+
   <ThingDef ParentName="MU_MechGrenadesItemBase">
     <defName>MU_EMPGrenades</defName>
     <label>EMP grenades</label>
@@ -276,58 +301,58 @@
     <costList>
       <Steel>50</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
-	  <Plasteel>15</Plasteel>
+      <Plasteel>15</Plasteel>
     </costList>
-	<statBases>
-	  <WorkToMake>20000</WorkToMake>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
     </statBases>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_EMPGrenades</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_MechGrenadesBase">
     <defName>MU_EMPGrenades</defName>
     <label>EMP grenades</label>
     <description>Electromagnetic pulse grenades damaging to electronic equipment. This particular version is designed to be used by mechanoids.</description>
-	<uiIconPath>Things/Item/MechanoidUpgrade/Grenades/MU_EMPGrenades</uiIconPath>
-	<ability>MU_EMPGrenades</ability>
-	<linkedThingDef>MU_EMPGrenades</linkedThingDef>
-	<commonality>0</commonality>
-	<comps>
-	  <li Class="MU.UpgradeCompProperties_SingleGraphic">
-		<texPaths>
-		  <li>Things/Pawn/MechanoidUpgrades/Grenades/Empty</li>
-		  <li>Things/Pawn/MechanoidUpgrades/Grenades/EMP/EMP_1</li>
-		  <li>Things/Pawn/MechanoidUpgrades/Grenades/EMP/EMP_2</li>
-		  <li>Things/Pawn/MechanoidUpgrades/Grenades/EMP/EMP_3</li>
-		</texPaths>
+    <uiIconPath>Things/Item/MechanoidUpgrade/Grenades/MU_EMPGrenades</uiIconPath>
+    <ability>MU_EMPGrenades</ability>
+    <linkedThingDef>MU_EMPGrenades</linkedThingDef>
+    <commonality>0</commonality>
+    <comps>
+      <li Class="MU.UpgradeCompProperties_SingleGraphic">
+        <texPaths>
+          <li>Things/Pawn/MechanoidUpgrades/Grenades/Empty</li>
+          <li>Things/Pawn/MechanoidUpgrades/Grenades/EMP/EMP_1</li>
+          <li>Things/Pawn/MechanoidUpgrades/Grenades/EMP/EMP_2</li>
+          <li>Things/Pawn/MechanoidUpgrades/Grenades/EMP/EMP_3</li>
+        </texPaths>
       </li>
     </comps>
   </MU.MechUpgradeDef>
-  
+
   <AbilityDef ParentName="MU_MechGrenadeAbility">
     <defName>MU_EMPGrenades</defName>
     <label>throw EMP grenade</label>
-	<description>Throw EMP grenade.</description>
-	<iconPath>UI/Abilities/MU_ThrowGrenade_EMP</iconPath>
-	<comps>
+    <description>Throw EMP grenade.</description>
+    <iconPath>UI/Abilities/MU_ThrowGrenade_EMP</iconPath>
+    <comps>
       <li Class="MU.CompProperties_AICastableAbility">
-		<cooldown>15</cooldown>
+        <cooldown>360</cooldown>
       </li>
-	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+      <li Class="MU.CompProperties_AbilityReloadableUpgrade">
         <ammoDef>Steel</ammoDef>
-		<ammoCount>15</ammoCount>
+        <ammoCount>15</ammoCount>
       </li>
-	  <li Class="MU.CompProperties_AbilityProjectileWithMissRadius">
+      <li Class="MU.CompProperties_AbilityProjectileWithMissRadius">
         <projectileDef>MU_EMPGrenade</projectileDef>
-		<forcedMissRadius>1.7</forcedMissRadius>
+        <forcedMissRadius>1.7</forcedMissRadius>
       </li>
     </comps>
   </AbilityDef>
-  
+
   <ThingDef ParentName="MU_BaseGrenade" >
     <defName>MU_EMPGrenade</defName>
     <label>EMP grenade</label>
@@ -338,5 +363,6 @@
       <explosionRadius>3.5</explosionRadius>
       <damageDef>EMP</damageDef>
     </projectile>
-  </ThingDef>
+  </ThingDef>
+
 </Defs>

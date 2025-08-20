@@ -155,7 +155,8 @@
       <ComponentIndustrial>3</ComponentIndustrial>
 	  <Plasteel>35</Plasteel>
 	  <Chemfuel>40</Chemfuel>
-    </costList>
+    </costList>
+
 	<comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_MechBooster</upgradeDef>
@@ -217,7 +218,8 @@
       <ComponentIndustrial>10</ComponentIndustrial>
 	  <Plasteel>60</Plasteel>
 	  <ComponentSpacer>1</ComponentSpacer>
-    </costList>
+    </costList>
+
 	<comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_LegActuators</upgradeDef>
@@ -277,7 +279,8 @@
       <ComponentIndustrial>6</ComponentIndustrial>
 	  <Plasteel>60</Plasteel>
 	  <Steel>110</Steel>
-    </costList>
+    </costList>
+
 	<comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_CommandTower</upgradeDef>
@@ -313,7 +316,8 @@
 	<commandRange>24.9</commandRange>
 	<allowRemoteControl>true</allowRemoteControl>
 	<commonality>0</commonality>
-  </MU.MechUpgradeDef>-->
+  </MU.MechUpgradeDef>-->
+
   
   <ThingDef ParentName="MU_MechUpgradeItemCraftable">
     <defName>MU_UrchinSpawner</defName>
@@ -329,7 +333,8 @@
 	  <ComponentIndustrial>4</ComponentIndustrial>
 	  <Plasteel>60</Plasteel>
 	  <Steel>200</Steel>
-    </costList>
+    </costList>
+
 	<comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_UrchinSpawner</upgradeDef>
@@ -354,7 +359,8 @@
     <defName>MU_UrchinSpawner</defName>
     <label>urchin mini-gestator</label>
     <description>A mini-gestator unit which can create war urchins. Require steel for gestation.</description>
-	<uiIconPath>Things/Item/MechanoidUpgrade/MU_UrchinSpawner</uiIconPath>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_UrchinSpawner</uiIconPath>
+
 	<linkedThingDef>MU_UrchinSpawner</linkedThingDef>
 	<exclusionTags>
 	  <li>Spawner</li>
@@ -394,7 +400,8 @@
       <ComponentIndustrial>3</ComponentIndustrial>
 	  <Plasteel>20</Plasteel>
 	  <Chemfuel>75</Chemfuel>
-    </costList>
+    </costList>
+
 	<comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_JumpLauncher</upgradeDef>
@@ -481,7 +488,8 @@
       <ComponentIndustrial>3</ComponentIndustrial>
 	  <Plasteel>10</Plasteel>
 	  <MedicineIndustrial>8</MedicineIndustrial>
-    </costList>
+    </costList>
+
 	<comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_MedicineKit</upgradeDef>

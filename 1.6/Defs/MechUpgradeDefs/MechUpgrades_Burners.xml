@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
+
+  <AbilityDef Name="MU_MechBurberAbility" Abstract="True">
+    <showPsycastEffects>False</showPsycastEffects>
+    <abilityClass>MU.Ability_AutoCastable</abilityClass>
+    <gizmoClass>MU.Command_AbilityAutoCastable</gizmoClass>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <showOnCharacterCard>false</showOnCharacterCard>
+    <aiCanUse>true</aiCanUse>
+    <warmupStartSound>FireSpew_Warmup</warmupStartSound>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <jobDef>CastAbilityOnThingWithoutWeaponInterruptible</jobDef>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>FireSpew_Resolve</soundCast>
+      <defaultCooldownTime>0.7</defaultCooldownTime>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="MU.CompProperties_AICastableAbility">
+        <incendiary>true</incendiary>
+        <cooldown>360</cooldown>
+      </li>
+    </comps>
+  </AbilityDef>
+
   <ThingDef ParentName="MU_MechUpgradeItemCraftable">
     <defName>MU_ChemfuelMiniBurner</defName>
     <label>mini-burner</label>
@@ -14,77 +41,68 @@
     <costList>
       <Steel>20</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
-	  <Plasteel>15</Plasteel>
-	  <Chemfuel>15</Chemfuel>
-    </costList>
-	<comps>
+      <Plasteel>15</Plasteel>
+      <Chemfuel>15</Chemfuel>
+    </costList>
+
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_ChemfuelMiniBurner</upgradeDef>
       </li>
     </comps>
-	<statBases>
+    <statBases>
       <MaxHitPoints>70</MaxHitPoints>
       <Mass>3</Mass>
       <Flammability>0.5</Flammability>
-	  <DeteriorationRate>1</DeteriorationRate>
-	  <WorkToMake>11000</WorkToMake>
+      <DeteriorationRate>1</DeteriorationRate>
+      <WorkToMake>11000</WorkToMake>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>MU_Burners</researchPrerequisite>
-	  <displayPriority>7000</displayPriority>
+      <displayPriority>7000</displayPriority>
     </recipeMaker>
-	<tradeTags>
+    <tradeTags>
       <li>MU_UpgradeWithAbility</li>
-	  <li>MU_Burner</li>
+      <li>MU_Burner</li>
     </tradeTags>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef>
     <defName>MU_ChemfuelMiniBurner</defName>
     <label>mini-burner</label>
     <description>A chemfuel-powered mini-burner unit which can be installed into mechanoid. Generates a stream of flame from highly flammable chemfuel, that form flamming pools on the ground. The mini-burner requires refueling after every use.</description>
-	<uiIconPath>UI/MechanoidUpgrades/MU_MiniBurner_Chemfuel</uiIconPath>
-	<linkedThingDef>MU_ChemfuelMiniBurner</linkedThingDef>
-	<exclusionTags>
-	  <li>Burner</li>
-	</exclusionTags>
-	<upgradePoints>1</upgradePoints>
-	<minBodySize>0.3</minBodySize>
-	<ability>MU_ChemfuelMiniBurner</ability>
-	<restrictions>
-	  <li Class="MU.UpgradeRestriction_FactorFromBodySize">
+    <uiIconPath>UI/MechanoidUpgrades/MU_MiniBurner_Chemfuel</uiIconPath>
+    <linkedThingDef>MU_ChemfuelMiniBurner</linkedThingDef>
+    <exclusionTags>
+      <li>Burner</li>
+    </exclusionTags>
+    <upgradePoints>1</upgradePoints>
+    <minBodySize>0.3</minBodySize>
+    <ability>MU_ChemfuelMiniBurner</ability>
+    <restrictions>
+      <li Class="MU.UpgradeRestriction_FactorFromBodySize">
         <curve>
-		  <points>
-		    <li>(0, 2)</li>
-			<li>(0.8, 1)</li>
-			<li>(0.9, 0.5)</li>
-			<li>(1, 0.1)</li>
-			<li>(2, 0)</li>
-		  </points>
-		</curve>
+          <points>
+            <li>(0, 2)</li>
+            <li>(0.8, 1)</li>
+            <li>(0.9, 0.5)</li>
+            <li>(1, 0.1)</li>
+            <li>(2, 0)</li>
+          </points>
+        </curve>
       </li>
-	</restrictions>
+    </restrictions>
   </MU.MechUpgradeDef>
-  
-  <AbilityDef>
+
+  <AbilityDef ParentName="MU_MechBurberAbility">
     <defName>MU_ChemfuelMiniBurner</defName>
     <label>mini-burner</label>
     <description>Use built-in mini-burner to spew stream of burning fuel. It ignites anything or anyone it hits, and also form flamming pools on the ground.</description>
     <iconPath>UI/Abilities/MU_MechBurner</iconPath>
-	<charges>1</charges>
-    <aiCanUse>true</aiCanUse>
-	<warmupStartSound>FireSpew_Warmup</warmupStartSound>
-    <showOnCharacterCard>false</showOnCharacterCard>
-	<jobDef>CastAbilityOnThingWithoutWeaponInterruptible</jobDef>
+    <charges>1</charges>
     <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <requireLineOfSight>true</requireLineOfSight>
       <range>5.9</range>
       <warmupTime>0.5</warmupTime>
-      <soundCast>FireSpew_Resolve</soundCast>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-      </targetParams>
     </verbProperties>
     <comps>
       <li Class="CompProperties_AbilityFireSpew">
@@ -93,19 +111,16 @@
         <filthDef>Filth_FlammableBile</filthDef>
         <effecterDef>Fire_Spew</effecterDef>
         <canHitFilledCells>true</canHitFilledCells>
-		<damAmount>12</damAmount>
+        <damAmount>12</damAmount>
       </li>
       <li Class="MU.CompProperties_AbilityReloadableUpgrade">
         <ammoDef>Chemfuel</ammoDef>
-		<ammoCount>15</ammoCount>
-      </li>
-	  <li Class="MU.CompProperties_AICastableAbility">
-		<incendiary>true</incendiary>
+        <ammoCount>15</ammoCount>
       </li>
     </comps>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
   </AbilityDef>
-  
+
   <ThingDef ParentName="MU_MechUpgradeItemCraftable">
     <defName>MU_ChemfuelBurner</defName>
     <label>burner</label>
@@ -119,71 +134,63 @@
     <costList>
       <Steel>40</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
-	  <Plasteel>25</Plasteel>
-	  <Chemfuel>40</Chemfuel>
-    </costList>
-	<comps>
+      <Plasteel>25</Plasteel>
+      <Chemfuel>40</Chemfuel>
+    </costList>
+
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_ChemfuelBurner</upgradeDef>
       </li>
     </comps>
-	<statBases>
+    <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <Mass>5</Mass>
       <Flammability>0.5</Flammability>
-	  <DeteriorationRate>1</DeteriorationRate>
-	  <WorkToMake>19000</WorkToMake>
+      <DeteriorationRate>1</DeteriorationRate>
+      <WorkToMake>19000</WorkToMake>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>MU_Burners</researchPrerequisite>
-	  <displayPriority>7000</displayPriority>
+      <displayPriority>7000</displayPriority>
     </recipeMaker>
-	<tradeTags>
+    <tradeTags>
       <li>MU_UpgradeWithAbility</li>
-	  <li>MU_Burner</li>
+      <li>MU_Burner</li>
     </tradeTags>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef>
     <defName>MU_ChemfuelBurner</defName>
     <label>burner</label>
     <description>A chemfuel-powered burner unit which can be installed into mechanoid. Generates a stream of flame from highly flammable chemfuel, that form flamming pools on the ground. The burner unit can be used twice before refueling.</description>
-	<uiIconPath>UI/MechanoidUpgrades/MU_Burner_Chemfuel</uiIconPath>
-	<linkedThingDef>MU_ChemfuelBurner</linkedThingDef>
-	<exclusionTags>
-	  <li>Burner</li>
-	</exclusionTags>
-	<upgradePoints>1</upgradePoints>
-	<minBodySize>0.8</minBodySize>
-	<maxBodySize>1.6</maxBodySize>
-	<ability>MU_ChemfuelBurner</ability>
-	<restrictions>
-	  <li Class="MU.UpgradeRestriction_HaveBodyParts">
+    <uiIconPath>UI/MechanoidUpgrades/MU_Burner_Chemfuel</uiIconPath>
+
+    <linkedThingDef>MU_ChemfuelBurner</linkedThingDef>
+    <exclusionTags>
+      <li>Burner</li>
+    </exclusionTags>
+    <upgradePoints>1</upgradePoints>
+    <minBodySize>0.8</minBodySize>
+    <maxBodySize>1.6</maxBodySize>
+    <ability>MU_ChemfuelBurner</ability>
+    <restrictions>
+      <li Class="MU.UpgradeRestriction_HaveBodyParts">
         <tag>ManipulationLimbDigit</tag>
-		<invert>false</invert>
+        <invert>false</invert>
       </li>
-	</restrictions>
+    </restrictions>
   </MU.MechUpgradeDef>
-  
-  <AbilityDef>
+
+  <AbilityDef ParentName="MU_MechBurberAbility">
     <defName>MU_ChemfuelBurner</defName>
     <label>burner</label>
     <description>Use built-in burner to spew stream of burning fuel. It ignites anything or anyone it hits, and also form flamming pools on the ground.</description>
     <iconPath>UI/Abilities/MU_MechBurner</iconPath>
-	<charges>2</charges>
-    <aiCanUse>true</aiCanUse>
-	<warmupStartSound>FireSpew_Warmup</warmupStartSound>
-    <showOnCharacterCard>false</showOnCharacterCard>
-	<jobDef>CastAbilityOnThingWithoutWeaponInterruptible</jobDef>
+    <charges>2</charges>
     <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <requireLineOfSight>true</requireLineOfSight>
       <range>7.9</range>
       <warmupTime>1.1</warmupTime>
-      <soundCast>FireSpew_Resolve</soundCast>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-      </targetParams>
     </verbProperties>
     <comps>
       <li Class="CompProperties_AbilityFireSpew">
@@ -192,20 +199,16 @@
         <filthDef>Filth_FlammableBile</filthDef>
         <effecterDef>Fire_Spew</effecterDef>
         <canHitFilledCells>true</canHitFilledCells>
-		<damAmount>12</damAmount>
+        <damAmount>12</damAmount>
       </li>
       <li Class="MU.CompProperties_AbilityReloadableUpgrade">
         <ammoDef>Chemfuel</ammoDef>
-		<ammoCount>20</ammoCount>
-      </li>
-	  <li Class="MU.CompProperties_AICastableAbility">
-		<incendiary>true</incendiary>
-		<cooldown>60</cooldown>
+        <ammoCount>20</ammoCount>
       </li>
     </comps>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
   </AbilityDef>
-  
+
   <ThingDef ParentName="MU_MechUpgradeItemCraftable">
     <defName>MU_ChemfuelFlamethrower</defName>
     <label>flamethrower</label>
@@ -219,64 +222,56 @@
     <costList>
       <Steel>100</Steel>
       <ComponentIndustrial>5</ComponentIndustrial>
-	  <Plasteel>40</Plasteel>
-	  <Chemfuel>175</Chemfuel>
-    </costList>
-	<comps>
+      <Plasteel>40</Plasteel>
+      <Chemfuel>175</Chemfuel>
+    </costList>
+
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_ChemfuelFlamethrower</upgradeDef>
       </li>
     </comps>
-	<statBases>
+    <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <Mass>5</Mass>
       <Flammability>0.5</Flammability>
-	  <DeteriorationRate>1</DeteriorationRate>
-	  <WorkToMake>26000</WorkToMake>
+      <DeteriorationRate>1</DeteriorationRate>
+      <WorkToMake>26000</WorkToMake>
     </statBases>
     <recipeMaker>
       <researchPrerequisite>MU_Burners</researchPrerequisite>
-	  <displayPriority>7000</displayPriority>
+      <displayPriority>7000</displayPriority>
     </recipeMaker>
-	<tradeTags>
+    <tradeTags>
       <li>MU_UpgradeWithAbility</li>
-	  <li>MU_Burner</li>
+      <li>MU_Burner</li>
     </tradeTags>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef>
     <defName>MU_ChemfuelFlamethrower</defName>
     <label>flamethrower</label>
     <description>A chemfuel-powered flamethrower unit which can be installed into mechanoid. Generates a long stream of flame from highly flammable chemfuel, that form flamming pools on the ground. The flamethrower unit can be used five times before refueling.</description>
-	<uiIconPath>UI/MechanoidUpgrades/MU_Flamethrower_Chemfuel</uiIconPath>
-	<linkedThingDef>MU_ChemfuelFlamethrower</linkedThingDef>
-	<exclusionTags>
-	  <li>Burner</li>
-	</exclusionTags>
-	<upgradePoints>3</upgradePoints>
-	<minBodySize>2.5</minBodySize>
-	<ability>MU_ChemfuelFlamethrower</ability>
+    <uiIconPath>UI/MechanoidUpgrades/MU_Flamethrower_Chemfuel</uiIconPath>
+
+    <linkedThingDef>MU_ChemfuelFlamethrower</linkedThingDef>
+    <exclusionTags>
+      <li>Burner</li>
+    </exclusionTags>
+    <upgradePoints>3</upgradePoints>
+    <minBodySize>2.5</minBodySize>
+    <ability>MU_ChemfuelFlamethrower</ability>
   </MU.MechUpgradeDef>
-  
-  <AbilityDef>
+
+  <AbilityDef ParentName="MU_MechBurberAbility">
     <defName>MU_ChemfuelFlamethrower</defName>
     <label>flamethrower</label>
     <description>Use built-in flamethrower to spew long stream of burning fuel. It ignites anything or anyone it hits, and also form flamming pools on the ground.</description>
     <iconPath>UI/Abilities/MU_MechBurner</iconPath>
-	<charges>5</charges>
-    <aiCanUse>true</aiCanUse>
-	<warmupStartSound>FireSpew_Warmup</warmupStartSound>
-    <showOnCharacterCard>false</showOnCharacterCard>
-	<jobDef>CastAbilityOnThingWithoutWeaponInterruptible</jobDef>
+    <charges>5</charges>
     <verbProperties>
-      <verbClass>Verb_CastAbility</verbClass>
-      <requireLineOfSight>true</requireLineOfSight>
       <range>15.9</range>
       <warmupTime>2.1</warmupTime>
-      <soundCast>FireSpew_Resolve</soundCast>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-      </targetParams>
     </verbProperties>
     <comps>
       <li Class="CompProperties_AbilityFireSpew">
@@ -285,15 +280,11 @@
         <filthDef>Filth_FlammableBile</filthDef>
         <effecterDef>Fire_Spew</effecterDef>
         <canHitFilledCells>true</canHitFilledCells>
-		<damAmount>15</damAmount>
+        <damAmount>15</damAmount>
       </li>
       <li Class="MU.CompProperties_AbilityReloadableUpgrade">
         <ammoDef>Chemfuel</ammoDef>
-		<ammoCount>35</ammoCount>
-      </li>
-	  <li Class="MU.CompProperties_AICastableAbility">
-		<incendiary>true</incendiary>
-		<cooldown>60</cooldown>
+        <ammoCount>35</ammoCount>
       </li>
     </comps>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>

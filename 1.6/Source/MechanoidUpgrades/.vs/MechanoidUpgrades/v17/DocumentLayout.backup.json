@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\ThingDef\\Races_RustedMass.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\Keyed\\Misc_Gameplay.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\ThingDef\\Buildings_Obelisks.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\BodyDef\\Bodies_Rust.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Bodies\\Bodies_Rust.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\mechanoidupgrades\\1.6\\source\\mechanoidupgrades\\abilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:abilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Grenades.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Burners.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Misc.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Misc\\DesignatorDropdownGroupDef\\DesignatorDropdownGroupDef.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Misc\\Designations\\Designations.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThinkTreeDefs\\Mechanoid.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Misc_Gameplay.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\Keyed\\Misc_Gameplay.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\NewAnomalyThreats\\Languages\\Russian\\Keyed\\Misc_Gameplay.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\Keyed\\Misc_Gameplay.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\NewAnomalyThreats\\Languages\\Russian\\Keyed\\Misc_Gameplay.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-20T09:07:39.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Buildings_Obelisks.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\ThingDef\\Buildings_Obelisks.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\ThingDef\\Buildings_Obelisks.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\ThingDef\\Buildings_Obelisks.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\ThingDef\\Buildings_Obelisks.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-20T09:06:40.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Races_RustedMass.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\ThingDef\\Races_RustedMass.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\ThingDef\\Races_RustedMass.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\ThingDef\\Races_RustedMass.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\ThingDef\\Races_RustedMass.xml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAADgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-20T09:05:48.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Bodies_Rust.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Bodies\\Bodies_Rust.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\NewAnomalyThreats\\1.6\\Defs\\Bodies\\Bodies_Rust.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Bodies\\Bodies_Rust.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\NewAnomalyThreats\\1.6\\Defs\\Bodies\\Bodies_Rust.xml",
+              "ViewState": "AgIAACYBAAAAAAAAAAAtwOsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-20T09:03:20.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bodies_Rust.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\BodyDef\\Bodies_Rust.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\BodyDef\\Bodies_Rust.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\BodyDef\\Bodies_Rust.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\NewAnomalyThreats\\Languages\\Russian\\DefInjected\\BodyDef\\Bodies_Rust.xml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAEcAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-20T09:02:33.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MechUpgrades_Misc.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Misc.xml",
+              "RelativeDocumentMoniker": "..\\..\\Defs\\MechUpgradeDefs\\MechUpgrades_Misc.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Misc.xml",
+              "RelativeToolTip": "..\\..\\Defs\\MechUpgradeDefs\\MechUpgrades_Misc.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-20T08:30:58.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MechUpgrades_Grenades.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Grenades.xml",
+              "RelativeDocumentMoniker": "..\\..\\Defs\\MechUpgradeDefs\\MechUpgrades_Grenades.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Grenades.xml",
+              "RelativeToolTip": "..\\..\\Defs\\MechUpgradeDefs\\MechUpgrades_Grenades.xml",
+              "ViewState": "AgIAAE8BAAAAAAAAAAAtwFYBAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-20T08:30:43.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MechUpgrades_Burners.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Burners.xml",
+              "RelativeDocumentMoniker": "..\\..\\Defs\\MechUpgradeDefs\\MechUpgrades_Burners.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Burners.xml",
+              "RelativeToolTip": "..\\..\\Defs\\MechUpgradeDefs\\MechUpgrades_Burners.xml",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAAAB8BAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-20T08:29:27.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Designations.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Misc\\Designations\\Designations.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Data\\Core\\Defs\\Misc\\Designations\\Designations.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Misc\\Designations\\Designations.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Data\\Core\\Defs\\Misc\\Designations\\Designations.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-20T08:05:44.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DesignatorDropdownGroupDef.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Misc\\DesignatorDropdownGroupDef\\DesignatorDropdownGroupDef.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Data\\Core\\Defs\\Misc\\DesignatorDropdownGroupDef\\DesignatorDropdownGroupDef.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Misc\\DesignatorDropdownGroupDef\\DesignatorDropdownGroupDef.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Data\\Core\\Defs\\Misc\\DesignatorDropdownGroupDef\\DesignatorDropdownGroupDef.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-20T07:55:23.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Mechanoid.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThinkTreeDefs\\Mechanoid.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Data\\Core\\Defs\\ThinkTreeDefs\\Mechanoid.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThinkTreeDefs\\Mechanoid.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Data\\Core\\Defs\\ThinkTreeDefs\\Mechanoid.xml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-20T07:48:11.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Abilities.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Abilities.cs",
+              "RelativeDocumentMoniker": "Abilities.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Abilities.cs",
+              "RelativeToolTip": "Abilities.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAgwGEAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T07:34:52.749Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

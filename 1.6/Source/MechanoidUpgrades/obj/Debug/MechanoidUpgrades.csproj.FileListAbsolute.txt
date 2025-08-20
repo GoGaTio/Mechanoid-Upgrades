@@ -6,3 +6,7 @@ D:\SteamLibrary\steamapps\common\RimWorld\Mods\MechanoidUpgrade\1.6\Assemblies\M
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\MechanoidUpgrade\1.6\Source\MechanoidUpgrades\obj\Debug\MechanoidUpgrades.csproj.CoreCompileInputs.cache
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\MechanoidUpgrade\1.6\Source\MechanoidUpgrades\obj\Debug\MechanoidUpgrades.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\MechanoidUpgrade\1.6\Source\MechanoidUpgrades\obj\Debug\MechanoidUpgrades.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MechanoidUpgrades\1.6\Assemblies\MechanoidUpgrades.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MechanoidUpgrades\1.6\Source\MechanoidUpgrades\obj\Debug\MechanoidUpgrades.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MechanoidUpgrades\1.6\Source\MechanoidUpgrades\obj\Debug\MechanoidUpgrades.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\MechanoidUpgrades\1.6\Source\MechanoidUpgrades\obj\Debug\MechanoidUpgrades.dll
