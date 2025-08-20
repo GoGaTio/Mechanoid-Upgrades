@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/StatDef[@Name = "MarketValueBase"]/parts</xpath>
+        <value>
+            <li Class="MU.StatPart_Upgrades"/>
+        </value>
+	</Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/StatDef[defName = "RangedWeapon_DamageMultiplier"]/parts</xpath>
+    <value>
+        <li Class="MU.StatPart_FactorFromHolder">
+		  <statDef>MU_RangedDamageFactor</statDef>
+		</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <success>Always</success>
+    <xpath>/Defs/StatDef[defName = "RangedWeapon_RangeMultiplier"]/parts</xpath>
+    <nomatch Class="PatchOperationAdd">
+    <xpath>/Defs/StatDef[defName = "RangedWeapon_RangeMultiplier"]</xpath>
+      <value>
+        <parts>
+          <li Class="MU.StatPart_FactorFromHolder">
+            <statDef>MU_WeaponRangeFactor</statDef>
+          </li>
+        </parts>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/StatDef[defName = "RangedWeapon_RangeMultiplier"]/parts</xpath>
+      <value>
+        <li Class="MU.StatPart_FactorFromHolder">
+          <statDef>MU_WeaponRangeFactor</statDef>
+        </li>
+      </value>
+    </match>
+  </Operation>
+	
+</Patch>

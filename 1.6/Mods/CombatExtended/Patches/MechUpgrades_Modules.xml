@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<!-- Durability Module -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_Module_Robust"]/statFactors/IncomingDamageFactor</xpath>
+		<value>
+			<IncomingDamageFactor>0.8</IncomingDamageFactor>
+		</value>
+	</Operation>
+	
+</Patch>

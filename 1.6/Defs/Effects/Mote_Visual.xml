@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="MU_MechUpgraderMoteBase" ParentName="SubcoreScannerMoteBase" Abstract="True">
+    <graphicData>
+      <color>(1.0, 0.5, 0.2, 0.85)</color>
+      <shaderParameters>
+        <_ScanSpeed>0.9</_ScanSpeed>
+        <_ScanPow>3</_ScanPow>
+      </shaderParameters>
+	  <drawSize>(3.25, 3.25)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MU_MechUpgraderMoteBase">
+    <defName>MU_MechUpgraderGlow_North</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_MechUpgraderGlow_north</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MU_MechUpgraderMoteBase">
+    <defName>MU_MechUpgraderGlow_South</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_MechUpgraderGlow_south</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MU_MechUpgraderMoteBase">
+    <defName>MU_MechUpgraderGlow_East</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_MechUpgraderGlow_east</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MU_MechUpgraderMoteBase">
+    <defName>MU_MechUpgraderGlow_West</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_MechUpgraderGlow_east</texPath>
+      <shaderParameters>
+        <_FlipHorizontally>1</_FlipHorizontally>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef Name="MU_UpgradesAssemblerMoteBase" ParentName="SubcoreScannerMoteBase" Abstract="True">
+    <graphicData>
+      <color>(1.0, 0.5, 0.2, 0.85)</color>
+      <shaderParameters>
+        <_ScanSpeed>1.3</_ScanSpeed>
+        <_ScanPow>1</_ScanPow>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+
+  <!--=============================Basic===================================-->
+  
+  <ThingDef ParentName="MU_UpgradesAssemblerMoteBase">
+    <defName>MU_BasicAssemblerGlow_North</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_BasicAssemblerGlow_north</texPath>
+	  <drawSize>(3, 2)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MU_UpgradesAssemblerMoteBase">
+    <defName>MU_BasicAssemblerGlow_South</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_BasicAssemblerGlow_south</texPath>
+	  <drawSize>(3, 2)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MU_UpgradesAssemblerMoteBase">
+    <defName>MU_BasicAssemblerGlow_East</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_BasicAssemblerGlow_east</texPath>
+	  <drawSize>(2, 3)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MU_UpgradesAssemblerMoteBase">
+    <defName>MU_BasicAssemblerGlow_West</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_BasicAssemblerGlow_west</texPath>
+	  <drawSize>(2, 3)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <!--=============================Advanced===================================-->
+  
+  <ThingDef ParentName="MU_UpgradesAssemblerMoteBase">
+    <defName>MU_AdvancedAssemblerGlow_North</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_AdvancedAssemblerGlow_north</texPath>
+	  <drawSize>(5, 2)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MU_UpgradesAssemblerMoteBase">
+    <defName>MU_AdvancedAssemblerGlow_South</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_AdvancedAssemblerGlow_south</texPath>
+	  <drawSize>(5, 2)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MU_UpgradesAssemblerMoteBase">
+    <defName>MU_AdvancedAssemblerGlow_East</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_AdvancedAssemblerGlow_east</texPath>
+	  <drawSize>(2, 5)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MU_UpgradesAssemblerMoteBase">
+    <defName>MU_AdvancedAssemblerGlow_West</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_AdvancedAssemblerGlow_west</texPath>
+	  <drawSize>(2, 5)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <!--=============================Centrifuge===================================-->
+  
+  <ThingDef ParentName="MU_UpgradesAssemblerMoteBase">
+    <defName>MU_CentrifugeGlow</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_CentrifugeGlow</texPath>
+	  <drawSize>(1, 1)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+</Defs>

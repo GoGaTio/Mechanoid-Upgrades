@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PrefabDef>
+    <defName>MU_AncientFacilityEntrance</defName>
+    <size>(5,5)</size>
+    <things>
+      <MU_AncientFacilityEntrance>
+        <position>(2,0,2)</position>
+      </MU_AncientFacilityEntrance> 
+      <AncientLamp>
+        <positions>
+          <li>(0, 0, 0)</li>
+          <li>(0, 0, 4)</li>
+          <li>(4, 0, 0)</li>
+          <li>(4, 0, 4)</li>
+        </positions>
+        <chance>0.7</chance>
+      </AncientLamp>
+    </things>
+    <terrain>
+      <AncientTile>
+        <rects>
+          <li>(0,0,4,4)</li>
+        </rects>
+      </AncientTile>
+    </terrain>
+  </PrefabDef>
+  
+  <PrefabDef>
+    <defName>MU_AncientMechUpgrader</defName>
+    <size>(5,3)</size>
+    <things>
+      <MU_AncientMechUpgrader>
+        <position>(2,0,2)</position>
+      </MU_AncientMechUpgrader> 
+      <MU_AncientUpgradesStorage>
+        <positions>
+          <li>(0, 0, 1)</li>
+          <li>(4, 0, 1)</li>
+        </positions>
+        <relativeRotation>Counterclockwise</relativeRotation>
+      </MU_AncientUpgradesStorage>
+    </things>
+  </PrefabDef>
+
+  <PrefabDef>
+    <defName>AncientLargeMechGestator</defName>
+    <size>(4,3)</size>
+    <things>
+      <AncientLargeMechGestator>
+        <position>(1, 0, 1)</position>
+      </AncientLargeMechGestator>
+    </things>
+  </PrefabDef>
+
+  <PrefabDef>
+    <defName>MU_AncientLargeUpgradesStorage_Cluster</defName>
+    <size>(4,4)</size>
+    <things>
+      <MU_AncientLargeUpgradesStorage>
+        <positions>
+          <li>(0, 0, 0)</li>
+          <li>(0, 0, 2)</li>
+          <li>(2, 0, 0)</li>
+          <li>(2, 0, 2)</li>
+        </positions>
+      </MU_AncientLargeUpgradesStorage>
+    </things>
+  </PrefabDef>
+
+  <PrefabDef>
+    <defName>MU_AncientBasicUpgradesAssembler</defName>
+    <size>(3,3)</size>
+    <things>
+      <DiningChair>
+        <position>(1,0,0)</position>
+        <stuff>Steel</stuff>
+        <chance>0.8</chance>
+      </DiningChair>
+      <MU_AncientBasicUpgradesAssembler>
+        <position>(1,0,1)</position>
+      </MU_AncientBasicUpgradesAssembler>
+    </things>
+  </PrefabDef>
+
+  <PrefabDef>
+    <defName>MU_AncientAdvancedUpgradesAssembler</defName>
+    <rotations>North</rotations>
+    <size>(5,3)</size>
+    <things>
+      <DiningChair>
+        <position>(2,0,0)</position>
+        <stuff>Steel</stuff>
+        <chance>0.8</chance>
+      </DiningChair>
+      <MU_AncientAdvancedUpgradesAssembler>
+        <position>(2,0,1)</position>
+      </MU_AncientAdvancedUpgradesAssembler>
+    </things>
+  </PrefabDef>
+
+  <PrefabDef>
+    <defName>MU_AncientUpgradesStorage_Edge</defName>
+    <edgeOnly>true</edgeOnly>
+    <size>(2,1)</size>
+    <things>
+      <MU_AncientUpgradesStorage>
+        <position>(1, 0, 0)</position>
+      </MU_AncientUpgradesStorage>
+    </things>
+  </PrefabDef>
+
+  <PrefabDef>
+    <defName>MU_AncientAssemblyCentrifuge</defName>
+    <size>(1,1)</size>
+    <things>
+      <MU_AncientAssemblyCentrifuge>
+        <position>(0, 0, 0)</position>
+      </MU_AncientAssemblyCentrifuge>
+    </things>
+  </PrefabDef>
+
+</Defs>

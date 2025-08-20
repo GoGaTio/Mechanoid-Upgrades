@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ==================== Frag grenade ========================== -->
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>MU_Proj_Grenade_Frag</defName>
+		<label>mechanoid frag grenade</label>
+		<graphicData>
+			<texPath>Things/Projectile/MU_Grenade_Frag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<explosionRadius>1.5</explosionRadius>
+				<damageDef>Bomb</damageDef>
+				<damageAmountBase>65</damageAmountBase>
+				<explosionDelay>40</explosionDelay>
+				<dropsCasings>false</dropsCasings>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<speed>12</speed>
+				<suppressionFactor>3.0</suppressionFactor>
+				<dangerFactor>2.0</dangerFactor>
+				<airborneSuppressionFactor>0.25</airborneSuppressionFactor>
+			</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>47</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+		<defName>MU_Weapon_Grenade_Frag</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>mechanoid frag grenade</label>
+		<description>An advanced frag grenade designed to be used by mechanoids.\nStill can be used by humans.</description>
+		<graphicData>
+			<texPath>Things/Ammo/MU_Grenades/Frag</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<stackLimit>50</stackLimit>
+		<statBases>
+			<Mass>0.4</Mass>
+			<Bulk>1</Bulk>
+			<MarketValue>15</MarketValue>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<generateCommonality>0.1</generateCommonality>
+		<weaponTags>
+			<li>CE_AI_AOE</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw frag grenade</label>
+			<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<range>10.0</range>
+			<minRange>4</minRange>
+			<warmupTime>0.8</warmupTime>
+			<noiseRadius>4</noiseRadius>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<soundCast>ThrowGrenade</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<defaultProjectile>MU_Proj_Grenade_Frag</defaultProjectile>
+			<onlyManualCast>true</onlyManualCast>
+			<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			<ai_AvoidFriendlyFireRadius>7</ai_AvoidFriendlyFireRadius>
+			</li>
+		</verbs>
+      <comps>
+				<li Class="CombatExtended.CompProperties_ExplosiveCE">
+					<damageAmountBase>65</damageAmountBase>
+					<explosiveDamageType>Bomb</explosiveDamageType>
+					<explosiveRadius>1.5</explosiveRadius>
+				</li>
+          <li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>47</Fragment_Small>
+				</fragments>
+			</li> 
+			</comps>
+	</ThingDef>
+
+	<!-- ==================== EMP grenade ========================== -->
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>MU_Proj_Grenade_EMP</defName>
+		<label>mechanoid EMP grenade</label>
+		<graphicData>
+			<texPath>Things/Projectile/MU_Grenade_EMP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<explosionRadius>3</explosionRadius>
+				<damageDef>EMP</damageDef>
+				<damageAmountBase>60</damageAmountBase>
+				<explosionDelay>40</explosionDelay>
+				<dropsCasings>false</dropsCasings>
+				<speed>12</speed>
+				<screenShakeFactor>0</screenShakeFactor>
+				<suppressionFactor>3.0</suppressionFactor>
+				<dangerFactor>2.0</dangerFactor>
+				<airborneSuppressionFactor>0.25</airborneSuppressionFactor>
+			</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+		<defName>MU_Weapon_Grenade_EMP</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>mechanoid EMP grenade</label>
+		<description>An advanced EMP grenade designed to be used by mechanoids.\nStill can be used by humans.</description>
+		<graphicData>
+			<texPath>Things/Ammo/MU_Grenades/EMP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<stackLimit>50</stackLimit>
+		<statBases>
+			<Mass>0.4</Mass>
+			<Bulk>1</Bulk>
+			<MarketValue>17</MarketValue>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CE_AI_EMP</li>
+		</weaponTags>
+     <generateCommonality>0.1</generateCommonality> 
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw EMP grenade</label>
+			<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<range>10</range>
+			<minRange>4</minRange>
+			<warmupTime>0.8</warmupTime>
+			<noiseRadius>4</noiseRadius>
+			<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+			<soundCast>ThrowGrenade</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<defaultProjectile>MU_Proj_Grenade_EMP</defaultProjectile>
+			<onlyManualCast>true</onlyManualCast>
+			<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+			</li>
+		</verbs>
+		<comps>
+				<li Class="CombatExtended.CompProperties_ExplosiveCE">
+					<damageAmountBase>60</damageAmountBase>
+					<explosiveDamageType>EMP</explosiveDamageType>
+					<explosiveRadius>3</explosiveRadius>
+				</li>
+			</comps>
+	</ThingDef>
+
+	<!-- ==================== Incendiary grenade ========================== -->
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>MU_Proj_Grenade_Incendiary</defName>
+		<label>mechanoid incendiary grenade</label>
+		<graphicData>
+			<texPath>Things/Projectile/MU_Grenade_Incendiary</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+				<explosionRadius>2.1</explosionRadius>
+				<damageDef>PrometheumFlame</damageDef>
+				<damageAmountBase>15</damageAmountBase>
+				<explosionDelay>40</explosionDelay>
+				<dropsCasings>false</dropsCasings>
+          <preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>0.75</preExplosionSpawnChance>
+				<speed>12</speed>
+				<ai_IsIncendiary>true</ai_IsIncendiary>
+				<screenShakeFactor>0</screenShakeFactor>
+				<suppressionFactor>3.0</suppressionFactor>
+				<dangerFactor>2.0</dangerFactor>
+				<airborneSuppressionFactor>0.25</airborneSuppressionFactor>
+			</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
+		<defName>MU_Weapon_Grenade_Incendiary</defName>
+		<equipmentType>Primary</equipmentType>
+		<label>mechanoid incendiary grenade</label>
+		<description>An advanced frag grenade designed to be used by mechanoids.\nStill can be used by humans.</description>
+		<graphicData>
+			<texPath>Things/Ammo/MU_Grenades/Incendiary</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<stackLimit>50</stackLimit>
+		<statBases>
+			<Mass>0.4</Mass>
+			<Bulk>1</Bulk>
+			<MarketValue>15</MarketValue>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CE_AI_AOE</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw incendiary grenade</label>
+			<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<range>10</range>
+			<minRange>1.9</minRange>
+			<warmupTime>0.8</warmupTime>
+			<noiseRadius>4</noiseRadius>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<soundCast>ThrowGrenade</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<defaultProjectile>MU_Proj_Grenade_Incendiary</defaultProjectile>
+			<onlyManualCast>true</onlyManualCast>
+			<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+			</li>
+		</verbs>
+     <comps>
+				<li Class="CombatExtended.CompProperties_ExplosiveCE">
+					<damageAmountBase>15</damageAmountBase>
+					<explosiveDamageType>PrometheumFlame</explosiveDamageType>
+					<explosiveRadius>2.1</explosiveRadius>
+					<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+					<preExplosionSpawnChance>0.8</preExplosionSpawnChance>
+				</li>
+			</comps>
+		<detonateProjectile>Proj_GrenadeStickBomb</detonateProjectile>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<VSEWW.RewardDef MayRequire="VanillaStorytellersExpanded.WinstonWave">
+		<defName>MU_MechUpgradesNormal</defName>
+		<texPath>UI/Rewards/MU_RewardUpgrades_Normal</texPath>
+		<label>Mech upgrades drop</label>
+		<description>Receive 4 random C tier upgrades, 2 random B tier upgrades and 2 other random upgrades.</description>
+		<category>Normal</category>
+		<type>Misc</type>
+		<commonality>0.5</commonality>
+		<needsMechanitor>true</needsMechanitor>
+		<randomItems>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_BasicUpgrade</tradeTag>
+				<count>4</count>
+			</li>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_StandardUpgrade</tradeTag>
+				<count>2</count>
+			</li>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_CraftableUpgrade</tradeTag>
+				<count>2</count>
+			</li>
+		</randomItems>
+	</VSEWW.RewardDef>
+
+	<VSEWW.RewardDef MayRequire="VanillaStorytellersExpanded.WinstonWave">
+		<defName>MU_MechUpgradesGood</defName>
+		<texPath>UI/Rewards/MU_RewardUpgrades_Good</texPath>
+		<label>Mech upgrades drop</label>
+		<description>Receive 6 random C tier upgrades, 2 random B tier upgrades, 1 random A tier upgrade and 4 other random upgrades.</description>
+		<category>Good</category>
+		<type>Misc</type>
+		<commonality>0.5</commonality>
+		<needsMechanitor>true</needsMechanitor>
+		<randomItems>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_BasicUpgrade</tradeTag>
+				<count>6</count>
+			</li>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_StandardUpgrade</tradeTag>
+				<count>2</count>
+			</li>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_AdvancedUpgrade</tradeTag>
+				<count>1</count>
+			</li>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_CraftableUpgrade</tradeTag>
+				<count>3</count>
+			</li>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_Upgrade</tradeTag>
+				<count>1</count>
+			</li>
+		</randomItems>
+	</VSEWW.RewardDef>
+
+	<VSEWW.RewardDef MayRequire="VanillaStorytellersExpanded.WinstonWave">
+		<defName>MU_MechUpgradesExcellent</defName>
+		<texPath>UI/Rewards/MU_RewardUpgrades_Excellent</texPath>
+		<label>Mech upgrades drop</label>
+		<description>Receive 4 random C tier upgrades, 4 random B tier upgrades, 4 random A tier upgrade and 6 other random upgrades.</description>
+		<category>Excellent</category>
+		<type>Misc</type>
+		<commonality>0.5</commonality>
+		<needsMechanitor>true</needsMechanitor>
+		<randomItems>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_BasicUpgrade</tradeTag>
+				<count>4</count>
+			</li>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_StandardUpgrade</tradeTag>
+				<count>4</count>
+			</li>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_AdvancedUpgrade</tradeTag>
+				<count>4</count>
+			</li>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_CraftableUpgrade</tradeTag>
+				<count>4</count>
+			</li>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_Upgrade</tradeTag>
+				<count>2</count>
+			</li>
+		</randomItems>
+	</VSEWW.RewardDef>
+
+	<VSEWW.RewardDef MayRequire="VanillaStorytellersExpanded.WinstonWave">
+		<defName>MU_MechUpgradesLegendary</defName>
+		<texPath>UI/Rewards/MU_RewardUpgrades_Legendary</texPath>
+		<label>Mech upgrades drop</label>
+		<description>Receive 6 random C tier upgrades, 10 random B tier upgrades, 6 random A tier upgrade and 15 other random upgrades.</description>
+		<category>Legendary</category>
+		<type>Misc</type>
+		<commonality>0.5</commonality>
+		<needsMechanitor>true</needsMechanitor>
+		<randomItems>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_BasicUpgrade</tradeTag>
+				<count>6</count>
+			</li>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_StandardUpgrade</tradeTag>
+				<count>10</count>
+			</li>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_AdvancedUpgrade</tradeTag>
+				<count>6</count>
+			</li>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_CraftableUpgrade</tradeTag>
+				<count>10</count>
+			</li>
+			<li>
+				<thingCategories>
+					<li>MU_Upgrades</li>
+				</thingCategories>
+				<tradeTag>MU_Upgrade</tradeTag>
+				<count>5</count>
+			</li>
+		</randomItems>
+	</VSEWW.RewardDef>
+
+</Defs>

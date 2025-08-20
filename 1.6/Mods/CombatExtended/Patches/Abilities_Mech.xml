@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Mini Burner -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/AbilityDef[defName="MU_ChemfuelBurner"]/comps/li[@Class="CompProperties_AbilityFireSpew"]/damAmount</xpath>
+	</Operation>
+	
+	<!-- Flamethrower -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/AbilityDef[defName="MU_ChemfuelFlamethrower"]/comps/li[@Class="CompProperties_AbilityFireSpew"]/damAmount</xpath>
+	</Operation>
+	
+	<!-- Jump Launcher -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="MU_JumpLauncher"]/verbProperties/range</xpath>
+		<value>
+			<range>24.9</range>
+		</value>
+	</Operation>
+	
+</Patch>

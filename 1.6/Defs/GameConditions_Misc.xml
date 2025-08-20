@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GameConditionDef>
+    <defName>MU_MechAdvancement</defName>
+    <conditionClass>MU.GameCondition_UpgradesChange</conditionClass>
+    <label>reinforced mechs</label>
+    <description>All mechanoids are upgraded.</description>
+    <descriptionFuture>all mechanoids will be upgraded</descriptionFuture>
+    <letterText>All mechanoids now have upgrades.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+    <natural>false</natural>
+    <displayOnUI>false</displayOnUI>
+  </GameConditionDef>
+
+</Defs>

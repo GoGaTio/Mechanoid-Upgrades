@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkGiverDef>
+    <defName>MU_HaulToStorage</defName>
+    <label>haul upgrades</label>
+    <giverClass>MU.WorkGiver_HaulToUpgradeStorage</giverClass>
+    <workType>Hauling</workType>
+    <verb>bank</verb>
+    <gerund>banking</gerund>
+    <priorityInType>101</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>MU_DoBillsUpgradeCrafter</defName>
+    <label>make upgrades</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Smithing</workType>
+    <priorityInType>195</priorityInType>
+    <fixedBillGiverDefs>
+      <li>MU_BasicUpgradesAssembler</li>
+	  <li>MU_AdvancedUpgradesAssembler</li>
+    </fixedBillGiverDefs>
+    <verb>work</verb>
+    <gerund>working at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+    <canBeDoneByMechs>true</canBeDoneByMechs>
+  </WorkGiverDef>
+
+</Defs>

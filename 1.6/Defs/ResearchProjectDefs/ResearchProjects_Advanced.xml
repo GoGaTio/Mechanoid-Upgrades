@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef Abstract="True" Name="MU_AdvancedBase">
+    <techLevel>Ultra</techLevel>
+    <requiresMechanitor>true</requiresMechanitor>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <tab>MU</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MU_AdvancedBase">
+    <defName>MU_AdvancedUpgrades</defName>
+    <label>advanced upgrades</label>
+    <description>Create advanced upgrades for mechanoids.</description>
+    <baseCost>1650</baseCost>
+    <prerequisites>
+      <li>UltraMechtech</li>
+      <li>MU_StandardUpgrades</li>
+    </prerequisites>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>2.80</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->advanced mech upgrades</li>
+
+        <li>subject_story->moved into the development of microelectronics</li>
+        
+        <li>subject_gerund->crafting advanced upgrades</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="MU_AdvancedBase">
+    <defName>MU_AdvancedChips</defName>
+    <label>advanced mechanoid chips</label>
+    <description>Work with complex microelectronics. This unlocks the hi-tech research bench and comms console.</description>
+    <baseCost>850</baseCost>
+    <prerequisites>
+      <li>MU_AdvancedUpgrades</li>
+      <li>MU_StandardChips</li>
+    </prerequisites>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->advanced mech upgrades</li>
+
+        <li>subject_story->moved into the development of microelectronics</li>
+       
+        <li>subject_gerund->crafting advanced upgrades</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="MU_AdvancedBase">
+    <defName>MU_AdvancedModules</defName>
+    <label>advanced mechanoid modules</label>
+    <description>Create advanced mechanoid modules.</description>
+    <baseCost>900</baseCost>
+    <prerequisites>
+      <li>MU_AdvancedUpgrades</li>
+	  <li>MU_StandardModules</li>
+    </prerequisites>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->standard modules</li>
+
+        <li>subject_story->created special modules for mechanoids</li>
+        
+        <li>subject_gerund->crafting standard modules</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MU_AdvancedBase">
+    <defName>MU_AdvancedArmor</defName>
+    <label>advanced mechanoid armor</label>
+    <description>Work with complex microelectronics. This unlocks the hi-tech research bench and comms console.</description>
+    <baseCost>800</baseCost>
+    <prerequisites>
+      <li>MU_AdvancedUpgrades</li>
+      <li>MU_StandardArmor</li>
+    </prerequisites>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>2.10</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->advanced mech upgrades</li>
+
+        <li>subject_story->moved into the development of microelectronics</li>
+        
+        <li>subject_gerund->crafting advanced upgrades</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="MU_AdvancedBase">
+    <defName>MU_AdvancedShields</defName>
+    <label>advanced mechanoid shields</label>
+    <description>Create advanced mechanoid shields.</description>
+    <baseCost>1250</baseCost>
+    <prerequisites>
+      <li>MU_AdvancedUpgrades</li>
+	  <li>MU_StandardShields</li>
+    </prerequisites>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>1.75</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->advanced mechanoid shields</li>
+
+        <li>subject_story->created shields for assault mechanoids</li>
+       
+        <li>subject_gerund->crafting advanced shields</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MU_AdvancedBase">
+    <defName>MU_ShieldBooster</defName>
+    <label>shield booster</label>
+    <description>Create advanced shield boosters that make shield much more durable to damage for a short period of time.</description>
+    <baseCost>1000</baseCost>
+    <prerequisites>
+      <li>MU_AdvancedUpgrades</li>
+    </prerequisites>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->shield boosters</li>
+
+        <li>subject_story->moved into the development of microelectronics</li>
+        
+        <li>subject_gerund->crafting advanced upgrades</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+</Defs>

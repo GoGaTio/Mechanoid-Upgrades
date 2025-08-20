@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/MechWeightClassDef[defName = "Light"]</xpath>
+        <value>
+            <li Class="MU.MechWeightClassExtension">
+				<upgradabilityFactor>0.7</upgradabilityFactor>
+			</li>
+        </value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/MechWeightClassDef[defName = "Medium"]</xpath>
+        <value>
+            <li Class="MU.MechWeightClassExtension">
+				<upgradabilityFactor>1</upgradabilityFactor>
+			</li>
+        </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/MechWeightClassDef[defName = "Heavy"]</xpath>
+        <value>
+            <li Class="MU.MechWeightClassExtension">
+				<upgradabilityFactor>1.05</upgradabilityFactor>
+			</li>
+        </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/MechWeightClassDef[defName = "UltraHeavy"]</xpath>
+        <value>
+            <li Class="MU.MechWeightClassExtension">
+				<upgradabilityFactor>1.2</upgradabilityFactor>
+			</li>
+        </value>
+	</Operation>
+	
+</Patch>

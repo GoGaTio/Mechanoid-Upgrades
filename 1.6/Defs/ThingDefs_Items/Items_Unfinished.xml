@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="MU_UnfinishedUpgradeBase" ParentName="UnfinishedBase" Abstract="True">
+    <statBases>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+  
+  <ThingDef ParentName="MU_UnfinishedUpgradeBase">
+    <defName>MU_UnfinishedUpgrade_Misc</defName>
+    <label>unfinished mechanoid upgrade</label>
+    <description>An unfinished mechanoid upgrade.</description>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/MU_UnfinishedModule</texPath>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="MU_UnfinishedUpgradeBase">
+    <defName>MU_UnfinishedUpgrade_Chip</defName>
+    <label>unfinished mechanoid chip</label>
+    <description>An unfinished mechanoid upgrade chip.</description>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/MU_UnfinishedMechChip</texPath>
+	  <drawSize>(0.7, 0.7)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="MU_UnfinishedUpgradeBase">
+    <defName>MU_UnfinishedUpgrade_Armor_Small</defName>
+    <label>unfinished small mecharmor</label>
+    <description>An unfinished mechanoid armor.</description>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/MU_UnfinishedSmallArmor</texPath>
+	  <drawSize>(1, 1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="MU_UnfinishedUpgradeBase">
+    <defName>MU_UnfinishedUpgrade_Armor_Medium</defName>
+    <label>unfinished medium mecharmor</label>
+    <description>An unfinished mechanoid armor.</description>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/MU_UnfinishedMediumArmor</texPath>
+	  <drawSize>(1, 1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="MU_UnfinishedUpgradeBase">
+    <defName>MU_UnfinishedUpgrade_Armor_Large</defName>
+    <label>unfinished large mecharmor</label>
+    <description>An unfinished mechanoid armor.</description>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/MU_UnfinishedLargeArmor</texPath>
+	  <drawSize>(1, 1)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="MU_UnfinishedUpgradeBase">
+    <defName>MU_UnfinishedUpgrade_Armor_UltraLarge</defName>
+    <label>unfinished ultra large mecharmor</label>
+    <description>An unfinished mechanoid armor.</description>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/MU_UnfinishedUltraLargeArmor</texPath>
+	  <drawSize>(1.25, 1.25)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="MU_UnfinishedUpgradeBase">
+    <defName>MU_UnfinishedUpgrade_Shield</defName>
+    <label>unfinished mechanoid shield</label>
+    <description>An unfinished mechanoid shield.</description>
+    <statBases>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/MU_UnfinishedShield</texPath>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="MU_UnfinishedUpgradeBase">
+    <defName>MU_UnfinishedUpgrade_Module</defName>
+    <label>unfinished mechanoid module</label>
+    <description>An unfinished mechanoid module.</description>
+    <statBases>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/MU_UnfinishedModule</texPath>
+	  <drawSize>(0.85, 0.85)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+</Defs>

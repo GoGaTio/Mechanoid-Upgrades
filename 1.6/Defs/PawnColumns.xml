@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnColumnDef>
+    <defName>MU_AutoReload</defName>
+    <label>auto reload</label>
+    <workerClass>MU.PawnColumnWorker_AutoReload</workerClass>
+    <paintable>true</paintable>
+  </PawnColumnDef>
+
+</Defs>

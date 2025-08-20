@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingSetMakerDef[defName="Reward_ItemsStandard"]/root/options/li[1]/thingSetMaker/options</xpath>
+		<value>
+			<li>
+                <weight>0.5</weight>
+                <thingSetMaker Class="ThingSetMaker_MarketValue">
+                  <fixedParams>
+                    <allowNonStackableDuplicates>False</allowNonStackableDuplicates>
+                    <filter>
+						<!--<thingSetMakerTagsToAllow>
+							<li>MU_UpgradePacks</li>
+						</thingSetMakerTagsToAllow>-->
+						<thingDefs>
+							<li>MU_RemoteControlChip</li>
+							<li>MU_Module_Robust</li>
+						</thingDefs>
+                    </filter>
+                  </fixedParams>
+                </thingSetMaker>
+			</li>			<li>                <weight>0.7</weight>                <thingSetMaker Class="ThingSetMaker_MarketValue">                  <fixedParams>                    <allowNonStackableDuplicates>False</allowNonStackableDuplicates>                    <filter>						<thingSetMakerTagsToAllow>							<li>MU_AdvancedUpgrades</li>						</thingSetMakerTagsToAllow>                    </filter>                  </fixedParams>                </thingSetMaker>			</li>
+		</value>
+	</Operation>       <Operation Class="PatchOperationConditional">    <xpath>Defs/ThingSetMakerDef[root[@Class = "ThingSetMaker_Sum"] and defName = "MapGen_AncientTempleContents"]</xpath>    <match Class="PatchOperationAdd">      <xpath>Defs/ThingSetMakerDef[defName = "MapGen_AncientTempleContents"]/root/options</xpath>      <value>        <li>          <chance>0.175</chance>           <thingSetMaker Class="ThingSetMaker_Count">            <fixedParams>              <filter>                <thingSetMakerTagsToAllow>                  <li>MU_AdvancedUpgrades</li>                </thingSetMakerTagsToAllow>              </filter>            </fixedParams>          </thingSetMaker>        </li>        <li>          <chance>0.05</chance>           <thingSetMaker Class="ThingSetMaker_Count">            <fixedParams>              <filter>                <thingSetMakerTagsToAllow>                  <li>MU_UpgradePacks</li>                </thingSetMakerTagsToAllow>              </filter>            </fixedParams>          </thingSetMaker>        </li>        <li>          <chance>0.075</chance>           <thingSetMaker Class="ThingSetMaker_StackCount">            <fixedParams>              <filter>                <thingDefs>                  <li>MU_RemoteControlChip</li>                  <li>MU_Module_Robust</li>                </thingDefs>              </filter>              <countRange>1~1</countRange>            </fixedParams>          </thingSetMaker>        </li>      </value>    </match>    <nomatch Class="PatchOperationAdd">      <xpath>Defs/ThingSetMakerDef[defName = "MapGen_AncientTempleContents"]/root/options</xpath>      <value>        <li>          <weight>0.175</weight>           <thingSetMaker Class="ThingSetMaker_Count">            <fixedParams>              <filter>                <thingSetMakerTagsToAllow>                  <li>MU_AdvancedUpgrades</li>                </thingSetMakerTagsToAllow>              </filter>            </fixedParams>          </thingSetMaker>        </li>        <li>          <weight>0.05</weight>           <thingSetMaker Class="ThingSetMaker_Count">            <fixedParams>              <filter>                <thingSetMakerTagsToAllow>                  <li>MU_UpgradePacks</li>                </thingSetMakerTagsToAllow>              </filter>            </fixedParams>          </thingSetMaker>        </li>        <li>          <weight>0.075</weight>           <thingSetMaker Class="ThingSetMaker_StackCount">            <fixedParams>              <filter>                <thingDefs>                  <li>MU_RemoteControlChip</li>                  <li>MU_Module_Robust</li>                </thingDefs>              </filter>              <countRange>1~1</countRange>            </fixedParams>          </thingSetMaker>        </li>      </value>    </nomatch>  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingSetMakerDef[defName = "MapGen_AncientComplexRoomLoot_Default"]/root/options</xpath>
+    <value>
+        <li>
+          <weight>0.1</weight>
+          <thingSetMaker Class="ThingSetMaker_Count">
+            <fixedParams>
+              <filter>
+                <thingSetMakerTagsToAllow>
+                  <li>MU_StandardUpgrades</li>
+                </thingSetMakerTagsToAllow>
+              </filter>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+    </value>
+  </Operation> 
+	
+</Patch>

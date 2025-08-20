@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ConceptDef>
+    <defName>MU_MechanoidUpgrades</defName>
+    <label>Mechanoid upgrades</label>
+    <helpText>All installed mechanoid upgrades can be seen in the “Upgrades” tab.\n\nResearch "basic upgrades" technology in the "mechanoid upgrades" research tab and build mech upgrader to install upgrades.\n\nEnemy mechs also can arrive upgraded, the amount of their upgrades can be changed in mod settings.</helpText>
+    <priority>50</priority>
+    <needsOpportunity>true</needsOpportunity>
+  </ConceptDef>
+  
+  <ConceptDef>
+    <defName>MU_MechUpgradeTab</defName>
+    <label>Upgrades tab</label>
+    <helpText>In «Upgrades» tab you can see all installed upgrades and their characteristics. There you can also see the upgradability stat for a specific mechanoid. The number of upgrades that can be installed depends on it. Each upgrade requires a different upgradability, that can be found in its description.\n\nNot all upgrades can be installed on all mechanoids: some require a certain body size or other features. A list of mechanoids on which specific upgrade can be installed can be seen in its description.</helpText>
+    <priority>50</priority>
+    <needsOpportunity>true</needsOpportunity>
+	<highlightTags>
+      <li>ITab-MU_Upgrades-Open</li>
+    </highlightTags>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>MU_MechUpgrader</defName>
+    <label>Upgrades inatallation</label>
+    <helpText>To upgrade your mechanoids you need to put them into mech upgrader and choose upgrades for installation by mechanitor.\n\nUpgrades should be in storage connected to upgrader to uae them.\n\nProcess will last for some time, but you can cancel it if you really need mech, all not installed upgrades will be put back into storages.</helpText>
+    <priority>50</priority>
+    <needsOpportunity>true</needsOpportunity>
+    <highlightTags>
+      <li>Designator-Build-MU_MechUpgrader</li>
+    </highlightTags>
+  </ConceptDef>
+
+</Defs>

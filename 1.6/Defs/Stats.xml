@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <StatCategoryDef>
+    <defName>MU_MechUpgrade_Offsets</defName>
+    <label>Offsets from upgrade</label>
+    <displayOrder>71</displayOrder>
+  </StatCategoryDef>
+  
+  <StatCategoryDef>
+    <defName>MU_MechUpgrade_Factors</defName>
+    <label>Factors from upgrade</label>
+    <displayOrder>72</displayOrder>
+  </StatCategoryDef>
+  
+  <StatCategoryDef>
+    <defName>MU_MechUpgrades</defName>
+    <label>Mechanoid upgrade</label>
+    <displayOrder>70</displayOrder>
+  </StatCategoryDef>
+  
+  <StatDef>
+    <defName>MU_Upgradability</defName>
+    <label>upgradability</label>
+    <description>Amount of upgrades that can be added to this mechanoid.</description>
+    <category>Mechanoid</category>
+    <defaultBaseValue>8</defaultBaseValue>
+	<workerClass>MU.StatWorker_Upgradability</workerClass>
+    <minValue>0</minValue>
+	<hideAtValue>0</hideAtValue>
+	<displayPriorityInCategory>8754</displayPriorityInCategory>
+    <toStringStyle>Integer</toStringStyle>
+    <showOnHumanlikes>false</showOnHumanlikes>
+    <showOnAnimals>false</showOnAnimals>
+    <showOnMechanoids>true</showOnMechanoids>
+    <showOnEntities>false</showOnEntities>
+    <parts>
+      <li Class="MU.StatPart_AdjustableBaseValue"/><!--Should be first in any case-->
+	  <li Class="MU.StatPart_UpgradesFromComp"/>
+	  <li Class="MU.StatPart_UpgradesFromBodySize"/>
+	  <li Class="MU.StatPart_UpgradesFromWeightClass"/>
+	  <li Class="MU.StatPart_RoundToInt"/>
+    </parts>
+  </StatDef>
+
+  <StatDef>
+    <defName>MU_UpgradeCreatingSpeed</defName>
+    <label>upgrades creating speed</label>
+    <description>The speed at which this person creates mechanoid upgrades.</description>
+    <category>PawnWork</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <minValue>0.1</minValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <statFactors>
+      <li>WorkSpeedGlobal</li>
+    </statFactors>
+    <skillNeedFactors>
+      <li Class="SkillNeed_BaseBonus">
+        <skill>Crafting</skill>
+        <baseValue>0.3</baseValue>
+        <bonusPerLevel>0.0875</bonusPerLevel>
+      </li>
+    </skillNeedFactors>
+    <capacityFactors>
+      <li>
+        <capacity>Manipulation</capacity>
+        <weight>1</weight>
+      </li>
+      <li>
+        <capacity>Sight</capacity>
+        <weight>0.2</weight>
+        <max>1</max>
+      </li>
+    </capacityFactors>
+    <scenarioRandomizable>true</scenarioRandomizable>
+    <displayPriorityInCategory>4602</displayPriorityInCategory>
+    <showOnPawnKind>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Mech_Fabricor</li>
+    </showOnPawnKind>    
+  </StatDef>
+  
+  <StatDef>
+    <defName>MU_RangedDamageFactor</defName>
+    <label>ranged damage multiplier</label>
+    <description>A damage multiplier applied to projectiles fired from weapon held by this creature.</description>
+    <category>PawnCombat</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <minValue>0.01</minValue>
+	<hideAtValue>1</hideAtValue>
+	<displayPriorityInCategory>4041</displayPriorityInCategory>
+    <toStringStyle>PercentZero</toStringStyle>
+    <showOnHumanlikes>true</showOnHumanlikes>
+    <showOnAnimals>false</showOnAnimals>
+    <showOnMechanoids>true</showOnMechanoids>
+    <showOnEntities>false</showOnEntities>
+	<scenarioRandomizable>true</scenarioRandomizable>
+  </StatDef>
+  
+  <StatDef>
+    <defName>MU_WeaponRangeFactor</defName>
+    <label>weapon range multiplier</label>
+    <description>A range multiplier applied to weapon held by this creature.</description>
+    <category>PawnCombat</category>
+    <defaultBaseValue>1</defaultBaseValue>
+    <minValue>0.01</minValue>
+	<hideAtValue>1</hideAtValue>
+	<displayPriorityInCategory>4041</displayPriorityInCategory>
+    <toStringStyle>PercentZero</toStringStyle>
+    <showOnHumanlikes>true</showOnHumanlikes>
+    <showOnAnimals>false</showOnAnimals>
+    <showOnMechanoids>true</showOnMechanoids>
+    <showOnEntities>false</showOnEntities>
+	<scenarioRandomizable>true</scenarioRandomizable>
+  </StatDef>
+  
+  <StatDef>
+    <defName>MU_CarriedMassOffset</defName>
+    <label>carried mass offset</label>
+    <description>An extra mass, this creature can carry.</description>
+    <category>BasicsPawn</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <minValue>0</minValue>
+	<hideAtValue>0</hideAtValue>
+    <toStringStyle>FloatOne</toStringStyle>
+	<formatString>{0} kg</formatString>
+    <showOnHumanlikes>true</showOnHumanlikes>
+    <showOnAnimals>true</showOnAnimals>
+    <showOnMechanoids>true</showOnMechanoids>
+    <showOnEntities>false</showOnEntities>
+	<scenarioRandomizable>true</scenarioRandomizable>
+  </StatDef>
+  
+  <HediffDef>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defName>MU_RangedDamageFactor_Hediff_Test</defName>
+    <label>crutch</label>
+    <description>Just a crutch to make ranged damage multiplier stat changable</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2500~3000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statFactors>
+          <MU_RangedDamageFactor>1.2</MU_RangedDamageFactor>
+		  <MU_WeaponRangeFactor>0.9</MU_WeaponRangeFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

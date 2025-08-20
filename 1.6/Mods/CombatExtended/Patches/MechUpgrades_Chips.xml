@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Melee Chips -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Melee_A"]/statOffsets/MeleeHitChance</xpath>
+		<value>
+			<MeleeHitChance>10.5</MeleeHitChance>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Melee_B"]/statOffsets/MeleeHitChance</xpath>
+		<value>
+			<MeleeHitChance>6</MeleeHitChance>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Melee_C"]/statOffsets/MeleeHitChance</xpath>
+		<value>
+			<MeleeHitChance>2.5</MeleeHitChance>
+		</value>
+	</Operation>
+	
+	<!-- Dodge Chip -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Dodge_A"]/statOffsets/MeleeDodgeChance</xpath>
+		<value>
+			<MeleeDodgeChance>0.20</MeleeDodgeChance>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Dodge_B"]/statOffsets/MeleeDodgeChance</xpath>
+		<value>
+			<MeleeDodgeChance>0.10</MeleeDodgeChance>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Dodge_C"]/statOffsets/MeleeDodgeChance</xpath>
+		<value>
+			<MeleeDodgeChance>0.05</MeleeDodgeChance>
+		</value>
+	</Operation>
+	
+	<!-- Accuracy Chip -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Ranged_A"]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<AimingAccuracy>0.5</AimingAccuracy>
+				<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+			</statOffsets>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Ranged_B"]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<AimingAccuracy>0.25</AimingAccuracy>
+				<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+			</statOffsets>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Ranged_C"]/statOffsets</xpath>
+		<value>
+			<statOffsets>
+				<AimingAccuracy>0.1</AimingAccuracy>
+				<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+			</statOffsets>
+		</value>
+	</Operation>
+	
+	<!-- Aiming Chip -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Aiming_A"]/statFactors</xpath>
+		<value>
+			<statOffsets>
+				<AimingDelayFactor>-0.25</AimingDelayFactor>
+			</statOffsets>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Aiming_B"]/statFactors</xpath>
+		<value>
+			<statOffsets>
+				<AimingDelayFactor>-0.15</AimingDelayFactor>
+			</statOffsets>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Aiming_C"]/statFactors</xpath>
+		<value>
+			<statOffsets>
+				<AimingDelayFactor>-0.05</AimingDelayFactor>
+			</statOffsets>
+		</value>
+	</Operation>
+	
+	<!-- Reload Chip -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Reload_A"]/statFactors/RangedCooldownFactor</xpath>
+		<value>
+			<ReloadSpeed>1.25</ReloadSpeed>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Reload_B"]/statFactors/RangedCooldownFactor</xpath>
+		<value>
+			<ReloadSpeed>1.15</ReloadSpeed>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_MechChip_Reload_C"]/statFactors/RangedCooldownFactor</xpath>
+		<value>
+			<ReloadSpeed>1.05</ReloadSpeed>
+		</value>
+	</Operation>
+	
+</Patch>

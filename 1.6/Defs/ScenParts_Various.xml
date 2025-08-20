@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenPartDef>
+    <defName>MU_UpgradeStartingMech</defName>
+    <label>upgrades for mechs</label>
+    <scenPartClass>MU.ScenPart_Upgrades</scenPartClass>
+    <category>StartingImportant</category>
+    <selectionWeight>0</selectionWeight>
+    <summaryPriority>140</summaryPriority>
+  </ScenPartDef>
+
+</Defs>

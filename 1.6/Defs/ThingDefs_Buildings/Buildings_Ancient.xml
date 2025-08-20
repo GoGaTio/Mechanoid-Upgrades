@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="AncientMechBuildingBase">
+    <defName>MU_AncientAssemblyCentrifuge</defName>
+    <label>ancient assembly centrifuge</label>
+    <description>An ancient toxifier generator. Valuable parts are missing, and everything else is degraded to uselessness.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/MU_AssemblyCentrifuge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <fillPercent>0.35</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+  </ThingDef>
+
+  <ThingDef ParentName="AncientMechBuildingBase">
+    <defName>MU_AncientMechUpgrader</defName>
+    <label>ancient mech upgrader</label>
+    <description>An ancient mech upgrader. Valuable parts are missing, and everything else is degraded to uselessness.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/MU_MechUpgrader/MU_MechUpgrader</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(3, 0.4, 3)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(3,3)</size>
+    <rotatable>true</rotatable>
+    <fillPercent>0.35</fillPercent>
+    <thingClass>MU.Building_AncientMechUpgrader</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <tickerType>Normal</tickerType>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+    </statBases>
+    <building>
+      <deconstructible>false</deconstructible>
+      <alwaysDeconstructible>false</alwaysDeconstructible>
+    </building>
+    <killedLeavings>
+      <ChunkSlagSteel>3</ChunkSlagSteel>
+    </killedLeavings>
+  </ThingDef>
+
+  <ThingDef ParentName="AncientMechBuildingBase">
+    <defName>MU_AncientBasicUpgradesAssembler</defName>
+    <label>ancient basic upgrades assembler</label>
+    <description>An ancient basic upgrades assembler. Valuable parts are missing, and everything else is degraded to uselessness.</description>
+    <rotatable>true</rotatable>
+    <graphicData>
+      <texPath>Things/Building/Ruins/MU_BasicUpgradesAssembler/MU_BasicUpgradesAssembler</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+      <shadowData>
+        <volume>(3, 2, 1.9)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(3,2)</size>
+    <fillPercent>0.3</fillPercent>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+    </statBases>
+    <killedLeavings>
+      <ChunkSlagSteel>2</ChunkSlagSteel>
+    </killedLeavings>
+  </ThingDef>
+
+  <ThingDef ParentName="AncientMechBuildingBase">
+    <defName>MU_AncientAdvancedUpgradesAssembler</defName>
+    <label>ancient advanced upgrades assembler</label>
+    <description>An ancient advanced upgrades assembler. Valuable parts are missing, and everything else is degraded to uselessness.</description>
+    <rotatable>true</rotatable>
+    <graphicData>
+      <texPath>Things/Building/Ruins/MU_AdvancedUpgradesAssembler/MU_AdvancedUpgradesAssembler</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,2)</drawSize>
+      <shadowData>
+        <volume>(5, 2, 1.9)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(5,2)</size>
+    <fillPercent>0.3</fillPercent>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+    </statBases>
+    <killedLeavings>
+      <ChunkSlagSteel>3</ChunkSlagSteel>
+    </killedLeavings>
+  </ThingDef>
+
+  <ThingDef ParentName="AncientMechBuildingBase">
+    <defName>MU_AncientUpgradesStorage</defName>
+    <label>ancient upgrades storage</label>
+    <description>An ancient upgrades storage. Valuable parts are missing, and everything else is degraded to uselessness.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/MU_UpgradesStorage/MU_UpgradesStorage</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,1)</drawSize>
+      <shadowData>
+        <volume>(1.7, 0.3, 0.85)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(2,1)</size>
+    <rotatable>true</rotatable>
+    <thingClass>Building_Crate</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+    </statBases>
+    <building>
+      <deconstructible>false</deconstructible>
+      <alwaysDeconstructible>false</alwaysDeconstructible>
+      <openingStartedSound>Building_Deconstructed</openingStartedSound>
+    </building>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+    <comps>
+      <li Class="CompProperties_EmptyStateGraphic">
+        <graphicData>
+          <texPath>Things/Building/Ancient/OpenableContainers/AirdropPallet_Open</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(2,1)</drawSize>
+        </graphicData>
+      </li>
+      <li Class="CompProperties_LootSpawn">
+        <contents>MU_Reward_AncientUpgradesStorage</contents>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="AncientMechBuildingBase">
+    <defName>MU_AncientLargeUpgradesStorage</defName>
+    <label>ancient large upgrades storage</label>
+    <description>An ancient large upgrades storage. Valuable parts are missing, and everything else is degraded to uselessness.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruins/MU_UpgradesStorage_Large/MU_UpgradesStorage_Large</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(1.7, 0.3, 1.7)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(2,2)</size>
+    <thingClass>Building_Crate</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+    </statBases>
+    <building>
+      <deconstructible>false</deconstructible>
+      <alwaysDeconstructible>false</alwaysDeconstructible>
+      <openingStartedSound>Building_Deconstructed</openingStartedSound>
+    </building>
+    <killedLeavings>
+      <ChunkSlagSteel>2</ChunkSlagSteel>
+    </killedLeavings>
+    <comps>
+      <li Class="CompProperties_EmptyStateGraphic">
+        <graphicData>
+          <texPath>Things/Building/Ancient/OpenableContainers/AirdropPallet_Open</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(2,2)</drawSize>
+        </graphicData>
+      </li>
+      <li Class="CompProperties_LootSpawn">
+        <contents>MU_Reward_AncientLargeUpgradesStorage</contents>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="NonBuildableLampBase">
+    <defName>MU_AncientEmergencyLight</defName>
+    <label>ancient light</label>
+    <description>An ancient light containing a long-lasting battery.</description>
+    <rotatable>true</rotatable>
+    <graphicData>
+      <texPath>Things/Building/MU_EmergencyLight/AncientEmergencyLight</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+      <drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+      <drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>35</MaxHitPoints>
+      <Mass>2</Mass>
+    </statBases>
+    <passability>Standable</passability>
+    <terrainAffordanceNeeded IsNull="True" />
+    <pathCost>0</pathCost>
+    <overrideMinifiedRot>North</overrideMinifiedRot>
+    <minifiedDrawOffset>(0, 0, 0.2)</minifiedDrawOffset>
+    <building>
+      <isEdifice>false</isEdifice>
+      <isAttachment>true</isAttachment>
+      <claimable>false</claimable>
+    </building>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>11</glowRadius>
+        <glowColor>(224, 54, 54, 0)</glowColor>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>Placeworker_AttachedToWall</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MU_AncientFacilityEntrance</defName>
+    <label>ancient facility entrance</label>
+    <description>The entrance to a long-abandoned subterranean facility. Hack it to open the hatch.</description>
+    <size>(3,3)</size>
+    <useHitPoints>false</useHitPoints>
+    <thingClass>MU.AncientFacilityEntrance</thingClass>
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/MU_AncientFacilityEntrance/AncientHatch_Closed</texPath>
+      <drawSize>(3, 3)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <fillPercent>0</fillPercent>
+    <passability>Impassable</passability>
+    <holdsRoof>true</holdsRoof>
+    <destroyable>false</destroyable>
+    <building>
+      <isEdifice>true</isEdifice>
+      <alwaysDeconstructible>false</alwaysDeconstructible>
+      <deconstructible>false</deconstructible>
+      <isTargetable>false</isTargetable>
+      <isInert>true</isInert>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+    </building>
+    <portal>
+      <pocketMapGenerator>MU_AncientFacility</pocketMapGenerator>
+      <exitDef>MU_AncientFacilityExit</exitDef>
+      <pocketMapSize>75</pocketMapSize>
+    </portal>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hackable">
+        <defence>4000</defence>
+        <effectHacking>HackingTerminal</effectHacking>
+        <lockoutDurationHoursRange>6~18</lockoutDurationHoursRange>
+        <showProgressAfterHackCompletion>false</showProgressAfterHackCompletion>
+        <notHackedInspectString>Hack to open.</notHackedInspectString>
+        <intellectualSkillPrerequisite>4</intellectualSkillPrerequisite>
+        <hackingCompletedSound>AncientHatchOpened</hackingCompletedSound>
+        <hackedMessage>{HACKER_labelShort} has finished hacking {SUBJECT_labelNoParenthesisDef}.</hackedMessage>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(239,133,50,0)</glowColor>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_ContentsMapPortal</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef ParentName="PocketMapExit">
+    <defName>MU_AncientFacilityExit</defName>
+    <label>ancient facility exit</label>
+    <description>A ladder which links to the surface hatch above.</description>
+    <size>(3,3)</size>
+    <drawerType>RealtimeOnly</drawerType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/MU_AncientFacilityEntrance/AncientHatch_Open</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <comps>
+      <!--<li Class="CompProperties_DrawAdditionalGraphics">
+        <graphics>
+          <li>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/AncientHatchExit/AncientHatchExit_Ladder</texPath>
+            <drawSize>(3,3)</drawSize>
+            <drawOffset>(0, 0.01, 0.7)</drawOffset>
+            <shaderType>Transparent</shaderType>
+          </li>
+        </graphics>
+      </li>-->
+    </comps>
+  </ThingDef>
+
+</Defs>

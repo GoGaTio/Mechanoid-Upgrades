@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Cargo cells -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_CargoCell_Small"]/statOffsets/MU_CarriedMassOffset</xpath>
+		<value>
+			<CarryWeight>20</CarryWeight>
+			<CarryBulk>20</CarryBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_CargoCell_Double"]/statOffsets/MU_CarriedMassOffset</xpath>
+		<value>
+			<CarryWeight>40</CarryWeight>
+			<CarryBulk>40</CarryBulk>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/MU.MechUpgradeDef[defName="MU_CargoCell_Large"]/statOffsets/MU_CarriedMassOffset</xpath>
+		<value>
+			<CarryWeight>95</CarryWeight>
+			<CarryBulk>95</CarryBulk>
+		</value>
+	</Operation>
+	
+</Patch>

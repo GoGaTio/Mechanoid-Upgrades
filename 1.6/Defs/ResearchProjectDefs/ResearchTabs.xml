@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchTabDef>
+    <defName>MU</defName>
+    <label>mechanoid upgrades</label>
+    <generalTitle>Mechanoid upgrades</generalTitle>
+    <generalDescription>Unlock mechanoid-related technologies by researching at a research bench.</generalDescription>
+  </ResearchTabDef>
+
+</Defs>

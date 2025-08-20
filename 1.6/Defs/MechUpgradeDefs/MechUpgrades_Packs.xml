@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="MU_MechPackItemBase" ParentName="MU_MechUpgradeItemCraftable" Abstract="True">
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>7</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>24000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+	  <displayPriority>9000</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef Name="MU_MechPackBase" Abstract="True">
+    <exclusionTags>
+	  <li>Pack</li>
+	</exclusionTags>
+	<upgradePoints>1</upgradePoints>
+	<maxBodySize>1.6</maxBodySize>
+	<minBodySize>0.7</minBodySize>
+	<restrictions>
+	  <li Class="MU.UpgradeRestriction_HaveBodyParts">
+        <tag>ManipulationLimbDigit</tag>
+		<invert>false</invert>
+      </li>
+	</restrictions>
+	<comps>
+	   <li Class="MU.UpgradeCompProperties_Graphics">
+		<graphicOptions>
+		  <li>
+			<mech>Mech_Scyther</mech>
+			<props>
+			  <parentTagDef>Body</parentTagDef>
+			  <drawSize>(0.4, 0.4)</drawSize>
+			  <baseLayer>5</baseLayer>
+			  <pawnType>Any</pawnType>
+			  <drawData>
+                <dataNorth>
+                  <offset>(0, 0, 0)</offset>
+                </dataNorth>
+                <dataEast><offset>(-0.4, 0, 0)</offset></dataEast>
+                <dataSouth>
+				  <layer>-5</layer>
+				</dataSouth>
+                <dataWest><offset>(0.4, 0, 0)</offset></dataWest>
+              </drawData>
+			</props>
+		  </li>
+		</graphicOptions>
+		<defaultProps>
+			  <parentTagDef>Body</parentTagDef>
+			  <drawSize>(0.4, 0.4)</drawSize>
+			  <baseLayer>5</baseLayer>
+			  <pawnType>Any</pawnType>
+			  <drawData>
+                <dataNorth>
+                  <offset>(0, 0, 0)</offset>
+                </dataNorth>
+                <dataEast><offset>(-0.4, 0, 0)</offset></dataEast>
+                <dataSouth>
+				  <layer>-5</layer>
+				</dataSouth>
+                <dataWest><offset>(0.4, 0, 0)</offset></dataWest>
+              </drawData>
+		</defaultProps>
+      </li>
+	  <!--<li Class="MU.UpgradeCompProperties_SingleGraphic">
+		<texPaths>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/EMPGrenades</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/FragGrenades</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/SmokeGrenades</li>
+		  <li>Things/Pawn/MechanoidUpgrades/Grenades/ToxGrenades</li>
+		</texPaths>
+      </li>-->
+	</comps>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_MechPackItemBase">
+    <defName>MU_CommandPack</defName>
+    <label>command pack</label>
+    <description>A utility pack for mechanoid that rebroadcast mechanitor command signals, creating additional control area.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_CommandPack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <costList>
+      <SubcoreHigh>1</SubcoreHigh>
+	  <ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>4</ComponentIndustrial>
+	  <Plasteel>30</Plasteel>
+	  <Steel>50</Steel>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_CommandPack</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>35000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>MU_CommandExtenders</researchPrerequisite>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<tradeTags>
+	  <li>MU_CommandUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MechPackBase">
+    <defName>MU_CommandPack</defName>
+    <label>command pack</label>
+    <description>A utility pack for mechanoid that rebroadcast mechanitor command signals, creating additional control area.</description>
+	<uiIconPath>Things/Item/MechanoidUpgrade/MU_CommandPack</uiIconPath>
+	<linkedThingDef>MU_CommandPack</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_SingleGraphic">
+		<texPaths>
+		  <li>Things/Pawn/MechanoidUpgrades/CommandPack/CommandPack</li>
+		</texPaths>
+		<drawSize>(1, 1)</drawSize>
+      </li>
+	</comps>
+	<allowRemoteControl>true</allowRemoteControl>
+	<commandRange>10.9</commandRange>
+	<commonality>0</commonality>
+	<upgradePoints>2</upgradePoints>
+  </MU.MechUpgradeDef>
+  
+  <!--=================================================Firefoam pack==============================================================-->
+  
+  <ThingDef ParentName="MU_MechPackItemBase">
+    <defName>MU_FirefoamPopPack</defName>
+    <label>firefoam pop pack</label>
+    <description>A utility pack for mechanoid. When triggered, a burst of fire-retardant foam is released, covering a wide circle around its wearer.</description>
+	<graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/FirefoamPack/FirefoamPack</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+	  <Chemfuel>30</Chemfuel>
+	  <Steel>40</Steel>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_FirefoamPopPack</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>10000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>MU_BasicUpgrades</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MechPackBase">
+    <defName>MU_FirefoamPopPack</defName>
+    <label>firefoam pop pack</label>
+    <description>A utility pack for mechanoid. When triggered, a burst of fire-retardant foam is released, covering a wide circle around its wearer.</description>
+	<uiIconPath>Things/Pawn/Humanlike/Apparel/FirefoamPack/FirefoamPack</uiIconPath>
+	<linkedThingDef>MU_FirefoamPopPack</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_SingleGraphic">
+		<texPaths>
+		  <li>Things/Pawn/Humanlike/Apparel/FirefoamPack/FirefoamPack</li>
+		</texPaths>
+		<drawSize>(1, 1)</drawSize>
+      </li>
+	</comps>
+	<commonality>0</commonality>
+	<ability>MU_FirefoamPopPack</ability>
+  </MU.MechUpgradeDef>
+  
+  <AbilityDef>
+    <defName>MU_FirefoamPopPack</defName>
+    <label>firefoam pop</label>
+    <description>Release a fire-retardant foam in a circular area.</description>
+    <iconPath>UI/Abilities/MechFirefoamPop</iconPath>
+    <charges>1</charges>
+    <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+    <targetRequired>false</targetRequired>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0</warmupTime>
+      <requireLineOfSight>false</requireLineOfSight>
+      <drawAimPie>false</drawAimPie>      
+      <range>4.9</range>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityFirefoampop">
+        <firefoamRadius>4.9</firefoamRadius>
+        <clamorType>Ability</clamorType>
+        <clamorRadius>15</clamorRadius>
+      </li>
+	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+        <ammoDef>Chemfuel</ammoDef>
+		<ammoCount>30</ammoCount>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <!--=================================================Smoke pack==============================================================-->
+  
+  <ThingDef ParentName="MU_MechPackItemBase">
+    <defName>MU_SmokePopPack</defName>
+    <label>smoke pop pack</label>
+    <description>A utility pack for mechanoid. When activated, it will release a cloud of smoke, obscuring incoming shots and preventing turrets from locking on.</description>
+	<graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/SmokepopPack/SmokepopPack_north</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.75, 0.75)</drawSize>
+    </graphicData>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+	  <Chemfuel>30</Chemfuel>
+	  <Steel>50</Steel>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_SmokePopPack</upgradeDef>
+      </li>
+    </comps>
+	<statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+	  <WorkToMake>10000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>MU_BasicUpgrades</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MechPackBase">
+    <defName>MU_SmokePopPack</defName>
+    <label>firefoam pop pack</label>
+    <description>A utility pack for mechanoid. When activated, it will release a cloud of smoke, obscuring incoming shots and preventing turrets from locking on.</description>
+	<uiIconPath>Things/Pawn/Humanlike/Apparel/SmokepopPack/SmokepopPack_north</uiIconPath>
+	<linkedThingDef>MU_SmokePopPack</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_SingleGraphic">
+		<texPaths>
+		  <li>Things/Pawn/Humanlike/Apparel/SmokepopPack/SmokepopPack</li>
+		</texPaths>
+		<drawSize>(0.7, 0.7)</drawSize>
+      </li>
+	</comps>
+	<commonality>0</commonality>
+	<ability>MU_SmokePopPack</ability>
+  </MU.MechUpgradeDef>
+  
+  <AbilityDef>
+    <defName>MU_SmokePopPack</defName>
+    <label>smoke pop</label>
+    <description>Release compressed smoke from concealed vents. Smoke reduces the accuracy of any shot fired through it, and prevents turrets from locking on entirely.</description>
+    <iconPath>UI/Abilities/MechSmokepop</iconPath>
+    <charges>3</charges>
+    <targetRequired>false</targetRequired>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0</warmupTime>
+      <range>4.9</range>
+      <drawAimPie>false</drawAimPie>   
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast> 
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilitySmokepop">
+        <smokeRadius>4.9</smokeRadius>
+        <clamorType>Ability</clamorType>
+        <clamorRadius>15</clamorRadius>
+      </li>
+	  <li Class="MU.CompProperties_AbilityReloadableUpgrade">
+        <ammoDef>Chemfuel</ammoDef>
+		<ammoCount>10</ammoCount>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

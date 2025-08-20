@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <MU.MechUpgradeDef Name="MU_MechShieldBase" Abstract="True">
+    <exclusionTags>
+	  <li>PersonalShield</li>
+	</exclusionTags>
+	<commonality>0.7</commonality>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef Name="MU_MechShieldItemBase" ParentName="MU_MechUpgradeItemCraftable" Abstract="True">
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.5</Flammability>
+	  <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+	<graphicData>
+       <graphicClass>Graphic_Single</graphicClass>
+	   <drawSize>(0.85, 0.85)</drawSize>
+    </graphicData>
+	<recipeMaker>
+	  <unfinishedThingDef>MU_UnfinishedUpgrade_Shield</unfinishedThingDef>
+	  <recipeUsers Inherit="False">
+        <li>MU_BasicUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingCategories Inherit="False">
+      <li>MU_Shields</li>
+    </thingCategories>
+	<tradeTags>
+	  <li>MU_ShieldBubble</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef Name="MU_BasicMechShieldItemBase" ParentName="MU_MechShieldItemBase" Abstract="True">
+    <statBases>
+      <Flammability>0.5</Flammability>
+	  <WorkToMake>15000</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <displayPriority>1500</displayPriority>
+	  <researchPrerequisite>MU_BasicShields</researchPrerequisite>
+    </recipeMaker>
+	<thingSetMakerTags>
+      <li>MU_BasicUpgrades</li>
+	  <li>MU_BasicShields</li>
+    </thingSetMakerTags>
+	<techLevel>Industrial</techLevel>
+	<tradeTags>
+	  <li>MU_BasicUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef Name="MU_StandardMechShieldItemBase" ParentName="MU_MechShieldItemBase" Abstract="True">
+    <statBases>
+      <Flammability>0.25</Flammability>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <displayPriority>1510</displayPriority>
+	  <researchPrerequisite>MU_StandardShields</researchPrerequisite>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags>
+      <li>MU_StandardUpgrades</li>
+	  <li>MU_StandardShields</li>
+    </thingSetMakerTags>
+	<techLevel>Spacer</techLevel>
+	<tradeTags>
+	  <li>MU_StandardUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef Name="MU_AdvancedMechShieldItemBase" ParentName="MU_MechShieldItemBase" Abstract="True">
+    <statBases>
+      <Flammability>0</Flammability>
+	  <WorkToMake>23500</WorkToMake>
+    </statBases>
+	<recipeMaker>
+      <displayPriority>1520</displayPriority>
+	  <researchPrerequisite>MU_AdvancedShields</researchPrerequisite>
+	  <recipeUsers Inherit="False">
+        <li>MU_AdvancedUpgradesAssembler</li>
+      </recipeUsers>
+    </recipeMaker>
+	<thingSetMakerTags>
+      <li>MU_AdvancedUpgrades</li>
+	  <li>MU_AdvancedShields</li>
+    </thingSetMakerTags>
+	<techLevel>Ultra</techLevel>
+	<tradeTags>
+	  <li>MU_AdvancedUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <!--=========================================Small===============================================-->
+
+  <MU.MechUpgradeDef Name="MU_SmallShieldBase" ParentName="MU_MechShieldBase" Abstract="True">
+	<upgradePoints>1</upgradePoints>
+	<minBodySize>0.3</minBodySize>
+	<maxBodySize>1</maxBodySize>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_AdvancedMechShieldItemBase">
+    <defName>MU_Shield_Small_A</defName>
+    <label>small shield tier A</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_Shield_Small</texPath>
+      <drawSize>(0.85, 0.85)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Small_A</uiIconPath>
+	<costList>
+      <PowerfocusChip>1</PowerfocusChip>
+      <ComponentIndustrial>2</ComponentIndustrial>
+	  <Plasteel>20</Plasteel>
+    </costList>
+	<statBases>
+	  <WorkToMake>17500</WorkToMake>
+    </statBases>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_Shield_Small_A</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_SmallShieldBase">
+    <defName>MU_Shield_Small_A</defName>
+    <label>small shield tier A</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Small_A</uiIconPath>
+	<linkedThingDef>MU_Shield_Small_A</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_Shield">
+        <energyLossPerDamage>0.033</energyLossPerDamage>
+		<energyOnReset>0.8</energyOnReset>
+		<baseMaxEnergy>1.7</baseMaxEnergy>
+		<baseEnergyGain>0.12</baseEnergyGain>
+		<startingTicksToReset>1800</startingTicksToReset>
+      </li>
+	</comps>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_StandardMechShieldItemBase">
+    <defName>MU_Shield_Small_B</defName>
+    <label>small shield tier B</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_Shield_Small</texPath>
+      <drawSize>(0.85, 0.85)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Small_B</uiIconPath>
+	<costList>
+	  <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>3</ComponentIndustrial>
+	  <Plasteel>15</Plasteel>
+	  <Steel>10</Steel>
+    </costList>
+	<statBases>
+	  <WorkToMake>13500</WorkToMake>
+    </statBases>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_Shield_Small_B</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_SmallShieldBase">
+    <defName>MU_Shield_Small_B</defName>
+    <label>small shield tier B</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Small_B</uiIconPath>
+	<linkedThingDef>MU_Shield_Small_B</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_Shield">
+        <energyLossPerDamage>0.033</energyLossPerDamage>
+		<energyOnReset>0.1</energyOnReset>
+		<baseMaxEnergy>1.1</baseMaxEnergy>
+		<baseEnergyGain>0.11</baseEnergyGain>
+		<startingTicksToReset>2200</startingTicksToReset>
+      </li>
+	</comps>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_BasicMechShieldItemBase">
+    <defName>MU_Shield_Small_C</defName>
+    <label>small shield tier C</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_Shield_Small</texPath>
+      <drawSize>(0.85, 0.85)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Small_C</uiIconPath>
+	<costList>
+      <ComponentIndustrial>3</ComponentIndustrial>
+	  <Plasteel>10</Plasteel>
+	  <Steel>20</Steel>
+    </costList>
+     <statBases>
+	  <WorkToMake>9750</WorkToMake>
+    </statBases>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_Shield_Small_C</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_SmallShieldBase">
+    <defName>MU_Shield_Small_C</defName>
+    <label>small shield tier C</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Small_C</uiIconPath>
+	<linkedThingDef>MU_Shield_Small_C</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_Shield">
+        <energyLossPerDamage>0.033</energyLossPerDamage>
+		<energyOnReset>0.05</energyOnReset>
+		<baseMaxEnergy>0.8</baseMaxEnergy>
+		<baseEnergyGain>0.1</baseEnergyGain>
+		<startingTicksToReset>2600</startingTicksToReset>
+      </li>
+	</comps>
+  </MU.MechUpgradeDef>
+  
+  <!--=========================================Medium===============================================-->
+  
+  <MU.MechUpgradeDef Name="MU_MediumShieldBase" ParentName="MU_MechShieldBase" Abstract="True">
+	<upgradePoints>2</upgradePoints>
+	<minBodySize>1</minBodySize>
+	<maxBodySize>2</maxBodySize>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_AdvancedMechShieldItemBase">
+    <defName>MU_Shield_Medium_A</defName>
+    <label>medium shield tier A</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_Shield_Medium</texPath>
+      <drawSize>(0.85, 0.85)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Medium_A</uiIconPath>
+	<costList>
+      <PowerfocusChip>1</PowerfocusChip>
+	  <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>2</ComponentIndustrial>
+	  <Plasteel>20</Plasteel>
+	  <Steel>10</Steel>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_Shield_Medium_A</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MediumShieldBase">
+    <defName>MU_Shield_Medium_A</defName>
+    <label>medium shield tier A</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Medium_A</uiIconPath>
+	<linkedThingDef>MU_Shield_Medium_A</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_Shield">
+        <energyLossPerDamage>0.033</energyLossPerDamage>
+		<energyOnReset>1.9</energyOnReset>
+		<baseMaxEnergy>1.9</baseMaxEnergy>
+		<baseEnergyGain>0.15</baseEnergyGain>
+		<startingTicksToReset>2300</startingTicksToReset>
+		<minDrawSize>1.9</minDrawSize>
+		<maxDrawSize>2.2</maxDrawSize>
+      </li>
+	</comps>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_StandardMechShieldItemBase">
+    <defName>MU_Shield_Medium_B</defName>
+    <label>medium shield tier B</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_Shield_Medium</texPath>
+      <drawSize>(0.85, 0.85)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Medium_B</uiIconPath>
+	<costList>
+	  <ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>2</ComponentIndustrial>
+	  <Plasteel>20</Plasteel>
+	  <Steel>20</Steel>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_Shield_Medium_B</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MediumShieldBase">
+    <defName>MU_Shield_Medium_B</defName>
+    <label>medium shield tier B</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Medium_B</uiIconPath>
+	<linkedThingDef>MU_Shield_Medium_B</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_Shield">
+        <energyLossPerDamage>0.033</energyLossPerDamage>
+		<energyOnReset>0.9</energyOnReset>
+		<baseMaxEnergy>1.3</baseMaxEnergy>
+		<baseEnergyGain>0.3</baseEnergyGain>
+		<startingTicksToReset>2700</startingTicksToReset>
+		<minDrawSize>1.9</minDrawSize>
+		<maxDrawSize>2.2</maxDrawSize>
+      </li>
+	</comps>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_BasicMechShieldItemBase">
+    <defName>MU_Shield_Medium_C</defName>
+    <label>medium shield tier C</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_Shield_Medium</texPath>
+      <drawSize>(0.85, 0.85)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Medium_C</uiIconPath>
+	<costList>
+      <ComponentIndustrial>3</ComponentIndustrial>
+	  <Plasteel>10</Plasteel>
+	  <Steel>30</Steel>
+    </costList>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_Shield_Medium_C</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_MediumShieldBase">
+    <defName>MU_Shield_Medium_C</defName>
+    <label>medium shield tier C</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Medium_C</uiIconPath>
+	<linkedThingDef>MU_Shield_Medium_C</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_Shield">
+        <energyLossPerDamage>0.033</energyLossPerDamage>
+		<energyOnReset>0.5</energyOnReset>
+		<baseMaxEnergy>1</baseMaxEnergy>
+		<baseEnergyGain>0.1</baseEnergyGain>
+		<startingTicksToReset>3000</startingTicksToReset>
+		<minDrawSize>1.9</minDrawSize>
+		<maxDrawSize>2.2</maxDrawSize>
+      </li>
+	</comps>
+  </MU.MechUpgradeDef>
+  
+  <!--=========================================Large===============================================-->
+  
+  <MU.MechUpgradeDef Name="MU_LargeShieldBase" ParentName="MU_MechShieldBase" Abstract="True">
+	<upgradePoints>4</upgradePoints>
+	<minBodySize>2</minBodySize>
+	<maxBodySize>6</maxBodySize>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_AdvancedMechShieldItemBase">
+    <defName>MU_Shield_Large_A</defName>
+    <label>large shield tier A</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_Shield_Large</texPath>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Large_A</uiIconPath>
+	<costList>
+      <PowerfocusChip>1</PowerfocusChip>
+	  <ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>4</ComponentIndustrial>
+	  <Plasteel>70</Plasteel>
+	  <Steel>90</Steel>
+    </costList>
+    <statBases>
+	  <WorkToMake>32500</WorkToMake>
+    </statBases>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_Shield_Large_A</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_LargeShieldBase">
+    <defName>MU_Shield_Large_A</defName>
+    <label>large shield tier A</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Large_A</uiIconPath>
+	<linkedThingDef>MU_Shield_Large_A</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_Shield">
+        <energyLossPerDamage>0.033</energyLossPerDamage>
+		<energyOnReset>2</energyOnReset>
+		<baseMaxEnergy>2</baseMaxEnergy>
+		<baseEnergyGain>0.19</baseEnergyGain>
+		<startingTicksToReset>2300</startingTicksToReset>
+		<minDrawSize>2.9</minDrawSize>
+		<maxDrawSize>3.2</maxDrawSize>
+      </li>
+	</comps>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_StandardMechShieldItemBase">
+    <defName>MU_Shield_Large_B</defName>
+    <label>large shield tier B</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_Shield_Large</texPath>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Large_B</uiIconPath>
+	<costList>
+	  <ComponentSpacer>3</ComponentSpacer>
+      <ComponentIndustrial>7</ComponentIndustrial>
+	  <Plasteel>50</Plasteel>
+	  <Steel>90</Steel>
+    </costList>
+	<statBases>
+	  <WorkToMake>25000</WorkToMake>
+    </statBases>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_Shield_Large_B</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_LargeShieldBase">
+    <defName>MU_Shield_Large_B</defName>
+    <label>large shield tier B</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Large_B</uiIconPath>
+	<linkedThingDef>MU_Shield_Large_B</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_Shield">
+        <energyLossPerDamage>0.033</energyLossPerDamage>
+		<energyOnReset>0.8</energyOnReset>
+		<baseMaxEnergy>1.5</baseMaxEnergy>
+		<baseEnergyGain>0.14</baseEnergyGain>
+		<startingTicksToReset>2700</startingTicksToReset>
+		<minDrawSize>2.8</minDrawSize>
+		<maxDrawSize>3.2</maxDrawSize>
+      </li>
+	</comps>
+  </MU.MechUpgradeDef>
+  
+  <ThingDef ParentName="MU_BasicMechShieldItemBase">
+    <defName>MU_Shield_Large_C</defName>
+    <label>large shield tier C</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_Shield_Large</texPath>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Large_C</uiIconPath>
+	<costList>
+      <ComponentIndustrial>8</ComponentIndustrial>
+	  <Plasteel>30</Plasteel>
+	  <Steel>70</Steel>
+    </costList>
+	<statBases>
+	  <WorkToMake>20000</WorkToMake>
+    </statBases>
+	<comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>MU_Shield_Large_C</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <MU.MechUpgradeDef ParentName="MU_LargeShieldBase">
+    <defName>MU_Shield_Large_C</defName>
+    <label>large shield tier C</label>
+    <description>A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP.</description>
+	<uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Large_C</uiIconPath>
+	<linkedThingDef>MU_Shield_Large_C</linkedThingDef>
+	<comps>
+	  <li Class="MU.UpgradeCompProperties_Shield">
+        <energyLossPerDamage>0.033</energyLossPerDamage>
+		<energyOnReset>0.5</energyOnReset>
+		<baseMaxEnergy>1.1</baseMaxEnergy>
+		<baseEnergyGain>0.12</baseEnergyGain>
+		<startingTicksToReset>3000</startingTicksToReset>
+		<minDrawSize>2.8</minDrawSize>
+		<maxDrawSize>3.2</maxDrawSize>
+      </li>
+	</comps>
+  </MU.MechUpgradeDef>
+
+</Defs>

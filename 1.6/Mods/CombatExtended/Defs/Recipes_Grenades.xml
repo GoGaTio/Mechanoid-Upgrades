@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RecipeDef ParentName="GrenadeRecipeBase">
+		<defName>MU_MakeFragGrenade</defName>
+		<label>make mechanoid frag grenades x10</label>
+		<description>Craft 10 mechanoid frag grenades.</description>
+		<jobString>Making frag grenades.</jobString>
+		<researchPrerequisites>
+			<li>MU_Grenades</li>
+        <li>Machining</li>
+		</researchPrerequisites>
+		<workAmount>3800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MU_Weapon_Grenade_Frag>10</MU_Weapon_Grenade_Frag>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GrenadeRecipeBase">
+		<defName>MU_MakeIncendiaryGrenade</defName>
+		<label>make mechanoid incendiary grenades x10</label>
+		<description>Craft 10 mechanoid incendiary grenades.</description>
+		<jobString>Making incendiary grenades.</jobString>
+		<workAmount>4500</workAmount>
+		<researchPrerequisites>
+			<li>MU_Grenades</li>
+			<li>Machining</li>
+		</researchPrerequisites>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Prometheum</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MU_Weapon_Grenade_Incendiary>10</MU_Weapon_Grenade_Incendiary>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GrenadeRecipeBase">
+		<defName>MU_MakeEMPGrenade</defName>
+		<label>make mechanoid EMP grenades x10</label>
+		<description>Craft 10 mechanoid EMP grenades.</description>
+		<jobString>Making EMP grenades.</jobString>
+		<researchPrerequisites>
+			<li>MU_Grenades</li>
+			<li>Machining</li>
+		</researchPrerequisites>
+		<workAmount>4500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>7</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Weapon_GrenadeEMP>10</Weapon_GrenadeEMP>
+		</products>
+	</RecipeDef>
+
+</Defs>

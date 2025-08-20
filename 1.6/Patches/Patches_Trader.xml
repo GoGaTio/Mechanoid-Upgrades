@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TraderKindDef[
+       defName = "Caravan_Neolithic_ShamanMerchant" or
+       defName = "Base_Outlander_Standard" or
+       defName = "Caravan_Outlander_Exotic" or
+       defName = "Orbital_BulkGoods" or
+       defName = "Orbital_PirateMerchant" or
+       defName = "Caravan_Personamech_BulkGoods"
+        ]/stockGenerators</xpath>
+        <value>
+           <li Class="StockGenerator_MarketValue">
+             <tradeTag>MU_BasicUpgrade</tradeTag>
+             <countRange>-5~2</countRange>
+           </li>
+           <li Class="StockGenerator_MarketValue">
+              <tradeTag>MU_StandardUpgrade</tradeTag>
+              <countRange>-7~1</countRange>
+           </li>
+        </value>
+	</Operation>
+
+   <Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TraderKindDef[
+       defName = "Base_Empire_Standard" or
+       defName = "Empire_Caravan_TraderGeneral" or
+       defName = "Orbital_Empire"
+        ]/stockGenerators</xpath>
+        <value>
+           <li Class="StockGenerator_MarketValue">
+             <tradeTag>MU_StandardUpgrade</tradeTag>
+             <countRange>-7~4</countRange>
+           </li>
+           <li Class="StockGenerator_MarketValue">
+              <tradeTag>MU_AdvancedUpgrade</tradeTag>
+              <countRange>-7~2</countRange>
+           </li>
+        </value>
+	</Operation>
+
+   <Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TraderKindDef[
+       defName = "Orbital_Exotic" or
+       defName = "Orbital_CombatSupplier" or
+       defName = "Base_Personamech_Standard" or
+       defName = "Caravan_Personamech_Exotic" or
+       defName = "Caravan_Personamech_CombatSupplier"
+        ]/stockGenerators</xpath>
+        <value>
+           <li Class="StockGenerator_MarketValue">
+             <tradeTag>MU_BasicUpgrade</tradeTag>
+             <countRange>-7~4</countRange>
+           </li>
+           <li Class="StockGenerator_MarketValue">
+              <tradeTag>MU_StandardUpgrade</tradeTag>
+              <countRange>-8~4</countRange>
+           </li>
+           <li Class="StockGenerator_MarketValue">
+              <tradeTag>MU_AdvancedUpgrade</tradeTag>
+              <countRange>-6~2</countRange>
+           </li>
+        </value>
+	</Operation>
+	
+</Patch>

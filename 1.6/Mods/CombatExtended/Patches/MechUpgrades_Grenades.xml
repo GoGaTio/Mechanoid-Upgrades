@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="MU_FragGrenade" or defName="MU_IncendiaryGrenade" or defName="MU_EMPGrenade"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="MU_FragGrenades"]/comps/li[@Class="MU.CompProperties_AbilityReloadableUpgrade"]/ammoDef</xpath>
+		<value>
+			<ammoDef>MU_Weapon_Grenade_Frag</ammoDef>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="MU_IncendiaryGrenades"]/comps/li[@Class="MU.CompProperties_AbilityReloadableUpgrade"]/ammoDef</xpath>
+		<value>
+			<ammoDef>MU_Weapon_Grenade_Incendiary</ammoDef>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="MU_EMPGrenades"]/comps/li[@Class="MU.CompProperties_AbilityReloadableUpgrade"]/ammoDef</xpath>
+		<value>
+			<ammoDef>MU_Weapon_Grenade_EMP</ammoDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="MU_FragGrenades" or defName="MU_IncendiaryGrenades" or defName="MU_EMPGrenades"]/comps/li[@Class="MU.CompProperties_AbilityReloadableUpgrade"]/ammoCount</xpath>
+		<value>
+			<ammoCount>1</ammoCount>
+		</value>
+	</Operation>
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="MU_FragGrenades"]/comps/li[@Class="MU.CompProperties_AbilityProjectileWithMissRadius"]</xpath>
+		<value>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>MU_Proj_Grenade_Frag</projectileDef>
+			</li>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="MU_IncendiaryGrenades"]/comps/li[@Class="MU.CompProperties_AbilityProjectileWithMissRadius"]</xpath>
+		<value>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>MU_Proj_Grenade_Incendiary</projectileDef>
+			</li>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="MU_EMPGrenades"]/comps/li[@Class="MU.CompProperties_AbilityProjectileWithMissRadius"]</xpath>
+		<value>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>MU_Proj_Grenade_EMP</projectileDef>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MU_FragGrenades"]/costList/Steel</xpath>
+		<value>
+			<Steel>5</Steel>
+        <MU_Weapon_Grenade_Frag>3</MU_Weapon_Grenade_Frag>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MU_IncendiaryGrenades"]/costList/Chemfuel</xpath>
+		<value>
+			<MU_Weapon_Grenade_Incendiary>3</MU_Weapon_Grenade_Incendiary>
+		</value>
+	</Operation>
+
+   <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MU_EMPGrenades"]/costList/Steel</xpath>
+		<value>
+			<Steel>5</Steel>
+        <MU_Weapon_Grenade_EMP>3</MU_Weapon_Grenade_EMP>
+		</value>
+	</Operation>
+
+</Patch>
