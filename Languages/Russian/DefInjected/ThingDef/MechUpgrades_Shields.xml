@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Small -->
+	
+	<!-- EN: small shield tier A -->
+	<MU_Shield_Small_A.label>малый щит класс A</MU_Shield_Small_A.label>
+	<!-- EN: A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP. -->
+	<MU_Shield_Small_A.description>Генератор защитного поля, устанавливаемый в механоида. Останавливает баллистические снаряды и осколки, но бесполезен против рукопашных атак и высокотемпературных воздействий. Мгновенно отключается от ЭМИ.</MU_Shield_Small_A.description>
+	
+	<!-- EN: small shield tier B -->
+	<MU_Shield_Small_B.label>малый щит класс B</MU_Shield_Small_B.label>
+	<!-- EN: A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP. -->
+	<MU_Shield_Small_B.description>Генератор защитного поля, устанавливаемый в механоида. Останавливает баллистические снаряды и осколки, но бесполезен против рукопашных атак и высокотемпературных воздействий. Мгновенно отключается от ЭМИ.</MU_Shield_Small_B.description>
+	
+	<!-- EN: small shield tier C -->
+	<MU_Shield_Small_C.label>малый щит класс C</MU_Shield_Small_C.label>
+	<!-- EN: A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP. -->
+	<MU_Shield_Small_C.description>Генератор защитного поля, устанавливаемый в механоида. Останавливает баллистические снаряды и осколки, но бесполезен против рукопашных атак и высокотемпературных воздействий. Мгновенно отключается от ЭМИ.</MU_Shield_Small_C.description>
+	
+	<!-- Medium -->
+	
+	<!-- EN: medium shield tier A -->
+	<MU_Shield_Medium_A.label>средний щит класс A</MU_Shield_Medium_A.label>
+	<!-- EN: A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP. -->
+	<MU_Shield_Medium_A.description>Генератор защитного поля, устанавливаемый в механоида. Останавливает баллистические снаряды и осколки, но бесполезен против рукопашных атак и высокотемпературных воздействий. Мгновенно отключается от ЭМИ.</MU_Shield_Medium_A.description>
+	
+	<!-- EN: medium shield tier B -->
+	<MU_Shield_Medium_B.label>средний щит класс B</MU_Shield_Medium_B.label>
+	<!-- EN: A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP. -->
+	<MU_Shield_Medium_B.description>Генератор защитного поля, устанавливаемый в механоида. Останавливает баллистические снаряды и осколки, но бесполезен против рукопашных атак и высокотемпературных воздействий. Мгновенно отключается от ЭМИ.</MU_Shield_Medium_B.description>
+	
+	<!-- EN: medium shield tier C -->
+	<MU_Shield_Medium_C.label>средний щит класс C</MU_Shield_Medium_C.label>
+	<!-- EN: A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP. -->
+	<MU_Shield_Medium_C.description>Генератор защитного поля, устанавливаемый в механоида. Останавливает баллистические снаряды и осколки, но бесполезен против рукопашных атак и высокотемпературных воздействий. Мгновенно отключается от ЭМИ.</MU_Shield_Medium_C.description>
+	
+	<!-- Large -->
+	
+	<!-- EN: large shield tier A -->
+	<MU_Shield_Large_A.label>большой щит класс A</MU_Shield_Large_A.label>
+	<!-- EN: A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP. -->
+	<MU_Shield_Large_A.description>Генератор защитного поля, устанавливаемый в механоида. Останавливает баллистические снаряды и осколки, но бесполезен против рукопашных атак и высокотемпературных воздействий. Мгновенно отключается от ЭМИ.</MU_Shield_Large_A.description>
+	
+	<!-- EN: large shield tier B -->
+	<MU_Shield_Large_B.label>большой щит класс B</MU_Shield_Large_B.label>
+	<!-- EN: A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP. -->
+	<MU_Shield_Large_B.description>Генератор защитного поля, устанавливаемый в механоида. Останавливает баллистические снаряды и осколки, но бесполезен против рукопашных атак и высокотемпературных воздействий. Мгновенно отключается от ЭМИ.</MU_Shield_Large_B.description>
+	
+	<!-- EN: large shield tier C -->
+	<MU_Shield_Large_C.label>большой щит класс C</MU_Shield_Large_C.label>
+	<!-- EN: A projectile-repulsion device which can be installed into a mechanoid. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks. It shuts down instantly if hit by EMP. -->
+	<MU_Shield_Large_C.description>Генератор защитного поля, устанавливаемый в механоида. Останавливает баллистические снаряды и осколки, но бесполезен против рукопашных атак и высокотемпературных воздействий. Мгновенно отключается от ЭМИ.</MU_Shield_Large_C.description>
+	
+</LanguageData>

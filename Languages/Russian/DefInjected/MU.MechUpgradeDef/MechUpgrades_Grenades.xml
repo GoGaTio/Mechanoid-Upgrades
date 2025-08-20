@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: frag grenades -->
+	<MU_FragGrenades.label>осколочные гранаты</MU_FragGrenades.label>
+	<!-- EN: Fragmentation grenades. This particular version is designed to be used by mechanoids. -->
+	<MU_FragGrenades.description>Осколочные гранаты для механоида.</MU_FragGrenades.description>
+	
+	<!-- EN: incendiary grenades -->
+	<MU_IncendiaryGrenades.label>поджигающие гранаты</MU_IncendiaryGrenades.label>
+	<!-- EN: Incendiary grenades. This particular version is designed to be used by mechanoids. -->
+	<MU_IncendiaryGrenades.description>Поджигающие гранаты для механоида.</MU_IncendiaryGrenades.description>
+	
+	<!-- EN: EMP grenades -->
+	<MU_EMPGrenades.label>ЭМИ гранаты</MU_EMPGrenades.label>
+	<!-- EN: Electromagnetic pulse grenades damaging to electronic equipment. This particular version is designed to be used by mechanoids. -->
+	<MU_EMPGrenades.description>ЭМИ гранаты для механоида.</MU_EMPGrenades.description>
+	
+</LanguageData>

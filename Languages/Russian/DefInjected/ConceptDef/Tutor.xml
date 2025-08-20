@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Mechanoid upgrades -->
+  <MU_MechanoidUpgrades.label>Улучшения механоидов</MU_MechanoidUpgrades.label>
+  <!-- EN: All installed mechanoid upgrades can be seen in the “Upgrades” tab.\n\nResearch "basic upgrades" technology in the "mechanoid upgrades" research tab and build mech upgrader to install upgrades.\n\nEnemy mechs also can arrive upgraded, the amount of their upgrades can be changed in mod settings. -->
+  <MU_MechanoidUpgrades.helpText>Все установленные улучшения механоида можно увидеть во вкладке «Улучшения».\n\nЧтобы установить улучшения на механоидов, изучите технологию «базовые улучшения» и постройте станцию улучшения.\n\nВраждебные механоиды также могут появиться с улучшениями. Количество и вероятность улучшений у них можно поменять в настройках мода.</MU_MechanoidUpgrades.helpText>
+  
+  <!-- EN: Upgrades tab -->
+  <MU_MechUpgradeTab.label>Вкладка «Улучшения»</MU_MechUpgradeTab.label>
+  <!-- EN: In «Upgrades» tab you can see all installed upgrades and their characteristics. There you can also see the upgradability stat for a specific mechanoid. The number of upgrades that can be installed depends on it. Each upgrade requires a different upgradability, that can be found in its description.\n\nNot all upgrades can be installed on all mechanoids: some require a certain body size or other features. A list of mechanoids on which specific upgrade can be installed can be seen in its description. -->
+  <MU_MechUpgradeTab.helpText>Во вкладке «Улучшения» можно увидеть улучшения механоида и информацию о них.\n\nТам так же можно увидеть и параметр улучшаемости конкретного механоида. От него зависит количество улучшений, которые можно установить. Каждое улучшение требует разную улучшаемость, это значение можно посмотреть в его описании.\n\nНе все улучшения устанавливаются на любых механоидов: некоторые требуют определенный размер тела или другие особенности. Список механоидов, на которых можно установить то или иное улучшение можно увидеть  его описании.</MU_MechUpgradeTab.helpText>
+
+  <!-- EN: Upgrades installation -->
+  <MU_MechUpgrader.label>Установка улучшений</MU_MechUpgrader.label>
+  <!-- EN: To upgrade your mechanoids you need to put them into mech upgrader and choose upgrades for installation by mechanitor.\n\nUpgrades should be in storage connected to upgrader to uae them.\n\nProcess will last for some time, but you can cancel it if you really need mech, all not installed upgrades will be put back into storages. -->
+  <MU_MechUpgrader.helpText>Для установки улучшений необходимо поместить механоида в станцию улучшений с подключенными хранилищами, после чего выбрать улучшения механитором.\n\nПроцесс занимает некоторе время, но не требует постоянного присутствия механитора.</MU_MechUpgrader.helpText>
+
+</LanguageData>

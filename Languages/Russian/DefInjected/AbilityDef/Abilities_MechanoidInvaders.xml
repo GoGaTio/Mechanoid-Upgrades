@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: system merge -->
+  <MU_SystemMerge.label>слияние систем</MU_SystemMerge.label>
+  <!-- EN: Connect and merge systems with another mechanoid, boosting its data processing and mobility, while reducing incoming damage by acting as backup for critical subsystems. Should the connection end prematurely by broadcaster's death, the receiver will suffer from severe system disruption. -->
+  <MU_SystemMerge.description>Соединиться с системами другого механоида, усиливая его обработку данных, мобильность и снижая получаемый урон засчёт поддержки критических субсистем. При смерти поддерживающего механоида слияние обрывается, вызывая расстраивание систем механоида-цели.</MU_SystemMerge.description>
+
+</LanguageData>

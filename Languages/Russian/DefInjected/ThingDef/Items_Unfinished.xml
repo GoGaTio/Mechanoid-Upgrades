@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: unfinished mechanoid upgrade -->
+	<MU_UnfinishedUpgrade_Misc.label>незаконченное мехулучшение</MU_UnfinishedUpgrade_Misc.label>
+	<!-- EN: An unfinished mechanoid upgrade. -->
+	<MU_UnfinishedUpgrade_Misc.description>Улучшение в процессе изготовления.</MU_UnfinishedUpgrade_Misc.description>
+	
+	<!-- EN: unfinished mechanoid chip -->
+	<MU_UnfinishedUpgrade_Chip.label>незаконченный мехчип</MU_UnfinishedUpgrade_Chip.label>
+	<!-- EN: An unfinished mechanoid upgrade chip. -->
+	<MU_UnfinishedUpgrade_Chip.description>Механоидный чип в процессе изготовления.</MU_UnfinishedUpgrade_Chip.description>
+	
+	<!-- EN: unfinished mechanoid module -->
+	<MU_UnfinishedUpgrade_Module.label>незаконченный мехмодуль</MU_UnfinishedUpgrade_Module.label>
+	<!-- EN: An unfinished mechanoid module. -->
+	<MU_UnfinishedUpgrade_Module.description>Механоидный модуль в процессе изготовления.</MU_UnfinishedUpgrade_Module.description>
+	
+	<!-- EN: unfinished mechanoid shield -->
+	<MU_UnfinishedUpgrade_Shield.label>незаконченный персональный щит</MU_UnfinishedUpgrade_Shield.label>
+	<!-- EN: An unfinished mechanoid shield. -->
+	<MU_UnfinishedUpgrade_Shield.description>Механоидный щит в процессе изготовления.</MU_UnfinishedUpgrade_Shield.description>
+
+	<!-- EN: unfinished small mecharmor -->
+	<MU_UnfinishedUpgrade_Armor_Small.label>незаконченная малая мехброня</MU_UnfinishedUpgrade_Armor_Small.label>
+	<!-- EN: An unfinished mechanoid armor. -->
+	<MU_UnfinishedUpgrade_Armor_Small.description>Малая мехброня в процессе изготовления.</MU_UnfinishedUpgrade_Armor_Small.description>
+	
+	<!-- EN: unfinished medium mecharmor -->
+	<MU_UnfinishedUpgrade_Armor_Medium.label>незаконченная средняя мехброня</MU_UnfinishedUpgrade_Armor_Medium.label>
+	<!-- EN: An unfinished mechanoid armor. -->
+	<MU_UnfinishedUpgrade_Armor_Medium.description>Средняя мехброня в процессе изготовления.</MU_UnfinishedUpgrade_Armor_Medium.description>
+	
+	<!-- EN: unfinished large mecharmor -->
+	<MU_UnfinishedUpgrade_Armor_Large.label>незаконченная большая мехброня</MU_UnfinishedUpgrade_Armor_Large.label>
+	<!-- EN: An unfinished mechanoid armor. -->
+	<MU_UnfinishedUpgrade_Armor_Large.description>Большая мехброня в процессе изготовления.</MU_UnfinishedUpgrade_Armor_Large.description>
+	
+	<!-- EN: unfinished ultra large mecharmor -->
+	<MU_UnfinishedUpgrade_Armor_UltraLarge.label>незаконченная сверхбольшая мехброня</MU_UnfinishedUpgrade_Armor_UltraLarge.label>
+	<!-- EN: An unfinished mechanoid armor. -->
+	<MU_UnfinishedUpgrade_Armor_UltraLarge.description>Сверхбольшая мехброня в процессе изготовления.</MU_UnfinishedUpgrade_Armor_UltraLarge.description>
+
+</LanguageData>

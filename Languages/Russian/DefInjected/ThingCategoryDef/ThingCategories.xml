@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: mech upgrades -->
+  <MU_Upgrades.label>мехулучшения</MU_Upgrades.label>
+  
+  <!-- EN: chips -->
+  <MU_Chips.label>чипы</MU_Chips.label>
+  
+  <!-- EN: modules -->
+  <MU_Modules.label>модули</MU_Modules.label>
+  
+  <!-- EN: armor -->
+  <MU_Armor.label>броня</MU_Armor.label>
+  
+  <!-- EN: shields -->
+  <MU_Shields.label>щиты</MU_Shields.label>
+  
+  <!-- EN: grenades -->
+  <MU_Grenades.label>гранаты</MU_Grenades.label>
+  
+  <!-- EN: poppers -->
+  <MU_Poppers.label>хлопушки</MU_Poppers.label>
+  
+  <!-- EN: turrets -->
+  <MU_Turrets.label>турели</MU_Turrets.label>
+  
+  <!-- EN: heavy weaponry -->
+  <MU_HeavyWeaponry.label>тяжёлое вооружение</MU_HeavyWeaponry.label>
+  
+  <!-- EN: upgrade packs -->
+  <MU_UpgradePacks.label>пакеты улучшений</MU_UpgradePacks.label>
+  
+</LanguageData>

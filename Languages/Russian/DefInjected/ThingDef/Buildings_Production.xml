@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: basic upgrades assembler -->
+  <MU_BasicUpgradesAssembler.label>базовый сборщик улучшений</MU_BasicUpgradesAssembler.label>
+  <!-- EN: A work station where low-tier mechanoid upgrades can be produced. -->
+  <MU_BasicUpgradesAssembler.description>Станок для создания низкоуровневых улучшений.</MU_BasicUpgradesAssembler.description>
+  
+  <!-- EN: advanced upgrades assembler -->
+  <MU_AdvancedUpgradesAssembler.label>продвинутый сборщик улучшений</MU_AdvancedUpgradesAssembler.label>
+  <!-- EN: A work station where high-tier mechanoid upgrades can be produced.\n\nHigh-tier upgrades can greatly improve mechanoid characteristics, but require advanced materials. -->
+  <MU_AdvancedUpgradesAssembler.description>Высокоточный станок для создания продвинутых улучшений.\n\nПродвинутые улучшения сильно усиливают механоидов, но требуют много ценных ресурсов для создания.</MU_AdvancedUpgradesAssembler.description>
+  
+  <!-- EN: mech upgrader -->
+  <MU_MechUpgrader.label>станция улучшения</MU_MechUpgrader.label>
+  <!-- EN: A special pod that can install and uninstall mechanoid upgrades. Requires mechanitor to begin process.\n\nUpgrades for installation should be in storages nearby. -->
+  <MU_MechUpgrader.description>Специальный аппарат для установки и извлечения улучшений механоидов. Требует механитора для запуска процесса.\n\nУлучшения должны находиться в хранилищах поблизости, чтобы их можно было установить.</MU_MechUpgrader.description>
+  
+  <!-- EN: upgrades storage -->
+  <MU_UpgradesStorage.label>хранилище улучшений</MU_UpgradesStorage.label>
+  <!-- EN: This building can store upgrades and make them available for using, when placed near a mech upgrader.\n\nCan contain up to 6 upgrades. -->
+  <MU_UpgradesStorage.description>Специальный контейнер для хранения улучшений, позволяющий использовать их на подключенных станция улучшения.\n\nМожет вместить до 6 улучшений.</MU_UpgradesStorage.description>
+  
+  <!-- EN: large upgrades storage -->
+  <MU_LargeUpgradesStorage.label>большое хранилище улучшений</MU_LargeUpgradesStorage.label>
+  <!-- EN: This building can store upgrades and make them available for using, when placed near a mech upgrader.\n\nCan contain up to 18 upgrades. -->
+  <MU_LargeUpgradesStorage.description>Большой контейнер для хранения улучшений, позволяющий использовать их на подключенных станция улучшения.\n\nМожет вместить до 18 улучшений.</MU_LargeUpgradesStorage.description>
+  
+  <!-- EN: assembly centrifuge-->
+  <MU_AssemblyCentrifuge.label>сборочная центрифуга</MU_AssemblyCentrifuge.label>
+  <!-- EN: Increases work speed when placed near an upgrades assembler. One assembler can use up to four centrifuges. -->
+  <MU_AssemblyCentrifuge.description>Увеличивает скорость работы. Должна быть размещена неподалёку от сборщика улучшений. К одному сборщику может быть одновременно привязано не более четырех сборочных центрифуг.</MU_AssemblyCentrifuge.description>
+  
+</LanguageData>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: standard upgrades -->
+	<MU_StandardUpgrades.label>стандартные улучшения</MU_StandardUpgrades.label>
+	<!-- EN: Create and install standard upgrades for mechanoids. -->
+	<MU_StandardUpgrades.description>Создание стандартных улучшений для механоидов.</MU_StandardUpgrades.description>
+	
+	<!-- EN: standard mechanoid chips -->
+	<MU_StandardChips.label>стандартные чипы</MU_StandardChips.label>
+	<!-- EN: standard mechanoid chips -->
+	<MU_StandardChips.description>Изготовление стандартных чипов, усиливающих механоидов.</MU_StandardChips.description>
+	
+	<!-- EN: standard mechanoid modules -->
+	<MU_StandardModules.label>стандартные модули</MU_StandardModules.label>
+	<!-- EN: Create standard mechanoid modules. -->
+	<MU_StandardModules.description>Изготовление стандартных модулей, усиливающих механоидов.</MU_StandardModules.description>
+	
+	<!-- EN: standard mechanoid armor -->
+	<MU_StandardArmor.label>стандартная броня</MU_StandardArmor.label>
+	<!-- EN: Create standard mechanoid armor. -->
+	<MU_StandardArmor.description>Изготовление стандартной брони для механоидов.</MU_StandardArmor.description>
+	
+	<!-- EN: standard mechanoid shields -->
+	<MU_StandardShields.label>стандартные щиты</MU_StandardShields.label>
+	<!-- EN: Create standard mechanoid shields. -->
+	<MU_StandardShields.description>Изготовление стандартных персональных щитов для механоидов.</MU_StandardShields.description>
+	
+	<!-- EN: jump launcher -->
+	<MU_JumpLauncher.label>прыжковые ускорители</MU_JumpLauncher.label>
+	<!-- EN: Create sipmle jump launchers for mechanoids. -->
+	<MU_JumpLauncher.description>Создание простых прыжковых ускорителей для механоидов.</MU_JumpLauncher.description>
+	
+	<!-- EN: command repeaters -->
+	<MU_CommandExtenders.label>командные ретрансляторы</MU_CommandExtenders.label>
+	<!-- EN: Create devices which rebroadcast mechanitor's commands, creating additional control areas. -->
+	<MU_CommandExtenders.description>Изготовление устройств, способных ретранслировать командование механитора, создавая дополнительные зоны контроля.</MU_CommandExtenders.description>
+	
+</LanguageData>

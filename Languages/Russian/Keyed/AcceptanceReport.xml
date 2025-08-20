@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!--Mech upgrader-->
+  <!-- EN: Not controlled -->
+  <MU_IsNotControlled>Не контролируется</MU_IsNotControlled>
+  <!-- EN: Not mechanitor -->
+  <MU_IsNotMechanitor>Не механитор</MU_IsNotMechanitor>
+  <!-- EN: No mechanoids -->
+  <MU_NoPawns>Нет механоидов</MU_NoPawns>
+  <!-- EN: No mechanitor -->
+  <MU_NoMechanitor>Нет механитора</MU_NoMechanitor>
+  
+  <!--Reload-->
+  <!-- EN: Cannot manipulate-->
+  <MU_CannotReload_CannotManipulate>Не может перезарядить: Не может манипулировать</MU_CannotReload_CannotManipulate>
+  <!-- EN: Cannot hold enough resource -->
+  <MU_CannotReload_NoStackSpace>Не может перезарядить: Не может удерживать достаточно ресурса</MU_CannotReload_NoStackSpace>
+  <!-- EN: no enough resource -->
+  <MU_CannotReload_NoEnoughAmmo>Не может перезарядить: Недостаточно {0}</MU_CannotReload_NoEnoughAmmo>
+  
+  <!--Upgrader report-->
+  <!-- EN: No enough free upgradability -->
+  <MU_CannotAdd_NotEnoughPoints>Недостаточно улучшаемости</MU_CannotAdd_NotEnoughPoints>
+  <!-- EN: Wrong mech weight class -->
+  <MU_CannotAdd_WrongMechClass>Несовместимый класс механоида</MU_CannotAdd_WrongMechClass>
+  <!-- EN: Mech is too large -->
+  <MU_CannotAdd_BiggerSize>Механоид слишком большой</MU_CannotAdd_BiggerSize>
+  <!-- EN: Mech is too small -->
+  <MU_CannotAdd_SmallerSize>Механоид слишком маленький</MU_CannotAdd_SmallerSize>
+  <!-- EN: Wrong mech -->
+  <MU_CannotAdd_WrongMech>Нельзя установить на этого механоида</MU_CannotAdd_WrongMech>
+  <!-- EN: Has same upgrade -->
+  <MU_CannotAdd_SameUpgrade>Такое улучшение уже добавлено</MU_CannotAdd_SameUpgrade>
+  <!-- EN: Has conflicting upgrade: {0} -->
+  <MU_CannotAdd_SameTags>Несовместимо с другим улучшением: {0}</MU_CannotAdd_SameTags>
+  <!-- EN: No required body part -->
+  <MU_CannotAdd_NoRequiredBodyPart>Нет необходимой части тела</MU_CannotAdd_NoRequiredBodyPart>
+  <!-- EN: Has conflicting body part -->
+  <MU_CannotAdd_HaveConflictingBodyPart>Есть конфликтующая часть тела</MU_CannotAdd_HaveConflictingBodyPart>
+  <!-- EN: Cannot do required work type -->
+  <MU_CannotAdd_NoRequiredWorkType>Не может выполнять необходимый тип работы</MU_CannotAdd_NoRequiredWorkType>
+  <!-- EN: Can do conflicting work type -->
+  <MU_CannotAdd_HaveConflictingWorkType>Может выполнять конфликтующий тип работы</MU_CannotAdd_HaveConflictingWorkType>
+  <!-- EN: Isn't worker mechanoid -->
+  <MU_CannotAdd_IsNotWorker>Не рабочий механоид</MU_CannotAdd_IsNotWorker>
+  <!-- EN: Is worker mechanoid -->
+  <MU_CannotAdd_IsWorker>Рабочий механоид</MU_CannotAdd_IsWorker>
+  <!-- EN: Wrong mech -->
+  <MU_CannotAdd_IsNotRangedFighter>Не может сражаться в дальнем бою</MU_CannotAdd_IsNotRangedFighter>
+  <!-- EN: Wrong mech -->
+  <MU_CannotAdd_IsRangedFighter>Сражается в дальнем бою</MU_CannotAdd_IsRangedFighter>
+  <!-- EN: No shield -->
+  <MU_CannotAdd_NoShieldComp>Нет щита</MU_CannotAdd_NoShieldComp>
+  <!-- EN: Has shield -->
+  <MU_CannotAdd_HasShieldComp>Есть щит</MU_CannotAdd_HasShieldComp>
+  
+  <!--Ability cooldown-->
+  <!-- EN: Ability on cooldown -->
+  <MU_OnCooldown>Перезаряжается</MU_OnCooldown>
+  
+  <!--Sets-->
+  <!-- EN: Some upgrades from this set cannot be installed on this mechanoid -->
+  <MU_CannotAddSet_CannotAddUpgrade>Некоторые улучшения из набора не могут быть установлены на этого механоида</MU_CannotAddSet_CannotAddUpgrade>
+  <!-- EN: No enough upgrades for the whole set -->
+  <MU_CannotAddSet_NoUpgrade>Недостаточно улучшений для полной установки набора</MU_CannotAddSet_NoUpgrade>
+  
+</LanguageData>

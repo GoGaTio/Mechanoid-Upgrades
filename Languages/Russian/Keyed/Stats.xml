@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  
+  <!--Misc-->
+  
+  <!-- EN: Factor from user -->
+  <MU_StatsReport_FactorFromHolder>Влияние удерживающего</MU_StatsReport_FactorFromHolder>
+  
+  <!--Mech stats-->
+  <!-- EN: Upgradable mech -->
+  <MU_IsUpgradableMechanoid>Улучшаемый механоид</MU_IsUpgradableMechanoid>
+  <!-- EN: -->
+  <MU_IsUpgradableMechanoid_Desc>Этого механоида можно улучшить.</MU_IsUpgradableMechanoid_Desc>
+  
+  <!-- EN: -->
+  <MU_UpgradesInsideMech>Установленные улучшения</MU_UpgradesInsideMech>
+  <!-- EN: -->
+  <MU_UpgradesInsideMech_Desc>Улучшения которые установлены на этого механоида.</MU_UpgradesInsideMech_Desc>
+  
+  <!--Modifiers from upgrades-->
+  <!-- EN: -->
+  <MU_StatOffsetsFromUpgrades>Приросты от улучшений</MU_StatOffsetsFromUpgrades>
+  <!-- EN: -->
+  <MU_StatFactorsFromUpgrades>Факторы улучшений</MU_StatFactorsFromUpgrades>
+  
+  <!-- EN: -->
+  <MU_GivesPersonalShield>Дает персональный щит</MU_GivesPersonalShield>
+  <!-- EN: -->
+  <MU_GivesPersonalShield_Desc>Дает ли это улучшение персональный щит от пуль.</MU_GivesPersonalShield_Desc>
+  
+  <!--Upgrade stats-->
+  <!-- EN: -->
+  <MU_CommandRange>Командный радиус</MU_CommandRange>
+  <!-- EN: -->
+  <MU_CommandRange_Desc>Радиус, в котором механоиды того же механитора, что и у носителя, могут контролироваться.</MU_CommandRange_Desc>
+  
+  <!-- EN: -->
+  <MU_UpgradePoints>Объем улучшения</MU_UpgradePoints>
+  <!-- EN: -->
+  <MU_UpgradePoints_Desc>Улучшаемость необходимая для установки этого улучшения.</MU_UpgradePoints_Desc>
+  
+  <!-- EN: -->
+  <MU_AllowsRemoteControl>Дает дистанционный контроль</MU_AllowsRemoteControl>
+  <!-- EN: -->
+  <MU_AllowsRemoteControl_Desc>Это улучшение позволяет контролировать механоида вне командного радиуса.</MU_AllowsRemoteControl_Desc>
+  
+  <!-- EN: -->
+  <MU_MinBodySize>Минимальный размер тела</MU_MinBodySize>
+  <!-- EN: -->
+  <MU_MinBodySize_Desc>Это улучшение можно установить только на механоидов, размер тела которых больше или равен этому значению.</MU_MinBodySize_Desc>
+  
+  <!-- EN: -->
+  <MU_MaxBodySize>Максимальный размер тела</MU_MaxBodySize>
+  <!-- EN: -->
+  <MU_MaxBodySize_Desc>Это улучшение можно установить только на механоидов, размер тела которых меньше этого значения.</MU_MaxBodySize_Desc>
+  
+  <!-- EN: -->
+  <MU_MechanoidsToAdd>Улучшаемые механоиды</MU_MechanoidsToAdd>
+  <!-- EN: -->
+  <MU_MechanoidsToAdd_Desc>Механоиды, на которых можно установить данное улучшение.</MU_MechanoidsToAdd_Desc>
+  
+  <!-- EN: -->
+  <MU_Stat_ReloadCost>Стоимость перезарядки</MU_Stat_ReloadCost>
+  <!-- EN: -->
+  <MU_Stat_ReloadCost_Desc>Стоимость перезарядки этого улучшения</MU_Stat_ReloadCost_Desc>
+  
+  <!-- EN: -->
+  <MU_QualityOffset>Прирост качества</MU_QualityOffset>
+  <!-- EN: -->
+  <MU_QualityOffset_Desc>Прирост качества добавляемый ко всем строениям и предметам, созданным этим механоидом.</MU_QualityOffset_Desc>
+  
+</LanguageData>

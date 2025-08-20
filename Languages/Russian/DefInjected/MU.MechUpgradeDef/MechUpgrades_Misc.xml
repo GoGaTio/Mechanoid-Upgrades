@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: shield booster -->
+	<MU_ShieldBooster.label>усилитель щита</MU_ShieldBooster.label>
+	<!-- EN: An advanced discharger device that allow to conduct large amount of energy in the shield system, making it much more durable to damage for a short period of time.\n\nThe main conductor gets overload when device is active, so it requires components for recharging.\n\nThe effect scales based on mechanoid body size. -->
+	<MU_ShieldBooster.description>Продвинутое распределительное устройство, позволяет использовать большие объемы энергии в системе щита механоида.\n\nОсновной проводник не может выдержать сверхвысоких нагрузок и требует замены после использования.\n\nСила эффекта зависит от размера тела механоида.</MU_ShieldBooster.description>
+	
+	<!-- EN: reinforced leg actuators -->
+	<MU_LegActuators.label>усиленные приводы ног</MU_LegActuators.label>
+	<!-- EN: Reinforced leg actuators for ultraheavy mechanoid. Greatly increase movement speed. -->
+	<MU_LegActuators.description>Усиленные приводы ног для сверхтяжелого механоида. Значительно повышают скорость передвижения.</MU_LegActuators.description>
+	
+	<!-- EN: mech booster -->
+	<MU_MechBooster.label>механоидный усилитель</MU_MechBooster.label>
+	<!-- EN: A remote energy and computation enhancement device. Can be installed into mechanoid. Any friendly mechanoids in its effect radius will move and work faster. -->
+	<MU_MechBooster.description>Устройство для удалённого повышения энергетических и вычислительных мощностей. Устанавливается в механоида. Все дружественные механоиды в радиусе действия усилителя будут двигаться и работать быстрее.</MU_MechBooster.description>
+	
+	<!-- EN: command tower -->
+	<MU_CommandTower.label>командная башня</MU_CommandTower.label>
+	<!-- EN: A special tower for mechanoid that rebroadcast mechanitor command signals, creating additional large control area. -->
+	<MU_CommandTower.description>Башня со специальным оборудованием, которая улавливает и ретранслирует сигналы от механитора, создавая большую дополнительную зону контроля.</MU_CommandTower.description>
+	
+	<!-- EN: urchin mini-gestator -->
+	<MU_UrchinSpawner.label>мини-гестатор дронов-пчёл</MU_UrchinSpawner.label>
+	<!-- EN: A mini-gestator unit which can create war urchins. Require steel for gestation. -->
+	<MU_UrchinSpawner.description>Компактный гестатор, предназначенный для установки в механоида. Создает дронов-пчёл, но требует сталь.</MU_UrchinSpawner.description>
+	
+	<!-- EN: jump launcher -->
+	<MU_JumpLauncher.label>прыжковый ускоритель</MU_JumpLauncher.label>
+	<!-- EN: Jump launcher that allows to jump to a distant location. -->
+	<MU_JumpLauncher.description>Прыжковый ускоритель, который позволяет совершать реактивные прыжки.</MU_JumpLauncher.description>
+	
+	<!-- EN: medicine kit -->
+	<MU_MedicineKit.label>медицинский набор</MU_MedicineKit.label>
+	<!-- EN: A first aid kit that can be installed in mechanoid. Can be used to tend living creatures. -->
+	<MU_MedicineKit.description>Набор первой помощи для установки в механоида. Позволяет быстро, но не очень качественно перевязывать раненых существ.</MU_MedicineKit.description>
+	
+</LanguageData>

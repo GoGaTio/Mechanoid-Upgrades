@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: haul upgrades -->
+  <MU_HaulToStorage.label>переносить улучшения</MU_HaulToStorage.label>
+  <!-- EN: banking -->
+  <MU_HaulToStorage.gerund>перенести</MU_HaulToStorage.gerund>
+  <!-- EN: bank -->
+  <MU_HaulToStorage.verb>перенести</MU_HaulToStorage.verb>
+  
+  <!-- EN: make upgrades -->
+  <MU_DoBillsUpgradeCrafter.label>делать улучшения</MU_DoBillsUpgradeCrafter.label>
+  <!-- EN: working at -->
+  <MU_DoBillsUpgradeCrafter.gerund>работать, используя</MU_DoBillsUpgradeCrafter.gerund>
+  <!-- EN: work -->
+  <MU_DoBillsUpgradeCrafter.verb>работать</MU_DoBillsUpgradeCrafter.verb>
+  
+</LanguageData>

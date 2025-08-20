@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  
+  <!--Tabs-->
+  <!-- EN: Choose upgrades -->
+  <MU_UpgradeConfig_Label>Изменение улучшений</MU_UpgradeConfig_Label>
+  <!-- EN: No upgrades -->
+  <MU_NoUpgradesInside>Нет улучшений</MU_NoUpgradesInside>
+  <!-- EN: Upgrades -->
+  <MU_TabUpgrades>Улучшения</MU_TabUpgrades>
+  <!-- EN: Should mechanoid automatically reload upgrades. -->
+  <MU_AutoReload_Desc>Должен ли механоид автоматически перезаряжать улучшения.</MU_AutoReload_Desc>
+  
+  <!--Settings-->
+  <!-- EN: Generate mechs with upgrades -->
+  <MU_Setting_GenerateWithUpgrades>Генерировать улучшения для механоидов</MU_Setting_GenerateWithUpgrades>
+  <!-- EN: Allow mechanoid generation with upgrades. -->
+  <MU_Setting_GenerateWithUpgrades_Desc>Будут ли механоиды генерироваться с улучшениями.\n\nВлияет только на старых механоидов, не затрагивая собранных кластерами или выращеных в гестаторах.</MU_Setting_GenerateWithUpgrades_Desc>
+  
+  <!-- EN: Chance for generation with upgrades -->
+  <MU_Setting_ChanceForUpgrades>Вероятность генерации улучшений</MU_Setting_ChanceForUpgrades>
+  <!-- EN: How often mechanoids will be generated with upgrades.\n\nFreshly manufactured mechanoids won't be affected. -->
+  <MU_Setting_ChanceForUpgrades_Desc>Вероятность того, что механоид сгенерируется с улучшениями.\n\nВлияет только на старых механоидов, не затрагивая собранных кластерами или выращеных в гестаторах.</MU_Setting_ChanceForUpgrades_Desc>
+  
+  <!-- EN: Minimum amount of upgrades -->
+  <MU_Setting_MinPercent>Минимальное количество улучшений</MU_Setting_MinPercent>
+  <!-- EN: Minimum amount of upgrades for mechanoid generation. -->
+  <MU_Setting_MinPercent_Desc>Минимальный процент улучшаемости, занятой улучшениями при генерации.</MU_Setting_MinPercent_Desc>
+  
+  <!-- EN: Maximum amount of upgrades -->
+  <MU_Setting_MaxPercent>Максимальное количество улучшений</MU_Setting_MaxPercent>
+  <!-- EN: Maximum amount of upgrades for mechanoid generation. -->
+  <MU_Setting_MaxPercent_Desc>Максимальный процент улучшаемости, занятой улучшениями при генерации.</MU_Setting_MaxPercent_Desc>
+  
+  <!-- EN: Chance for preset combination -->
+  <MU_Setting_CombinationsCommonality>Вероятность генерации комбинаций</MU_Setting_CombinationsCommonality>
+  <!-- EN: How often mechanoids will spawn with preset combinations of upgrades. -->
+  <MU_Setting_CombinationsCommonality_Desc>Вероятность того, что механоид сгенерируется с заранее определенным для него набором улучшений.\n\n\n\nВероятность генерации комбинаций просчитывается после вероятности улучшения.</MU_Setting_CombinationsCommonality_Desc>
+  
+  <!-- EN: Extra loot -->
+  <MU_Setting_ExtraButcherProducts>Дополнительная добыча при разборке</MU_Setting_ExtraButcherProducts>
+  <!-- EN: Allow extra resources after shredding of upgraded mechs. -->
+  <MU_Setting_ExtraButcherProducts_Desc>Будет ли дополнительная добыча при разборке улучшенных механоидов.</MU_Setting_ExtraButcherProducts_Desc>
+  
+  <!-- EN: Chance for extra loot -->
+  <MU_Setting_ChanceForExtraLoot>Вероятность дополнительной добычи</MU_Setting_ChanceForExtraLoot>
+  <!-- EN: Chance for extra resources after shredding of upgraded mechs.\n\nThis chance applies for each upgrade. -->
+  <MU_Setting_ChanceForExtraLoot_Desc>Вероятность дополнительной добычи при разборке улучшенных механоидов.</MU_Setting_ChanceForExtraLoot_Desc>
+  
+  <!-- EN: Amount of extra loot -->
+  <MU_Setting_ExtraLootAmount>Количество дополнительной добычи</MU_Setting_ExtraLootAmount>
+  <!-- EN: Amount of extra resources after shredding of upgraded mechs. -->
+  <MU_Setting_ExtraLootAmount_Desc>Количество дополнительной добычи при разборке улучшенных механоидов.</MU_Setting_ExtraLootAmount_Desc>
+  
+  <!-- EN: Base upgradability -->
+  <MU_Setting_BaseUpgradability>Базовая улучшаемость</MU_Setting_BaseUpgradability>
+  <!-- EN: Base upgradability value.\n\nFinal value calculation includes body size and weight class factors. -->
+  <MU_Setting_BaseUpgradability_Desc>Базовое значение улучшаемости.\n\nПри расчете финального значения учитываеся размер тела и класс механоида.</MU_Setting_BaseUpgradability_Desc>
+  <!-- EN: Warning! Change of value significantly affects balance. -->
+  <MU_Setting_BaseUpgradability_Warning>Внимание! Изменение этого значения может сильно отразиться на игровом процессе.</MU_Setting_BaseUpgradability_Warning>
+  
+  <!--Inspect strings-->
+  <!-- EN: Waiting -->
+  <MU_Upgrader_WaitingForOrder>Простаивает</MU_Upgrader_WaitingForOrder>
+  <!-- EN: Waiting for mechanoid -->
+  <MU_Upgrader_WaitingForMechanoid>Ожидает механоида</MU_Upgrader_WaitingForMechanoid>
+  <!-- EN: Waiting for mechanitor -->
+  <MU_Upgrader_WaitingForMechanitor>Ожидает механитора</MU_Upgrader_WaitingForMechanitor>
+  <!-- EN: Time left -->
+  <MU_Upgrader_TimeLeft>Времени осталось</MU_Upgrader_TimeLeft>
+  <!-- EN: all upgrades -->
+  <MU_AllOperations>все улучшения</MU_AllOperations>
+  <!-- EN: current upgrade -->
+  <MU_ThisOperation>текущее улучшение</MU_ThisOperation>
+  
+  <!--Job-->
+  <!-- EN: Begin process -->
+  <MU_ConfigureUpgrades>Изменить улучшения</MU_ConfigureUpgrades>
+  
+  <!--Carrier comp-->
+  <!-- EN: Steel -->
+  <MU_MechCarrier_Title>Сталь</MU_MechCarrier_Title>
+  <!-- EN: How many steel mini-gestator has to create war urchins. -->
+  <MU_MechCarrier_Tooltip>Количество стали, которая прямо сейчас находится в ячейке дронов-пчёл.</MU_MechCarrier_Tooltip>
+  <!-- EN: mini-gestator -->
+  <MU_MechCarrier_Label>мин-гестатор дронов-пчёл</MU_MechCarrier_Label>
+  
+  <!--Set-->
+  <!-- EN: Cannot create upgrades set -->
+  <MU_CannotCreateSet>Невозможно создать набор улучшений</MU_CannotCreateSet>
+  <!-- EN: Save as -->
+  <MU_SaveAs>Сохранить как</MU_SaveAs>
+  
+  <!--Filters-->
+  <!-- EN: Hide not installable -->
+  <MU_HideNotInstallable>Скрыть неиспользуемое</MU_HideNotInstallable>
+  
+</LanguageData>

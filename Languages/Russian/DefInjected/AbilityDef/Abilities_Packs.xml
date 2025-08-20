@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: firefoam pop -->
+  <MU_FirefoamPopPack.label>пенный ранец</MU_FirefoamPopPack.label>
+  <!-- EN: Release a fire-retardant foam in a circular area. -->
+  <MU_FirefoamPopPack.description>Распылить противопожарную пену вокруг себя.</MU_FirefoamPopPack.description>
+  
+  <!-- EN: smoke pop -->
+  <MU_SmokePopPack.label>дымовая шашка</MU_SmokePopPack.label>
+  <!-- EN: Release compressed smoke from concealed vents. Smoke reduces the accuracy of any shot fired through it, and prevents turrets from locking on entirely. -->
+  <MU_SmokePopPack.description>Выпустить сжатый дым из скрытых отверстий. Через получившееся облако не смогут стрелять турели, а точность стрельбы остального оружия снизится.</MU_SmokePopPack.description>
+  
+</LanguageData>

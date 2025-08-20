@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Small -->
+	
+	<!-- EN: small mech armor tier A -->
+	<MU_MechArmor_Small_A.label>малая мехброня класс A</MU_MechArmor_Small_A.label>
+	<!-- EN: Universal armor for a small mechanoid. Gives a small increase in protection against penetrating and crushing damage. -->
+	<MU_MechArmor_Small_A.description>Универсальная броня для механоида малого размера. Обеспечивает механоида небольшим приростом защиты от проникающих и дробящих повреждений.</MU_MechArmor_Small_A.description>
+	
+	<!-- EN: small mech armor tier B -->
+	<MU_MechArmor_Small_B.label>малая мехброня класс B</MU_MechArmor_Small_B.label>
+	<!-- EN: Universal armor for a small mechanoid. Gives a medium increase in protection against penetrating and crushing damage. -->
+	<MU_MechArmor_Small_B.description>Универсальная броня для механоида малого размера. Обеспечивает механоида средним приростом защиты от проникающих и дробящих повреждений.</MU_MechArmor_Small_B.description>
+	
+	<!-- EN: small mech armor tier C -->
+	<MU_MechArmor_Small_C.label>малая мехброня класс C</MU_MechArmor_Small_C.label>
+	<!-- EN: Universal armor for a small mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nAdvanced armor technology allows to reduce even non-reflected damage. -->
+	<MU_MechArmor_Small_C.description>Универсальная броня для механоида малого размера. Обеспечивает механоида большим приростом защиты от проникающих и дробящих повреждений.\n\nПродвинутая технология бронирования позволяет снизить даже не отраженный урон.</MU_MechArmor_Small_C.description>
+	
+	<!-- Medium -->
+	
+	<!-- EN: medium mech armor tier A -->
+	<MU_MechArmor_Medium_A.label>средняя мехброня класс A</MU_MechArmor_Medium_A.label>
+	<!-- EN: Universal armor for a medium mechanoid. Gives a small increase in protection against penetrating and crushing damage. -->
+	<MU_MechArmor_Medium_A.description>Универсальная броня для механоида среднего размера. Обеспечивает механоида небольшим приростом защиты от проникающих и дробящих повреждений.</MU_MechArmor_Medium_A.description>
+	
+	<!-- EN: medium mech armor tier B -->
+	<MU_MechArmor_Medium_B.label>средняя мехброня класс B</MU_MechArmor_Medium_B.label>
+	<!-- EN: Universal armor for a medium mechanoid. Gives a medium increase in protection against penetrating and crushing damage. -->
+	<MU_MechArmor_Medium_B.description>Универсальная броня для механоида среднего размера. Обеспечивает механоида средним приростом защиты от проникающих и дробящих повреждений.</MU_MechArmor_Medium_B.description>
+	
+	<!-- EN: medium mech armor tier C -->
+	<MU_MechArmor_Medium_C.label>средняя мехброня класс C</MU_MechArmor_Medium_C.label>
+	<!-- EN: Universal armor for a medium mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nAdvanced armor technology allows to reduce even non-reflected damage. -->
+	<MU_MechArmor_Medium_C.description>Универсальная броня для механоида среднего размера. Обеспечивает механоида большим приростом защиты от проникающих и дробящих повреждений.\n\nПродвинутая технология бронирования позволяет снизить даже не отраженный урон.</MU_MechArmor_Medium_C.description>
+	
+	<!-- Large -->
+	
+	<!-- EN: large mech armor tier A -->
+	<MU_MechArmor_Large_A.label>большая мехброня класс A</MU_MechArmor_Large_A.label>
+	<!-- EN: Universal armor for a large mechanoid. Gives a small increase in protection against penetrating and crushing damage. -->
+	<MU_MechArmor_Large_A.description>Универсальная броня для механоида большого размера. Обеспечивает механоида небольшим приростом защиты от проникающих и дробящих повреждений.</MU_MechArmor_Large_A.description>
+	
+	<!-- EN: large mech armor tier B -->
+	<MU_MechArmor_Large_B.label>большая мехброня класс B</MU_MechArmor_Large_B.label>
+	<!-- EN: Universal armor for a large mechanoid. Gives a medium increase in protection against penetrating and crushing damage. -->
+	<MU_MechArmor_Large_B.description>Универсальная броня для механоида большого размера. Обеспечивает механоида средним приростом защиты от проникающих и дробящих повреждений.</MU_MechArmor_Large_B.description>
+	
+	<!-- EN: large mech armor tier C -->
+	<MU_MechArmor_Large_C.label>большая мехброня класс C</MU_MechArmor_Large_C.label>
+	<!-- EN: Universal armor for a large mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nAdvanced armor technology allows to reduce even non-reflected damage. -->
+	<MU_MechArmor_Large_C.description>Универсальная броня для механоида большого размера. Обеспечивает механоида большим приростом защиты от проникающих и дробящих повреждений.\n\nПродвинутая технология бронирования позволяет снизить даже не отраженный урон.</MU_MechArmor_Large_C.description>
+	
+	<!-- Ultra large -->
+	
+	<!-- EN: ultra large mech armor tier A -->
+	<MU_MechArmor_UltraLarge_A.label>сверхбольшая мехброня класс A</MU_MechArmor_UltraLarge_A.label>
+	<!-- EN: Universal armor for an ultra large mechanoid. Gives a small increase in protection against penetrating and crushing damage. -->
+	<MU_MechArmor_UltraLarge_A.description>Универсальная броня для механоида сверхбольшого размера. Обеспечивает механоида небольшим приростом защиты от проникающих и дробящих повреждений.</MU_MechArmor_UltraLarge_A.description>
+	
+	<!-- EN: ultra large mech armor tier B -->
+	<MU_MechArmor_UltraLarge_B.label>сверхбольшая мехброня класс B</MU_MechArmor_UltraLarge_B.label>
+	<!-- EN: Universal armor for an ultra large mechanoid. Gives a medium increase in protection against penetrating and crushing damage. -->
+	<MU_MechArmor_UltraLarge_B.description>Универсальная броня для механоида сверхбольшого размера. Обеспечивает механоида средним приростом защиты от проникающих и дробящих повреждений.</MU_MechArmor_UltraLarge_B.description>
+	
+	<!-- EN: ultra large mech armor tier C -->
+	<MU_MechArmor_UltraLarge_C.label>сверхбольшая мехброня класс C</MU_MechArmor_UltraLarge_C.label>
+	<!-- EN: Universal armor for an ultra large mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nAdvanced armor technology allows to reduce even non-reflected damage. -->
+	<MU_MechArmor_UltraLarge_C.description>Универсальная броня для механоида сверхбольшого размера. Обеспечивает механоида большим приростом защиты от проникающих и дробящих повреждений.\n\nПродвинутая технология бронирования позволяет снизить даже не отраженный урон.</MU_MechArmor_UltraLarge_C.description>
+
+</LanguageData>

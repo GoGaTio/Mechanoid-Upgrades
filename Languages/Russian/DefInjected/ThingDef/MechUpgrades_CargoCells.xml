@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: small cargo cell -->
+  <MU_CargoCell_Small.label>малая грузовая ячейка</MU_CargoCell_Small.label>
+  <!-- EN: Small cargo cell that can be installed in mechanoid. Increases carried weight, but also affects energy consumption. -->
+  <MU_CargoCell_Small.description>Малая грузовая ячейка, которая может быть устаовлена на механоида. Увеличивает переносимую массу и расход энергии.</MU_CargoCell_Small.description>
+  
+  <!-- EN: double cargo cell -->
+  <MU_CargoCell_Double.label>двойная грузовая ячейка</MU_CargoCell_Double.label>
+  <!-- EN: Two small cargo cells that can be installed in mechanoid. Increase carried weight, but also affects energy consumption. -->
+  <MU_CargoCell_Double.description>Две малые грузовые ячейки, которые могут быть устаовлены на механоида. Увеличивают переносимую массу и расход энергии.</MU_CargoCell_Double.description>
+  
+  <!-- EN: large cargo cell -->
+  <MU_CargoCell_Large.label>большая грузовая ячейка</MU_CargoCell_Large.label>
+  <!-- EN: Large cargo cell that can be installed in mechanoid. Increases carried weight, but also affects energy consumption. -->
+  <MU_CargoCell_Large.description>Большая грузовая ячейка, которая может быть устаовлена на механоида. Увеличивает переносимую массу и расход энергии.</MU_CargoCell_Large.description>
+  
+</LanguageData>

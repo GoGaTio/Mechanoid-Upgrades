@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	
+	<!-- Ranged -->
+	
+	<!-- EN: ranged damage module tier A -->
+	<MU_Module_Ranged_A.label>модуль урона снарядов класс A</MU_Module_Ranged_A.label>
+	<!-- EN: A special module, that can be installed into mechanoid ammo control system, giving a large ranged damage increase. -->
+	<MU_Module_Ranged_A.description>Специальный модуль для механоида. Повышает урон в дальнем бою.</MU_Module_Ranged_A.description>
+	
+	<!-- EN: ranged damage module tier B -->
+	<MU_Module_Ranged_B.label>модуль урона снарядов класс B</MU_Module_Ranged_B.label>
+	<!-- EN: A special module, that can be installed into mechanoid ammo control system, giving a medium ranged damage increase. -->
+	<MU_Module_Ranged_B.description>Специальный модуль для механоида. Повышает урон в дальнем бою.</MU_Module_Ranged_B.description>
+	
+	<!-- EN: ranged damage module tier C -->
+	<MU_Module_Ranged_C.label>модуль урона снарядов класс C</MU_Module_Ranged_C.label>
+	<!-- EN: A special module, that can be installed into mechanoid ammo control system, giving a small ranged damage increase. -->
+	<MU_Module_Ranged_C.description>Специальный модуль для механоида. Повышает урон в дальнем бою.</MU_Module_Ranged_C.description>
+	
+	<!-- Melee -->
+	
+	<!-- EN: melee damage module tier A -->
+	<MU_Module_Melee_A.label>модуль урона врукопашную класс A</MU_Module_Melee_A.label>
+	<!-- EN: A special module, that can be installed into mechanoid, giving a large melee damage increase. -->
+	<MU_Module_Melee_A.description>Специальный модуль для механоида. Повышает урон в ближнем бою.</MU_Module_Melee_A.description>
+	
+	<!-- EN: melee damage module tier B -->
+	<MU_Module_Melee_B.label>модуль урона врукопашную класс B</MU_Module_Melee_B.label>
+	<!-- EN: A special module, that can be installed into mechanoid, giving a medium melee damage increase. -->
+	<MU_Module_Melee_B.description>Специальный модуль для механоида. Повышает урон в ближнем бою.</MU_Module_Melee_B.description>
+	
+	<!-- EN: melee damage module tier C -->
+	<MU_Module_Melee_C.label>модуль урона врукопашную класс C</MU_Module_Melee_C.label>
+	<!-- EN: A special module, that can be installed into mechanoid, giving a small melee damage increase. -->
+	<MU_Module_Melee_C.description>Специальный модуль для механоида. Повышает урон в ближнем бою.</MU_Module_Melee_C.description>
+	
+	<!-- Repair -->
+	
+	<!-- EN: repair module tier A -->
+	<MU_Module_Repair_A.label>модуль починки класс A</MU_Module_Repair_A.label>
+	<!-- EN: A special module, that can be installed into mechanoid repair system, making it more efficient. -->
+	<MU_Module_Repair_A.description>Специальный модуль, устанавливающийся в ремонтную систему механоида. Повышает эффективность ремонта.</MU_Module_Repair_A.description>
+	
+	<!-- EN: repair module tier B -->
+	<MU_Module_Repair_B.label>модуль починки класс B</MU_Module_Repair_B.label>
+	<!-- EN: A special module, that can be installed into mechanoid repair system, making it more efficient. -->
+	<MU_Module_Repair_B.description>Специальный модуль, устанавливающийся в ремонтную систему механоида. Повышает эффективность ремонта.</MU_Module_Repair_B.description>
+	
+	<!-- EN: repair module tier C -->
+	<MU_Module_Repair_C.label>модуль починки класс C</MU_Module_Repair_C.label>
+	<!-- EN: A special module, that can be installed into mechanoid repair system, making it more efficient. -->
+	<MU_Module_Repair_C.description>Специальный модуль, устанавливающийся в ремонтную систему механоида. Повышает эффективность ремонта.</MU_Module_Repair_C.description>
+	
+	<!-- Shield -->
+	
+	<!-- EN: shield module tier A -->
+	<MU_Module_Shield_A.label>модуль щита класс A</MU_Module_Shield_A.label>
+	<!-- EN: A special module, that can be installed into mechanoid shield core, giving a large max energy increase. -->
+	<MU_Module_Shield_A.description>Специальный модуль, устанавливающийся в ядро щита механоида. Дает большой прирост максимальной энергии щита.</MU_Module_Shield_A.description>
+	
+	<!-- EN: shield module tier B -->
+	<MU_Module_Shield_B.label>модуль щита класс B</MU_Module_Shield_B.label>
+	<!-- EN: A special module, that can be installed into mechanoid shield core, giving a medium max energy increase. -->
+	<MU_Module_Shield_B.description>Специальный модуль, устанавливающийся в ядро щита механоида. Дает средний прирост максимальной энергии щита.</MU_Module_Shield_B.description>
+	
+	<!-- EN: shield module tier C -->
+	<MU_Module_Shield_C.label>модуль щита класс C</MU_Module_Shield_C.label>
+	<!-- EN: A special module, that can be installed into mechanoid shield core, giving a small max energy increase. -->
+	<MU_Module_Shield_C.description>Специальный модуль, устанавливающийся в ядро щита механоида. Дает малый прирост максимальной энергии щита.</MU_Module_Shield_C.description>
+	
+	<!-- Robust -->
+	
+	<!-- EN: durability module -->
+	<MU_Module_Robust.label>модуль прочности</MU_Module_Robust.label>
+	<!-- EN: A special module, that can be installed into mechanoid, increasing durability. -->
+	<MU_Module_Robust.description>Специальный модуль для механоида. Повышает общую прочность всех систем.</MU_Module_Robust.description>
+	
+	<!-- Robust -->
+	
+	<!-- EN: invisibility module -->
+	<MU_InvisibilityModule.label>модуль невидимости</MU_InvisibilityModule.label>
+	<!-- EN: A special module, that can be installed into mechanoid, giving an ability to become invisible. The module uses revenant spine to manipulate the visual centers of those nearby, letting the user pass unnoticed. -->
+	<MU_InvisibilityModule.description>Специальный модуль для механоида. Использует хребет ревенанта, чтобы воздействовать на зрительные центры тех, кто находится рядом, и на короткое время становиться для них невидимым.</MU_InvisibilityModule.description>
+	
+</LanguageData>

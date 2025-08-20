@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: system merger -->
+  <MU_SystemMerger.label>системный объединитель</MU_SystemMerger.label>
+  <!-- EN: A special device that can be installed into mechanoid, allowing to connect and merge systems with another mechanoid, boosting its data processing and mobility, while reducing incoming damage by acting as backup for critical subsystems. Should the connection end prematurely by broadcaster's death, the receiver will suffer from severe system disruption. -->
+  <MU_SystemMerger.description>Специальное устройство, которое можно установить в механоида. Позволяет соединиться с системами другого механоида, усиливая его обработку данных, мобильность и снижая получаемый урон засчёт поддержки критических субсистем. При смерти поддерживающего механоида слияние обрывается, вызывая расстраивание систем механоида-цели.</MU_SystemMerger.description>
+  
+  <!-- EN: propulsor amplifier -->
+  <MU_PropulsorAmplifier.label>реактивный усилитель</MU_PropulsorAmplifier.label>
+  <!-- EN: Amplifier for mechanoid propulsion engine. Increases speed and carried mass, but also consumes additional energy. -->
+  <MU_PropulsorAmplifier.description>Усилитель реактивного потока для движителя механоидов. Увеличивает скорость и грузоподъёмность, но также потребляет больше энергии.</MU_PropulsorAmplifier.description>
+  
+</LanguageData>

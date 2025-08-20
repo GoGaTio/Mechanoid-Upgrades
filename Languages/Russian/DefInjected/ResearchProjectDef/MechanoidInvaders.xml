@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<!-- EN: system merger -->
+	<MU_SystemMerger.label>системные объединители</MU_SystemMerger.label>
+	<!-- EN: Create devices that can merge mechanoid systems, enhancing various characteristics. -->
+	<MU_SystemMerger.description>Изготовление устройств, которые позволяют механоидам объединять свои системы.</MU_SystemMerger.description>
+	
+</LanguageData>

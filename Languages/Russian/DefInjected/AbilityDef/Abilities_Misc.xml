@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: shield boost -->
+  <MU_ShieldBoost.label>Усиление щита</MU_ShieldBoost.label>
+  <!-- EN: Use the shield booster to enhance mechanoid shield, making it much more durable for a short period of time.\n\nThe effect scales based on mechanoid body size. -->
+  <MU_ShieldBoost.description>Активировать усиление щита, делая его куда более прочным на короткое время.\n\nЭффект зависит от размера тела механоида.</MU_ShieldBoost.description>
+
+  <!-- EN: jump launcher -->
+  <MU_JumpLauncher.label>реактивный прыжок</MU_JumpLauncher.label>
+  <!-- EN: Jump to a distant location using a jump launcher. -->
+  <MU_JumpLauncher.description>Совершить длинный прыжок, используя прыжковый ускоритель.</MU_JumpLauncher.description>
+  
+  <!-- EN: use medicine kit -->
+  <MU_MedicineKit.label>применить медицинский набор</MU_MedicineKit.label>
+  <!-- EN: Use installed medical kit to tend wounds of living creature. -->
+  <MU_MedicineKit.description>Использовать медицинский набор, чтобы быстро, но не очень качественно перевязать кровоточащие раны.</MU_MedicineKit.description>
+
+</LanguageData>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make mechanoid frag grenades x10 -->
+  <MU_MakeFragGrenade.label>изготовить осколочные мехгранаты x10</MU_MakeFragGrenade.label>
+  <!-- EN: Craft 10 mechanoid frag grenades. -->
+  <MU_MakeFragGrenade.description>Изготовить 10 осколочных мехгранат.</MU_MakeFragGrenade.description>
+  <!-- EN: Making frag grenades. -->
+  <MU_MakeFragGrenade.jobString>Изготавливает осколочные мехгранаты</MU_MakeFragGrenade.jobString>
+  
+  <!-- EN: make mechanoid incendiary grenades x10 -->
+  <MU_MakeIncendiaryGrenade.label>изготовить зажигательные мехгранаты x10</MU_MakeIncendiaryGrenade.label>
+  <!-- EN: Craft 10 mechanoid incendiary grenades. -->
+  <MU_MakeIncendiaryGrenade.description>Изготовить 10 зажигательных мехгранат.</MU_MakeIncendiaryGrenade.description>
+  <!-- EN: Making incendiary grenades. -->
+  <MU_MakeIncendiaryGrenade.jobString>Изготавливает зажигательные мехгранаты</MU_MakeIncendiaryGrenade.jobString>
+  
+  <!-- EN: make mechanoid EMP grenades x10 -->
+  <MU_MakeEMPGrenade.label>изготовить ЭМИ мехгранаты x10</MU_MakeEMPGrenade.label>
+  <!-- EN: Craft 10 mechanoid EMP grenades. -->
+  <MU_MakeEMPGrenade.description>Изготовить 10 ЭМИ мехгранат.</MU_MakeEMPGrenade.description>
+  <!-- EN: Making EMP grenades. -->
+  <MU_MakeEMPGrenade.jobString>Изготавливает ЭМИ мехгранаты</MU_MakeEMPGrenade.jobString>
+  
+</LanguageData>

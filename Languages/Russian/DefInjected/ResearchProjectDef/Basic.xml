@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: basic upgrades -->
+	<MU_BasicUpgrades.label>базовые улучшения</MU_BasicUpgrades.label>
+	<!-- EN: Create and install basic upgrades for mechanoids. -->
+	<MU_BasicUpgrades.description>Создание и установка базовых улучшений для механоидов.</MU_BasicUpgrades.description>
+	
+	<!-- EN: basic mechanoid chips -->
+	<MU_BasicChips.label>базовые чипы</MU_BasicChips.label>
+	<!-- EN: basic mechanoid chips -->
+	<MU_BasicChips.description>Изготовление базовых чипов, усиливающих механоидов.</MU_BasicChips.description>
+	
+	<!-- EN: basic mechanoid modules -->
+	<MU_BasicModules.label>базовые модули</MU_BasicModules.label>
+	<!-- EN: Create basic mechanoid modules. -->
+	<MU_BasicModules.description>Изготовление базовых модулей, усиливающих механоидов.</MU_BasicModules.description>
+	
+	<!-- EN: basic mechanoid armor -->
+	<MU_BasicArmor.label>базовая броня</MU_BasicArmor.label>
+	<!-- EN: Create basic mechanoid armor. -->
+	<MU_BasicArmor.description>Изготовление базовой брони для механоидов.</MU_BasicArmor.description>
+	
+	<!-- EN: basic mechanoid shields -->
+	<MU_BasicShields.label>базовые щиты</MU_BasicShields.label>
+	<!-- EN: Create basic mechanoid shields. -->
+	<MU_BasicShields.description>Изготовление базовых персональных щитов для механоидов.</MU_BasicShields.description>
+	
+	<!-- EN: built-in burners -->
+	<MU_Burners.label>встроенные огнеметы</MU_Burners.label>
+	<!-- EN: Create compact flamethrowers for mechanoids. -->
+	<MU_Burners.description>Создание компактных огнемётов для механоидов.</MU_Burners.description>
+	
+	<!-- EN: mechanoid grenades -->
+	<MU_Grenades.label>гранаты для механоидов</MU_Grenades.label>
+	<!-- EN: Create grenades for mechanoids. -->
+	<MU_Grenades.description>Создание гранат для механоидов.</MU_Grenades.description>
+	
+</LanguageData>

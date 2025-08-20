@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: mini-burner -->
+  <MU_ChemfuelMiniBurner.label>мини-горелка</MU_ChemfuelMiniBurner.label>
+  <!-- EN: Use built-in mini-burner to spew stream of burning fuel. It ignites anything or anyone it hits, and also form flamming pools on the ground. -->
+  <MU_ChemfuelMiniBurner.description>Выпустить струю горящего химтоплива, которая поджигает все в зоне поражения и оставляет горящие лужи.</MU_ChemfuelMiniBurner.description>
+  
+  <!-- EN: burner -->
+  <MU_ChemfuelBurner.label>горелка</MU_ChemfuelBurner.label>
+  <!-- EN: Use built-in burner to spew stream of burning fuel. It ignites anything or anyone it hits, and also form flamming pools on the ground. -->
+  <MU_ChemfuelBurner.description>Выпустить струю горящего химтоплива, которая поджигает все в зоне поражения и оставляет горящие лужи.</MU_ChemfuelBurner.description>
+  
+  <!-- EN: flamethrower -->
+  <MU_ChemfuelFlamethrower.label>огнемёт</MU_ChemfuelFlamethrower.label>
+  <!-- EN: Use built-in flamethrower to spew long stream of burning fuel. It ignites anything or anyone it hits, and also form flamming pools on the ground. -->
+  <MU_ChemfuelFlamethrower.description>Выпустить струю горящего химтоплива, которая поджигает все в зоне поражения и оставляет горящие лужи.</MU_ChemfuelFlamethrower.description>
+
+</LanguageData>

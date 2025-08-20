@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: mini-burner -->
+  <MU_ChemfuelMiniBurner.label>мини-горелка</MU_ChemfuelMiniBurner.label>
+  <!-- EN: A chemfuel-powered mini-burner unit which can be installed into mechanoid. Generates a stream of flame from highly flammable chemfuel, that form flamming pools on the ground. The mini-burner unit requires refueling after every use. -->
+  <MU_ChemfuelMiniBurner.description>Мини-горелка на химтопливе, устанавливаемая в механоида. Создает струю пламени, которая оставляет лужи химтоплива. Имеет один заряда.</MU_ChemfuelMiniBurner.description>
+  
+  <!-- EN: burner -->
+  <MU_ChemfuelBurner.label>горелка</MU_ChemfuelBurner.label>
+  <!-- EN: A chemfuel-powered burner unit which can be installed into mechanoid. Generates a stream of flame from highly flammable chemfuel, that form flamming pools on the ground. The burner unit can be used twice before refueling. -->
+  <MU_ChemfuelBurner.description>Горелка на химтопливе, устанавливаемая в механоида. Создает струю пламени, которая оставляет лужи химтоплива. Имеет два заряда.</MU_ChemfuelBurner.description>
+  
+  <!-- EN: flamethrower -->
+  <MU_ChemfuelFlamethrower.label>огнемёт</MU_ChemfuelFlamethrower.label>
+  <!-- EN: A chemfuel-powered flamethrower unit which can be installed into mechanoid. Generates a long stream of flame from highly flammable chemfuel, that form flamming pools on the ground. The flamethrower unit can be used five times before refueling. -->
+  <MU_ChemfuelFlamethrower.description>Огнемёт на химтопливе, устанавливающийся в механоида. Создает длинную струю пламени, которая оставляет лужи химтоплива. Имеет пять зарядов.</MU_ChemfuelFlamethrower.description>
+  
+</LanguageData>

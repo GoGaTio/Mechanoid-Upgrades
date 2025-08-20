@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Offsets from upgrade -->
+  <MU_MechUpgrade_Offsets.label>Приросты от улучшения</MU_MechUpgrade_Offsets.label>
+  
+  <!-- EN: Factors from upgrade -->
+  <MU_MechUpgrade_Factors.label>Модификаторы от улучшения</MU_MechUpgrade_Factors.label>
+  
+  <!-- EN: Mechanoid upgrade -->
+  <MU_MechUpgrades.label>Улучшение</MU_MechUpgrades.label>
+  
+</LanguageData>

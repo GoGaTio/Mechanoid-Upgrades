@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: upgradability -->
+  <MU_Upgradability.label>улучшаемость</MU_Upgradability.label>
+  <!-- EN: Amount of upgrades that can be added to this mechanoid. -->
+  <MU_Upgradability.description>Сколько улучшений можно установить на этого механоида.</MU_Upgradability.description>
+  
+  <!-- EN: carried mass offset -->
+  <MU_CarriedMassOffset.label>дополнительная переносимая масса</MU_CarriedMassOffset.label>
+  <!-- EN: An extra mass, this creature can carry. -->
+  <MU_CarriedMassOffset.description>Сколько дополнительной массы может переносить это существо.</MU_CarriedMassOffset.description>
+  <!-- EN: {0} kg -->
+  <MU_CarriedMassOffset.formatString>{0} кг</MU_CarriedMassOffset.formatString>
+
+  <!-- EN: upgrades creating speed -->
+  <MU_UpgradeCreatingSpeed.label>скорость создания улучшений</MU_UpgradeCreatingSpeed.label>
+  <!-- EN: The speed at which this person creates mechanoid upgrades. -->
+  <MU_UpgradeCreatingSpeed.description>Скорость, с которой персонаж создаёт улучшения для механоидов.</MU_UpgradeCreatingSpeed.description>
+
+  <!-- EN: ranged damage factor -->
+  <MU_RangedDamageFactor.label>множитель урона при стрельбе</MU_RangedDamageFactor.label>
+  <!-- EN: A damage multiplier applied to projectiles fired from weapon held by this creature. -->
+  <MU_RangedDamageFactor.description>Множитель урона снарядов оружия, используемого этим персонажем.</MU_RangedDamageFactor.description>
+</LanguageData>

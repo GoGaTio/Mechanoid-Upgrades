@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+   
+	<!-- EN: firefoam pop pack -->
+	<MU_FirefoamPopPack.label>ранец с пожарной пеной</MU_FirefoamPopPack.label>
+	<!-- EN: A utility pack for mechanoid. When triggered, a burst of fire-retardant foam is released, covering a wide circle around its wearer. -->
+	<MU_FirefoamPopPack.description>Ранец для механоида, который при активации разбрасывает огнестойкую пену, покрывающую широкую область вокруг владельца.</MU_FirefoamPopPack.description>
+	
+	<!-- EN: smoke pop pack -->
+	<MU_SmokePopPack.label>ранец с дымовыми шашками</MU_SmokePopPack.label>
+	<!-- EN: A utility pack for mechanoid. When activated, it will release a cloud of smoke, obscuring incoming shots and preventing turrets from locking on. -->
+	<MU_SmokePopPack.description>Ранец для механоида с пиротехническим устройством постановки дымовой завесы. При активации выпускает густое облако дыма, маскирующее носителя и препятствующее наведению турелей.</MU_SmokePopPack.description>
+	
+	<!-- EN: command pack -->
+	<MU_CommandPack.label>командный ранец</MU_CommandPack.label>
+	<!-- EN: A utility pack for mechanoid that rebroadcast mechanitor command signals, creating additional control area. -->
+	<MU_CommandPack.description>Ранец для механоида, который улавливает и ретранслирует сигналы от механитора, создавая дополнительную зону контроля.</MU_CommandPack.description>
+	
+</LanguageData>

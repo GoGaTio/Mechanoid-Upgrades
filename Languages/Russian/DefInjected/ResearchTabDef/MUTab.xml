@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	
+	<!-- EN: mechanoid upgrades -->
+	<MU.label>улучшения механоидов</MU.label>
+	<!-- EN: Mechanoid upgrades -->
+	<MU.generalTitle>Улучшения механоидов</MU.generalTitle>
+	<!-- EN: Unlock mechanoid-related technologies by researching at a research bench. -->
+	<MU.generalDescription>Открывает технологии, связанные с улучшениями механоидов.</MU.generalDescription>
+	
+</LanguageData>

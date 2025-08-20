@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: mech reload station -->
+  <MU_MechReloadStation.label>станция перезарядки</MU_MechReloadStation.label>
+  <!-- EN: A mechanoid auto reloading unit. When active, it reloads upgrades of mechs nearby. -->
+  <MU_MechReloadStation.description>Механоидное устройство автоматической перезарядки. Когда активна, перезаряжает улуйчшения у механоидов поблизости.</MU_MechReloadStation.description>
+  
+</LanguageData>

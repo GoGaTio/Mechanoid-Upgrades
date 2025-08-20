@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: advanced upgrades -->
+	<MU_AdvancedUpgrades.label>продвинутые улучшения</MU_AdvancedUpgrades.label>
+	<!-- EN: Create and install advanced upgrades for mechanoids. -->
+	<MU_AdvancedUpgrades.description>Создание продвинутых улучшений для механоидов.</MU_AdvancedUpgrades.description>
+	
+	<!-- EN: MU_AdvancedChips -->
+	<MU_AdvancedChips.label>продвинутые чипы</MU_AdvancedChips.label>
+	<!-- EN: advanced mechanoid chips -->
+	<MU_AdvancedChips.description>Изготовление продвинутых чипов, усиливающих механоидов.</MU_AdvancedChips.description>
+	
+	<!-- EN: advanced mechanoid modules -->
+	<MU_AdvancedModules.label>продвинутые модули</MU_AdvancedModules.label>
+	<!-- EN: Create advanced mechanoid modules. -->
+	<MU_AdvancedModules.description>Изготовление продвинутых модулей, усиливающих механоидов.</MU_AdvancedModules.description>
+	
+	<!-- EN: advanced mechanoid armor -->
+	<MU_AdvancedArmor.label>продвинутая броня</MU_AdvancedArmor.label>
+	<!-- EN: Create advanced mechanoid armor. -->
+	<MU_AdvancedArmor.description>Изготовление продвинутой брони для механоидов.</MU_AdvancedArmor.description>
+	
+	<!-- EN: advanced mechanoid shields -->
+	<MU_AdvancedShields.label>продвинутые щиты</MU_AdvancedShields.label>
+	<!-- EN: Create advanced mechanoid shields. -->
+	<MU_AdvancedShields.description>Изготовление продвинутых персональных щитов для механоидов.</MU_AdvancedShields.description>
+	
+	<!-- EN: shield booster -->
+	<MU_ShieldBooster.label>усилитель щита</MU_ShieldBooster.label>
+	<!-- EN: Create advanced shield boosters that make shield much more durable to damage for a short period of time. -->
+	<MU_ShieldBooster.description>Сборка продвинутых усилителей щита, способных многократно увеличить прочность щита на короткое время.</MU_ShieldBooster.description>
+	
+</LanguageData>

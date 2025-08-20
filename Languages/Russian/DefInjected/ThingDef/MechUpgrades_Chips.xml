@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Work -->
+	
+	<!-- EN: work chip tier C -->
+	<MU_MechChip_Work_C.label>чип работы класс C</MU_MechChip_Work_C.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a small work speed increase. -->
+	<MU_MechChip_Work_C.description>Маленький чип, устанавливающийся в мозг механоида. Дает небольшой прирост скорости работы.</MU_MechChip_Work_C.description>
+	
+	<!-- EN: work chip tier B -->
+	<MU_MechChip_Work_B.label>чип работы класс B</MU_MechChip_Work_B.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a medium work speed increase. -->
+	<MU_MechChip_Work_B.description>Маленький чип, устанавливающийся в мозг механоида. Дает средний прирост скорости работы.</MU_MechChip_Work_B.description>
+	
+	<!-- EN: work chip tier A -->
+	<MU_MechChip_Work_A.label>чип работы класс A</MU_MechChip_Work_A.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a large work speed increase. -->
+	<MU_MechChip_Work_A.description>Маленький чип, устанавливающийся в мозг механоида. Дает большой прирост скорости работы.</MU_MechChip_Work_A.description>
+	
+	<!-- Speed -->
+	
+	<!-- EN: speed chip tier C -->
+	<MU_MechChip_Speed_C.label>чип скорости класс C</MU_MechChip_Speed_C.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a small movement speed increase. -->
+	<MU_MechChip_Speed_C.description>Маленький чип, устанавливающийся в мозг механоида. Дает небольшой прирост скорости передвижения.</MU_MechChip_Speed_C.description>
+	
+	<!-- EN: spped chip tier B -->
+	<MU_MechChip_Speed_B.label>чип скорости класс B</MU_MechChip_Speed_B.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a medium movement speed increase. -->
+	<MU_MechChip_Speed_B.description>Маленький чип, устанавливающийся в мозг механоида. Дает средний прирост скорости передвижения.</MU_MechChip_Speed_B.description>
+	
+	<!-- EN: speed chip tier A -->
+	<MU_MechChip_Speed_A.label>чип скорости класс A</MU_MechChip_Speed_A.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a large movement speed increase. -->
+	<MU_MechChip_Speed_A.description>Маленький чип, устанавливающийся в мозг механоида. Дает большой прирост скорости передвижения.</MU_MechChip_Speed_A.description>
+	
+	<!-- Energy -->
+	
+	<!-- EN: energy chip tier C -->
+	<MU_MechChip_Energy_C.label>чип энергоэффективности класс C</MU_MechChip_Energy_C.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a small energy usage decrease. -->
+	<MU_MechChip_Energy_C.description>Маленький чип, устанавливающийся в мозг механоида. Дает небольшой прирост энергоэффективности.</MU_MechChip_Energy_C.description>
+	
+	<!-- EN: energy chip tier B -->
+	<MU_MechChip_Energy_B.label>чип энергоэффективности класс B</MU_MechChip_Energy_B.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a medium energy usage decrease. -->
+	<MU_MechChip_Energy_B.description>Маленький чип, устанавливающийся в мозг механоида. Дает средний прирост энергоэффективности.</MU_MechChip_Energy_B.description>
+	
+	<!-- EN: energy chip tier A -->
+	<MU_MechChip_Energy_A.label>чип энергоэффективности класс A</MU_MechChip_Energy_A.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a large energy usage decrease. -->
+	<MU_MechChip_Energy_A.description>Маленький чип, устанавливающийся в мозг механоида. Дает большой прирост энергоэффективности.</MU_MechChip_Energy_A.description>
+	
+	<!-- Melee -->
+	
+	<!-- EN: melee chip tier C -->
+	<MU_MechChip_Melee_C.label>чип ближнего боя класс C</MU_MechChip_Melee_C.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a small melee hit chance increase. -->
+	<MU_MechChip_Melee_C.description>Маленький чип, устанавливающийся в мозг механоида. Дает небольшой прирост шанса удара врукопашную.</MU_MechChip_Melee_C.description>
+	
+	<!-- EN: melee chip tier B -->
+	<MU_MechChip_Melee_B.label>чип ближнего боя класс B</MU_MechChip_Melee_B.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a medium melee hit chance increase. -->
+	<MU_MechChip_Melee_B.description>Маленький чип, устанавливающийся в мозг механоида. Дает средний прирост шанса удара врукопашную.</MU_MechChip_Melee_B.description>
+	
+	<!-- EN: melee chip tier A -->
+	<MU_MechChip_Melee_A.label>чип ближнего боя класс A</MU_MechChip_Melee_A.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a large melee hit chance increase. -->
+	<MU_MechChip_Melee_A.description>Маленький чип, устанавливающийся в мозг механоида. Дает большой прирост шанса удара врукопашную.</MU_MechChip_Melee_A.description>
+	
+	<!-- Dodge -->
+	
+	<!-- EN: dodge chip tier C -->
+	<MU_MechChip_Dodge_C.label>чип уклонения класс C</MU_MechChip_Dodge_C.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a small melee dodge chance increase. -->
+	<MU_MechChip_Dodge_C.description>Маленький чип, устанавливающийся в мозг механоида. Дает небольшой прирост шанса уклонения.</MU_MechChip_Dodge_C.description>
+	
+	<!-- EN: dodge chip tier B -->
+	<MU_MechChip_Dodge_B.label>чип уклонения класс B</MU_MechChip_Dodge_B.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a medium melee dodge chance increase. -->
+	<MU_MechChip_Dodge_B.description>Маленький чип, устанавливающийся в мозг механоида. Дает средний прирост шанса уклонения.</MU_MechChip_Dodge_B.description>
+	
+	<!-- EN: dodge chip tier A -->
+	<MU_MechChip_Dodge_A.label>чип уклонения класс A</MU_MechChip_Dodge_A.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a large melee dodge chance increase. -->
+	<MU_MechChip_Dodge_A.description>Маленький чип, устанавливающийся в мозг механоида. Дает большой прирост шанса уклонения.</MU_MechChip_Dodge_A.description>
+	
+	<!-- Accuracy -->
+	
+	<!-- EN: accuracy chip tier C -->
+	<MU_MechChip_Ranged_C.label>чип точности класс C</MU_MechChip_Ranged_C.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a small shooting accuracy increase. -->
+	<MU_MechChip_Ranged_C.description>Маленький чип, устанавливающийся в мозг механоида. Дает небольшой прирост точности стрельбы.</MU_MechChip_Ranged_C.description>
+	
+	<!-- EN: accuracy chip tier B -->
+	<MU_MechChip_Ranged_B.label>чип точности класс B</MU_MechChip_Ranged_B.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a medium shooting accuracy increase. -->
+	<MU_MechChip_Ranged_B.description>Маленький чип, устанавливающийся в мозг механоида. Дает средний прирост точности стрельбы.</MU_MechChip_Ranged_B.description>
+	
+	<!-- EN: accuracy chip tier A -->
+	<MU_MechChip_Ranged_A.label>чип точности класс A</MU_MechChip_Ranged_A.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a large shooting accuracy increase. -->
+	<MU_MechChip_Ranged_A.description>Маленький чип, устанавливающийся в мозг механоида. Дает большой прирост точности стрельбы.</MU_MechChip_Ranged_A.description>
+	
+	<!-- Reload -->
+	
+	<!-- EN: reload chip tier C -->
+	<MU_MechChip_Reload_C.label>чип перезарядки класс C</MU_MechChip_Reload_C.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a small reload speed increase. -->
+	<MU_MechChip_Reload_C.description>Маленький чип, устанавливающийся в мозг механоида. Дает небольшой прирост скорости перезарядки.</MU_MechChip_Reload_C.description>
+	
+	<!-- EN: reload chip tier B -->
+	<MU_MechChip_Reload_B.label>чип перезарядки класс B</MU_MechChip_Reload_B.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a medium reload speed increase. -->
+	<MU_MechChip_Reload_B.description>Маленький чип, устанавливающийся в мозг механоида. Дает средний прирост скорости перезарядки.</MU_MechChip_Reload_B.description>
+	
+	<!-- EN: reload chip tier A -->
+	<MU_MechChip_Reload_A.label>чип перезарядки класс A</MU_MechChip_Reload_A.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a large reload speed increase. -->
+	<MU_MechChip_Reload_A.description>Маленький чип, устанавливающийся в мозг механоида. Дает большой прирост скорости перезарядки.</MU_MechChip_Reload_A.description>
+	
+	<!-- Aiming -->
+	
+	<!-- EN: aiming chip tier C -->
+	<MU_MechChip_Aiming_C.label>чип прицеливания класс C</MU_MechChip_Aiming_C.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a small aiming speed increase. -->
+	<MU_MechChip_Aiming_C.description>Маленький чип, устанавливающийся в мозг механоида. Дает небольшой прирост скорости прицеливания.</MU_MechChip_Aiming_C.description>
+	
+	<!-- EN: aiming chip tier B -->
+	<MU_MechChip_Aiming_B.label>чип прицеливания класс B</MU_MechChip_Aiming_B.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a medium aiming speed increase. -->
+	<MU_MechChip_Aiming_B.description>Маленький чип, устанавливающийся в мозг механоида. Дает средний прирост скорости прицеливания.</MU_MechChip_Aiming_B.description>
+	
+	<!-- EN: aiming chip tier A -->
+	<MU_MechChip_Aiming_A.label>чип прицеливания класс A</MU_MechChip_Aiming_A.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a large aiming speed increase. -->
+	<MU_MechChip_Aiming_A.description>Маленький чип, устанавливающийся в мозг механоида. Дает большой прирост скорости прицеливания.</MU_MechChip_Aiming_A.description>
+	
+	<!-- Medical -->
+	
+	<!-- EN: medical chip tier B -->
+	<MU_MechChip_Medical_B.label>медицинский чип класс B</MU_MechChip_Medical_B.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a medium increase to all medical characteristics. -->
+	<MU_MechChip_Medical_B.description>Маленький чип, устанавливающийся в мозг механоида. Дает средний прирост всех медицинских характеристик.</MU_MechChip_Medical_B.description>
+	
+	<!-- EN: medical chip tier A -->
+	<MU_MechChip_Medical_A.label>медицинский чип класс A</MU_MechChip_Medical_A.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a large increase to all medical characteristics. -->
+	<MU_MechChip_Medical_A.description>Маленький чип, устанавливающийся в мозг механоида. Дает большой прирост всех медицинских характеристик.</MU_MechChip_Medical_A.description>
+	
+	<!-- Production -->
+	
+	<!-- EN: production chip tier A -->
+	<MU_MechChip_Production_A.label>производственный чип класс A</MU_MechChip_Production_A.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a work speed increase and increases quality of things created by mechanoid. -->
+	<MU_MechChip_Production_A.description>Маленький чип, устанавливающийся в мозг механоида. Дает большой прирост скорости работы и повышает качество создаваемых изделий на 1.</MU_MechChip_Production_A.description>
+	
+	<!-- EN: production chip tier B -->
+	<MU_MechChip_Production_B.label>производственный чип класс B</MU_MechChip_Production_B.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a work speed increase. -->
+	<MU_MechChip_Production_B.description>Маленький чип, устанавливающийся в мозг механоида. Дает большой прирост скорости работы.</MU_MechChip_Production_B.description>
+	
+	<!-- Gastro-analize -->
+	
+	<!-- EN: gastro-analize chip tier A -->
+	<MU_MechChip_GastroAnalize_A.label>чип гастроанализа класс A</MU_MechChip_GastroAnalize_A.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a cooking speed increase and prevents food poisoning. -->
+	<MU_MechChip_GastroAnalize_A.description>Маленький чип, устанавливающийся в мозг механоида. Дает прирост скорости готовки и предотвращает отравление пищи.</MU_MechChip_GastroAnalize_A.description>
+	
+	<!-- EN: gastro-analize chip tier B -->
+	<MU_MechChip_GastroAnalize_B.label>чип гастроанализа класс B</MU_MechChip_GastroAnalize_B.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Gives a cooking speed increase and decreases food poisoning chance. -->
+	<MU_MechChip_GastroAnalize_B.description>Маленький чип, устанавливающийся в мозг механоида. Дает прирост скорости готовки и уменьшает шанс отравления пищи.</MU_MechChip_GastroAnalize_B.description>
+	
+</LanguageData>

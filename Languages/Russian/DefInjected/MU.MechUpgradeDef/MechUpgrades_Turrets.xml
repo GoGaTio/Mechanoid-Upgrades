@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: mini-turret -->
+  <MU_MiniTurret.label>мини-турель</MU_MiniTurret.label>
+  <!-- EN: Small defence turret that can be mounted on mechanoid. Has lower range and accuracy than stationary variants. -->
+  <MU_MiniTurret.description>Небольшая защитная турель, предназначенная для установки на механоида. Оюладает меньшей дальностью и точностью, чем стационарные образцы.</MU_MiniTurret.description>
+  
+</LanguageData>

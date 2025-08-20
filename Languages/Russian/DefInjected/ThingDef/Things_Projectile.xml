@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: frag grenade -->
+	<MU_FragGrenade.label>осколочная граната</MU_FragGrenade.label>
+	
+	<!-- EN: incendiary grenade -->
+	<MU_IncendiaryGrenade.label>поджигающая граната</MU_IncendiaryGrenade.label>
+	
+	<!-- EN: EMP grenade -->
+	<MU_EMPGrenade.label>ЭМИ граната</MU_EMPGrenade.label>
+
+</LanguageData>

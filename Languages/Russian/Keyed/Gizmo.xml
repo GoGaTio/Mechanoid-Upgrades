@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!--Mech upgrader-->
+  <!-- EN: -->
+  <MU_InsertMech>Поместить механоида</MU_InsertMech>
+  <!-- EN: -->
+  <MU_InsertMech_Desc>Выбрать механоида для улучшения.</MU_InsertMech_Desc>
+  
+  <!-- EN: -->
+  <MU_CommandCancelWaiting>Отменить погрузку</MU_CommandCancelWaiting>
+  <!-- EN: -->
+  <MU_CommandCancelWaiting_Desc>Отменить инициализацию процесса улучшения.</MU_CommandCancelWaiting_Desc>
+  
+  <!-- EN: -->
+  <MU_CommandCancelUpgrading>Отменить улучшение</MU_CommandCancelUpgrading>
+  <!-- EN: -->
+  <MU_CommandCancelUpgrading_Desc>Отменить процесс улучшения механоида. Все уже установленные улучшения останутся.</MU_CommandCancelUpgrading_Desc>
+  
+  <!--Upgradable mech comp-->
+  <!-- EN: -->
+  <MU_ForceReload>Перезарядить...</MU_ForceReload>
+  <!-- EN: -->
+  <MU_ForceReload_Desc>Перезарядить одно из улучшений, требующих этого.</MU_ForceReload_Desc>
+  
+</LanguageData>

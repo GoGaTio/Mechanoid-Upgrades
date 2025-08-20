@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!--  -->
+
+	<!-- EN: militor upgrade pack -->
+	<MU_UpgradePack_Militor.label>пакет улучшений милитора</MU_UpgradePack_Militor.label>
+	<!-- EN: Pack of different upgrades for militor.\nAlso contains remote controle module that allows control outside of mechanitor command range. -->
+	<MU_UpgradePack_Militor.description>Пакет различных улучшений для милитора.\nТакже содержит модуль дистанционного управления.</MU_UpgradePack_Militor.description>
+	
+	<!-- EN: scyther upgrade pack -->
+	<MU_UpgradePack_Scyther.label>пакет улучшений жнеца</MU_UpgradePack_Scyther.label>
+	<!-- EN: Pack of different upgrades for scyther.\nAlso contains remote controle module that allows control outside of mechanitor command range. -->
+	<MU_UpgradePack_Scyther.description>Пакет различных улучшений для жнеца.\nТакже содержит модуль дистанционного управления.</MU_UpgradePack_Scyther.description>
+	
+	<!-- EN: tesseron upgrade pack -->
+	<MU_UpgradePack_Tesseron.label>пакет улучшений тессерона</MU_UpgradePack_Tesseron.label>
+	<!-- EN: Pack of different upgrades for tesseron.\nAlso contains remote controle module that allows control outside of mechanitor command range. -->
+	<MU_UpgradePack_Tesseron.description>Пакет различных улучшений для тессерона.\nТакже содержит модуль дистанционного управления.</MU_UpgradePack_Tesseron.description>
+	
+	<!-- Small -->
+
+	<!-- EN: remote control chip -->
+	<MU_RemoteControlChip.label>чип дистанционного контроля</MU_RemoteControlChip.label>
+	<!-- EN: A small chip, that can be installed into mechanoid brain. Mechanoid with it can be controlled even outside of mechanitor command range. -->
+	<MU_RemoteControlChip.description>Маленький чип, устанавливающийся в мозг механоида. Позволяет механоиду быть управляемым даже вне командного радиуса.</MU_RemoteControlChip.description>
+	
+</LanguageData>
