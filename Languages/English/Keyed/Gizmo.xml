@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!--Mech upgrader-->
+  <MU_InsertMech>Insert mechanoid</MU_InsertMech>
+  <MU_InsertMech_Desc>Insert a mechanoid into the mech upgrader. After insertion mechanitor should begin upgrade process.</MU_InsertMech_Desc>
+  
+  <MU_CommandCancelWaiting>Cancel upgrade</MU_CommandCancelWaiting>
+  <MU_CommandCancelWaiting_Desc>Cancel the upgrade process. The contained mechanoid will be ejected.</MU_CommandCancelWaiting_Desc>
+  
+  <MU_CommandCancelUpgrading>Cancel process</MU_CommandCancelUpgrading>
+  <MU_CommandCancelUpgrading_Desc>Cancel the upgrade process. The contained mechanoid will be ejected.</MU_CommandCancelUpgrading_Desc>
+  
+  <!--Upgradable mech comp-->
+  <MU_ForceReload>Force reload...</MU_ForceReload>
+  <MU_ForceReload_Desc>Force mechanoid to reload one of upgrades that need reload.</MU_ForceReload_Desc>
+  
+  <MU_MechBooster_Label>Switch mech booster</MU_MechBooster_Label>
+  <MU_MechBooster_Desc>Switch mech booster to another mode.</MU_MechBooster_Desc>
+  
+</LanguageData>

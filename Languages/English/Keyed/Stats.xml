@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  
+  <!--Misc-->  
+  <MU_StatsReport_FactorFromHolder>Factor from user</MU_StatsReport_FactorFromHolder>
+  
+  <!--Mech stats-->
+  <MU_IsUpgradableMechanoid>Upgradable mech</MU_IsUpgradableMechanoid>
+  <MU_IsUpgradableMechanoid_Desc>This mechanoid can be upgraded.</MU_IsUpgradableMechanoid_Desc>
+  
+  <MU_UpgradesInsideMech>Upgrades</MU_UpgradesInsideMech>
+  <MU_UpgradesInsideMech_Desc>Installed upgrades.</MU_UpgradesInsideMech_Desc>
+  
+  <!--Modifiers from upgrades-->
+  <MU_StatOffsetsFromUpgrades>Offsets from upgrades</MU_StatOffsetsFromUpgrades>
+  <MU_StatFactorsFromUpgrades>Factors from upgrades</MU_StatFactorsFromUpgrades>
+  
+  <MU_GivesPersonalShield>Gives personal shield</MU_GivesPersonalShield>
+  <MU_GivesPersonalShield_Desc>This upgrade creates shield bubble around mechanoid.</MU_GivesPersonalShield_Desc>
+  
+  <!--Upgrade stats-->
+  <MU_CommandRange>Command range</MU_CommandRange>
+  <MU_CommandRange_Desc>Range around mechanoid where other mechs can be controlled.</MU_CommandRange_Desc>
+  
+  <MU_UpgradePoints>Upgrade points</MU_UpgradePoints>
+  <MU_UpgradePoints_Desc>Upgradability which this upgrade takes.</MU_UpgradePoints_Desc>
+  
+  <MU_AllowsRemoteControl>Allows remote control</MU_AllowsRemoteControl>
+  <MU_AllowsRemoteControl_Desc>With this upgrade mechanoid can be controlled outside of command range.</MU_AllowsRemoteControl_Desc>
+  
+  <MU_MinBodySize>minimum body size</MU_MinBodySize>
+  <MU_MinBodySize_Desc>This upgrade is only for mechs with body size equal or larger than this value.</MU_MinBodySize_Desc>
+  
+  <MU_MaxBodySize>maximum body size</MU_MaxBodySize>
+  <MU_MaxBodySize_Desc>This upgrade is only for mechs with body size smaller than this value.</MU_MaxBodySize_Desc>
+  
+  <MU_MechanoidsToAdd>Upgradable mechs</MU_MechanoidsToAdd>
+  <MU_MechanoidsToAdd_Desc>Mechanoids which can be upgraded with this upgrade.</MU_MechanoidsToAdd_Desc>
+  
+  <MU_Stat_ReloadCost>Reload cost</MU_Stat_ReloadCost>
+  <MU_Stat_ReloadCost_Desc>The amount of items required to reload this object once.</MU_Stat_ReloadCost_Desc>
+  
+  <MU_QualityOffset>Quality offset</MU_QualityOffset>
+  <MU_QualityOffset_Desc>Quality offset to crafting or construction.</MU_QualityOffset_Desc>
+  
+</LanguageData>

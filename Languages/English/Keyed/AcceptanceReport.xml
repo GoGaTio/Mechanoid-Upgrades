@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!--Mech upgrader-->
+  <MU_IsNotControlled>Not controlled</MU_IsNotControlled>
+  <MU_IsNotMechanitor>Not mechanitor</MU_IsNotMechanitor>
+  <MU_NoPawns>No mechanoids</MU_NoPawns>
+  <MU_NoMechanitor>No mechanitor</MU_NoMechanitor>
+  
+  <!--Reload-->
+  <MU_CannotReload_CannotManipulate>Cannot manipulate</MU_CannotReload_CannotManipulate>
+  <MU_CannotReload_NoStackSpace>Cannot hold enough resource</MU_CannotReload_NoStackSpace>
+  <MU_CannotReload_NoEnoughAmmo>no enough resource</MU_CannotReload_NoEnoughAmmo>
+  
+  <!--Upgrader report-->
+  <MU_CannotAdd_NotEnoughPoints>No enough free upgradability</MU_CannotAdd_NotEnoughPoints>
+  <MU_CannotAdd_WrongMechClass>Wrong mech weight class</MU_CannotAdd_WrongMechClass>
+  <MU_CannotAdd_BiggerSize>Mech is too large</MU_CannotAdd_BiggerSize>
+  <MU_CannotAdd_SmallerSize>Mech is too small</MU_CannotAdd_SmallerSize>
+  <MU_CannotAdd_WrongMech>Wrong mech</MU_CannotAdd_WrongMech>
+  <MU_CannotAdd_SameUpgrade>Has same upgrade</MU_CannotAdd_SameUpgrade>
+  <MU_CannotAdd_SameTags>Has conflicting upgrade: {0}</MU_CannotAdd_SameTags>
+  <MU_CannotAdd_NoRequiredBodyPart>No required body part</MU_CannotAdd_NoRequiredBodyPart>
+  <MU_CannotAdd_HaveConflictingBodyPart>Has conflicting body part</MU_CannotAdd_HaveConflictingBodyPart>
+  <MU_CannotAdd_NoRequiredWorkType>Cannot do required work type</MU_CannotAdd_NoRequiredWorkType>
+  <MU_CannotAdd_HaveConflictingWorkType>Can do conflicting work type</MU_CannotAdd_HaveConflictingWorkType>
+  <MU_CannotAdd_IsNotWorker>Isn't worker mechanoid</MU_CannotAdd_IsNotWorker>
+  <MU_CannotAdd_IsWorker>Is worker mechanoid</MU_CannotAdd_IsWorker>
+  <MU_CannotAdd_IsNotRangedFighter>Wrong mech</MU_CannotAdd_IsNotRangedFighter> <!--yeah I'm too lazy-->
+  <MU_CannotAdd_IsRangedFighter>Wrong mech</MU_CannotAdd_IsRangedFighter>
+  <MU_CannotAdd_NoShieldComp>No shield</MU_CannotAdd_NoShieldComp>
+  <MU_CannotAdd_HasShieldComp>Has shield</MU_CannotAdd_HasShieldComp>
+  
+  <!--Ability cooldown-->
+  <MU_OnCooldown>Ability on cooldown</MU_OnCooldown>
+  
+  <!--Sets-->
+  <MU_CannotAddSet_CannotAddUpgrade>Some upgrades from this set cannot be installed on this mechanoid</MU_CannotAddSet_CannotAddUpgrade>
+  <MU_CannotAddSet_NoUpgrade>No enough upgrades for the whole set</MU_CannotAddSet_NoUpgrade>
+  
+</LanguageData>

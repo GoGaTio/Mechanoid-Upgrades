@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  
+  <!--Tabs-->
+  <MU_UpgradeConfig_Label>Choose upgrades</MU_UpgradeConfig_Label>
+  <MU_NoUpgradesInside>No upgrades</MU_NoUpgradesInside>
+  <MU_TabUpgrades>Upgrades</MU_TabUpgrades>
+  <MU_AutoReload_Desc>Should mechanoid automatically reload upgrades.</MU_AutoReload_Desc>
+  
+  <!--Settings-->
+  <MU_Setting_GenerateWithUpgrades>Generate mechs with upgrades</MU_Setting_GenerateWithUpgrades>
+  <MU_Setting_GenerateWithUpgrades_Desc>Allow mechanoid generation with upgrades.</MU_Setting_GenerateWithUpgrades_Desc>
+  
+  <MU_Setting_ChanceForUpgrades>Chance for generation with upgrades</MU_Setting_ChanceForUpgrades>
+  <MU_Setting_ChanceForUpgrades_Desc>How often mechanoids will be generated with upgrades.\n\nFreshly manufactured mechanoids won't be affected.</MU_Setting_ChanceForUpgrades_Desc>
+  
+  <MU_Setting_MinPercent>Minimum amount of upgrades</MU_Setting_MinPercent>
+  <MU_Setting_MinPercent_Desc>Minimum amount of upgrades for mechanoid generation.</MU_Setting_MinPercent_Desc>
+  
+  <MU_Setting_MaxPercent>Maximum amount of upgrades</MU_Setting_MaxPercent>
+  <MU_Setting_MaxPercent_Desc>Maximum amount of upgrades for mechanoid generation.</MU_Setting_MaxPercent_Desc>
+  
+  <MU_Setting_CombinationsCommonality>Chance for preset combination</MU_Setting_CombinationsCommonality>
+  <MU_Setting_CombinationsCommonality_Desc>How often mechanoids will spawn with preset combinations of upgrades.</MU_Setting_CombinationsCommonality_Desc>
+  
+  <MU_Setting_ExtraButcherProducts>Extra loot</MU_Setting_ExtraButcherProducts>
+  <MU_Setting_ExtraButcherProducts_Desc>Allow extra resources after shredding of upgraded mechs.</MU_Setting_ExtraButcherProducts_Desc>
+  
+  <MU_Setting_ChanceForExtraLoot>Chance for extra loot</MU_Setting_ChanceForExtraLoot>
+  <MU_Setting_ChanceForExtraLoot_Desc>Chance for extra resources after shredding of upgraded mechs.\n\nThis chance applies for each upgrade.</MU_Setting_ChanceForExtraLoot_Desc>
+  
+  <MU_Setting_ExtraLootAmount>Amount of extra loot</MU_Setting_ExtraLootAmount>
+  <MU_Setting_ExtraLootAmount_Desc>Amount of extra resources after shredding of upgraded mechs.</MU_Setting_ExtraLootAmount_Desc>
+  
+  <MU_Setting_BaseUpgradability>Base upgradability</MU_Setting_BaseUpgradability>
+  <MU_Setting_BaseUpgradability_Desc>Base upgradability value.\n\nFinal value calculation includes body size and weight class factors.</MU_Setting_BaseUpgradability_Desc>
+  <MU_Setting_BaseUpgradability_Warning>Warning! Change of value significantly affects balance.</MU_Setting_BaseUpgradability_Warning>
+  
+  <!--Inspect strings-->
+  <MU_Upgrader_WaitingForOrder>Waiting</MU_Upgrader_WaitingForOrder>
+  <MU_Upgrader_WaitingForMechanoid>Waiting for mechanoid</MU_Upgrader_WaitingForMechanoid>
+  <MU_Upgrader_WaitingForMechanitor>Waiting for mechanitor</MU_Upgrader_WaitingForMechanitor>
+  <MU_Upgrader_TimeLeft>Time left</MU_Upgrader_TimeLeft>
+  
+  <MU_AllOperations>all upgrades</MU_AllOperations>
+  <MU_ThisOperation>current upgrade</MU_ThisOperation>
+  
+  <!--Job-->
+  <MU_ConfigureUpgrades>Begin process</MU_ConfigureUpgrades>
+  
+  <!--Carrier comp-->
+  <MU_MechCarrier_Title>Steel</MU_MechCarrier_Title>
+  <MU_MechCarrier_Tooltip>How many steel mini-gestator has to create war urchins.</MU_MechCarrier_Tooltip>
+  <MU_MechCarrier_Label>mini-gestator</MU_MechCarrier_Label>
+  
+  <!--Set-->
+  <MU_CannotCreateSet>Cannot create upgrades set</MU_CannotCreateSet>
+  <MU_SaveAs>Save as</MU_SaveAs>
+  
+  <!--Filters-->
+  <MU_HideNotInstallable>Hide not installable</MU_HideNotInstallable>
+  
+</LanguageData>
