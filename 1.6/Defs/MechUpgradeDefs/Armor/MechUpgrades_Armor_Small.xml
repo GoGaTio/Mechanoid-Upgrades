@@ -2,32 +2,32 @@
 <Defs>
 
   <MU.MechUpgradeDef Name="MU_SmallMechArmorBase" ParentName="MU_MechArmorBase" Abstract="True">
-	<upgradePoints>2</upgradePoints>
-	<minBodySize>0</minBodySize>
-	<maxBodySize>0.8</maxBodySize>
+    <upgradePoints>2</upgradePoints>
+    <minBodySize>0</minBodySize>
+    <maxBodySize>0.8</maxBodySize>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef Name="MU_SmallMechArmorItemBase" ParentName="MU_MechUpgradeItemCraftable" Abstract="True">
     <statBases>
       <MaxHitPoints>550</MaxHitPoints>
       <Mass>35</Mass>
       <Flammability>0</Flammability>
-	  <DeteriorationRate>1</DeteriorationRate>
+      <DeteriorationRate>1</DeteriorationRate>
     </statBases>
-	<graphicData>
+    <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_SmallMechArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1, 1)</drawSize>
     </graphicData>
-	<recipeMaker>
+    <recipeMaker>
       <displayPriority>1000</displayPriority>
-	  <unfinishedThingDef>MU_UnfinishedUpgrade_Armor_Small</unfinishedThingDef>
+      <unfinishedThingDef>MU_UnfinishedUpgrade_Armor_Small</unfinishedThingDef>
     </recipeMaker>
-	<thingCategories Inherit="False">
-      <li>MU_Armor</li>
+    <thingCategories Inherit="False">
+      <li>MU_SmallArmor</li>
     </thingCategories>
-	<tradeTags>
-	  <li>MU_SmallArmor</li>
+    <tradeTags>
+      <li>MU_SmallArmor</li>
     </tradeTags>
   </ThingDef>
 
@@ -35,137 +35,138 @@
     <defName>MU_MechArmor_Small_C</defName>
     <label>small mech armor tier C</label>
     <description>Universal armor for a small mechanoid. Gives a small increase in protection against penetrating and crushing damage.</description>
-    <techLevel>Industrial</techLevel>
-	<comps>
+    <techLevel>Industrial</techLevel>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_MechArmor_Small_C</upgradeDef>
       </li>
     </comps>
-	<costList>
+    <costList>
       <Steel>20</Steel>
-	  <Plasteel>10</Plasteel>
+      <Plasteel>10</Plasteel>
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
-	<statBases>
-	  <WorkToMake>20000</WorkToMake>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
     </statBases>
-	<recipeMaker>
+    <recipeMaker>
       <researchPrerequisite>MU_BasicArmor</researchPrerequisite>
     </recipeMaker>
-	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_C</uiIconPath>
-	<tradeTags>
-	  <li>MU_BasicUpgrade</li>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_C</uiIconPath>
+    <tradeTags>
+      <li>MU_BasicUpgrade</li>
     </tradeTags>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_SmallMechArmorBase">
     <defName>MU_MechArmor_Small_C</defName>
     <label>small mech armor tier C</label>
-	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_C</uiIconPath>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_C</uiIconPath>
     <description>Universal armor for a small mechanoid. Gives a small increase in protection against penetrating and crushing damage.</description>
     <statOffsets>
-	  <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
-	  <MoveSpeed>-0.1</MoveSpeed>
-	</statOffsets>
-	<linkedThingDef>MU_MechArmor_Small_C</linkedThingDef>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <MoveSpeed>-0.1</MoveSpeed>
+    </statOffsets>
+    <linkedThingDef>MU_MechArmor_Small_C</linkedThingDef>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef ParentName="MU_SmallMechArmorItemBase">
     <defName>MU_MechArmor_Small_B</defName>
     <label>small mech armor tier B</label>
     <description>Universal armor for a small mechanoid. Gives a medium increase in protection against penetrating and crushing damage.</description>
-    <techLevel>Spacer</techLevel>
-	<comps>
+    <techLevel>Spacer</techLevel>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_MechArmor_Small_B</upgradeDef>
       </li>
     </comps>
-	<costList>
+    <costList>
       <Steel>30</Steel>
-	  <Plasteel>15</Plasteel>
-	  <Uranium>5</Uranium>
+      <Plasteel>15</Plasteel>
+      <Uranium>5</Uranium>
       <ComponentIndustrial>1</ComponentIndustrial>
-	  <ComponentSpacer>1</ComponentSpacer>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
-	<statBases>
-	  <WorkToMake>25000</WorkToMake>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
     </statBases>
-	<recipeMaker>
+    <recipeMaker>
       <researchPrerequisite>MU_StandardArmor</researchPrerequisite>
-	  <recipeUsers Inherit="False">
+      <recipeUsers Inherit="False">
         <li>MU_AdvancedUpgradesAssembler</li>
       </recipeUsers>
     </recipeMaker>
-	<thingSetMakerTags Inherit="False">
+    <thingSetMakerTags Inherit="False">
       <li>MU_StandardUpgrades</li>
     </thingSetMakerTags>
-	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_B</uiIconPath>
-	<tradeTags>
-	  <li>MU_StandardUpgrade</li>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_B</uiIconPath>
+    <tradeTags>
+      <li>MU_StandardUpgrade</li>
     </tradeTags>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_SmallMechArmorBase">
     <defName>MU_MechArmor_Small_B</defName>
     <label>small mech armor tier B</label>
-	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_B</uiIconPath>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_B</uiIconPath>
+
     <description>Universal armor for a small mechanoid. Gives a medium increase in protection against penetrating and crushing damage.</description>
     <statOffsets>
-	  <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-	  <MoveSpeed>-0.2</MoveSpeed>
-	</statOffsets>
-	<linkedThingDef>MU_MechArmor_Small_B</linkedThingDef>
+      <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <MoveSpeed>-0.2</MoveSpeed>
+    </statOffsets>
+    <linkedThingDef>MU_MechArmor_Small_B</linkedThingDef>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef ParentName="MU_SmallMechArmorItemBase">
     <defName>MU_MechArmor_Small_A</defName>
     <label>small mech armor tier A</label>
     <description>Universal armor for a small mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nStandard armor technology allows to reduce even non-reflected damage.</description>
     <techLevel>Ultra</techLevel>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_MechArmor_Small_A</upgradeDef>
       </li>
     </comps>
-	<costList>
-      <NanostructuringChip>1</NanostructuringChip>
-	  <Plasteel>15</Plasteel>
-	  <Uranium>10</Uranium>
+    <costList>
+      <NanostructuringChip>1</NanostructuringChip>
+      <Plasteel>15</Plasteel>
+      <Uranium>10</Uranium>
     </costList>
-	<statBases>
-	  <WorkToMake>30000</WorkToMake>
+    <statBases>
+      <WorkToMake>14000</WorkToMake>
     </statBases>
-	<recipeMaker>
+    <recipeMaker>
       <researchPrerequisite>MU_AdvancedArmor</researchPrerequisite>
-	  <recipeUsers Inherit="False">
+      <recipeUsers Inherit="False">
         <li>MU_AdvancedUpgradesAssembler</li>
       </recipeUsers>
     </recipeMaker>
-	<thingSetMakerTags Inherit="False">
+    <thingSetMakerTags Inherit="False">
       <li>MU_AdvancedUpgrades</li>
     </thingSetMakerTags>
-	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_A</uiIconPath>
-	<tradeTags>
-	  <li>MU_AdvancedUpgrade</li>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_A</uiIconPath>
+    <tradeTags>
+      <li>MU_AdvancedUpgrade</li>
     </tradeTags>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_SmallMechArmorBase">
     <defName>MU_MechArmor_Small_A</defName>
     <label>small mech armor tier A</label>
-	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_A</uiIconPath>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_A</uiIconPath>
     <description>Universal armor for a small mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nStandard armor technology allows to reduce even non-reflected damage.</description>
     <statOffsets>
-	  <ArmorRating_Sharp>0.70</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
-	  <MoveSpeed>-0.15</MoveSpeed>
-	</statOffsets>
-	<statFactors>
-	  <IncomingDamageFactor>0.75</IncomingDamageFactor>
-	</statFactors>
-	<linkedThingDef>MU_MechArmor_Small_A</linkedThingDef>
+      <ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </statOffsets>
+    <statFactors>
+      <IncomingDamageFactor>0.75</IncomingDamageFactor>
+    </statFactors>
+    <linkedThingDef>MU_MechArmor_Small_A</linkedThingDef>
   </MU.MechUpgradeDef>
 
 </Defs>

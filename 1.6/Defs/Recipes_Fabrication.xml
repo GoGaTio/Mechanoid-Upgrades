@@ -1,0 +1,926 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MU.ImproveRecipeDef Name="MU_ImproveUpgradeBase" Abstract="True">
+    <jobString>Loading upgrades fabricator.</jobString>
+    <workAmount>5</workAmount>
+    <workSpeedStat>MU_UpgradeFabricationSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>MechGestatorCycle_Initiating</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0</workSkillLearnFactor>
+    <formingTicks>60000</formingTicks>
+    <recipeUsers>
+      <li>MU_UpgradesFabricator</li>
+    </recipeUsers>
+  </MU.ImproveRecipeDef>
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeBase" Name="MU_ImproveUpgradeCBase" Abstract="True">
+    <fixedIngredientFilter>
+      <disallowedSpecialFilters>
+        <li>MU_AllowNonTier</li>
+        <li>MU_AllowBTier</li>
+        <li>MU_AllowATier</li>
+        <li MayRequire="GoGaTio.FactoriesFarAway">MU_AllowSTier</li>
+      </disallowedSpecialFilters>
+      <specialFiltersToDisallow>
+        <li>MU_AllowNonTier</li>
+        <li>MU_AllowBTier</li>
+        <li>MU_AllowATier</li>
+        <li MayRequire="GoGaTio.FactoriesFarAway">MU_AllowSTier</li>
+      </specialFiltersToDisallow>
+      <hiddenSpecialFilters>
+        <li>MU_AllowCTier</li>
+      </hiddenSpecialFilters>
+    </fixedIngredientFilter>
+    <tier>C</tier>
+    <formingTicks>30000</formingTicks>
+  </MU.ImproveRecipeDef>
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeBase" Name="MU_ImproveUpgradeBBase" Abstract="True">
+    <fixedIngredientFilter>
+      <disallowedSpecialFilters>
+        <li>MU_AllowNonTier</li>
+        <li>MU_AllowCTier</li>
+        <li>MU_AllowATier</li>
+        <li MayRequire="GoGaTio.FactoriesFarAway">MU_AllowSTier</li>
+      </disallowedSpecialFilters>
+      <specialFiltersToDisallow>
+        <li>MU_AllowNonTier</li>
+        <li>MU_AllowCTier</li>
+        <li>MU_AllowATier</li>
+        <li MayRequire="GoGaTio.FactoriesFarAway">MU_AllowSTier</li>
+      </specialFiltersToDisallow>
+      <hiddenSpecialFilters>
+        <li>MU_AllowBTier</li>
+      </hiddenSpecialFilters>
+    </fixedIngredientFilter>
+    <tier>B</tier>
+    <formingTicks>60000</formingTicks>
+  </MU.ImproveRecipeDef>
+
+  <MU.ImproveRecipeDef MayRequire="GoGaTio.FactoriesFarAway" ParentName="MU_ImproveUpgradeBase" Name="MU_ImproveUpgradeABase" Abstract="True">
+    <fixedIngredientFilter>
+      <disallowedSpecialFilters>
+        <li>MU_AllowNonTier</li>
+        <li>MU_AllowCTier</li>
+        <li>MU_AllowBTier</li>
+        <li>MU_AllowSTier</li>
+      </disallowedSpecialFilters>
+      <specialFiltersToDisallow>
+        <li>MU_AllowNonTier</li>
+        <li>MU_AllowCTier</li>
+        <li>MU_AllowBTier</li>
+        <li>MU_AllowSTier</li>
+      </specialFiltersToDisallow>
+      <hiddenSpecialFilters>
+        <li>MU_AllowATier</li>
+      </hiddenSpecialFilters>
+    </fixedIngredientFilter>
+    <tier>A</tier>
+    <formingTicks>90000</formingTicks>
+  </MU.ImproveRecipeDef>
+  
+  <!--Chips-->
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeCBase">
+    <defName>MU_ImproveChipTierC</defName>
+    <label>C tier chip to B tier</label>
+    <description>Improve C tier chip to B tier chip.\n\nYields 5 steel.</description>
+    <researchPrerequisite>MU_StandardChips</researchPrerequisite>
+    <formingTicks>20000</formingTicks>
+    <uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChipB</uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_Chips</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <yieldThings>
+      <Steel>5</Steel>
+    </yieldThings>
+    <category>MU_Chips</category>
+  </MU.ImproveRecipeDef>
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeBBase">
+    <defName>MU_ImproveChipTierB</defName>
+    <label>B tier chip to A tier</label>
+    <description>Improve B tier chip to A tier chip.\n\nYields 50 silver, 1 basic and 1 advanced component.</description>
+    <researchPrerequisite>MU_AdvancedChips</researchPrerequisite>
+    <formingTicks>40000</formingTicks>
+    <uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChipA</uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_Chips</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SignalChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <yieldThings>
+      <Silver>5</Silver>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </yieldThings>
+    <category>MU_Chips</category>
+  </MU.ImproveRecipeDef>
+  
+  <!--Modules-->
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeCBase">
+    <defName>MU_ImproveModuleTierC</defName>
+    <label>C tier module to B tier</label>
+    <description>Improve C tier module to B tier module.</description>
+    <researchPrerequisite>MU_StandardModules</researchPrerequisite>
+    <formingTicks>30000</formingTicks>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_ModuleB</uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_Modules</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <category>MU_Modules</category>
+  </MU.ImproveRecipeDef>
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeBBase">
+    <defName>MU_ImproveModuleTierB</defName>
+    <label>B tier module to A tier</label>
+    <description>Improve B tier module to A tier module.\n\nYields 20 steel, 1 basic and 1 advanced component.</description>
+    <researchPrerequisite>MU_AdvancedModules</researchPrerequisite>
+    <formingTicks>60000</formingTicks>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_ModuleA</uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_Modules</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PowerfocusChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <yieldThings>
+      <Steel>20</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </yieldThings>
+    <category>MU_Modules</category>
+  </MU.ImproveRecipeDef>
+
+  <!--==================================================================Armor==========================================================================-->
+  <!--Small armor-->
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeCBase">
+    <defName>MU_ImproveSmallArmorTierC</defName>
+    <label>C tier small armor to B tier</label>
+    <description>Improve C tier small armor to B tier small armor.</description>
+    <researchPrerequisite>MU_StandardArmor</researchPrerequisite>
+    <formingTicks>30000</formingTicks>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_B</uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_SmallArmor</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <category>MU_SmallArmor</category>
+  </MU.ImproveRecipeDef>
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeBBase">
+    <defName>MU_ImproveSmallArmorTierB</defName>
+    <label>B tier small armor to A tier</label>
+    <description>Improve B tier small armor to A tier small armor.\n\nYields 30 steel, 1 basic and 1 advanced component.</description>
+    <researchPrerequisite>MU_AdvancedArmor</researchPrerequisite>
+    <formingTicks>60000</formingTicks>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_SmallMechArmor_A</uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_SmallArmor</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>NanostructuringChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <yieldThings>
+      <Steel>30</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </yieldThings>
+    <category>MU_SmallArmor</category>
+  </MU.ImproveRecipeDef>
+
+  <!--Medium armor-->
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeCBase">
+    <defName>MU_ImproveMediumArmorTierC</defName>
+    <label>C tier medium armor to B tier</label>
+    <description>Improve C tier medium armor to B tier medium armor.</description>
+    <researchPrerequisite>MU_StandardArmor</researchPrerequisite>
+    <formingTicks>35000</formingTicks>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_B</uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_MediumArmor</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <category>MU_MediumArmor</category>
+  </MU.ImproveRecipeDef>
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeBBase">
+    <defName>MU_ImproveMediumArmorTierB</defName>
+    <label>B tier medium armor to A tier</label>
+    <description>Improve B tier medium armor to A tier medium armor.\n\nYields 30 steel, 3 basic and 1 advanced component.</description>
+    <researchPrerequisite>MU_AdvancedArmor</researchPrerequisite>
+    <formingTicks>70000</formingTicks>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_A</uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_MediumArmor</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>NanostructuringChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <yieldThings>
+      <Steel>30</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </yieldThings>
+    <category>MU_MediumArmor</category>
+  </MU.ImproveRecipeDef>
+
+  <!--Large armor-->
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeCBase">
+    <defName>MU_ImproveLargeArmorTierC</defName>
+    <label>C tier large armor to B tier</label>
+    <description>Improve C tier large armor to B tier large armor.\n\nYields 1 basic component.</description>
+    <researchPrerequisite>MU_StandardArmor</researchPrerequisite>
+    <formingTicks>45000</formingTicks>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_LargeMechArmor_B</uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_LargeArmor</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <yieldThings>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </yieldThings>
+    <category>MU_LargeArmor</category>
+  </MU.ImproveRecipeDef>
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeBBase">
+    <defName>MU_ImproveLargeArmorTierB</defName>
+    <label>B tier large armor to A tier</label>
+    <description>Improve B tier large armor to A tier large armor.\n\nYields 30 steel, 1 basic and 1 advanced component.</description>
+    <researchPrerequisite>MU_AdvancedArmor</researchPrerequisite>
+    <formingTicks>90000</formingTicks>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_LargeMechArmor_A</uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_LargeArmor</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>NanostructuringChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <yieldThings>
+      <Steel>30</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </yieldThings>
+    <category>MU_LargeArmor</category>
+  </MU.ImproveRecipeDef>
+
+  <!--Ultra large armor-->
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeCBase">
+    <defName>MU_ImproveUltraLargeArmorTierC</defName>
+    <label>C tier ultra large armor to B tier</label>
+    <description>Improve C tier ultra large armor to B tier ultra large armor.</description>
+    <researchPrerequisite>MU_StandardArmor</researchPrerequisite>
+    <formingTicks>50000</formingTicks>
+    <uiIconPath></uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_UltraLargeArmor</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <category>MU_UltraLargeArmor</category>
+  </MU.ImproveRecipeDef>
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeBBase">
+    <defName>MU_ImproveUltraArmorTierB</defName>
+    <label>B tier ultra large armor to A tier</label>
+    <description>Improve B tier ultra large armor to A tier ultra large armor.\n\nYields 40 steel, 2 basic and 1 advanced component.</description>
+    <researchPrerequisite>MU_AdvancedArmor</researchPrerequisite>
+    <formingTicks>100000</formingTicks>
+    <uiIconPath></uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_UltraLargeArmor</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>NanostructuringChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <yieldThings>
+      <Steel>40</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </yieldThings>
+    <category>MU_UltraLargeArmor</category>
+  </MU.ImproveRecipeDef>
+
+  <!--==================================================================Shields==========================================================================-->
+  <!--Small shield-->
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeCBase">
+    <defName>MU_ImproveSmallShieldTierC</defName>
+    <label>C tier small shield to B tier</label>
+    <description>Improve C tier small shield to B tier small shield.\n\nYields 1 basic component.</description>
+    <researchPrerequisite>MU_StandardShields</researchPrerequisite>
+    <formingTicks>30000</formingTicks>
+    <uiIconPath></uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_SmallShields</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <yieldThings>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </yieldThings>
+    <category>MU_SmallShields</category>
+  </MU.ImproveRecipeDef>
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeBBase">
+    <defName>MU_ImproveSmallShieldTierB</defName>
+    <label>B tier small shield to A tier</label>
+    <description>Improve B tier small armor to A tier small shield.\n\nYields 20 steel, 1 basic and 1 advanced component.</description>
+    <researchPrerequisite>MU_AdvancedShields</researchPrerequisite>
+    <formingTicks>60000</formingTicks>
+    <uiIconPath></uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_SmallShields</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PowerfocusChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <yieldThings>
+      <Steel>20</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </yieldThings>
+    <category>MU_SmallShields</category>
+  </MU.ImproveRecipeDef>
+
+  <!--Medium shield-->
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeCBase">
+    <defName>MU_ImproveMediumShieldTierC</defName>
+    <label>C tier medium shield to B tier</label>
+    <description>Improve C tier medium shield to B tier medium shield.</description>
+    <researchPrerequisite>MU_StandardShields</researchPrerequisite>
+    <formingTicks>35000</formingTicks>
+    <uiIconPath></uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_MediumShields</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <category>MU_MediumShields</category>
+  </MU.ImproveRecipeDef>
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeBBase">
+    <defName>MU_ImproveMediumShieldTierB</defName>
+    <label>B tier medium shield to A tier</label>
+    <description>Improve B tier medium shield to A tier medium shield.\n\nYields 10 steel and 1 advanced component.</description>
+    <researchPrerequisite>MU_AdvancedShields</researchPrerequisite>
+    <formingTicks>70000</formingTicks>
+    <uiIconPath></uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_MediumShields</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PowerfocusChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <yieldThings>
+      <Steel>10</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </yieldThings>
+    <category>MU_MediumShields</category>
+  </MU.ImproveRecipeDef>
+
+  <!--Large shield-->
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeCBase">
+    <defName>MU_ImproveLargeShieldTierC</defName>
+    <label>C tier large shield to B tier</label>
+    <description>Improve C tier large shield to B tier large shield.\n\nYields 1 basic component.</description>
+    <researchPrerequisite>MU_StandardShields</researchPrerequisite>
+    <formingTicks>45000</formingTicks>
+    <uiIconPath></uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_LargeShields</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <yieldThings>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </yieldThings>
+    <category>MU_LargeShields</category>
+  </MU.ImproveRecipeDef>
+
+  <MU.ImproveRecipeDef ParentName="MU_ImproveUpgradeBBase">
+    <defName>MU_ImproveLargeShieldTierB</defName>
+    <label>B tier large shield to A tier</label>
+    <description>Improve B tier large shield to A tier large shield.\n\nYields 3 basic components.</description>
+    <researchPrerequisite>MU_AdvancedShields</researchPrerequisite>
+    <formingTicks>90000</formingTicks>
+    <uiIconPath></uiIconPath>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MU_LargeShields</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PowerfocusChip</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <yieldThings>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </yieldThings>
+    <category>MU_LargeShields</category>
+  </MU.ImproveRecipeDef>
+
+</Defs>

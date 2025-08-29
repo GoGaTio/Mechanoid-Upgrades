@@ -5,7 +5,7 @@
     <techLevel>Spacer</techLevel>
     <requiresMechanitor>true</requiresMechanitor>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-	<requiredResearchFacilities>
+    <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
     <tab>MU</tab>
@@ -27,12 +27,12 @@
         <li>subject->standard mechanoid upgrades</li>
 
         <li>subject_story->created standard upgrades for mechanoids</li>
-       
+
         <li>subject_gerund->crafting standard upgrades</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
-  
+
   <ResearchProjectDef ParentName="MU_StandardBase">
     <defName>MU_StandardChips</defName>
     <label>standard mechanoid chips</label>
@@ -49,12 +49,12 @@
         <li>subject->standard chips</li>
 
         <li>subject_story->programmed chips to upgrade mechanoids</li>
-        
+
         <li>subject_gerund->crafting standard chips</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
-  
+
   <ResearchProjectDef ParentName="MU_StandardBase">
     <defName>MU_StandardModules</defName>
     <label>standard mechanoid modules</label>
@@ -62,7 +62,7 @@
     <baseCost>650</baseCost>
     <prerequisites>
       <li>MU_StandardUpgrades</li>
-	  <li>MU_BasicModules</li>
+      <li>MU_BasicModules</li>
     </prerequisites>
     <researchViewX>4.00</researchViewX>
     <researchViewY>1.40</researchViewY>
@@ -71,7 +71,7 @@
         <li>subject->standard modules</li>
 
         <li>subject_story->created special modules for mechanoids</li>
-        
+
         <li>subject_gerund->crafting standard modules</li>
       </rulesStrings>
     </generalRules>
@@ -93,12 +93,12 @@
         <li>subject->mechanoid upgrades</li>
 
         <li>subject_story->moved into the development of microelectronics</li>
-        
+
         <li>subject_gerund->crafting mechanoid upgrades</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
-  
+
   <ResearchProjectDef ParentName="MU_StandardBase">
     <defName>MU_StandardShields</defName>
     <label>standard mechanoid shields</label>
@@ -106,7 +106,7 @@
     <baseCost>950</baseCost>
     <prerequisites>
       <li>MU_StandardUpgrades</li>
-	  <li>MU_BasicShields</li>
+      <li>MU_BasicShields</li>
     </prerequisites>
     <researchViewX>5.00</researchViewX>
     <researchViewY>1.75</researchViewY>
@@ -115,7 +115,7 @@
         <li>subject->standard mechanoid shields</li>
 
         <li>subject_story->created shields for assault mechanoids</li>
-       
+
         <li>subject_gerund->crafting standard shields</li>
       </rulesStrings>
     </generalRules>
@@ -136,12 +136,12 @@
         <li>subject->mechanoid jump launchers</li>
 
         <li>subject_story->created jump launchers for mechanoids</li>
-        
+
         <li>subject_gerund->creating jump launchers for mechanoids</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
-  
+
   <ResearchProjectDef ParentName="MU_StandardBase">
     <defName>MU_CommandExtenders</defName>
     <label>command repeaters</label>
@@ -157,8 +157,29 @@
         <li>subject->portable command range extenders</li>
 
         <li>subject_story->extended command range for battle mechanitors</li>
-        
+
         <li>subject_gerund->crafting command range extenders</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MU_StandardBase">
+    <defName>MU_UpgradeFabricator</defName>
+    <label>upgrades fabricator</label>
+    <description>Create devices which can fabricate lower tier upgrades into higher tiers automatically.</description>
+    <baseCost>600</baseCost>
+    <prerequisites>
+      <li>MU_StandardUpgrades</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>2.70</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->upgrades improver</li>
+
+        <li>subject_story->improved B tier upgrades into A tier</li>
+
+        <li>subject_gerund->improving upgrades</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>

@@ -131,4 +131,38 @@
     </graphicData>
   </ThingDef>
 
+  <!--=============================Improver===================================-->
+
+  <ThingDef ParentName="MU_UpgradesAssemblerMoteBase">
+    <defName>MU_UpgradesFabricatorGlow_North</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_UpgradesFabricatorGlow_north</texPath>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MU_UpgradesAssemblerMoteBase">
+    <defName>MU_UpgradesFabricatorGlow_South</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_UpgradesFabricatorGlow_north</texPath>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MU_UpgradesAssemblerMoteBase">
+    <defName>MU_UpgradesFabricatorGlow_East</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_UpgradesFabricatorGlow_east</texPath>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MU_UpgradesAssemblerMoteBase">
+    <defName>MU_UpgradesFabricatorGlow_West</defName>
+    <graphicData>
+      <texPath>Things/Mote/MU_UpgradesFabricatorGlow_east</texPath>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+  </ThingDef>
+
 </Defs>

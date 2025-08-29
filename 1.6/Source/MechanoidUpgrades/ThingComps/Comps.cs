@@ -298,8 +298,19 @@ namespace MU
 		{
 			compClass = typeof(CompReloadStation);
 		}
+
+        public override void ResolveReferences(ThingDef parentDef)
+        {
+            base.ResolveReferences(parentDef);
+			string s = "Recipes:";
+			foreach(RecipeDef def in DefDatabase<RecipeDef>.AllDefs)
+			{
+				s += "\n" + def.defName;
+            }
+			Log.Message(s);
+        }
 	}
-	public class CompReloadStation : ThingComp//Will finish this soon, but stuck at textures
+	public class CompReloadStation : ThingComp
 	{
 		public int cooldown;
 		public CompProperties_ReloadStation Props => (CompProperties_ReloadStation)props;

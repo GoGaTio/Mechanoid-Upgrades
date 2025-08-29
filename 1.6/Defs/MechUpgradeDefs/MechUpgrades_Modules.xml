@@ -3,532 +3,534 @@
 
   <MU.MechUpgradeDef Name="MU_MechModuleBase" Abstract="True">
     <upgradePoints>2</upgradePoints>
-	<commonality>1</commonality>
+    <commonality>1</commonality>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef Name="MU_MechModuleItemBase" ParentName="MU_MechUpgradeItemCraftable" Abstract="True">
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <Mass>2</Mass>
-	  <DeteriorationRate>1</DeteriorationRate>
+      <DeteriorationRate>1</DeteriorationRate>
     </statBases>
-	<graphicData>
+    <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>(0.85, 0.85)</drawSize>
+      <drawSize>(0.85, 0.85)</drawSize>
     </graphicData>
-	<recipeMaker>
-	  <unfinishedThingDef>MU_UnfinishedUpgrade_Module</unfinishedThingDef>
-	  <recipeUsers Inherit="False">
+    <recipeMaker>
+      <unfinishedThingDef>MU_UnfinishedUpgrade_Module</unfinishedThingDef>
+      <recipeUsers Inherit="False">
         <li>MU_BasicUpgradesAssembler</li>
       </recipeUsers>
     </recipeMaker>
-	<thingCategories Inherit="False">
+    <thingCategories Inherit="False">
       <li>MU_Modules</li>
     </thingCategories>
-	<tradeTags>
-	  <li>MU_Module</li>
+    <tradeTags>
+      <li>MU_Module</li>
     </tradeTags>
   </ThingDef>
-  
+
   <ThingDef ParentName="MU_MechModuleItemBase" Name="MU_BasicModuleItemBase" Abstract="True">
     <statBases>
-      <Flammability>0.5</Flammability><WorkToMake>15000</WorkToMake>
+      <Flammability>0.5</Flammability>
+      <WorkToMake>10000</WorkToMake>
     </statBases>
-	<costList>
+    <costList>
       <ComponentIndustrial>1</ComponentIndustrial>
-	  <Plasteel>10</Plasteel>
-	  <Steel>10</Steel>
-	  <Uranium>5</Uranium>
+      <Plasteel>10</Plasteel>
+      <Steel>10</Steel>
+      <Uranium>5</Uranium>
     </costList>
-	<recipeMaker>
+    <recipeMaker>
       <displayPriority>200</displayPriority>
-	  <researchPrerequisite>MU_BasicModules</researchPrerequisite>
+      <researchPrerequisite>MU_BasicModules</researchPrerequisite>
     </recipeMaker>
-	<thingSetMakerTags>
+    <thingSetMakerTags>
       <li>MU_BasicUpgrades</li>
-	  <li>MU_BasicModules</li>
+      <li>MU_BasicModules</li>
     </thingSetMakerTags>
-	<techLevel>Industrial</techLevel>
-	<tradeTags>
-	  <li>MU_BasicUpgrade</li>
+    <techLevel>Industrial</techLevel>
+    <tradeTags>
+      <li>MU_BasicUpgrade</li>
     </tradeTags>
   </ThingDef>
-  
+
   <ThingDef ParentName="MU_MechModuleItemBase" Name="MU_StandardModuleItemBase" Abstract="True">
     <statBases>
-      <Flammability>0.25</Flammability><WorkToMake>17000</WorkToMake>
+      <Flammability>0.25</Flammability>
+      <WorkToMake>11500</WorkToMake>
     </statBases>
-	<costList>
-	  <ComponentSpacer>1</ComponentSpacer>
+    <costList>
+      <ComponentSpacer>1</ComponentSpacer>
       <ComponentIndustrial>1</ComponentIndustrial>
-	  <Plasteel>20</Plasteel>
-	  <Steel>20</Steel>
-	  <Uranium>10</Uranium>
+      <Plasteel>20</Plasteel>
+      <Steel>20</Steel>
+      <Uranium>10</Uranium>
     </costList>
-	<recipeMaker>
+    <recipeMaker>
       <displayPriority>210</displayPriority>
-	  <researchPrerequisite>MU_StandardModules</researchPrerequisite>
-	  <recipeUsers Inherit="False">
+      <researchPrerequisite>MU_StandardModules</researchPrerequisite>
+      <recipeUsers Inherit="False">
         <li>MU_AdvancedUpgradesAssembler</li>
       </recipeUsers>
     </recipeMaker>
-	<thingSetMakerTags>
+    <thingSetMakerTags>
       <li>MU_StandardUpgrades</li>
-	  <li>MU_StandardModules</li>
+      <li>MU_StandardModules</li>
     </thingSetMakerTags>
-	<techLevel>Spacer</techLevel>
-	<tradeTags>
-	  <li>MU_StandardUpgrade</li>
+    <techLevel>Spacer</techLevel>
+    <tradeTags>
+      <li>MU_StandardUpgrade</li>
     </tradeTags>
   </ThingDef>
-  
+
   <ThingDef ParentName="MU_MechModuleItemBase" Name="MU_AdvancedModuleItemBase" Abstract="True">
     <statBases>
       <Flammability>0</Flammability>
-	  <WorkToMake>20000</WorkToMake>
+      <WorkToMake>13000</WorkToMake>
     </statBases>
-	<costList>
-      <PowerfocusChip>1</PowerfocusChip>
-	  <Plasteel>20</Plasteel>
-	  <Uranium>15</Uranium>
+    <costList>
+      <PowerfocusChip>1</PowerfocusChip>
+      <Plasteel>20</Plasteel>
+      <Uranium>15</Uranium>
     </costList>
-	<recipeMaker>
+    <recipeMaker>
       <displayPriority>220</displayPriority>
-	  <researchPrerequisite>MU_AdvancedModules</researchPrerequisite>
-	  <recipeUsers Inherit="False">
+      <researchPrerequisite>MU_AdvancedModules</researchPrerequisite>
+      <recipeUsers Inherit="False">
         <li>MU_AdvancedUpgradesAssembler</li>
       </recipeUsers>
     </recipeMaker>
-	<thingSetMakerTags>
+    <thingSetMakerTags>
       <li>MU_AdvancedUpgrades</li>
-	  <li>MU_AdvancedModules</li>
+      <li>MU_AdvancedModules</li>
     </thingSetMakerTags>
-	<techLevel>Ultra</techLevel>
-	<tradeTags>
-	  <li>MU_AdvancedUpgrade</li>
+    <techLevel>Ultra</techLevel>
+    <tradeTags>
+      <li>MU_AdvancedUpgrade</li>
     </tradeTags>
   </ThingDef>
-  
+
   <!--===================================Repair==========================================-->
-  
+
   <MU.MechUpgradeDef ParentName="MU_MechModuleBase" Name="MU_RepairModuleBase" Abstract="True">
     <exclusionTags>
-	  <li>RepairModule</li>
-	</exclusionTags>
-	<commonality>0.25</commonality>
+      <li>RepairModule</li>
+    </exclusionTags>
+    <commonality>0.25</commonality>
   </MU.MechUpgradeDef>
 
   <ThingDef ParentName="MU_AdvancedModuleItemBase">
     <defName>MU_Module_Repair_A</defName>
     <label>repair module tier A</label>
-	<description>A special module, that can be installed into mechanoid repair system, making it more efficient.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Repair_A</uiIconPath>
-	<graphicData>
+    <description>A special module, that can be installed into mechanoid repair system, making it more efficient.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Repair_A</uiIconPath>
+    <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_Module_Repair</texPath>
     </graphicData>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_Module_Repair_A</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_RepairModuleBase">
     <defName>MU_Module_Repair_A</defName>
     <label>repair module tier A</label>
-	<description>A special module, that can be installed into mechanoid repair system, making it more efficient.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Repair_A</uiIconPath>
+    <description>A special module, that can be installed into mechanoid repair system, making it more efficient.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Repair_A</uiIconPath>
     <statFactors>
-	   <MechEnergyLossPerHP>0.5</MechEnergyLossPerHP>
-	</statFactors>
-	<linkedThingDef>MU_Module_Repair_A</linkedThingDef>
+      <MechEnergyLossPerHP>0.5</MechEnergyLossPerHP>
+    </statFactors>
+    <linkedThingDef>MU_Module_Repair_A</linkedThingDef>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef ParentName="MU_StandardModuleItemBase">
     <defName>MU_Module_Repair_B</defName>
     <label>repair module tier B</label>
-	<description>A special module, that can be installed into mechanoid repair system, making it more efficient.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Repair_B</uiIconPath>
-	<graphicData>
+    <description>A special module, that can be installed into mechanoid repair system, making it more efficient.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Repair_B</uiIconPath>
+    <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_Module_Repair</texPath>
     </graphicData>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_Module_Repair_B</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_RepairModuleBase">
     <defName>MU_Module_Repair_B</defName>
     <label>repair module tier B</label>
-	<description>A special module, that can be installed into mechanoid repair system, making it more efficient.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Repair_B</uiIconPath>
+    <description>A special module, that can be installed into mechanoid repair system, making it more efficient.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Repair_B</uiIconPath>
     <statFactors>
-	   <MechEnergyLossPerHP>0.75</MechEnergyLossPerHP>
-	</statFactors>
-	<linkedThingDef>MU_Module_Repair_B</linkedThingDef>
+      <MechEnergyLossPerHP>0.75</MechEnergyLossPerHP>
+    </statFactors>
+    <linkedThingDef>MU_Module_Repair_B</linkedThingDef>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef ParentName="MU_BasicModuleItemBase">
     <defName>MU_Module_Repair_C</defName>
     <label>repair module tier C</label>
-	<description>A special module, that can be installed into mechanoid repair system, making it more efficient.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Repair_C</uiIconPath>
+    <description>A special module, that can be installed into mechanoid repair system, making it more efficient.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Repair_C</uiIconPath>
     <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_Module_Repair</texPath>
     </graphicData>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_Module_Repair_C</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_RepairModuleBase">
     <defName>MU_Module_Repair_C</defName>
     <label>repair module tier C</label>
-	<description>A special module, that can be installed into mechanoid repair system, making it more efficient.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Repair_C</uiIconPath>
+    <description>A special module, that can be installed into mechanoid repair system, making it more efficient.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Repair_C</uiIconPath>
     <statFactors>
-	   <MechEnergyLossPerHP>0.9</MechEnergyLossPerHP>
-	</statFactors>
-	<linkedThingDef>MU_Module_Repair_C</linkedThingDef>
+      <MechEnergyLossPerHP>0.9</MechEnergyLossPerHP>
+    </statFactors>
+    <linkedThingDef>MU_Module_Repair_C</linkedThingDef>
   </MU.MechUpgradeDef>
-  
+
   <!--===================================Melee==========================================-->
-  
+
   <MU.MechUpgradeDef ParentName="MU_MechModuleBase" Name="MU_MeleeModuleBase" Abstract="True">
     <exclusionTags>
-	  <li>MeleeDamageModule</li>
-	</exclusionTags>
-	<restrictions>
-	  <li Class="MU.UpgradeRestriction_MeleeFighter">
+      <li>MeleeDamageModule</li>
+    </exclusionTags>
+    <restrictions>
+      <li Class="MU.UpgradeRestriction_MeleeFighter">
         <factor>0</factor>
       </li>
-	</restrictions>
-	<commonality>1.5</commonality>
+    </restrictions>
+    <commonality>1.5</commonality>
   </MU.MechUpgradeDef>
 
   <ThingDef ParentName="MU_AdvancedModuleItemBase">
     <defName>MU_Module_Melee_A</defName>
     <label>melee damage module tier A</label>
-	<description>A special module, that can be installed into mechanoid, giving a large melee damage increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Melee_A</uiIconPath>
-	<graphicData>
+    <description>A special module, that can be installed into mechanoid, giving a large melee damage increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Melee_A</uiIconPath>
+    <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_Module_Melee</texPath>
     </graphicData>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_Module_Melee_A</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_MeleeModuleBase">
     <defName>MU_Module_Melee_A</defName>
     <label>melee damage module tier A</label>
-	<description>A special module, that can be installed into mechanoid, giving a large melee damage increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Melee_A</uiIconPath>
+    <description>A special module, that can be installed into mechanoid, giving a large melee damage increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Melee_A</uiIconPath>
     <statFactors>
-	   <MeleeDamageFactor>1.5</MeleeDamageFactor>
-	</statFactors>
-	<linkedThingDef>MU_Module_Melee_A</linkedThingDef>
+      <MeleeDamageFactor>1.5</MeleeDamageFactor>
+    </statFactors>
+    <linkedThingDef>MU_Module_Melee_A</linkedThingDef>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef ParentName="MU_StandardModuleItemBase">
     <defName>MU_Module_Melee_B</defName>
     <label>melee damage module tier B</label>
-	<description>A special module, that can be installed into mechanoid, giving a medium melee damage increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Melee_B</uiIconPath>
-	<graphicData>
+    <description>A special module, that can be installed into mechanoid, giving a medium melee damage increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Melee_B</uiIconPath>
+    <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_Module_Melee</texPath>
     </graphicData>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_Module_Melee_B</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_MeleeModuleBase">
     <defName>MU_Module_Melee_B</defName>
     <label>melee damage module tier B</label>
-	<description>A special module, that can be installed into mechanoid, giving a medium melee damage increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Melee_B</uiIconPath>
+    <description>A special module, that can be installed into mechanoid, giving a medium melee damage increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Melee_B</uiIconPath>
     <statFactors>
-	   <MeleeDamageFactor>1.25</MeleeDamageFactor>
-	</statFactors>
-	<linkedThingDef>MU_Module_Melee_B</linkedThingDef>
+      <MeleeDamageFactor>1.25</MeleeDamageFactor>
+    </statFactors>
+    <linkedThingDef>MU_Module_Melee_B</linkedThingDef>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef ParentName="MU_BasicModuleItemBase">
     <defName>MU_Module_Melee_C</defName>
     <label>melee damage module tier C</label>
-	<description>A special module, that can be installed into mechanoid, giving a small melee damage increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Melee_C</uiIconPath>
+    <description>A special module, that can be installed into mechanoid, giving a small melee damage increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Melee_C</uiIconPath>
     <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_Module_Melee</texPath>
     </graphicData>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_Module_Melee_C</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_MeleeModuleBase">
     <defName>MU_Module_Melee_C</defName>
     <label>melee damage module tier C</label>
-	<description>A special module, that can be installed into mechanoid, giving a small melee damage increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Melee_C</uiIconPath>
+    <description>A special module, that can be installed into mechanoid, giving a small melee damage increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Melee_C</uiIconPath>
     <statFactors>
-	   <MeleeDamageFactor>1.1</MeleeDamageFactor>
-	</statFactors>
-	<linkedThingDef>MU_Module_Melee_C</linkedThingDef>
+      <MeleeDamageFactor>1.1</MeleeDamageFactor>
+    </statFactors>
+    <linkedThingDef>MU_Module_Melee_C</linkedThingDef>
   </MU.MechUpgradeDef>
-  
+
   <!--===================================Ranged==========================================-->
-  
+
   <MU.MechUpgradeDef ParentName="MU_MechModuleBase" Name="MU_RangedModuleBase" Abstract="True">
     <exclusionTags>
-	  <li>RangedDamageModule</li>
-	</exclusionTags>
-	<restrictions>
-	  <li Class="MU.UpgradeRestriction_RangedFighter" />
-	</restrictions>
-	<mechanoidDefs>
-	   <li>Mech_Diabolus</li>
-	</mechanoidDefs>
-	<listIsWhitelist>false</listIsWhitelist>
+      <li>RangedDamageModule</li>
+    </exclusionTags>
+    <restrictions>
+      <li Class="MU.UpgradeRestriction_RangedFighter" />
+    </restrictions>
+    <mechanoidDefs>
+      <li>Mech_Diabolus</li>
+    </mechanoidDefs>
+    <listIsWhitelist>false</listIsWhitelist>
   </MU.MechUpgradeDef>
 
   <ThingDef ParentName="MU_AdvancedModuleItemBase">
     <defName>MU_Module_Ranged_A</defName>
     <label>ranged damage module tier A</label>
-	<description>A special module, that can be installed into mechanoid ammo control system, giving a large ranged damage increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Ranged_A</uiIconPath>
-	<graphicData>
+    <description>A special module, that can be installed into mechanoid ammo control system, giving a large ranged damage increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Ranged_A</uiIconPath>
+    <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_Module_Ranged</texPath>
     </graphicData>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_Module_Ranged_A</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_RangedModuleBase">
     <defName>MU_Module_Ranged_A</defName>
     <label>ranged damage module tier A</label>
-	<description>A special module, that can be installed into mechanoid ammo control system, giving a large ranged damage increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Ranged_A</uiIconPath>
+    <description>A special module, that can be installed into mechanoid ammo control system, giving a large ranged damage increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Ranged_A</uiIconPath>
     <statFactors>
-	   <MU_RangedDamageFactor>1.5</MU_RangedDamageFactor>
-	</statFactors>
-	<linkedThingDef>MU_Module_Ranged_A</linkedThingDef>
+      <MU_RangedDamageFactor>1.5</MU_RangedDamageFactor>
+    </statFactors>
+    <linkedThingDef>MU_Module_Ranged_A</linkedThingDef>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef ParentName="MU_StandardModuleItemBase">
     <defName>MU_Module_Ranged_B</defName>
     <label>ranged damage module tier B</label>
-	<description>A special module, that can be installed into mechanoid ammo control system, giving a medium ranged damage increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Ranged_B</uiIconPath>
-	<graphicData>
+    <description>A special module, that can be installed into mechanoid ammo control system, giving a medium ranged damage increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Ranged_B</uiIconPath>
+    <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_Module_Ranged</texPath>
     </graphicData>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_Module_Ranged_B</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_RangedModuleBase">
     <defName>MU_Module_Ranged_B</defName>
     <label>ranged damage module tier B</label>
-	<description>A special module, that can be installed into mechanoid ammo control system, giving a medium ranged damage increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Ranged_B</uiIconPath>
+    <description>A special module, that can be installed into mechanoid ammo control system, giving a medium ranged damage increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Ranged_B</uiIconPath>
     <statFactors>
-	   <MU_RangedDamageFactor>1.25</MU_RangedDamageFactor>
-	</statFactors>
-	<linkedThingDef>MU_Module_Ranged_B</linkedThingDef>
+      <MU_RangedDamageFactor>1.25</MU_RangedDamageFactor>
+    </statFactors>
+    <linkedThingDef>MU_Module_Ranged_B</linkedThingDef>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef ParentName="MU_BasicModuleItemBase">
     <defName>MU_Module_Ranged_C</defName>
     <label>ranged damage module tier C</label>
-	<description>A special module, that can be installed into mechanoid ammo control system, giving a small ranged damage increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Ranged_C</uiIconPath>
+    <description>A special module, that can be installed into mechanoid ammo control system, giving a small ranged damage increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Ranged_C</uiIconPath>
     <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_Module_Ranged</texPath>
     </graphicData>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_Module_Ranged_C</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_RangedModuleBase">
     <defName>MU_Module_Ranged_C</defName>
     <label>ranged damage module tier C</label>
-	<description>A special module, that can be installed into mechanoid ammo control system, giving a small ranged damage increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Ranged_C</uiIconPath>
+    <description>A special module, that can be installed into mechanoid ammo control system, giving a small ranged damage increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Ranged_C</uiIconPath>
     <statFactors>
-	   <MU_RangedDamageFactor>1.1</MU_RangedDamageFactor>
-	</statFactors>
-	<linkedThingDef>MU_Module_Ranged_C</linkedThingDef>
+      <MU_RangedDamageFactor>1.1</MU_RangedDamageFactor>
+    </statFactors>
+    <linkedThingDef>MU_Module_Ranged_C</linkedThingDef>
   </MU.MechUpgradeDef>
-  
+
   <!--===================================Shield==========================================-->
-  
+
   <MU.MechUpgradeDef ParentName="MU_MechModuleBase" Name="MU_ShieldModuleBase" Abstract="True">
     <exclusionTags>
-	  <li>ShieldModule</li>
-	</exclusionTags>
-	<commonality>2</commonality>
-	<restrictions>
-	  <li Class="MU.UpgradeRestriction_Shield" />
-	</restrictions>
+      <li>ShieldModule</li>
+    </exclusionTags>
+    <commonality>2</commonality>
+    <restrictions>
+      <li Class="MU.UpgradeRestriction_Shield" />
+    </restrictions>
   </MU.MechUpgradeDef>
 
   <ThingDef ParentName="MU_AdvancedModuleItemBase">
     <defName>MU_Module_Shield_A</defName>
     <label>shield module tier A</label>
-	<description>A special module, that can be installed into mechanoid shield core, giving a large max energy increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Shield_A</uiIconPath>
-	<graphicData>
+    <description>A special module, that can be installed into mechanoid shield core, giving a large max energy increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Shield_A</uiIconPath>
+    <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_Module_Shield</texPath>
     </graphicData>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_Module_Shield_A</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_ShieldModuleBase">
     <defName>MU_Module_Shield_A</defName>
     <label>shield module tier A</label>
-	<description>A special module, that can be installed into mechanoid shield core, giving a large max energy increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Shield_A</uiIconPath>
+    <description>A special module, that can be installed into mechanoid shield core, giving a large max energy increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Shield_A</uiIconPath>
     <statFactors>
-	   <EnergyShieldEnergyMax>2</EnergyShieldEnergyMax>
-	</statFactors>
-	<linkedThingDef>MU_Module_Shield_A</linkedThingDef>
-	<comps>
-	  <li Class="MU.UpgradeCompProperties_ShieldUpgrade">
+      <EnergyShieldEnergyMax>2</EnergyShieldEnergyMax>
+    </statFactors>
+    <linkedThingDef>MU_Module_Shield_A</linkedThingDef>
+    <comps>
+      <li Class="MU.UpgradeCompProperties_ShieldUpgrade">
         <factor>2</factor>
       </li>
-	</comps>
+    </comps>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef ParentName="MU_StandardModuleItemBase">
     <defName>MU_Module_Shield_B</defName>
     <label>shield module tier B</label>
-	<description>A special module, that can be installed into mechanoid shield core, giving a medium max energy increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Shield_B</uiIconPath>
-	<graphicData>
+    <description>A special module, that can be installed into mechanoid shield core, giving a medium max energy increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Shield_B</uiIconPath>
+    <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_Module_Shield</texPath>
     </graphicData>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_Module_Shield_B</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_ShieldModuleBase">
     <defName>MU_Module_Shield_B</defName>
     <label>shield module tier B</label>
-	<description>A special module, that can be installed into mechanoid shield core, giving a medium max energy increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Shield_B</uiIconPath>
+    <description>A special module, that can be installed into mechanoid shield core, giving a medium max energy increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Shield_B</uiIconPath>
     <statFactors>
-	   <EnergyShieldEnergyMax>1.5</EnergyShieldEnergyMax>
-	</statFactors>
-	<linkedThingDef>MU_Module_Shield_B</linkedThingDef>
-	<comps>
-	  <li Class="MU.UpgradeCompProperties_ShieldUpgrade">
+      <EnergyShieldEnergyMax>1.5</EnergyShieldEnergyMax>
+    </statFactors>
+    <linkedThingDef>MU_Module_Shield_B</linkedThingDef>
+    <comps>
+      <li Class="MU.UpgradeCompProperties_ShieldUpgrade">
         <factor>1.5</factor>
       </li>
-	</comps>
+    </comps>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef ParentName="MU_BasicModuleItemBase">
     <defName>MU_Module_Shield_C</defName>
     <label>shield module tier C</label>
-	<description>A special module, that can be installed into mechanoid shield core, giving a small max energy increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Shield_C</uiIconPath>
+    <description>A special module, that can be installed into mechanoid shield core, giving a small max energy increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Shield_C</uiIconPath>
     <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_Module_Shield</texPath>
     </graphicData>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_Module_Shield_C</upgradeDef>
       </li>
     </comps>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_ShieldModuleBase">
     <defName>MU_Module_Shield_C</defName>
     <label>shield module tier C</label>
-	<description>A special module, that can be installed into mechanoid shield core, giving a small max energy increase.</description>
-	<uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Shield_C</uiIconPath>
+    <description>A special module, that can be installed into mechanoid shield core, giving a small max energy increase.</description>
+    <uiIconPath>UI/MechanoidUpgrades/Modules/MU_Module_Shield_C</uiIconPath>
     <statFactors>
-	   <EnergyShieldEnergyMax>1.25</EnergyShieldEnergyMax>
-	</statFactors>
-	<linkedThingDef>MU_Module_Shield_C</linkedThingDef>
-	<comps>
-	  <li Class="MU.UpgradeCompProperties_ShieldUpgrade">
+      <EnergyShieldEnergyMax>1.25</EnergyShieldEnergyMax>
+    </statFactors>
+    <linkedThingDef>MU_Module_Shield_C</linkedThingDef>
+    <comps>
+      <li Class="MU.UpgradeCompProperties_ShieldUpgrade">
         <factor>1.25</factor>
       </li>
-	</comps>
+    </comps>
   </MU.MechUpgradeDef>
-  
+
   <!--===================================Robust==========================================-->
-  
+
   <ThingDef ParentName="MU_MechUpgradeItemBase">
     <defName>MU_Module_Robust</defName>
     <label>durability module</label>
     <description>A special module, that can be installed into mechanoid, increasing it's durability.</description>
-	<techLevel>Ultra</techLevel>
+    <techLevel>Ultra</techLevel>
     <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_Module_Robust</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>(0.85, 0.85)</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.85, 0.85)</drawSize>
     </graphicData>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_Module_Robust</upgradeDef>
       </li>
     </comps>
-	<statBases>
+    <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <Mass>2</Mass>
       <Flammability>0</Flammability>
-	  <DeteriorationRate>0</DeteriorationRate>
-     <MarketValue>2000</MarketValue>
+      <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>2000</MarketValue>
     </statBases>
-	<thingCategories Inherit="False">
+    <thingCategories Inherit="False">
       <li>MU_Modules</li>
     </thingCategories>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_MechModuleBase">
     <defName>MU_Module_Robust</defName>
     <label>durability module</label>
     <description>A special module, that can be installed into mechanoid, increasing it's durability.</description>
-	<uiIconPath>Things/Item/MechanoidUpgrade/MU_Module_Robust</uiIconPath>
-	<linkedThingDef>MU_Module_Robust</linkedThingDef>
-	<statFactors>
-	  <IncomingDamageFactor>0.75</IncomingDamageFactor>
-	</statFactors>
-	<commonality>0.5</commonality>
-	<exclusionTags>
-	  <li>RobustModule</li>
-	</exclusionTags>
+    <uiIconPath>Things/Item/MechanoidUpgrade/MU_Module_Robust</uiIconPath>
+    <linkedThingDef>MU_Module_Robust</linkedThingDef>
+    <statFactors>
+      <IncomingDamageFactor>0.75</IncomingDamageFactor>
+    </statFactors>
+    <commonality>0.5</commonality>
+    <exclusionTags>
+      <li>RobustModule</li>
+    </exclusionTags>
   </MU.MechUpgradeDef>
-  
-  
+
+
 </Defs>

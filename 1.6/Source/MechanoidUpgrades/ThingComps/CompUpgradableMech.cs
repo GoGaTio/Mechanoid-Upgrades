@@ -63,7 +63,45 @@ namespace MU
 
 		private MechUpgradeDef upgradeForReload;
 
-		public bool RemoteControllable
+        [Unsaved(false)]
+        private Dictionary<DamageDef, float> cachedDamageFactors = new Dictionary<DamageDef, float>();
+
+		public void DirtyUpgrades()
+		{
+            cachedDamageFactors.Clear();
+        }
+
+        public float FactorForDamage(DamageInfo dinfo)
+        {
+            if (dinfo.Def == null || upgrades.NullOrEmpty())
+            {
+                return 1f;
+            }
+            if (cachedDamageFactors.TryGetValue(dinfo.Def, out var value))
+            {
+                return value;
+            }
+            float num = 1f;
+            for (int i = 0; i < upgrades.Count; i++)
+            {
+                MechUpgrade upgrade = upgrades[i];
+                if (upgrade.def.damageFactors.NullOrEmpty())
+                {
+                    continue;
+                }
+                for (int j = 0; j < upgrade.def.damageFactors.Count; j++)
+                {
+                    if (upgrade.def.damageFactors[j].damageDef == dinfo.Def)
+                    {
+                        num *= upgrade.def.damageFactors[j].factor;
+                    }
+                }
+            }
+            cachedDamageFactors.Add(dinfo.Def, num);
+            return num;
+        }
+
+        public bool RemoteControllable
 		{
 			get
 			{
@@ -110,21 +148,24 @@ namespace MU
 			MechUpgrade upgrade = MechUpgradeUtility.MakeUpgrade(def);
 			upgrades.Add(upgrade);
 			upgrade.OnAdded(Mech);
-			return upgrade;
+			DirtyUpgrades();
+            return upgrade;
 		}
 
 		public MechUpgrade AddUpgrade(MechUpgrade upgrade)
 		{
 			upgrades.Add(upgrade);
 			upgrade.OnAdded(Mech);
-			return upgrade;
+            DirtyUpgrades();
+            return upgrade;
 		}
 
 		public void RemoveUpgrade(MechUpgrade upgrade)
 		{
 			upgrade.OnRemoved(Mech);
 			upgrades.Remove(upgrade);
-		}
+            DirtyUpgrades();
+        }
 
 		public Pawn Mech => (Pawn)parent;
 
@@ -259,7 +300,8 @@ namespace MU
 
 		public override void PostPreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
 		{
-			bool a = false;
+            dinfo.SetAmount(dinfo.Amount * FactorForDamage(dinfo));
+            bool a = false;
 			if (upgrades != null)
 			{
 				foreach (MechUpgrade u in upgrades)

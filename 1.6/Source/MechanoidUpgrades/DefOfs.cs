@@ -76,7 +76,9 @@ namespace MU
 
 		public static StatDef MU_CarriedMassOffset;
 
-		public static StatCategoryDef MU_MechUpgrades;
+        public static StatDef MU_UpgradeFabricationSpeed;
+
+        public static StatCategoryDef MU_MechUpgrades;
 
 		public static StatCategoryDef MU_MechUpgrade_Offsets;
 

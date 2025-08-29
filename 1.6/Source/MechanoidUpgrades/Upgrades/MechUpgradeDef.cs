@@ -34,11 +34,13 @@ namespace MU
 	{
 		public Type upgradeClass = typeof(MechUpgrade); 
 		
-		public List<StatModifier> statOffsets;
+		public List<StatModifier> statOffsets = new List<StatModifier>();
 
-		public List<StatModifier> statFactors;
+		public List<StatModifier> statFactors = new List<StatModifier>();
 
-		public AbilityDef ability;
+        public List<ThingDefCountClass> yieldList = null;
+
+        public AbilityDef ability;
 
 		public bool notGenerateHyperlink;
 
@@ -52,7 +54,7 @@ namespace MU
 		[NoTranslate]
 		public string uiIconPath;
 
-		public List<string> exclusionTags;
+		public List<string> exclusionTags = new List<string>();
 
 		public float commonality = 1;
 
@@ -74,11 +76,13 @@ namespace MU
 
 		public bool isForFight;
 
-		public List<MU.UpgradeCompProperties> comps;
+		public List<MU.UpgradeCompProperties> comps = new List<MU.UpgradeCompProperties>();
 
-		public List<MU.UpgradeRestriction> restrictions;
+		public List<MU.UpgradeRestriction> restrictions = new List<MU.UpgradeRestriction>();
 
-		public float? commandRange;
+        public List<DamageFactor> damageFactors = new List<DamageFactor>();
+
+        public float? commandRange;
 
 		public bool allowRemoteControl;
 

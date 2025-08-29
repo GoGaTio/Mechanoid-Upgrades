@@ -2,17 +2,17 @@
 <Defs>
 
   <MU.MechUpgradeDef Name="MU_MechArmorBase" Abstract="True">
-	<exclusionTags>
-	  <li>Armor</li>
-	</exclusionTags>
+    <exclusionTags>
+      <li>Armor</li>
+    </exclusionTags>
   </MU.MechUpgradeDef>
-  
+
   <MU.MechUpgradeDef Name="MU_MediumMechArmorBase" ParentName="MU_MechArmorBase" Abstract="True">
-	<upgradePoints>3</upgradePoints>
-	<minBodySize>0.8</minBodySize>
-	<maxBodySize>1.6</maxBodySize>
+    <upgradePoints>3</upgradePoints>
+    <minBodySize>0.8</minBodySize>
+    <maxBodySize>1.6</maxBodySize>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef Name="MU_MediumMechArmorItemBase" ParentName="MU_MechUpgradeItemCraftable" Abstract="True">
     <graphicData>
       <texPath>Things/Item/MechanoidUpgrade/MU_MediumMechArmor</texPath>
@@ -23,18 +23,18 @@
       <MaxHitPoints>550</MaxHitPoints>
       <Mass>35</Mass>
       <Flammability>0</Flammability>
-	  <DeteriorationRate>1</DeteriorationRate>
-	  <WorkToMake>30000</WorkToMake>
+      <DeteriorationRate>1</DeteriorationRate>
+      <WorkToMake>13000</WorkToMake>
     </statBases>
-	<recipeMaker>
+    <recipeMaker>
       <displayPriority>1100</displayPriority>
-	  <unfinishedThingDef>MU_UnfinishedUpgrade_Armor_Medium</unfinishedThingDef>
+      <unfinishedThingDef>MU_UnfinishedUpgrade_Armor_Medium</unfinishedThingDef>
     </recipeMaker>
-	<thingCategories Inherit="False">
-      <li>MU_Armor</li>
+    <thingCategories Inherit="False">
+      <li>MU_MediumArmor</li>
     </thingCategories>
-	<tradeTags>
-	  <li>MU_MediumArmor</li>
+    <tradeTags>
+      <li>MU_MediumArmor</li>
     </tradeTags>
   </ThingDef>
 
@@ -43,133 +43,133 @@
     <label>medium mech armor tier C</label>
     <description>Universal armor for a medium mechanoid. Gives a small increase in protection against penetrating and crushing damage.</description>
     <techLevel>Industrial</techLevel>
-	<comps>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_MechArmor_Medium_C</upgradeDef>
       </li>
     </comps>
-	<costList>
+    <costList>
       <Steel>30</Steel>
-	  <Plasteel>10</Plasteel>
+      <Plasteel>10</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
-	<recipeMaker>
+    <recipeMaker>
       <researchPrerequisite>MU_BasicArmor</researchPrerequisite>
     </recipeMaker>
-	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_C</uiIconPath>
-	<tradeTags>
-	  <li>MU_BasicUpgrade</li>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_C</uiIconPath>
+    <tradeTags>
+      <li>MU_BasicUpgrade</li>
     </tradeTags>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_MediumMechArmorBase">
     <defName>MU_MechArmor_Medium_C</defName>
     <label>medium mech armor tier C</label>
-	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_C</uiIconPath>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_C</uiIconPath>
     <description>Universal armor for a medium mechanoid. Gives a small increase in protection against penetrating and crushing damage.</description>
     <statOffsets>
-	  <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
-	  <MoveSpeed>-0.15</MoveSpeed>
-	</statOffsets>
-	<linkedThingDef>MU_MechArmor_Medium_C</linkedThingDef>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </statOffsets>
+    <linkedThingDef>MU_MechArmor_Medium_C</linkedThingDef>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef ParentName="MU_MediumMechArmorItemBase">
     <defName>MU_MechArmor_Medium_B</defName>
     <label>medium mech armor tier B</label>
     <description>Universal armor for a medium mechanoid. Gives a medium increase in protection against penetrating and crushing damage.</description>
-    <techLevel>Spacer</techLevel>
-	<comps>
+    <techLevel>Spacer</techLevel>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_MechArmor_Medium_B</upgradeDef>
       </li>
     </comps>
-	<costList>
+    <costList>
       <Steel>30</Steel>
-	  <Plasteel>25</Plasteel>
-	  <Uranium>10</Uranium>
+      <Plasteel>20</Plasteel>
+      <Uranium>10</Uranium>
       <ComponentIndustrial>3</ComponentIndustrial>
-	  <ComponentSpacer>1</ComponentSpacer>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
-	<statBases>
-	  <WorkToMake>40000</WorkToMake>
+    <statBases>
+      <WorkToMake>17000</WorkToMake>
     </statBases>
-	<recipeMaker>
+    <recipeMaker>
       <researchPrerequisite>MU_StandardArmor</researchPrerequisite>
-	  <recipeUsers Inherit="False">
+      <recipeUsers Inherit="False">
         <li>MU_AdvancedUpgradesAssembler</li>
       </recipeUsers>
     </recipeMaker>
-	<thingSetMakerTags Inherit="False">
+    <thingSetMakerTags Inherit="False">
       <li>MU_StandardUpgrades</li>
     </thingSetMakerTags>
-	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_B</uiIconPath>
-	<tradeTags>
-	  <li>MU_StandardUpgrade</li>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_B</uiIconPath>
+    <tradeTags>
+      <li>MU_StandardUpgrade</li>
     </tradeTags>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_MediumMechArmorBase">
     <defName>MU_MechArmor_Medium_B</defName>
     <label>medium mech armor tier B</label>
-	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_B</uiIconPath>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_B</uiIconPath>
     <description>Universal armor for a medium mechanoid. Gives a medium increase in protection against penetrating and crushing damage.</description>
     <statOffsets>
-	  <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
-	  <MoveSpeed>-0.2</MoveSpeed>
-	</statOffsets>
-	<linkedThingDef>MU_MechArmor_Medium_B</linkedThingDef>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <MoveSpeed>-0.2</MoveSpeed>
+    </statOffsets>
+    <linkedThingDef>MU_MechArmor_Medium_B</linkedThingDef>
   </MU.MechUpgradeDef>
-  
+
   <ThingDef ParentName="MU_MediumMechArmorItemBase">
     <defName>MU_MechArmor_Medium_A</defName>
     <label>medium mech armor tier A</label>
     <description>Universal armor for a medium mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nStandard armor technology allows to reduce even non-reflected damage.</description>
-    <techLevel>Ultra</techLevel>
-	<comps>
+    <techLevel>Ultra</techLevel>
+    <comps>
       <li Class="MU.CompProperties_MechUpgrade">
         <upgradeDef>MU_MechArmor_Medium_A</upgradeDef>
       </li>
     </comps>
-	<costList>
-      <NanostructuringChip>1</NanostructuringChip>
-	  <Plasteel>35</Plasteel>
-	  <Uranium>15</Uranium>
+    <costList>
+      <NanostructuringChip>1</NanostructuringChip>
+      <Plasteel>30</Plasteel>
+      <Uranium>15</Uranium>
     </costList>
-	<statBases>
-	  <WorkToMake>50000</WorkToMake>
+    <statBases>
+      <WorkToMake>23000</WorkToMake>
     </statBases>
-	<recipeMaker>
+    <recipeMaker>
       <researchPrerequisite>MU_AdvancedArmor</researchPrerequisite>
-	  <recipeUsers Inherit="False">
+      <recipeUsers Inherit="False">
         <li>MU_AdvancedUpgradesAssembler</li>
       </recipeUsers>
     </recipeMaker>
-	<thingSetMakerTags Inherit="False">
+    <thingSetMakerTags Inherit="False">
       <li>MU_AdvancedUpgrades</li>
     </thingSetMakerTags>
-	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_A</uiIconPath>
-	<tradeTags>
-	  <li>MU_AdvancedUpgrade</li>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_A</uiIconPath>
+    <tradeTags>
+      <li>MU_AdvancedUpgrade</li>
     </tradeTags>
   </ThingDef>
-  
+
   <MU.MechUpgradeDef ParentName="MU_MediumMechArmorBase">
     <defName>MU_MechArmor_Medium_A</defName>
     <label>medium mech armor tier A</label>
-	<uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_A</uiIconPath>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_MediumMechArmor_A</uiIconPath>
     <description>Universal armor for a medium mechanoid. Gives a large increase in protection against penetrating and crushing damage.\n\nStandard armor technology allows to reduce even non-reflected damage.</description>
     <statOffsets>
-	  <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
-	  <MoveSpeed>-0.15</MoveSpeed>
-	</statOffsets>
-	<statFactors>
-	  <IncomingDamageFactor>0.75</IncomingDamageFactor>
-	</statFactors>
-	<linkedThingDef>MU_MechArmor_Medium_A</linkedThingDef>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <MoveSpeed>-0.15</MoveSpeed>
+    </statOffsets>
+    <statFactors>
+      <IncomingDamageFactor>0.75</IncomingDamageFactor>
+    </statFactors>
+    <linkedThingDef>MU_MechArmor_Medium_A</linkedThingDef>
   </MU.MechUpgradeDef>
 
 </Defs>

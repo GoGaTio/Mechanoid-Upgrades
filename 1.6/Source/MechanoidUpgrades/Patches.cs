@@ -65,7 +65,25 @@ namespace MU
 		}
 	}
 
-	[HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest)})]
+    /*[HarmonyPatch(typeof(ParseHelper))]
+    [HarmonyPatch(new Type[] { })]
+    public class Patch_XMLLoad
+    {
+        [HarmonyPostfix]
+        static void Postfix()
+        {
+            ParseHelper.Parsers<StatModifier>.Register(ParsePlanetTile);
+        }
+
+        public static StatModifier FromString(string s)
+        {
+            StatModifier m = new StatModifier();
+            m.value = ParseHelper.FromString<float>(xmlRoot.FirstChild.Value);
+			return m;
+        }
+    }*/
+
+    [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest)})]
 	public class Patch_GenerateUpgradedPawn
 	{
 		public static float CombinationsChance(Pawn mech)
@@ -410,4 +428,17 @@ namespace MU
             }
 		}
 	}
+
+    [HarmonyPatch(typeof(BillUtility), nameof(BillUtility.MakeNewBill))]
+    public class Patch_Bill
+    {
+        [HarmonyPostfix]
+        public static void Postfix(RecipeDef recipe, Precept_ThingStyle precept, ref Bill __result)
+        {
+            if (recipe is ImproveRecipeDef)
+            {
+                __result = new Bill_Improve(recipe, precept);
+            }
+        }
+    }
 }

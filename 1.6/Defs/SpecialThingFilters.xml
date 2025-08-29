@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SpecialThingFilterDef>
+    <defName>MU_AllowCorpsesWithUpgrades</defName>
+    <label>allow corpses with upgrades</label>
+    <description>Allow dead bodies of mechanoids with upgrades.</description>
+    <parentCategory>Corpses</parentCategory>
+    <allowedByDefault>true</allowedByDefault>
+    <saveKey>allowCorpsesWithMechUpgrades</saveKey>
+    <configurable>true</configurable>
+    <workerClass>MU.SpecialThingFilterWorker_CorpsesUpgraded</workerClass>
+  </SpecialThingFilterDef>
+  
+  <SpecialThingFilterDef Abstract="True" Name="MU_BaseTierFilter">
+    <parentCategory>MU_Upgrades</parentCategory>
+    <allowedByDefault>true</allowedByDefault>
+  </SpecialThingFilterDef>
+
+  <SpecialThingFilterDef ParentName="MU_BaseTierFilter">
+    <defName>MU_AllowNonTier</defName>
+    <label>allow tierless</label>
+    <description>Allow upgrades without tier.</description>
+    <saveKey>allowMechUpgradesTierless</saveKey>
+    <workerClass>MU.SpecialThingFilterWorker_NotTier</workerClass>
+  </SpecialThingFilterDef>
+
+  <SpecialThingFilterDef ParentName="MU_BaseTierFilter">
+    <defName>MU_AllowCTier</defName>
+    <label>allow C tier</label>
+    <description>Allow upgrades of C tier.</description>
+    <saveKey>allowMechUpgradesCTier</saveKey>
+    <workerClass>MU.SpecialThingFilterWorker_UpgradeTier_C</workerClass>
+  </SpecialThingFilterDef>
+
+  <SpecialThingFilterDef ParentName="MU_BaseTierFilter">
+    <defName>MU_AllowBTier</defName>
+    <label>allow B tier</label>
+    <description>Allow upgrades of B tier.</description>
+    <saveKey>allowMechUpgradesTierB</saveKey>
+    <workerClass>MU.SpecialThingFilterWorker_UpgradeTier_B</workerClass>
+  </SpecialThingFilterDef>
+
+  <SpecialThingFilterDef ParentName="MU_BaseTierFilter">
+    <defName>MU_AllowATier</defName>
+    <label>allow A tier</label>
+    <description>Allow upgrades of A tier.</description>
+    <saveKey>allowMechUpgradesTierA</saveKey>
+    <workerClass>MU.SpecialThingFilterWorker_UpgradeTier_A</workerClass>
+  </SpecialThingFilterDef>
+
+  <SpecialThingFilterDef MayRequire="GoGaTio.FactoriesFarAway" ParentName="MU_BaseTierFilter">
+    <defName>MU_AllowSTier</defName>
+    <label>allow S tier</label>
+    <description>Allow upgrades of S tier.</description>
+    <saveKey>allowMechUpgradesTierS</saveKey>
+    <workerClass>MU.SpecialThingFilterWorker_UpgradeTier_S</workerClass>
+  </SpecialThingFilterDef>
+
+</Defs>

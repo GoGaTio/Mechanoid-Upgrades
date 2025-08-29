@@ -66,6 +66,9 @@
   <ItemGroup>
     <Compile Include="Archotech.cs" />
     <Compile Include="MapGen.cs" />
+    <Compile Include="Mod.cs" />
+    <Compile Include="SpecialThingFilters.cs" />
+    <Compile Include="Stats.cs" />
     <Compile Include="Things\AncientFacilityEntrance.cs" />
     <Compile Include="Things\Building_AncientMechUpgrader.cs" />
     <Compile Include="Things\Building_MechUpgrader.cs" />
