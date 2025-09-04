@@ -43,6 +43,8 @@ namespace MU
 		public static PrefabDef MU_AncientMechUpgrader;
 
 		public static PrefabDef MU_AncientFacilityEntrance;
+
+		//public static MechUpgradeDef MU_CerebrexLink;
 	}
 
 	[DefOf]
@@ -77,6 +79,10 @@ namespace MU
 		public static StatDef MU_CarriedMassOffset;
 
         public static StatDef MU_UpgradeFabricationSpeed;
+
+        public static StatDef MU_WeaponRangeFactor;
+
+        public static StatDef MU_RangedDamageFactor;
 
         public static StatCategoryDef MU_MechUpgrades;
 

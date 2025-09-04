@@ -186,10 +186,37 @@ namespace MU
 
         public override void TransformValue(StatRequest req, ref float val)
         {
-            if (req.Thing is Pawn pawn && req.Thing.HasComp<MU.CompUpgradableMechanoid>())
+            val = Mathf.RoundToInt(val);
+        }
+    }
+
+    public class StatPart_CompOffset : StatPart
+    {
+        public override string ExplanationPart(StatRequest req)
+        {
+            float offset = 0;
+            if(req.Thing is Pawn pawn && (offset = CompOffset(pawn)) > 0)
             {
-                val = Mathf.RoundToInt(val);
+                return "MU_CompOffset".Translate() + ": x" + offset.ToStringByStyle(ToStringStyle.Integer);
             }
+            return null;
+        }
+
+        public override void TransformValue(StatRequest req, ref float val)
+        {
+            if (req.Thing is Pawn pawn)
+            {
+                val += CompOffset(pawn);
+            }
+        }
+
+        public static float CompOffset(Pawn pawn)
+        {
+            if(pawn.TryGetComp<CompUpgradableMechanoid>(out CompUpgradableMechanoid comp))
+            {
+                return comp.upgradabilityOffset;
+            }
+            return 0;
         }
     }
 

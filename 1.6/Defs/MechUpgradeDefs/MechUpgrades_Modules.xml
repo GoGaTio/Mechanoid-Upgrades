@@ -117,7 +117,7 @@
     <exclusionTags>
       <li>RepairModule</li>
     </exclusionTags>
-    <commonality>0.25</commonality>
+    <commonality>0</commonality>
   </MU.MechUpgradeDef>
 
   <ThingDef ParentName="MU_AdvancedModuleItemBase">

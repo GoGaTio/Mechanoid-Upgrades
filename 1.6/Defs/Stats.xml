@@ -41,6 +41,7 @@
       <li Class="MU.StatPart_UpgradesFromBodySize"/>
       <li Class="MU.StatPart_UpgradesFromWeightClass"/>
       <li Class="MU.StatPart_RoundToInt"/>
+      <li Class="MU.StatPart_CompOffset"/>
     </parts>
   </StatDef>
 

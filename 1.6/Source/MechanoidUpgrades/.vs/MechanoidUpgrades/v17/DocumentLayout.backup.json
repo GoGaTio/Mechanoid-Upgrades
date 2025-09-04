@@ -3,25 +3,110 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Shielding.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\patches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:patches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\Stats.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\mechanoidupgrades\\1.6\\source\\mechanoidupgrades\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\thingcomps\\compupgradablemech.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:thingcomps\\compupgradablemech.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\upgrades\\mechupgradedef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:upgrades\\mechupgradedef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\upgrades\\mechupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:upgrades\\mechupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\archotech.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:archotech.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\thingcomps\\comps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:thingcomps\\comps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Misc.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Biotech\\Defs\\ThingDefs_Misc\\Weapons\\RangedMechanoid_Light.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\ResearchProjectDefs\\ResearchProjects_Advanced.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\Recipes_Fabrication.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_Large.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\mechanoidupgrades\\1.6\\source\\mechanoidupgrades\\upgrades\\upgraderestriction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:upgrades\\upgraderestriction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\RecipeDefs\\Recipes_Production.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Modules.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\defofs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:defofs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\ResearchProjectDefs\\ResearchProjects_Standard.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Patches\\Patches_Stats.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Stats\\Stats_Pawns_General.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Odyssey\\Defs\\AbilityDefs\\Abilities.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_Medium.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Races\\Races_Mechanoid.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_Small.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Modules.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Production.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\mapgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:mapgen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\RecipeDefs\\Recipes_Production.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_UltraLarge.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_Large.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\misc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:misc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Shielding.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\Chips\\MechUpgrades_MiscChips.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
@@ -30,30 +115,20 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Buildings\\Buildings_Production.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\mechanoidupgrades\\1.6\\source\\mechanoidupgrades\\things\\building_upgradesimprover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Biotech\\Defs\\ThingDefs_Buildings\\Buildings_Production.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\things\\building_upgradesimprover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:things\\building_upgradesimprover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Production.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\ThingCategories.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\upgrades\\mechupgradedef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:upgrades\\mechupgradedef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\SpecialThingFilters.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Items\\Items_Resource_Manufactured.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\ResearchProjectDefs\\ResearchProjects_Standard.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Biotech\\Defs\\ThingDefs_Buildings\\Buildings_Production.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\Effects\\Mote_Visual.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
@@ -70,45 +145,10 @@
       "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:upgrades\\mechupgradewithcomps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\defofs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:defofs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\patches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:patches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\thingcomps\\comps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:thingcomps\\comps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\WorkGivers.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\misc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:misc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\thingcomps\\compupgradablemech.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:thingcomps\\compupgradablemech.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Biotech\\Defs\\WorkGiverDefs\\WorkGivers.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D15AD93-6B9F-476B-8BE0-BFFACA8EE1B7}|MechanoidUpgrades.csproj|solutionrelative:utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\Stats.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -118,43 +158,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 37,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "MechUpgradeDef.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Upgrades\\MechUpgradeDef.cs",
               "RelativeDocumentMoniker": "Upgrades\\MechUpgradeDef.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Upgrades\\MechUpgradeDef.cs",
               "RelativeToolTip": "Upgrades\\MechUpgradeDef.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAgwHwAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAANoAAAAAAAAAAAAcwPEAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-26T15:26:17.345Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 24,
               "Title": "Buildings_Production.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Production.xml",
               "RelativeDocumentMoniker": "..\\..\\Defs\\ThingDefs_Buildings\\Buildings_Production.xml",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Production.xml",
               "RelativeToolTip": "..\\..\\Defs\\ThingDefs_Buildings\\Buildings_Production.xml",
-              "ViewState": "AgIAABACAAAAAAAAAAAgwCoCAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAgwAcBAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2025-08-26T20:07:19.093Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "Recipes_Fabrication.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\Recipes_Fabrication.xml",
               "RelativeDocumentMoniker": "..\\..\\Defs\\Recipes_Fabrication.xml",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\Recipes_Fabrication.xml",
               "RelativeToolTip": "..\\..\\Defs\\Recipes_Fabrication.xml",
-              "ViewState": "AgIAACsCAAAAAAAAAAAAABoCAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAIEDAAAAAAAAAAAAAHwDAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2025-08-26T20:10:20.399Z",
               "IsPinned": true,
@@ -162,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 26,
               "Title": "Recipes_Production.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\RecipeDefs\\Recipes_Production.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Data\\Core\\Defs\\RecipeDefs\\Recipes_Production.xml",
@@ -171,25 +213,205 @@
               "ViewState": "AgIAAF8BAAAAAAAAAAAAAG4BAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2025-08-26T19:34:05.041Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DefOfs.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\DefOfs.cs",
+              "RelativeDocumentMoniker": "DefOfs.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\DefOfs.cs",
+              "RelativeToolTip": "DefOfs.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowFQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T15:12:53.766Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 13,
+              "Title": "UpgradeRestriction.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Upgrades\\UpgradeRestriction.cs",
+              "RelativeDocumentMoniker": "Upgrades\\UpgradeRestriction.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Upgrades\\UpgradeRestriction.cs",
+              "RelativeToolTip": "Upgrades\\UpgradeRestriction.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAA1wN8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T09:09:03.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MechUpgrades_Modules.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Modules.xml",
+              "RelativeDocumentMoniker": "..\\..\\Defs\\MechUpgradeDefs\\MechUpgrades_Modules.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Modules.xml",
+              "RelativeToolTip": "..\\..\\Defs\\MechUpgradeDefs\\MechUpgrades_Modules.xml",
+              "ViewState": "AgIAAGUBAAAAAAAAAAAAAHwBAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-08-28T07:58:20.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ResearchProjects_Advanced.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\ResearchProjectDefs\\ResearchProjects_Advanced.xml",
+              "RelativeDocumentMoniker": "..\\..\\Defs\\ResearchProjectDefs\\ResearchProjects_Advanced.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\ResearchProjectDefs\\ResearchProjects_Advanced.xml",
+              "RelativeToolTip": "..\\..\\Defs\\ResearchProjectDefs\\ResearchProjects_Advanced.xml",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAIkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-09-02T08:24:06.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RangedMechanoid_Light.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Biotech\\Defs\\ThingDefs_Misc\\Weapons\\RangedMechanoid_Light.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Data\\Biotech\\Defs\\ThingDefs_Misc\\Weapons\\RangedMechanoid_Light.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Biotech\\Defs\\ThingDefs_Misc\\Weapons\\RangedMechanoid_Light.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Data\\Biotech\\Defs\\ThingDefs_Misc\\Weapons\\RangedMechanoid_Light.xml",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAAANsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-09-02T07:50:20.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Patches_Stats.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Patches\\Patches_Stats.xml",
+              "RelativeDocumentMoniker": "..\\..\\Patches\\Patches_Stats.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Patches\\Patches_Stats.xml",
+              "RelativeToolTip": "..\\..\\Patches\\Patches_Stats.xml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-09-02T07:47:34.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Stats_Pawns_General.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Stats\\Stats_Pawns_General.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Data\\Core\\Defs\\Stats\\Stats_Pawns_General.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\Stats\\Stats_Pawns_General.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Data\\Core\\Defs\\Stats\\Stats_Pawns_General.xml",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAE8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-09-01T10:32:12.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Abilities.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Odyssey\\Defs\\AbilityDefs\\Abilities.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Data\\Odyssey\\Defs\\AbilityDefs\\Abilities.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Odyssey\\Defs\\AbilityDefs\\Abilities.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Data\\Odyssey\\Defs\\AbilityDefs\\Abilities.xml",
+              "ViewState": "AgIAALcAAAAAAAAAAAAAANQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-09-01T10:12:25.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Races_Mechanoid.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Races\\Races_Mechanoid.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Data\\Core\\Defs\\ThingDefs_Races\\Races_Mechanoid.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Races\\Races_Mechanoid.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Data\\Core\\Defs\\ThingDefs_Races\\Races_Mechanoid.xml",
+              "ViewState": "AgIAABQAAAAAAAAAAAAWwCYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-09-01T10:11:48.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Archotech.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Archotech.cs",
+              "RelativeDocumentMoniker": "Archotech.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Archotech.cs",
+              "RelativeToolTip": "Archotech.cs",
+              "ViewState": "AgIAAHoBAAAAAAAAAAAYwI4BAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T10:01:04.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MechUpgrades_Misc.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Misc.xml",
+              "RelativeDocumentMoniker": "..\\..\\Defs\\MechUpgradeDefs\\MechUpgrades_Misc.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Misc.xml",
+              "RelativeToolTip": "..\\..\\Defs\\MechUpgradeDefs\\MechUpgrades_Misc.xml",
+              "ViewState": "AgIAAEQCAAAAAAAAAAAmwG4CAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-09-01T09:59:48.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MechUpgrade.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Upgrades\\MechUpgrade.cs",
+              "RelativeDocumentMoniker": "Upgrades\\MechUpgrade.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Upgrades\\MechUpgrade.cs",
+              "RelativeToolTip": "Upgrades\\MechUpgrade.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAYwNsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T09:54:21.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MechUpgrades_Armor_UltraLarge.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_UltraLarge.xml",
+              "RelativeDocumentMoniker": "..\\..\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_UltraLarge.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_UltraLarge.xml",
+              "RelativeToolTip": "..\\..\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_UltraLarge.xml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAJcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-09-01T07:26:53.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MapGen.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\MapGen.cs",
+              "RelativeDocumentMoniker": "MapGen.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\MapGen.cs",
+              "RelativeToolTip": "MapGen.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAowF0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T07:05:17.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "MechUpgrades_Shielding.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Shielding.xml",
               "RelativeDocumentMoniker": "..\\..\\Defs\\MechUpgradeDefs\\MechUpgrades_Shielding.xml",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Shielding.xml",
               "RelativeToolTip": "..\\..\\Defs\\MechUpgradeDefs\\MechUpgrades_Shielding.xml",
-              "ViewState": "AgIAAHkBAAAAAAAAAAAAAJABAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAJABAAAAAAAAAAAWwKMBAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-08-28T08:41:58.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T08:41:58.124Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 28,
               "Title": "MechUpgrades_Armor_Large.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_Large.xml",
               "RelativeDocumentMoniker": "..\\..\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_Large.xml",
@@ -197,12 +419,11 @@
               "RelativeToolTip": "..\\..\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_Large.xml",
               "ViewState": "AgIAAGYAAAAAAAAAAAAAAH0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-08-28T08:28:17.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T08:28:17.339Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 21,
               "Title": "MechUpgrades_Armor_Medium.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_Medium.xml",
               "RelativeDocumentMoniker": "..\\..\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_Medium.xml",
@@ -215,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 23,
               "Title": "MechUpgrades_Armor_Small.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_Small.xml",
               "RelativeDocumentMoniker": "..\\..\\Defs\\MechUpgradeDefs\\Armor\\MechUpgrades_Armor_Small.xml",
@@ -228,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 37,
               "Title": "Items_Resource_Manufactured.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Items\\Items_Resource_Manufactured.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Data\\Core\\Defs\\ThingDefs_Items\\Items_Resource_Manufactured.xml",
@@ -240,32 +461,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ResearchProjects_Standard.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\ResearchProjectDefs\\ResearchProjects_Standard.xml",
               "RelativeDocumentMoniker": "..\\..\\Defs\\ResearchProjectDefs\\ResearchProjects_Standard.xml",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\ResearchProjectDefs\\ResearchProjects_Standard.xml",
               "RelativeToolTip": "..\\..\\Defs\\ResearchProjectDefs\\ResearchProjects_Standard.xml",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAAAJgAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-08-28T08:05:03.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MechUpgrades_Modules.xml",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Modules.xml",
-              "RelativeDocumentMoniker": "..\\..\\Defs\\MechUpgradeDefs\\MechUpgrades_Modules.xml",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\MechUpgrades_Modules.xml",
-              "RelativeToolTip": "..\\..\\Defs\\MechUpgradeDefs\\MechUpgrades_Modules.xml",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAH4AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-08-28T07:58:20.321Z",
+              "WhenOpened": "2025-08-28T08:05:03.896Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 31,
               "Title": "MechUpgrades_MiscChips.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\MechUpgradeDefs\\Chips\\MechUpgrades_MiscChips.xml",
               "RelativeDocumentMoniker": "..\\..\\Defs\\MechUpgradeDefs\\Chips\\MechUpgrades_MiscChips.xml",
@@ -273,12 +482,11 @@
               "RelativeToolTip": "..\\..\\Defs\\MechUpgradeDefs\\Chips\\MechUpgrades_MiscChips.xml",
               "ViewState": "AgIAAHgAAAAAAAAAAAAAAIQAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-08-26T17:59:37.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-26T17:59:37.401Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 32,
               "Title": "Buildings_Production.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Buildings\\Buildings_Production.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Data\\Core\\Defs\\ThingDefs_Buildings\\Buildings_Production.xml",
@@ -286,12 +494,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\Data\\Core\\Defs\\ThingDefs_Buildings\\Buildings_Production.xml",
               "ViewState": "AgIAAHUAAAAAAAAAAAAAAIQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-08-27T15:25:02.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T15:25:02.031Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 33,
               "Title": "Buildings_Production.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Biotech\\Defs\\ThingDefs_Buildings\\Buildings_Production.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Data\\Biotech\\Defs\\ThingDefs_Buildings\\Buildings_Production.xml",
@@ -303,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 38,
               "Title": "Mote_Visual.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\Effects\\Mote_Visual.xml",
               "RelativeDocumentMoniker": "..\\..\\Defs\\Effects\\Mote_Visual.xml",
@@ -315,7 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 39,
               "Title": "Buildings_Mech.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\ThingDefs_Buildings\\Buildings_Mech.xml",
               "RelativeDocumentMoniker": "..\\..\\Defs\\ThingDefs_Buildings\\Buildings_Mech.xml",
@@ -327,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 8,
               "Title": "Comps.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\ThingComps\\Comps.cs",
               "RelativeDocumentMoniker": "ThingComps\\Comps.cs",
@@ -335,24 +542,24 @@
               "RelativeToolTip": "ThingComps\\Comps.cs",
               "ViewState": "AgIAABwBAAAAAAAAAAAuwDMBAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T07:28:50.66Z"
+              "WhenOpened": "2025-08-27T07:28:50.66Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 34,
               "Title": "Building_UpgradesImprover.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Things\\Building_UpgradesImprover.cs",
               "RelativeDocumentMoniker": "Things\\Building_UpgradesImprover.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Things\\Building_UpgradesImprover.cs",
               "RelativeToolTip": "Things\\Building_UpgradesImprover.cs",
-              "ViewState": "AgIAANIBAAAAAAAAAAAcwNMBAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAGQAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T14:56:49.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-26T14:56:49.119Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 41,
               "Title": "MechUpgradeWithComps.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Upgrades\\MechUpgradeWithComps.cs",
               "RelativeDocumentMoniker": "Upgrades\\MechUpgradeWithComps.cs",
@@ -364,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 42,
               "Title": "WorkGivers.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\WorkGivers.xml",
               "RelativeDocumentMoniker": "..\\..\\Defs\\WorkGivers.xml",
@@ -376,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 43,
               "Title": "WorkGivers.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Biotech\\Defs\\WorkGiverDefs\\WorkGivers.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Data\\Biotech\\Defs\\WorkGiverDefs\\WorkGivers.xml",
@@ -388,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 36,
               "Title": "SpecialThingFilters.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\SpecialThingFilters.xml",
               "RelativeDocumentMoniker": "..\\..\\Defs\\SpecialThingFilters.xml",
@@ -400,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 35,
               "Title": "ThingCategories.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\ThingCategories.xml",
               "RelativeDocumentMoniker": "..\\..\\Defs\\ThingCategories.xml",
@@ -412,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 40,
               "Title": "SpecialThingFilters.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\SpecialThingFilters.cs",
               "RelativeDocumentMoniker": "SpecialThingFilters.cs",
@@ -424,67 +631,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 0,
               "Title": "Patches.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Patches.cs",
               "RelativeDocumentMoniker": "Patches.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Patches.cs",
               "RelativeToolTip": "Patches.cs",
-              "ViewState": "AgIAAI0BAAAAAAAAAAAAALUBAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAKMBAAAAAAAAAAAMwLsBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T18:35:19.195Z"
+              "WhenOpened": "2025-08-26T18:35:19.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 6,
               "Title": "Utility.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Utility.cs",
               "RelativeDocumentMoniker": "Utility.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Utility.cs",
               "RelativeToolTip": "Utility.cs",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAuwLYAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAmwKcAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T16:59:18.987Z"
+              "WhenOpened": "2025-08-26T16:59:18.987Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 3,
               "Title": "CompUpgradableMech.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\ThingComps\\CompUpgradableMech.cs",
               "RelativeDocumentMoniker": "ThingComps\\CompUpgradableMech.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\ThingComps\\CompUpgradableMech.cs",
               "RelativeToolTip": "ThingComps\\CompUpgradableMech.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADMAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAowFMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T15:20:11.536Z"
+              "WhenOpened": "2025-08-26T15:20:11.536Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 2,
               "Title": "Stats.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Stats.cs",
               "RelativeDocumentMoniker": "Stats.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Stats.cs",
               "RelativeToolTip": "Stats.cs",
-              "ViewState": "AgIAALAAAAAAAAAAAAAiwNEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAMIAAAAAAAAAAAA1wNgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T15:15:30.004Z"
+              "WhenOpened": "2025-08-26T15:15:30.004Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "Misc.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Misc.cs",
               "RelativeDocumentMoniker": "Misc.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Misc.cs",
               "RelativeToolTip": "Misc.cs",
-              "ViewState": "AgIAAPEAAAAAAAAAAAAAABQBAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAE8BAAAAAAAAAAAUwG0BAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-26T15:14:29.678Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 17,
               "Title": "Mod.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\Mod.cs",
               "RelativeDocumentMoniker": "Mod.cs",
@@ -492,31 +703,21 @@
               "RelativeToolTip": "Mod.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T15:14:42.621Z"
+              "WhenOpened": "2025-08-26T15:14:42.621Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 1,
               "Title": "Stats.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\Stats.xml",
               "RelativeDocumentMoniker": "..\\..\\Defs\\Stats.xml",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Defs\\Stats.xml",
               "RelativeToolTip": "..\\..\\Defs\\Stats.xml",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAowFMAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-08-26T15:13:25.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "DefOfs.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\DefOfs.cs",
-              "RelativeDocumentMoniker": "DefOfs.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MechanoidUpgrades\\1.6\\Source\\MechanoidUpgrades\\DefOfs.cs",
-              "RelativeToolTip": "DefOfs.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAgwE4AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T15:12:53.766Z"
+              "WhenOpened": "2025-08-26T15:13:25.385Z",
+              "EditorCaption": ""
             }
           ]
         }

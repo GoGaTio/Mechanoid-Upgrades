@@ -174,7 +174,7 @@ namespace MU
 					return;
                 }
 				comp.AddUpgrade(def);
-				num += def.upgradePoints;
+				num -= def.upgradePoints;
 			}
 		}
 
@@ -246,9 +246,9 @@ namespace MU
 		public static int MaxUpgradePoints(Thing t)
 		{
 			int result = 0;
-			if (t is Pawn)
+			if (t is Pawn pawn)
 			{
-				result = ((int)t.GetStatValueForPawn(MUStatDefOf.MU_Upgradability, t as Pawn));
+				result = Mathf.RoundToInt(pawn.GetStatValue(MUStatDefOf.MU_Upgradability));
 			}
 			else
 			{

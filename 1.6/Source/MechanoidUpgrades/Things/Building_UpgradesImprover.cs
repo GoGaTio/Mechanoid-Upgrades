@@ -473,8 +473,6 @@ namespace MU
 
         public List<ThingDefCountClass> yieldThings = new List<ThingDefCountClass>();
 
-        override 
-
         public override void ResolveReferences()
         {
             base.ResolveReferences();

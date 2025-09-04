@@ -1,4 +1,21 @@
-﻿using System;
+﻿using DelaunatorSharp;
+using Gilzoide.ManagedJobs;
+using HarmonyLib;
+using Ionic.Crc;
+using Ionic.Zlib;
+using JetBrains.Annotations;
+using KTrie;
+using LudeonTK;
+using NVorbis.NAudioSupport;
+using RimWorld;
+using RimWorld.BaseGen;
+using RimWorld.IO;
+using RimWorld.Planet;
+using RimWorld.QuestGen;
+using RimWorld.SketchGen;
+using RimWorld.Utility;
+using RuntimeAudioClipLoader;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -19,22 +36,6 @@ using System.Xml.Linq;
 using System.Xml.Serialization;
 using System.Xml.XPath;
 using System.Xml.Xsl;
-using DelaunatorSharp;
-using Gilzoide.ManagedJobs;
-using Ionic.Crc;
-using Ionic.Zlib;
-using JetBrains.Annotations;
-using KTrie;
-using LudeonTK;
-using NVorbis.NAudioSupport;
-using RimWorld;
-using RimWorld.BaseGen;
-using RimWorld.IO;
-using RimWorld.Planet;
-using RimWorld.QuestGen;
-using RimWorld.SketchGen;
-using RimWorld.Utility;
-using RuntimeAudioClipLoader;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
@@ -51,7 +52,7 @@ using Verse.Noise;
 using Verse.Profile;
 using Verse.Sound;
 using Verse.Steam;
-using HarmonyLib;
+using static RimWorld.MechClusterSketch;
 
 namespace MU
 {
@@ -70,8 +71,30 @@ namespace MU
             {
 				foreach (Pawn p in map.mapPawns.PawnsInFaction(Faction.OfMechanoids))
 				{
-					MechUpgradeUtility.UpgradeMechCerebrex(p);
-				}
+                    CompUpgradableMechanoid comp = p.GetComp<CompUpgradableMechanoid>();
+                    if (comp == null)
+					{
+						continue;
+					}
+                    MechUpgradeUtility.DEV_RemoveAll(p);
+					MechUpgradeUtility.UpgradeMech(p, 1f, true);
+					foreach(MechUpgrade u in comp.upgrades.ToList())
+					{
+						string s = u.def.defName;
+						if(s.EndsWith("_B") || s.EndsWith("_C"))
+						{
+
+							MechUpgradeDef def = DefDatabase<MechUpgradeDef>.GetNamedSilentFail(s.Remove(s.Count() - 1) + "A");
+							if (def != null)
+							{
+                                comp.RemoveUpgrade(u);
+								comp.AddUpgrade(def);
+
+                            }
+                        }
+					}
+					//comp.AddUpgrade(MUMiscDefOf.MU_CerebrexLink);
+                }
 			}
 			catch(Exception ex)
             {

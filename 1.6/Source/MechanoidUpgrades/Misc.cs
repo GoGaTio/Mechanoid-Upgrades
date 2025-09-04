@@ -334,16 +334,16 @@ namespace MU
 		}
 
 		public void DoOperation(Pawn p, Building_MechUpgrader b)
-        {
+		{
 			if (type == UpgradeOperationType.Skip)
-            {
+			{
 				return;
-            }
-			if(upgrade == null)
-            {
+			}
+			if (upgrade == null)
+			{
 				Log.Error("Cannot do mech upgrade operation: null upgrade def - MU");
 				return;
-            }
+			}
 			p.Drawer.renderer.SetAllGraphicsDirty();
 			if (type == UpgradeOperationType.Add)
 			{
@@ -352,7 +352,7 @@ namespace MU
 				if (upgrade.def.ability != null)
 				{
 					p.abilities.GetAbility(upgrade.def.ability, true).RemainingCharges = upgrade.charges ?? p.abilities.GetAbility(upgrade.def.ability, true).maxCharges;
-                }
+				}
 				return;
 			}
 			int? i = null;
@@ -360,9 +360,8 @@ namespace MU
 			{
 				i = p.abilities.GetAbility(upgrade.def.ability, true).RemainingCharges;
 			}
-			upgrade.OnRemoved(p);
-			p.TryGetComp<MU.CompUpgradableMechanoid>().upgrades.Remove(upgrade);
-			if(upgrade.def.linkedThingDef.GetCompProperties<CompProperties_MechUpgrade>() == null)
+			p.TryGetComp<MU.CompUpgradableMechanoid>().RemoveUpgrade(upgrade);
+			if (upgrade.def.linkedThingDef == null || upgrade.def.linkedThingDef.GetCompProperties<CompProperties_MechUpgrade>() == null)
             {
 				return;
             }

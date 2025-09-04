@@ -189,4 +189,33 @@ namespace MU
 			}
 		}
 	}
+
+	/*public class CerebrexLink : MechUpgrade
+	{
+        public override void OnAdded(Pawn p)
+        {
+            base.OnAdded(p);
+			p.GetComp<CompUpgradableMechanoid>().upgradabilityOffset++;
+        }
+
+        public override void Tick()
+        {
+            base.Tick();
+			if (holder.IsHashIntervalTick(170) && holder.Map != null)
+			{
+				if (holder.InMentalState)
+				{
+					holder.mindState.mentalStateHandler.Reset();
+                }
+				if(holder.Faction != Faction.OfMechanoids)
+				{
+                    holder.SetFaction(Faction.OfMechanoids);
+                    if (holder.GetLord() == null)
+                    {
+                        LordMaker.MakeNewLord(Faction.OfMechanoids, new LordJob_AssaultColony(Faction.OfMechanoids, false, false, false, false, false, false, false), holder.Map, Gen.YieldSingle(holder));
+                    }
+                }
+			}
+        }
+	}*/
 }

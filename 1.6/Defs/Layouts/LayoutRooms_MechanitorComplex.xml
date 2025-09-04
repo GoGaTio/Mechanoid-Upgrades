@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Entrance -->
+
+  <LayoutRoomDef>
+    <defName>MU_AncientEntranceRoom</defName>
+    <canMergeWithAdjacentRoom>false</canMergeWithAdjacentRoom>
+    <roomContentsWorkerType>MU.RoomContents_EntranceRoom</roomContentsWorkerType>
+    <prefabs>
+      <MU_AncientUpgradesStorage_Edge>
+        <countPerHundredCells>5</countPerHundredCells>
+        <minMaxRange>1~3</minMaxRange>
+      </MU_AncientUpgradesStorage_Edge>
+      <AncientBasicRecharger_Edge>
+        <countPerHundredCells>5</countPerHundredCells>
+        <minMaxRange>1~1</minMaxRange>
+      </AncientBasicRecharger_Edge>
+      <AncientLamp_Single>
+        <countPerHundredCells>5</countPerHundredCells>
+        <minMaxRange>0~1</minMaxRange>
+      </AncientLamp_Single>
+    </prefabs>
+    <floorTypes>
+      <li>AncientConcrete</li>
+    </floorTypes>
+    <scatter>
+      <ChunkMechanoidSlag>
+        <groupsPerHundredCells>2~4</groupsPerHundredCells>
+        <itemsPerGroup>1~2</itemsPerGroup>
+        <groupDistRange>3~5</groupDistRange>
+        <minGroups>1</minGroups>
+      </ChunkMechanoidSlag>
+    </scatter>
+  </LayoutRoomDef> 
+
+  <LayoutRoomDef>
+    <defName>MU_AncientFacilityEntrance</defName>
+    <roomContentsWorkerType>MU.RoomContents_FacilityEntrance</roomContentsWorkerType>
+    <minSingleRectWidth>9</minSingleRectWidth>
+    <minSingleRectHeight>9</minSingleRectHeight>
+  </LayoutRoomDef>
+
+  <!-- Common -->
+
+  <LayoutRoomDef>
+    <defName>MU_AncientUpgraderRoom</defName>
+    <canMergeWithAdjacentRoom>false</canMergeWithAdjacentRoom>
+    <minSingleRectWidth>9</minSingleRectWidth>
+    <minSingleRectHeight>9</minSingleRectHeight>
+    <roomContentsWorkerType>MU.RoomContents_UpgraderRoom</roomContentsWorkerType>
+    <prefabs>
+      <MU_AncientLargeUpgradesStorage_Cluster>
+        <countPerHundredCells>5</countPerHundredCells>
+        <minMaxRange>1~1</minMaxRange>
+      </MU_AncientLargeUpgradesStorage_Cluster>
+      <MU_AncientUpgradesStorage_Edge>
+        <countPerHundredCells>5</countPerHundredCells>
+        <minMaxRange>1~5</minMaxRange>
+      </MU_AncientUpgradesStorage_Edge>
+      <AncientLamp_Single>
+        <countPerHundredCells>5</countPerHundredCells>
+        <minMaxRange>0~2</minMaxRange>
+      </AncientLamp_Single>
+    </prefabs>
+    <floorTypes>
+      <li>AncientTile</li>
+    </floorTypes>
+    <scatter>
+      <ChunkMechanoidSlag>
+        <groupsPerHundredCells>2~4</groupsPerHundredCells>
+        <itemsPerGroup>1~2</itemsPerGroup>
+        <groupDistRange>3~5</groupDistRange>
+        <minGroups>1</minGroups>
+      </ChunkMechanoidSlag>
+    </scatter>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>MU_AncientAssemblerRoom</defName>
+    <canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
+    <prefabs>
+      <MU_AncientBasicUpgradesAssembler>
+        <countPerTenEdgeCells>3</countPerTenEdgeCells>
+        <minMaxRange>1~2</minMaxRange>
+      </MU_AncientBasicUpgradesAssembler>
+      <MU_AncientAdvancedUpgradesAssembler>
+        <countPerTenEdgeCells>2</countPerTenEdgeCells>
+        <minMaxRange>1~2</minMaxRange>
+      </MU_AncientAdvancedUpgradesAssembler>
+      <MU_AncientUpgradesStorage_Edge>
+        <countPerHundredCells>5</countPerHundredCells>
+        <minMaxRange>1~5</minMaxRange>
+      </MU_AncientUpgradesStorage_Edge>
+      <AncientLamp_Single>
+        <countPerHundredCells>5</countPerHundredCells>
+        <minMaxRange>0~1</minMaxRange>
+      </AncientLamp_Single>
+    </prefabs>
+    <floorTypes>
+      <li>AncientTile</li>
+    </floorTypes>
+    <scatter>
+      <ChunkMechanoidSlag>
+        <groupsPerHundredCells>2~4</groupsPerHundredCells>
+        <itemsPerGroup>1~2</itemsPerGroup>
+        <groupDistRange>3~5</groupDistRange>
+        <minGroups>1</minGroups>
+      </ChunkMechanoidSlag>
+    </scatter>
+  </LayoutRoomDef>
+
+  <LayoutRoomDef>
+    <defName>MU_AncientDormantMechsRoom</defName>
+    <minSingleRectWidth>10</minSingleRectWidth>
+    <minSingleRectHeight>10</minSingleRectHeight>
+    <prefabs>
+      <AncientDisplayBank_Edge>
+        <countPerTenEdgeCells>3</countPerTenEdgeCells>
+        <minMaxRange>2~6</minMaxRange>
+      </AncientDisplayBank_Edge>
+      <AncientBandNode_Cluster>
+        <countPerHundredCells>10</countPerHundredCells>
+        <minMaxRange>5~15</minMaxRange>
+      </AncientBandNode_Cluster>
+    </prefabs>
+    <floorTypes>
+      <li>AncientConcrete</li>
+    </floorTypes>
+    <edgeTerrain>AncientTile</edgeTerrain>
+    <scatter>
+      <ChunkMechanoidSlag>
+        <groupsPerHundredCells>2~4</groupsPerHundredCells>
+        <itemsPerGroup>1~2</itemsPerGroup>
+        <groupDistRange>3~5</groupDistRange>
+        <minGroups>1</minGroups>
+      </ChunkMechanoidSlag>
+    </scatter>
+  </LayoutRoomDef>
+  
+</Defs>

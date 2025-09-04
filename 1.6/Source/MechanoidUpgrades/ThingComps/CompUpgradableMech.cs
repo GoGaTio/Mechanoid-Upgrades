@@ -55,13 +55,26 @@ namespace MU
 	public class CompUpgradableMechanoid : ThingComp
 	{
 		public List<MechUpgrade> upgrades = new List<MechUpgrade>();
-		public float? CommandDistanceSquared => CommandDistance * CommandDistance;
+		public float? CommandDistanceSquared
+		{
+			get
+			{
+				float? num = CommandDistance;
+				if(num != null)
+				{
+					num *= num;
+				}
+				return num;
+			}
+		}
 
 		public UpgradeCompReloadable compForReload;
 
 		private int compForReloadIndex = -1;
 
 		private MechUpgradeDef upgradeForReload;
+
+		public int upgradabilityOffset;
 
         [Unsaved(false)]
         private Dictionary<DamageDef, float> cachedDamageFactors = new Dictionary<DamageDef, float>();
@@ -646,11 +659,13 @@ namespace MU
 				}
 			}
 			Scribe_Defs.Look(ref upgradeForReload, "upgradeForReload");
-			Scribe_Values.Look(ref compForReloadIndex, "compForReloadIndex", defaultValue: -1);
-			Scribe_Collections.Look(ref upgrades, "upgrades", LookMode.Deep);
+			Scribe_Values.Look(ref upgradabilityOffset, "upgradabilityOffset", defaultValue: 0);
+            Scribe_Values.Look(ref compForReloadIndex, "compForReloadIndex", defaultValue: -1);
+            Scribe_Collections.Look(ref upgrades, "upgrades", LookMode.Deep);
 			Scribe_Values.Look(ref autoReload, "autoReload", defaultValue: true);
 			if (Scribe.mode == LoadSaveMode.PostLoadInit && !upgrades.NullOrEmpty())
 			{
+				upgrades.RemoveWhere(x => x.def == null);
 				if (compForReloadIndex != -1 && upgradeForReload != null)
 				{
 					MechUpgradeWithComps ru = upgrades.FirstOrDefault((MechUpgrade u) => u.def == upgradeForReload) as MechUpgradeWithComps;

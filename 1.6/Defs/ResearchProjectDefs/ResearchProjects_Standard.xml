@@ -92,7 +92,7 @@
       <rulesStrings>
         <li>subject->mechanoid upgrades</li>
 
-        <li>subject_story->moved into the development of microelectronics</li>
+        <li>subject_story->created armor for assault mechanoids</li>
 
         <li>subject_gerund->crafting mechanoid upgrades</li>
       </rulesStrings>
@@ -171,8 +171,8 @@
     <prerequisites>
       <li>MU_StandardUpgrades</li>
     </prerequisites>
-    <researchViewX>4.00</researchViewX>
-    <researchViewY>2.70</researchViewY>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
     <generalRules>
       <rulesStrings>
         <li>subject->upgrades improver</li>

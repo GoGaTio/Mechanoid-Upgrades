@@ -239,7 +239,7 @@ namespace MU
 			{
 				yield return $"MechUpgradeDef {defName} has a commonality < 0.";
 			}
-			if (linkedThingDef == null)
+			if (linkedThingDef == null && !notGenerateHyperlink)
 			{
 				yield return $"MechUpgradeDef {defName} has no linked ThingDef.";
 			}

@@ -5,7 +5,7 @@
     <techLevel>Ultra</techLevel>
     <requiresMechanitor>true</requiresMechanitor>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-	<requiredResearchFacilities>
+    <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
     <tab>MU</tab>
@@ -26,17 +26,17 @@
       <rulesStrings>
         <li>subject->advanced mech upgrades</li>
 
-        <li>subject_story->moved into the development of microelectronics</li>
-        
+        <li>subject_story->created advanced for mechanoids</li>
+
         <li>subject_gerund->crafting advanced upgrades</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
-  
+
   <ResearchProjectDef ParentName="MU_AdvancedBase">
     <defName>MU_AdvancedChips</defName>
     <label>advanced mechanoid chips</label>
-    <description>Work with complex microelectronics. This unlocks the hi-tech research bench and comms console.</description>
+    <description>Create advanced mechanoid chips.</description>
     <baseCost>850</baseCost>
     <prerequisites>
       <li>MU_AdvancedUpgrades</li>
@@ -48,13 +48,13 @@
       <rulesStrings>
         <li>subject->advanced mech upgrades</li>
 
-        <li>subject_story->moved into the development of microelectronics</li>
-       
+        <li>subject_story->created advanced chips for mechanoids</li>
+
         <li>subject_gerund->crafting advanced upgrades</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
-  
+
   <ResearchProjectDef ParentName="MU_AdvancedBase">
     <defName>MU_AdvancedModules</defName>
     <label>advanced mechanoid modules</label>
@@ -62,7 +62,7 @@
     <baseCost>900</baseCost>
     <prerequisites>
       <li>MU_AdvancedUpgrades</li>
-	  <li>MU_StandardModules</li>
+      <li>MU_StandardModules</li>
     </prerequisites>
     <researchViewX>7.00</researchViewX>
     <researchViewY>1.40</researchViewY>
@@ -70,8 +70,8 @@
       <rulesStrings>
         <li>subject->standard modules</li>
 
-        <li>subject_story->created special modules for mechanoids</li>
-        
+        <li>subject_story->created advanced modules for mechanoids</li>
+
         <li>subject_gerund->crafting standard modules</li>
       </rulesStrings>
     </generalRules>
@@ -80,7 +80,7 @@
   <ResearchProjectDef ParentName="MU_AdvancedBase">
     <defName>MU_AdvancedArmor</defName>
     <label>advanced mechanoid armor</label>
-    <description>Work with complex microelectronics. This unlocks the hi-tech research bench and comms console.</description>
+    <description>Create advanced mechanoid armor.</description>
     <baseCost>800</baseCost>
     <prerequisites>
       <li>MU_AdvancedUpgrades</li>
@@ -92,13 +92,13 @@
       <rulesStrings>
         <li>subject->advanced mech upgrades</li>
 
-        <li>subject_story->moved into the development of microelectronics</li>
-        
+        <li>subject_story->created advanced armor for mechanoids</li>
+
         <li>subject_gerund->crafting advanced upgrades</li>
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
-  
+
   <ResearchProjectDef ParentName="MU_AdvancedBase">
     <defName>MU_AdvancedShields</defName>
     <label>advanced mechanoid shields</label>
@@ -106,7 +106,7 @@
     <baseCost>1250</baseCost>
     <prerequisites>
       <li>MU_AdvancedUpgrades</li>
-	  <li>MU_StandardShields</li>
+      <li>MU_StandardShields</li>
     </prerequisites>
     <researchViewX>8.00</researchViewX>
     <researchViewY>1.75</researchViewY>
@@ -115,7 +115,7 @@
         <li>subject->advanced mechanoid shields</li>
 
         <li>subject_story->created shields for assault mechanoids</li>
-       
+
         <li>subject_gerund->crafting advanced shields</li>
       </rulesStrings>
     </generalRules>
@@ -135,8 +135,8 @@
       <rulesStrings>
         <li>subject->shield boosters</li>
 
-        <li>subject_story->moved into the development of microelectronics</li>
-        
+        <li>subject_story->created shield boosters for mechanoids</li>
+
         <li>subject_gerund->crafting advanced upgrades</li>
       </rulesStrings>
     </generalRules>

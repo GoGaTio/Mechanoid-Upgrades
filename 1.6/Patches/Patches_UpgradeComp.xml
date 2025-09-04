@@ -2,57 +2,58 @@
 
 <Patch>
 
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[comps/li[@Class = "CompProperties_OverseerSubject"]]/comps</xpath>
-        <value>
-            <li Class="MU.CompProperties_UpgradableMechanoid" />
-        </value>
-	</Operation>
-    
-    <Operation Class="PatchOperationConditional">
-      <success>Always</success>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[comps/li[@Class = "CompProperties_OverseerSubject"]]/comps</xpath>
+    <value>
+      <li Class="MU.CompProperties_UpgradableMechanoid" />
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/MapGeneratorDef[defName = "Mechhive"]/genSteps</xpath>
+    <match Class="PatchOperationAdd">
       <xpath>Defs/MapGeneratorDef[defName = "Mechhive"]/genSteps</xpath>
-      <match Class="PatchOperationAdd">
-        <xpath>Defs/MapGeneratorDef[defName = "Mechhive"]/genSteps</xpath>
-        <value>
-          <li>MU_CerebrexUpgrades</li>
-        </value>
-      </match>
-    </Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[
-        @Name = "BasePawn" or
-        defName = "DMS_Mech_Armiman" or
-        defName = "DMS_Mech_BigSister" or
-        defName = "DMS_Mech_Maiden" 
-         ]/inspectorTabs</xpath>
-        <value>
-            <li>MU.ITab_MechUpgrades</li>
-        </value>
-	</Operation>
-	
-	<Operation Class="PatchOperationInsert">
-		<xpath>Defs/ThinkTreeDef[defName="Mechanoid"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalPlayerControlledMech"]/subNodes/li[@Class="ThinkNode_ConditionalNotFormingCaravan"]/subNodes/li[@Class ="ThinkNode_ConditionalRecharging"]</xpath>
-		<order>Append</order>
-		<value>			
-			<li Class="MU.ThinkNode_ConditionalUpgradeNeedsReload">
-				<subNodes>
-					<li Class="MU.JobGiver_ReloadUpgrades" />
-				</subNodes>
-			</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationInsert">
-		<xpath>Defs/PawnTableDef[defName="Mechs"]/columns/li[text()="AutoRepair"]</xpath>
-		<order>Append</order>
-		<value>			
-			<li>MU_AutoReload</li>
-		</value>
-	</Operation>
-	
-	
+      <value>
+        <li>MU_CerebrexUpgrades</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>
+      Defs/ThingDef[
+      @Name = "BasePawn" or
+      defName = "DMS_Mech_Armiman" or
+      defName = "DMS_Mech_BigSister" or
+      defName = "DMS_Mech_Maiden"
+      ]/inspectorTabs
+    </xpath>
+    <value>
+      <li>MU.ITab_MechUpgrades</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationInsert">
+    <xpath>Defs/ThinkTreeDef[defName="Mechanoid"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalPlayerControlledMech"]/subNodes/li[@Class="ThinkNode_ConditionalNotFormingCaravan"]/subNodes/li[@Class ="ThinkNode_ConditionalRecharging"]</xpath>
+    <order>Append</order>
+    <value>
+      <li Class="MU.ThinkNode_ConditionalUpgradeNeedsReload">
+        <subNodes>
+          <li Class="MU.JobGiver_ReloadUpgrades" />
+        </subNodes>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationInsert">
+    <xpath>Defs/PawnTableDef[defName="Mechs"]/columns/li[text()="AutoRepair"]</xpath>
+    <order>Append</order>
+    <value>
+      <li>MU_AutoReload</li>
+    </value>
+  </Operation>
+
+
 </Patch>

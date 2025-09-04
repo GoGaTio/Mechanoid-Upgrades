@@ -259,7 +259,7 @@
     <graphicData>
       <texPath>Things/Building/MU_UpgradesStorage/MU_UpgradesStorage</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2, 1.1)</drawSize>
+      <drawSize>(2, 2)</drawSize>
       <shadowData>
         <volume>(1.7, 0.3, 0.85)</volume>
       </shadowData>

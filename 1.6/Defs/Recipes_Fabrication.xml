@@ -587,7 +587,7 @@
     <description>Improve C tier ultra large armor to B tier ultra large armor.</description>
     <researchPrerequisite>MU_StandardArmor</researchPrerequisite>
     <formingTicks>50000</formingTicks>
-    <uiIconPath></uiIconPath>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_UltraLargeMechArmor_B</uiIconPath>
     <ingredients>
       <li>
         <filter>
@@ -631,7 +631,7 @@
     <description>Improve B tier ultra large armor to A tier ultra large armor.\n\nYields 40 steel, 2 basic and 1 advanced component.</description>
     <researchPrerequisite>MU_AdvancedArmor</researchPrerequisite>
     <formingTicks>100000</formingTicks>
-    <uiIconPath></uiIconPath>
+    <uiIconPath>UI/MechanoidUpgrades/Armor/MU_UltraLargeMechArmor_A</uiIconPath>
     <ingredients>
       <li>
         <filter>
@@ -675,7 +675,7 @@
     <description>Improve C tier small shield to B tier small shield.\n\nYields 1 basic component.</description>
     <researchPrerequisite>MU_StandardShields</researchPrerequisite>
     <formingTicks>30000</formingTicks>
-    <uiIconPath></uiIconPath>
+    <uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Small_B</uiIconPath>
     <ingredients>
       <li>
         <filter>
@@ -714,7 +714,7 @@
     <description>Improve B tier small armor to A tier small shield.\n\nYields 20 steel, 1 basic and 1 advanced component.</description>
     <researchPrerequisite>MU_AdvancedShields</researchPrerequisite>
     <formingTicks>60000</formingTicks>
-    <uiIconPath></uiIconPath>
+    <uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Small_A</uiIconPath>
     <ingredients>
       <li>
         <filter>
@@ -749,7 +749,7 @@
     <description>Improve C tier medium shield to B tier medium shield.</description>
     <researchPrerequisite>MU_StandardShields</researchPrerequisite>
     <formingTicks>35000</formingTicks>
-    <uiIconPath></uiIconPath>
+    <uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Medium_B</uiIconPath>
     <ingredients>
       <li>
         <filter>
@@ -793,7 +793,7 @@
     <description>Improve B tier medium shield to A tier medium shield.\n\nYields 10 steel and 1 advanced component.</description>
     <researchPrerequisite>MU_AdvancedShields</researchPrerequisite>
     <formingTicks>70000</formingTicks>
-    <uiIconPath></uiIconPath>
+    <uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Medium_A</uiIconPath>
     <ingredients>
       <li>
         <filter>
@@ -835,7 +835,7 @@
     <description>Improve C tier large shield to B tier large shield.\n\nYields 1 basic component.</description>
     <researchPrerequisite>MU_StandardShields</researchPrerequisite>
     <formingTicks>45000</formingTicks>
-    <uiIconPath></uiIconPath>
+    <uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Large_B</uiIconPath>
     <ingredients>
       <li>
         <filter>
@@ -890,7 +890,7 @@
     <description>Improve B tier large shield to A tier large shield.\n\nYields 3 basic components.</description>
     <researchPrerequisite>MU_AdvancedShields</researchPrerequisite>
     <formingTicks>90000</formingTicks>
-    <uiIconPath></uiIconPath>
+    <uiIconPath>UI/MechanoidUpgrades/Shields/MU_Shield_Large_A</uiIconPath>
     <ingredients>
       <li>
         <filter>

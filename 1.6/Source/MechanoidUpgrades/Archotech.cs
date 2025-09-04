@@ -383,13 +383,13 @@ namespace MU.Archotech //classes for add-on "Mechanoid Upgrades - Archotech"
         {
 			if(Props.job == null)
             {
-				if(target is Pawn mech && mech.TryGetComp<CompUpgradableMechanoid>()?.upgrades?.NullOrEmpty() == false)
+				if(target is Pawn mech && mech.TryGetComp<CompUpgradableMechanoid>()?.upgrades?.Any((MechUpgrade u) => u.def.linkedThingDef != null) == true)
                 {
 					return true;
                 }
 				return false;
             }
-			if(target is Corpse corpse && corpse.InnerPawn?.TryGetComp<CompUpgradableMechanoid>()?.upgrades?.NullOrEmpty() == false)
+			if(target is Corpse corpse && corpse.InnerPawn?.TryGetComp<CompUpgradableMechanoid>()?.upgrades?.Any((MechUpgrade u) => u.def.linkedThingDef != null) == true)
             {
 				return true;
             }
@@ -405,7 +405,7 @@ namespace MU.Archotech //classes for add-on "Mechanoid Upgrades - Archotech"
 			int amount = Mathf.Min(Props.options.IndexOf(Props.options.RandomElementByWeight((float o) => o)) + 1, comp.upgrades.Count);
 			for (int i= 0; i < amount; i++)
             {
-				MechUpgrade upgrade = comp.upgrades.RandomElementByWeight((MechUpgrade u) => 3f / (float)(u.def.upgradePoints + 2));//upgrades with more points will have smaller chances
+				MechUpgrade upgrade = comp.upgrades.RandomElementByWeight((MechUpgrade u) => u.def.linkedThingDef == null ? 0 : 3f / (float)(u.def.upgradePoints + 2));//upgrades with more points will have smaller chances
 				upgrade.OnRemoved(mech); 
 				comp.upgrades.Remove(upgrade);
 				GenSpawn.Spawn(MechUpgradeUtility.ItemFromUpgrade(upgrade), mech.PositionHeld, mech.MapHeld);

@@ -441,4 +441,46 @@ namespace MU
             }
         }
     }
+
+    /*[HarmonyPatch(typeof(CompAbilityEffect_DeactivateMechanoid), nameof(CompAbilityEffect_DeactivateMechanoid.Valid))]
+    public class Patch_CompAbilityEffect_DeactivateMechanoid
+    {
+        [HarmonyPostfix]
+        public static void Postfix(LocalTargetInfo target, ref bool __result)
+        {
+            Pawn pawn = target.Pawn;
+            if (pawn == null)
+            {
+                return;
+            }
+            CompUpgradableMechanoid comp = pawn.GetComp<CompUpgradableMechanoid>();
+            if(comp != null && comp.upgrades.Any((MechUpgrade u) => u is CerebrexLink))
+			{
+				__result = false;
+            }
+        }
+    }*/
+
+    [HarmonyPatch(typeof(VerbProperties), nameof(VerbProperties.AdjustedRange))]
+    public class Patch_AdjustedRange
+    {
+        [HarmonyPostfix]
+        public static void Postfix(Verb ownerVerb, Thing attacker, ref float __result)
+        {
+            if (attacker is Pawn)
+            {
+				__result *= attacker.GetStatValue(MUStatDefOf.MU_WeaponRangeFactor);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(Verb_ShootBeam), "ApplyDamage")]
+    public class Patch_ApplyBeamDamage
+    {
+        [HarmonyPrefix]
+        public static void Prefix(ref float damageFactor, Verb_ShootBeam __instance)
+        {
+			damageFactor *= __instance.CasterPawn?.GetStatValue(MUStatDefOf.MU_RangedDamageFactor) ?? 1f;
+        }
+    }
 }
